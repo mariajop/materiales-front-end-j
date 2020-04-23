@@ -1,19 +1,17 @@
-<p align="center">
-  <a href="http://adalab.es/">
-    <img align="center" src="assets/images/adalab_brand.png" alt="AdaLab brand">
-  </a>
-</p>
-<h3 align="center">Materiales del curso de programación web front-end</h3>
-<p align="center">
-   Conviértete en desarrolladora web front-end y aprende a hacer tus propias páginas y aplicaciones
-</p>
+# Introduction
+
+ [![AdaLab brand](.gitbook/assets/adalab_brand.png)](http://adalab.es/)
+
+### Materiales del curso de programación web front-end
+
+ Conviértete en desarrolladora web front-end y aprende a hacer tus propias páginas y aplicaciones
 
 ## Contenido
 
-- [Acerca del curso](#acerca-del-curso)
-- [Sobre Adalab](#sobre-adalab)
-- [Objetivos generales](#objetivos-generales)
-- [Cómo colaborar](#cómo-colaborar)
+* [Acerca del curso](./#acerca-del-curso)
+* [Sobre Adalab](./#sobre-adalab)
+* [Objetivos generales](./#objetivos-generales)
+* [Cómo colaborar](./#cómo-colaborar)
 
 ## Acerca del programa
 
@@ -21,7 +19,7 @@ Este repositorio recoge los materiales técnicos utilizados dentro del curso int
 
 El objetivo principal del curso es que las participantes adquieran las habilidades y conocimientos básicos necesarios para trabajar, de forma profesional como programadoras front-end junior. La duración del programa es de 12 semanas. Se partirá del aprendizaje acerca de cómo funciona la web y el proceso de desarrollo de un producto, posteriormente se empezará con el aprendizaje y la práctica de programación, continuaremos con el aprendizaje de programación en JavaScript, haremos posteriormente un repaso de las técnicas, herramientas y procesos que utilizan los desarrolladores profesionales hoy en día y, finalmente, aprenderemos a utilizar un framework de JavaScript.
 
-El fin último del curso es que todas las participantes sean capaces de realizar todas las tareas reflejadas en los [Objetivos generales](#objetivos-generales).
+El fin último del curso es que todas las participantes sean capaces de realizar todas las tareas reflejadas en los [Objetivos generales](./#objetivos-generales).
 
 ## Sobre Adalab
 
@@ -35,10 +33,10 @@ Actualmente tenemos una tasa de inserción laboral del 95%.
 
 El objetivo del programa es que las participantes sean capaces de realizar las siguientes tareas:
 
-- Crear páginas web y aplicaciones web sencillas utilizando un código correcto y ordenado.
-- Modificar el código de una aplicación web existente, dejándolo en un estado igual o mejor.
-- Usar herramientas y metodologías de trabajo en equipo para desarrollar de productos digitales.
-- Entender qué es un framework de JavaScript y manejar la base de alguno de ellos.
+* Crear páginas web y aplicaciones web sencillas utilizando un código correcto y ordenado.
+* Modificar el código de una aplicación web existente, dejándolo en un estado igual o mejor.
+* Usar herramientas y metodologías de trabajo en equipo para desarrollar de productos digitales.
+* Entender qué es un framework de JavaScript y manejar la base de alguno de ellos.
 
 ## Cómo colaborar
 
@@ -46,4 +44,5 @@ Siempre estamos abiertos a sugerencias acerca de como mejorar este programa. Si 
 
 Otra forma de colaborar con este repositorio es [hacer un fork](https://help.github.com/articles/fork-a-repo/) y enviarnos directamente un [pull request](https://help.github.com/articles/using-pull-requests/) para solucionar cualquier error que encuentres o añadir algún recurso o información.
 
-**Cualquier ayuda es bienvenida :)**
+**Cualquier ayuda es bienvenida :\)**
+
