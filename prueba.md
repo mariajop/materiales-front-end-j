@@ -8,4 +8,8 @@
 
 [https://books.adalab.es/materiales-front-end-j/modulo-1.-hola-mundo/1_1_intro_a_la_web](https://books.adalab.es/materiales-front-end-j/modulo-1.-hola-mundo/1_1_intro_a_la_web)
 
-[1.4 Flexbox](modulo-1.-hola-mundo/1_4_posicionamiento_con_flexbox.md)
+[1.4 Flexbox](sprint_1/1_4_posicionamiento_con_flexbox.md)
+
+[1.4 Flexbox](sprint_1/1_4_posicionamiento_con_flexbox)
+
+[1.4 Flexbox](modulo-1.-hola-mundo/1_4_posicionamiento_con_flexbox)
