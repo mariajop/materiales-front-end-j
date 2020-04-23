@@ -1,4 +1,4 @@
-# Código de conducta en Adalab
+# Código de Conducta convenido para Contribuyentes
 
 ## Nuestro compromiso
 
@@ -8,19 +8,19 @@ En el interés de fomentar una comunidad abierta y acogedora, nosotros como cont
 
 Ejemplos de comportamiento que contribuyen a crear un ambiente positivo:
 
-* Uso de lenguaje amable e inclusivo.
-* Respeto a diferentes puntos de vista y experiencias.
-* Aceptación de críticas constructivas.
-* Enfocarse en lo que es mejor para la comunidad.
-* Mostrar empatía a otros miembros de la comunidad.
+- Uso de lenguaje amable e inclusivo.
+- Respeto a diferentes puntos de vista y experiencias.
+- Aceptación de críticas constructivas.
+- Enfocarse en lo que es mejor para la comunidad.
+- Mostrar empatía a otros miembros de la comunidad.
 
 Ejemplos de comportamiento inaceptable por participantes:
 
-* Uso de lenguaje o imágenes sexuales y atención sexual no deseada.
-* Comentarios insultantes o despectivos \(_trolling_\) y ataques personales o políticos.
-* Acoso público o privado.
-* Publicación de información privada de terceros sin su consentimiento, como direcciones físicas o electrónicas.
-* Otros tipos de conducta que pudieran considerarse inapropiadas en un entorno profesional.
+- Uso de lenguaje o imágenes sexuales y atención sexual no deseada.
+- Comentarios insultantes o despectivos (_trolling_) y ataques personales o políticos.
+- Acoso público o privado.
+- Publicación de información privada de terceros sin su consentimiento, como direcciones físicas o electrónicas.
+- Otros tipos de conducta que pudieran considerarse inapropiadas en un entorno profesional.
 
 ## Nuestras responsabilidades
 
@@ -40,5 +40,6 @@ Administradores que no sigan o que no hagan cumplir este Código de Conducta pue
 
 ## Atribución
 
-Este Código de Conducta es una adaptación del [Contributor Covenant](https://www.contributor-covenant.org), versión 1.4, disponible en [https://www.contributor-covenant.org/es/version/1/4/code-of-conduct.html](https://www.contributor-covenant.org/es/version/1/4/code-of-conduct.html)
+Este Código de Conducta es una adaptación del [Contributor Covenant][homepage], versión 1.4, disponible en https://www.contributor-covenant.org/es/version/1/4/code-of-conduct.html
 
+[homepage]: https://www.contributor-covenant.org
