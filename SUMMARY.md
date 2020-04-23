@@ -1,6 +1,9 @@
 # Table of contents
 
 * [Introduction](README.md)
+
+### Pruebas
+
 * [Pruebas](prueba.md)
 
 ## Módulo 1. Hola Mundo
