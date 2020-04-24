@@ -2,6 +2,14 @@
 
 - [Introduction](README.md)
 
+## Antes de empezar
+
+- [Código de conducta en Adalab](guias/codigo_de_conducta.md)
+- [Instalación de ordenadores](guias/instalacion_de_ordenadores.md)
+- [Información de interés](guias/informacion_de_interes.md)
+- [Cómo trabajar en remoto](guias/como_trabajar_en_remoto.md)
+- [Guía para enfrentarse a problemas técnicos de manera autónoma](guias/busqueda_de_soluciones.md)
+
 ## Módulo 1. Hola Mundo
 
 - [1.1. Intro a la web](sprint_1/1_1_intro_a_la_web.md)
@@ -72,9 +80,5 @@
 
 ## Guías
 
-- [Información de interés](guias/informacion_de_interes.md)
 - [Agile](guias/agile.md)
 - [Scrum](guias/scrum.md)
-- [Guía para enfrentarse a problemas técnicos de manera autónoma](guias/busqueda_de_soluciones.md)
-- [Código de conducta en Adalab](guias/codigo_de_conducta.md)
-- [Instalación de ordenadores](guias/instalacion_de_ordenadores.md)
