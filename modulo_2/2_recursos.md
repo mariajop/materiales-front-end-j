@@ -2,6 +2,7 @@
 
 ## Recursos de JavaScript
 
+- [Sintaxis de JS](modulo_2/2_sintaxis_de_js.md)
 - [Sintaxis de JS](/modulo_2/2_sintaxis_de_js.md)
 - [Sintaxis de JS](./modulo_2/2_sintaxis_de_js.md)
 - [Sintaxis de JS](./2_sintaxis_de_js.md)
