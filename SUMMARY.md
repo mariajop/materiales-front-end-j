@@ -1,14 +1,8 @@
 # Summary
 
 - [Introduction](README.md)
-
-## Antes de empezar
-
-- [Código de conducta en Adalab](guias/codigo_de_conducta.md)
-- [Instalación de ordenadores](guias/instalacion_de_ordenadores.md)
+- [Antes de empezar el curso](guias/antes_de_empezar_el_curso.md)
 - [Información de interés](guias/informacion_de_interes.md)
-- [Cómo trabajar en remoto](guias/como_trabajar_en_remoto.md)
-- [Guía para enfrentarse a problemas técnicos de manera autónoma](guias/busqueda_de_soluciones.md)
 
 ## Módulo 1. Hola Mundo
 
@@ -80,5 +74,8 @@
 
 ## Guías
 
+- [Código de conducta en Adalab](guias/codigo_de_conducta.md)
+- [Instalación de ordenadores](guias/instalacion_de_ordenadores.md)
+- [Guía para enfrentarse a problemas técnicos de manera autónoma](guias/busqueda_de_soluciones.md)
 - [Agile](guias/agile.md)
 - [Scrum](guias/scrum.md)

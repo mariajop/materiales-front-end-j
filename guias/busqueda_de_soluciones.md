@@ -27,7 +27,7 @@ Vamos a ver algunos ejemplos, cuando buscamos información y cuando buscamos un 
 
 [js check if a checkbox is checked](https://www.google.com/search?hl=en&q=js%20check%20if%20a%20checkbox%20is%20checked%20)
 
-–¡Espera! esta búsqueda no me sirve porque todos los resultados hablan de JQuery
+¡Espera! esta búsqueda no me sirve porque todos los resultados hablan de JQuery
 Pues nada, sin JQuery:
 
 [js check if a checkbox is checked -jquery](https://www.google.com/search?hl=en&q=js%20check%20if%20a%20checkbox%20is%20checked%20-jquery)

@@ -149,7 +149,7 @@ Y la terminal debe mostrar la versión de Git instalada, algo como `git version 
 ### Zoom desde Ubuntu
 
 - Accede al instalador de aplicaciones desde el menú
-- Buscar Zoom e instálalo.
+- Buscar **Zoom** e instálalo.
 
 ### Zoom desde Windows
 
@@ -161,7 +161,7 @@ Y la terminal debe mostrar la versión de Git instalada, algo como `git version 
 
 ### Otros programas
 
-Necesitamos instalar VS Code, Chrome y Slack. Desde Windows y Mac podemos instalar estos programas accediendo a las siguientes páginas:
+Necesitamos instalar **VS Code**, **Chrome** y **Slack**. Desde Windows y Mac podemos instalar estos programas accediendo a las siguientes páginas:
 
 - VS Code (https://code.visualstudio.com/)
 - Chrome (https://www.google.com/chrome/)

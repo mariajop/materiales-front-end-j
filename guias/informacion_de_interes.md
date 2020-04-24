@@ -1,5 +1,17 @@
 # Información de interés para tu día a día en Adalab
 
+## Guías
+
+- [Cómo trabajar en remoto](guias/como_trabajar_en_remoto.md)
+- [Guía para enfrentarse a problemas técnicos de manera autónoma](guias/busqueda_de_soluciones.md)
+
+## Páginas de documentación y resolución de dudas
+
+- Documentación sobre HTML, CSS y JS: [MDN](https://developer.mozilla.org/es/)
+- Documentación sobre HTML, CSS y JS: [Devdocs](https://devdocs.io/)
+- Resolución de dudas y búsqueda de errores: [Stack Overflow](https://stackoverflow.com)
+- Resolución de dudas y búsqueda de errores: [Google](https://google.com)
+
 ## Repositorios
 
 Durante el curso los profesores vamos a ir subiendo ejercicios de programación a estos repositorios:
