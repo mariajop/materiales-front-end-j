@@ -2,8 +2,6 @@
 
 - [Introduction](README.md)
 
-- [Prueba](prueba.md)
-
 ## Módulo 1. Hola Mundo
 
 - [1.1. Intro a la web](sprint_1/1_1_intro_a_la_web.md)
