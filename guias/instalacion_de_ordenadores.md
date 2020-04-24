@@ -148,15 +148,16 @@ Y la terminal debe mostrar la versión de Git instalada, algo como `git version 
 
 ### Zoom desde Ubuntu
 
-Descarga e instala [Zoom](https://zoom.us/support/download).
+- Accede al instalador de aplicaciones desde el menú
+- Buscar Zoom e instálalo.
 
 ### Zoom desde Windows
 
-Descarga e instala [Zoom](https://zoom.us/support/download).
+- Descarga e instala [Zoom](https://zoom.us/support/download).
 
 ### Zoom desde Mac
 
-Descarga e instala [Zoom](https://zoom.us/support/download).
+- Descarga e instala [Zoom](https://zoom.us/support/download).
 
 ### Otros programas
 
@@ -167,8 +168,6 @@ Necesitamos instalar VS Code, Chrome y Slack. Desde Windows y Mac podemos instal
 - Slack (https://slack.com/)
 
 Desde Ubuntu, la forma más cómoda es acceder al instalador de aplicaciones desde el menú, y ahí buscar cada programa e instalarlo.
-
-> **Nota:** Si tienes algún problema durante la instalación, no te preocupes, díselo a tu profesora el primer día de clase.
 
 ## Creación de cuentas
 
@@ -195,3 +194,5 @@ Inicia sesión en la aplicación de Zoom:
 - Crea una cuenta en [Trello](https://trello.com/).
 - Usa el mismo email de Gmail que has proporcionado a Adalab.
 - A la hora de elegir tu nombre de usuaria ten en cuenta que será parte de vuestro futuro perfil profesional.
+
+> **Nota:** Si tienes algún problema durante la instalación o la creación de cuentas, no te preocupes, díselo a tu profesora el primer día de clase.
