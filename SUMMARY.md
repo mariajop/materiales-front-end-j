@@ -76,6 +76,7 @@
 
 - [Código de conducta en Adalab](guias/codigo_de_conducta.md)
 - [Instalación de ordenadores](guias/instalacion_de_ordenadores.md)
+- [Cómo trabajar en remoto](guias/como_trabajar_en_remoto.md)
 - [Guía para enfrentarse a problemas técnicos de manera autónoma](guias/busqueda_de_soluciones.md)
 - [Agile](guias/agile.md)
 - [Scrum](guias/scrum.md)
