@@ -1,5 +1,7 @@
 # Recursos de JavaScript
 
+## Recursos de JavaScript
+
 - [Sintaxis de JS](/modulo_2/2_sintaxis_de_js.md)
 - [Fases de un programa de JavaScript](/modulo_2/2_fases_de_un_programa_js.md)
 
