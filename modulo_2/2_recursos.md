@@ -1,7 +1,7 @@
 # Recursos de JavaScript
 
-- [Sintaxis de JS](2_sintaxis_de_js.md)
-- [Fases de un programa de JavaScript](2_fases_de_un_programa_js.md)
+- [Sintaxis de JS](/modulo_2/2_sintaxis_de_js.md)
+- [Fases de un programa de JavaScript](/modulo_2/2_fases_de_un_programa_js.md)
 
 ## Preguntas de entrevista
 
