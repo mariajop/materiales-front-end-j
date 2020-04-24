@@ -2,8 +2,8 @@
 
 ## Guías
 
-- [Cómo trabajar en remoto](guias/como_trabajar_en_remoto.md)
-- [Guía para enfrentarse a problemas técnicos de manera autónoma](guias/busqueda_de_soluciones.md)
+- [Cómo trabajar en remoto](guias/como_trabajar_en_remoto)
+- [Guía para enfrentarse a problemas técnicos de manera autónoma](guias/busqueda_de_soluciones)
 
 ## Páginas de documentación y resolución de dudas
 
@@ -30,7 +30,7 @@ Una vez acabado el curso intensivo de Adalab os pediremos que realicéis un proy
 
 ## Plugins de VS Code que vamos usar durante el curso
 
-En la [guía de instalación de ordenadores](guias/instalacion_de_ordenadores.md) hemos instalado VS Code. Os recomendamos instalar los siguientes plugins.
+En la [guía de instalación de ordenadores](guias/instalacion_de_ordenadores) hemos instalado VS Code. Os recomendamos instalar los siguientes plugins.
 
 - [Live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 - [Live share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
