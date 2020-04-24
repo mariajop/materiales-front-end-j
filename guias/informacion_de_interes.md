@@ -2,8 +2,8 @@
 
 ## Guías
 
-- [Cómo trabajar en remoto](como_trabajar_en_remoto.md)
-- [Guía para enfrentarse a problemas técnicos de manera autónoma](busqueda_de_soluciones.md)
+- [Cómo trabajar en remoto](./como_trabajar_en_remoto.md)
+- [Guía para enfrentarse a problemas técnicos de manera autónoma](./guias/busqueda_de_soluciones.md)
 
 ## Páginas de documentación y resolución de dudas
 
