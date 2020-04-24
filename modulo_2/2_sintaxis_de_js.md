@@ -1,6 +1,6 @@
 # Sintaxis de JS: resumen del módulo 2
 
-Resumen de la sintaxis de JavaScript del módulo 2.
+## Resumen de la sintaxis de JavaScript del módulo 2.
 
 En promociones anteriores creamos esta guía a petición de las alumnas, bajo el acuerdo de que seríais vosotras las responsables de mejorarla. Si ves que faltan contenidos o se pueden mejorar, redáctalos y pásalelos a tus profes. Estarás ayudando a tus compañeras presentes y futuras y además... PEGATINA!!!
 
