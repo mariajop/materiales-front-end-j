@@ -22,7 +22,7 @@
 - [1.13 Animaciones CSS](modulo_1/1_13_animaciones_CSS.md)
 - [1.14 Accesibilidad y Sistemas de diseño](modulo_1/1_14_accesibilidad_sistemas_de_diseno.md)
 - [Repaso](modulo_1/1_repaso.md)
-- [Preguntas entrevista](modulo_1/1_questions.md)
+- [Recursos](modulo_1/1_recursos.md)
 
 ## Módulo 2. Programando la web
 
@@ -42,8 +42,6 @@
 - [2.13 Métodos funcionales de array](modulo_2/2_13_metodos_funcionales_array.md)
 - [2.14 Asincronía y temporizadores](modulo_2/2_14_asincronia.md)
 - [Repaso](modulo_2/2_repaso.md)
-- [Preguntas entrevista](modulo_2/2_questions.md)
-- [Sintaxis de JS](modulo_2/sintaxis-de-js.md)
 - [Recursos](modulo_2/recursos.md)
 
 ## Módulo 3. React
@@ -64,7 +62,7 @@
 - [3.13 Testing con JavaScript](modulo_3/3_13_testing_js.md)
 - [3.14 Refactoring](modulo_3/3_14_refactoring.md)
 - [Repaso](modulo_3/3_repaso.md)
-- [Preguntas entrevista](modulo_3/3_questions.md)
+- [Recursos](modulo_3/3_recursos.md)
 
 ## Proyectos
 
