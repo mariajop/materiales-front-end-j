@@ -13,7 +13,7 @@
 - [1.5 Posicionamiento](modulo_1/1_5_posicionamiento.md)
 - [1.6 Diseño responsive](modulo_1/1_6_responsive_design.md)
 - [1.7 Publicando nuestra web](modulo_1/1_7_publicando_nuestra_web.md)
-- [Repaso intermedio](modulo_1/1_repaso-intermedio.md)
+- [Repaso intermedio](modulo_1/1_repaso_intermedio.md)
 - [1.8 Control de versiones](modulo_1/1_8_control_de_versiones.md)
 - [1.9 Automatización de tareas](modulo_1/1_9_automatizacion_de_tareas.md)
 - [1.10 SASS](modulo_1/1_10_sass.md)
@@ -33,7 +33,7 @@
 - [2.5 Eventos](modulo_2/2_5_eventos.md)
 - [2.6 Objetos](modulo_2/2_6_objetos.md)
 - [2.7 Arrays y bucles](modulo_2/2_7_arrays_y_bucles.md)
-- [Repaso intermedio](modulo_2/2_repaso-intermedio.md)
+- [Repaso intermedio](modulo_2/2_repaso_intermedio.md)
 - [2.8 Trabajo colaborativo en Git](modulo_2/2_8_trabajo_colaborativo_en_git.md)
 - [2.9 Arrays y bucles 2](modulo_2/2_9_array_y_bucles_2.md)
 - [2.10 Peticiones al servidor](modulo_2/2_10_peticiones_al_servidor.md)
@@ -42,7 +42,7 @@
 - [2.13 Métodos funcionales de array](modulo_2/2_13_metodos_funcionales_array.md)
 - [2.14 Asincronía y temporizadores](modulo_2/2_14_asincronia.md)
 - [Repaso](modulo_2/2_repaso.md)
-- [Recursos](modulo_2/recursos.md)
+- [Recursos](modulo_2/2_recursos.md)
 
 ## Módulo 3. React
 
@@ -53,7 +53,7 @@
 - [3.5 Eventos en React](modulo_3/3_5_eventos_react.md)
 - [3.6 Estado en React](modulo_3/3_6_estado_react.md)
 - [3.7 React Hooks](modulo_3/3_7_react_hooks.md)
-- [Repaso intermedio](modulo_3/3_repaso-intermedio.md)
+- [Repaso intermedio](modulo_3/3_repaso_intermedio.md)
 - [3.8 Formularios en React](modulo_3/3_8_formularios_en_react.md)
 - [3.9 Buenas prácticas](modulo_3/3_9_buenas_practicas.md)
 - [3.10 Arquitectura de aplicaciones React](modulo_3/3_10_arquitectura_estado.md)
