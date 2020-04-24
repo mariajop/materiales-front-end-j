@@ -34,22 +34,23 @@ Si queremos mantener Windows, tendremos que hacer una partición:
 
 > NOTA: Al elegir instalar ubuntu, seleccionamos la opción de "opciones adicionales" para elegir en qué partición hacerlo. Una vez seleccionada la partición donde instalar Ubuntu, elegir que el gestor de arranque (bootloader) se instale en el disco duro principal en un desplegable abajo de la pantalla.
 
+> NOTA: En Adalab los profesores trabajamos con UBUNTU 18. Si quieres usar otra distribución de Linux, no podemos garantizar que sabremos resolver todos los problemas relacionados con el sistema operativo.
+
 #### Problemas en la instalación de Ubuntu
 
-En equipos de la marca MSI, [suele haber problemas con los drivers de teclado / ratón en la instalación, de la tarjeta gráfico y/o de la conexión WiFi](https://gist.github.com/mari-linhares/cef4cb3440408e44963d1447a7db5ae0).
-
-En algunos Asus, no funciona la conexión Wifi, y [hay que instalar los drivers](https://askubuntu.com/questions/990378/wi-fi-not-working-on-lenovo-thinkpad-e570-realtek-rtl8821ce) que podéis pasar en un pendrive o con una conexión a Internet a través de vuestro móvil.
-
-También encontramos otras incompatibilidades de hardware (ordenador) con Ubuntu, [como esta que nos ha sucedido](https://askubuntu.com/questions/38780/how-do-i-set-nomodeset-after-ive-already-installed-ubuntu).
+- En equipos de la marca MSI, [suele haber problemas con los drivers de teclado / ratón en la instalación, de la tarjeta gráfico y/o de la conexión WiFi](https://gist.github.com/mari-linhares/cef4cb3440408e44963d1447a7db5ae0).
+- En algunos Asus, no funciona la conexión Wifi, y [hay que instalar los drivers](https://askubuntu.com/questions/990378/wi-fi-not-working-on-lenovo-thinkpad-e570-realtek-rtl8821ce) que podéis pasar en un pendrive o con una conexión a Internet a través de vuestro móvil.
+- También encontramos otras incompatibilidades de hardware (ordenador) con Ubuntu, [como esta que nos ha sucedido](https://askubuntu.com/questions/38780/how-do-i-set-nomodeset-after-ive-already-installed-ubuntu).
 
 ### Windows 10
 
-Si tienes Windows 10 debes instalar (un mini) Ubuntu dentro de tu Windows 10. Para ello:
+Si tienes Windows 10 vamos a instalar (un mini) Ubuntu dentro de tu Windows 10. Para ello:
 
 1. Desde el menú inicio de tu Windows busca y abre **Microsoft Store**.
 1. En el buscador del store busca **Ubuntu**.
 1. Instala **Ubuntu 18.04 LTS**.
 1. Verás que en tu menú inicio se habrá añadido un programa llamado **Ubuntu 18.04 LTS**.
+1. Al instalar te pedirá que añadas una nueva contraseña. Esta contraseña es que utilizaremos siempre para la consola de Ubuntu. No la pierdas!!
 
 Una vez terminado debes:
 
@@ -72,12 +73,15 @@ Si tienes problemas para realizar alguno de estos pasos te ayudaremos durante la
 
 ## Instalación de los programas
 
-Una vez preparado el sistema operativo, instalaremos algunos programas para el curso:
+Una vez preparado el sistema operativo, instalaremos los siguientes programas para el curso:
 
-### Node JS desde Windows 10
+- **Node:** es un programa que nos permite ejecutar JavaScript en nuestro ordenador y lo vamos a usar para que nos ayude a programar y a automatizar tareas.
+- **Git:** es un repositorio de código para organizar, almacenar y compartir nuestros proyectos. Algo así como el Drive o el Dropbox de los programadores.
+- **Zoom:** es para hacer video llamadas.
+- **VS Code:** es el editor de código de moda.
+- **Slack:** es un WhatsApp orientado a empresas.
 
-1. Desde el menú inicio abre Ubuntu.
-1. Y sigue los pasos del siguiente apartado: Node JS desde Ubuntu.
+> NOTA: En los siguientes pasos vamos a escribir `sudo` en la terminal. Siempre que escribimos `sudo` la terminal nos pedirá una contraseña, esto es porque vamos a instalar cosas en **modo Administrador**. En Ubuntu y Mac es la contraseña del usuario. En Windows es la contraseña que pusimos al instalar el mini Ubuntu.
 
 ### Node JS desde Ubuntu
 
@@ -85,18 +89,21 @@ Ejecuta las siguientes líneas en la terminal de una en una:
 
 ```bash
 sudo apt install curl
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt install nodejs
 ```
 
-Para más información [consultar esta página](https://joshtronic.com/2018/05/08/how-to-install-nodejs-10-on-ubuntu-1804-lts/).
+### Node JS desde Windows 10
+
+1. Desde el menú inicio abre Ubuntu.
+1. Y sigue los pasos del apartado anterior: Node JS desde Ubuntu.
 
 ### Node JS desde Mac
 
 Ejecuta la siguiente línea en la terminal:
 
 ```bash
-sudo brew install node@10
+sudo brew install node@12
 ```
 
 ### Node JS: comprobando si lo hemos instalado bien
@@ -107,8 +114,7 @@ Una vez terminada la instalación de Node JS desde cualquiera de los 3 sistemas 
 node --version
 ```
 
-Y la terminal debe mostrar la versión de Node JS instalada, algo como `v10.14.0`.
-Si por el contrario la terminal muestra el mensaje `No se ha encontrado la orden «node»...` es que algo hemos hecho mal.
+Y la terminal debe mostrar la versión de Node JS instalada, algo como `v12.16.0`. **Es importante que empiece por v12.** Si por el contrario la terminal muestra el mensaje `No se ha encontrado la orden «node»...` es que algo hemos hecho mal. Vuelve a repetir todos los pasos y si no te funciona consulta a tu profesor.
 
 ### Git desde Ubuntu
 
@@ -123,14 +129,14 @@ sudo apt install git
 ### Git desde Windows
 
 1. Desde el menú inicio abre Ubuntu.
-1. Y sigue los pasos del siguiente apartado: Git desde Ubuntu.
+1. Y sigue los pasos del apartado anterior: Git desde Ubuntu.
 1. Y también descarga e instala [Git para Windows](https://git-scm.com/download/win).
 
 ### Git desde Mac
 
 Descarga e instala Git desde [esta página](https://git-scm.com/download/mac).
 
-### Git: comprobando si lo hemso instalado bien
+### Git: comprobando si lo hemos instalado bien
 
 También debemos comprobar que Git se ha instalado correctamente la versión 2.x escribiendo en la terminal la siguiente línea:
 
@@ -138,7 +144,19 @@ También debemos comprobar que Git se ha instalado correctamente la versión 2.x
 git --version
 ```
 
-Y la terminal debe mostrar la versión de Git instalada, algo como `git version 2.17.1`. Si por el contrario la terminal muestra el mensaje `No se ha encontrado la orden git...` es que algo hemos hecho mal.
+Y la terminal debe mostrar la versión de Git instalada, algo como `git version 2.17.1`. Si por el contrario la terminal muestra el mensaje `No se ha encontrado la orden git...` es que algo hemos hecho mal. Vuelve a repetir todos los pasos y si no te funciona consulta a tu profesor.
+
+### Zoom desde Ubuntu
+
+Descarga e instala [Zoom](https://zoom.us/support/download).
+
+### Zoom desde Windows
+
+Descarga e instala [Zoom](https://zoom.us/support/download).
+
+### Zoom desde Mac
+
+Descarga e instala [Zoom](https://zoom.us/support/download).
 
 ### Otros programas
 
@@ -154,7 +172,26 @@ Desde Ubuntu, la forma más cómoda es acceder al instalador de aplicaciones des
 
 ## Creación de cuentas
 
-También debes crear cuentas en estos servicios (elegid un nombre de usuario teniendo en mente que será parte de vuestro futuro perfil profesional):
+### Cuenta de Zoom
 
-- GitHub (https://github.com/)
-- Trello (https://trello.com/)
+- Crea una cuenta en [Zoom](https://zoom.us/signup).
+- Usa el mismo email de Gmail que has proporcionado a Adalab.
+- No uses el botón de **Iniciar sesión con Google**.
+
+Inicia sesión en la aplicación de Zoom:
+
+- Abre la aplicación de Zoom de tu ordenador.
+- Mete tu email y contraseña en el formulario de la izquierda.
+- No uses el botón **Ingresar con Google**.
+
+### Cuenta de GitHub
+
+- Crea una cuenta en [GitHub](https://github.com/).
+- Usa el mismo email de Gmail que has proporcionado a Adalab.
+- A la hora de elegir tu nombre de usuaria ten en cuenta que será parte de vuestro futuro perfil profesional.
+
+### Cuenta de Trello
+
+- Crea una cuenta en [Trello](https://trello.com/).
+- Usa el mismo email de Gmail que has proporcionado a Adalab.
+- A la hora de elegir tu nombre de usuaria ten en cuenta que será parte de vuestro futuro perfil profesional.
