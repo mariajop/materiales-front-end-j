@@ -3,7 +3,7 @@
 ## Información de interés
 
 - [Antes de empezar el curso](guias/antes_de_empezar_el_curso.md)
-  - [2 Instalación de ordenadores](guias/instalacion_de_ordenadores.md)
+  - [Instalación de ordenadores](guias/instalacion_de_ordenadores.md)
   - [Instalación de programas](guias/instalacion_de_programas.md)
   - [Instalación y uso de VS Code](guias/instalacion_de_vscode.md)
   - [Instalación y uso de Git / GitHub](guias/instalacion_de_git_github.md)
@@ -86,6 +86,3 @@
 
 - [Agile](guias/agile.md)
 - [Scrum](guias/scrum.md)
-
-
-- [Glosario](GLOSSARY.md)
