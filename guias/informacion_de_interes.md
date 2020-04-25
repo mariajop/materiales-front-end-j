@@ -5,13 +5,6 @@
 - [Cómo trabajar en remoto](como_trabajar_en_remoto.md)
 - [Guía para enfrentarse a problemas técnicos de manera autónoma](busqueda_de_soluciones.md)
 
-## Páginas de documentación y resolución de dudas
-
-- Documentación sobre HTML, CSS y JS: [MDN](https://developer.mozilla.org/es/)
-- Documentación sobre HTML, CSS y JS: [Devdocs](https://devdocs.io/)
-- Resolución de dudas y búsqueda de errores: [Stack Overflow](https://stackoverflow.com)
-- Resolución de dudas y búsqueda de errores: [Google](https://google.com)
-
 ## Repositorios
 
 Durante el curso los profesores vamos a ir subiendo ejercicios de programación a estos repositorios:
@@ -38,3 +31,10 @@ En la [guía de instalación de ordenadores](instalacion_de_ordenadores.md) hemo
 - [Code validator](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
 - [ES lint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+## Páginas de documentación y resolución de dudas
+
+- Documentación sobre HTML, CSS y JS: [MDN](https://developer.mozilla.org/es/)
+- Documentación sobre HTML, CSS y JS: [Devdocs](https://devdocs.io/)
+- Resolución de dudas y búsqueda de errores: [Stack Overflow](https://stackoverflow.com)
+- Resolución de dudas y búsqueda de errores: [Google](https://google.com)
