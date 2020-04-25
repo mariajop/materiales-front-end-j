@@ -1,5 +1,9 @@
 - [Introducción](README.md)
-  - [3 Código de conducta en Adalab](guias/codigo_de_conducta.md)
+
+## Antes de empezar
+
+- [Antes de empezar](README.md)
+  - [4 Código de conducta en Adalab](guias/codigo_de_conducta.md)
   - [Instalación de ordenadores](guias/instalacion_de_ordenadores.md)
   - [Instalación de programas](guias/instalacion_de_programas.md)
   - [Instalación y uso de VS Code](guias/instalacion_de_vscode.md)
