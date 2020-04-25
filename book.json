@@ -7,10 +7,16 @@
   "description": "Curso para mujeres sin conocimientos técnicos previos que desean reinventarse como programadoras",
   "author": "Asociación Adalab",
   "language": "es",
-  "promo": {
-    "letter": "j"
+  "variables": {
+    "promo": {
+      "letter": "j"
+    }
   },
   "styles": {
-    "website": "styles/website.css"
+    "website": "styles/website.css",
+    "ebook": "styles/website.css",
+    "pdf": "styles/website.css",
+    "mobi": "styles/website.css",
+    "epub": "styles/website.css"
   }
 }

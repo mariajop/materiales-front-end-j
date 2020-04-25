@@ -9,7 +9,7 @@
 
 Durante el curso los profesores vamos a ir subiendo ejercicios de programación a estos repositorios:
 
-- https://github.com/adalab/ejercicios-en-clase-{{book.promo.letter}}
+- https://github.com/adalab/ejercicios-en-clase-{{ book.promo.letter }}
 - https://github.com/adalab/ejercicios-extra
 
 Y os recomendamos a las alumnas que subáis vuestros ejercicios y recursos a estos repositorios para compartir vuestro conocimiento y trabajo con las demás:
