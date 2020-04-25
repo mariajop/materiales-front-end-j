@@ -1,7 +1,7 @@
 # Summary
 
 - [Introduction](README.md)
-   - [Código de conducta en Adalab](guias/codigo_de_conducta.md)
+   - [1 Código de conducta en Adalab](guias/codigo_de_conducta.md)
    - [Instalación de ordenadores](guias/instalacion_de_ordenadores.md)
    - [Instalación de programas](guias/instalacion_de_programas.md)
    - [Instalación y uso de VS Code](guias/instalacion_de_vscode.md)
