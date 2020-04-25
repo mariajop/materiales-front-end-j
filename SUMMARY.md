@@ -1,6 +1,6 @@
 - [Introducción](README.md)
 
-## Antes de empezar
+### Antes de empezar
 
 - [Antes de empezar](README.md)
   - [4 Código de conducta en Adalab](guias/codigo_de_conducta.md)
