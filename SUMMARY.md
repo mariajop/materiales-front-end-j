@@ -1,15 +1,15 @@
 # Summary
 
 - [Introduction](README.md)
-  - [Código de conducta en Adalab](guias/codigo_de_conducta.md)
-  - [Instalación de ordenadores](guias/instalacion_de_ordenadores.md)
-  - [Instalación de programas](guias/instalacion_de_programas.md)
-  - [Instalación y uso de VS Code](guias/instalacion_de_vscode.md)
-  - [Instalación y uso de Git / GitHub](guias/instalacion_de_git_github.md)
-  - [Instalación y uso de Zoom](guias/instalacion_de_zoom.md)
-  - [Instalación de Node JS](guias/instalacion_de_node_js.md)
-  - [Cómo trabajar en remoto](guias/como_trabajar_en_remoto.md)
-  - [Guía para enfrentarse a problemas técnicos de manera autónoma](guias/busqueda_de_soluciones.md)
+   - [Código de conducta en Adalab](guias/codigo_de_conducta.md)
+   - [Instalación de ordenadores](guias/instalacion_de_ordenadores.md)
+   - [Instalación de programas](guias/instalacion_de_programas.md)
+   - [Instalación y uso de VS Code](guias/instalacion_de_vscode.md)
+   - [Instalación y uso de Git / GitHub](guias/instalacion_de_git_github.md)
+   - [Instalación y uso de Zoom](guias/instalacion_de_zoom.md)
+   - [Instalación de Node JS](guias/instalacion_de_node_js.md)
+   - [Cómo trabajar en remoto](guias/como_trabajar_en_remoto.md)
+   - [Guía para enfrentarse a problemas técnicos de manera autónoma](guias/busqueda_de_soluciones.md)
 - [Información de interés](guias/informacion_de_interes.md)
 
 ## Módulo 1. Hola Mundo
