@@ -21,17 +21,6 @@ Una vez acabado el curso intensivo de Adalab os pediremos que realicéis un proy
 
 - https://github.com/adalab/ejemplo-de-proyecto-personal
 
-## Plugins de VS Code que vamos usar durante el curso
-
-En la [guía de instalación de ordenadores](instalacion_de_ordenadores.md) hemos instalado VS Code. Os recomendamos instalar los siguientes plugins.
-
-- [Live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-- [Live share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
-- [Formateador Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-- [Code validator](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
-- [ES lint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-
 ## Páginas de documentación y resolución de dudas
 
 - Documentación sobre HTML, CSS y JS: [MDN](https://developer.mozilla.org/es/)
