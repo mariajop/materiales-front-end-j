@@ -2,8 +2,8 @@
 
 ## Información de interés
 
-- Antes de empezar el curso
-  - [1 Instalación de ordenadores](guias/instalacion_de_ordenadores.md)
+- [Antes de empezar el curso](guias/antes_de_empezar_el_curso.md)
+  - [Instalación de ordenadores](guias/instalacion_de_ordenadores.md)
   - [Instalación de programas](guias/instalacion_de_programas.md)
   - [Instalación y uso de VS Code](guias/instalacion_de_vscode.md)
   - [Instalación y uso de Git / GitHub](guias/instalacion_de_git_github.md)
