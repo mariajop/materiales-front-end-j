@@ -2,9 +2,8 @@
 
 ## Información de interés
 
-- [Antes de empezar](guias/antes_de_empezar_el_curso.md)
-  - [Código de conducta en Adalab](guias/codigo_de_conducta.md)
-  - [Instalación de ordenadores](guias/instalacion_de_ordenadores.md)
+- Antes de empezar el curso
+  - [1 Instalación de ordenadores](guias/instalacion_de_ordenadores.md)
   - [Instalación de programas](guias/instalacion_de_programas.md)
   - [Instalación y uso de VS Code](guias/instalacion_de_vscode.md)
   - [Instalación y uso de Git / GitHub](guias/instalacion_de_git_github.md)
@@ -12,7 +11,8 @@
   - [Instalación de Node JS](guias/instalacion_de_node_js.md)
   - [Cómo trabajar en remoto](guias/como_trabajar_en_remoto.md)
   - [Guía para enfrentarse a problemas técnicos de manera autónoma](guias/busqueda_de_soluciones.md)
-- [Repositorios](guias/informacion_de_interes.md)
+  - [Código de conducta en Adalab](guias/codigo_de_conducta.md)
+- [Repositorios más usados](guias/repositorios_mas_usados.md)
 
 ## Módulo 1. Hola Mundo
 
