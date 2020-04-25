@@ -86,3 +86,6 @@
 
 - [Agile](guias/agile.md)
 - [Scrum](guias/scrum.md)
+
+
+- [Glosario](GLOSSARY.md)
