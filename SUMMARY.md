@@ -1,5 +1,7 @@
 # Summary
 
+## Introducción
+
 - [Introduction](README.md)
   - [2 Código de conducta en Adalab](guias/codigo_de_conducta.md)
   - [Instalación de ordenadores](guias/instalacion_de_ordenadores.md)
