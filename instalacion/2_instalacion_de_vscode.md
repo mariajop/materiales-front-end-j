@@ -1,16 +1,18 @@
 # Instalación de VS Code
 
-## Uso de VS Code
+## Instalación de VS Code
 
-Vídeo explicando el contenido de Herramientas 1
+Qué es VS Code
 
-## Uso de la terminal o consola
+### En Windows 10
 
-Vídeo
+### En Ubuntu 18
 
-## Plugins de VS Code que vamos usar durante el curso
+### En Mac
 
-En la [guía de instalación de ordenadores](instalacion_de_ordenadores.md) hemos instalado VS Code. Os recomendamos instalar los siguientes plugins.
+## Plugins de VS Code
+
+Qué son
 
 - [Live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 - [Live share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
@@ -18,3 +20,5 @@ En la [guía de instalación de ordenadores](instalacion_de_ordenadores.md) hemo
 - [Code validator](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
 - [ES lint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+## Mirar Herramientas 2 para mejorar esta lección

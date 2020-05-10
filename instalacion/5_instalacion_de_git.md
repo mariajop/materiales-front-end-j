@@ -50,4 +50,6 @@ git --version
 
 Y la terminal debe mostrar la versión de Git instalada, algo como `git version 2.17.1`. Si por el contrario la terminal muestra el mensaje `No se ha encontrado la orden git...` es que algo hemos hecho mal. Vuelve a repetir todos los pasos y si no te funciona consulta a tu profesor.
 
-## Crear nuestro primer repositorio
+## Crear nuestro primer repositorio para los ejercicios
+
+### Explicar la estructura de carpetas que vamos a usar

@@ -2,16 +2,20 @@
 
 ## Información de interés
 
-- [Antes de empezar el curso](guias/antes_de_empezar_el_curso.md)
-  - [Instalación de ordenadores](guias/instalacion_de_ordenadores.md)
-  - [Instalación de programas](guias/instalacion_de_programas.md)
-  - [Instalación y uso de VS Code](guias/instalacion_de_vscode.md)
-  - [Instalación y uso de Git / GitHub](guias/instalacion_de_git_github.md)
-  - [Instalación y uso de Zoom](guias/instalacion_de_zoom.md)
-  - [Instalación de Node JS](guias/instalacion_de_node_js.md)
-  - [Cómo trabajar en remoto](guias/como_trabajar_en_remoto.md)
-  - [Guía para enfrentarse a problemas técnicos de manera autónoma](guias/busqueda_de_soluciones.md)
-  - [Código de conducta en Adalab](guias/codigo_de_conducta.md)
+- [Antes de empezar el curso](guias/0_antes_de_empezar_el_curso.md)
+  - [Instalación de ordenadores](instalacion/1_instalacion_de_ordenadores.md)
+  - [Instalación y uso de VS Code](instalacion/2_instalacion_de_vscode.md)
+  - [Instalación de la terminal](instalacion/3_instalacion_de_la_terminal.md)
+  - [Instalación de Node JS](instalacion/4_instalacion_de_node_js.md)
+  - [Instalación y uso de Git](instalacion/5_instalacion_de_git.md)
+  - [Instalación y uso de Zoom](instalacion/6_instalacion_de_zoom.md)
+  - [Instalación de programas](instalacion/7_instalacion_de_programas.md)
+- Guías
+  - [Código de conducta en Adalab](guias/1_codigo_de_conducta.md)
+  - [Cómo trabajar en remoto](guias/2_como_trabajar_en_remoto.md)
+  - [Guía para enfrentarse a problemas técnicos de manera autónoma](guias/3_busqueda_de_soluciones.md)
+  - [Agile](guias/4_agile.md)
+  - [Scrum](guias/5_scrum.md)
 - [Repositorios más usados](guias/repositorios_mas_usados.md)
 
 ## Módulo 1. Hola Mundo
@@ -70,7 +74,7 @@
 - [3.9 Buenas prácticas](modulo_3/3_9_buenas_practicas.md)
 - [3.10 Arquitectura de aplicaciones React](modulo_3/3_10_arquitectura_estado.md)
 - [3.11 React router](modulo_3/3_11_react_router.md)
-- [3.12 Métodos del ciclo de vida de componentes](modulo_3/3_12_ciclo_vida_componentes_react.md)
+- [3.12 Ciclo de vida de componentes](modulo_3/3_12_ciclo_vida_componentes_react.md)
 - [3.13 Testing con JavaScript](modulo_3/3_13_testing_js.md)
 - [3.14 Refactoring](modulo_3/3_14_refactoring.md)
 - [Repaso final](modulo_3/3_repaso.md)
@@ -81,8 +85,3 @@
 - [Proyecto 1. Web grupal](proyectos/p1_proyecto.md)
 - [Anexo. Diseña tu web desde cero](proyectos/p1_anexo.md)
 <!-- - [Proyecto 2. Awesome profile-cards](proyectos/P2_proyecto.md) - [Anexo. Documentación del API de Awesome Profile Cards](proyectos/P2_anexo.md) - [Proyecto 3. Un caso de código heredado](proyectos/P3_proyecto.md) -->
-
-## Guías
-
-- [Agile](guias/agile.md)
-- [Scrum](guias/scrum.md)

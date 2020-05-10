@@ -1,4 +1,4 @@
-# Métodos del ciclo de vida de componentes en React
+# Ciclo de vida de componentes en React
 
 ## Contenidos
 

@@ -1,6 +1,6 @@
 # Otros programas y cuentas
 
-Necesitamos instalar **VS Code**, **Chrome** y **Slack**. Desde Windows y Mac podemos instalar estos programas accediendo a las siguientes páginas:
+Necesitamos instalar **Chrome** y **Slack**. Desde Windows y Mac podemos instalar estos programas accediendo a las siguientes páginas:
 
 - Chrome (https://www.google.com/chrome/)
 - Slack (https://slack.com/)

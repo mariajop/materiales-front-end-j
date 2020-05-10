@@ -15,7 +15,7 @@ Para poder realizar el curso el sistema operativo (SO) del ordenador debe ser un
 - **Ubuntu 18**
 - **Mac**
 
-## Windows 10
+## Windows 10 (mover a instalación de la terminal)
 
 Si tienes Windows 10 vamos a instalar (un mini) Ubuntu dentro de tu Windows 10. Para ello:
 
@@ -23,26 +23,14 @@ Si tienes Windows 10 vamos a instalar (un mini) Ubuntu dentro de tu Windows 10. 
 1. En el buscador del store busca **Ubuntu**.
 1. Instala **Ubuntu 18.04 LTS**.
 1. Verás que en tu menú inicio se habrá añadido un programa llamado **Ubuntu 18.04 LTS**.
-1. Al instalar te pedirá que añadas una nueva contraseña. Esta contraseña es que utilizaremos siempre para la consola de Ubuntu. No la pierdas!!
+1. Al instalar te pedirá que añadas una nueva contraseña. **Esta contraseña es la que utilizaremos siempre para la terminal.** No la pierdas!!
 
 Una vez terminado debes:
 
 1. Desde el menú inicio de tu Windows busca y abre **Activar o desactivar las características de Windows**.
 1. Activa la opción **Subsistema de Windows para Linux**. Acepta y reinicia.
 
-Después de haber hecho estas dos cosas tu Windows contará con una consola (o terminal que es lo mismo) que funciona igual que si estuvieras trabajando en Linux.
-
-Por último:
-
-1. Instala VS Code (más abajo explicamos cómo hacerlo).
-1. Abre la configuración de VS Code pulsando en el icono de la tuerca (esquina inferior izquierda) y a continuación **Settings**.
-1. Busca la opción **Terminal > External: Windows exec**.
-1. Añade el texto **C:\windows\System32\cmd.exe**.
-1. Abre una terminal puslando en el menú superior > **Terminal** > **New terminal**: una nueva terminal se abrirá en la parte inferior de VS Code.
-1. En dicha parte inferior hay un desplegable, ábrelo y pulsa en **Select default shell**.
-1. Selecciona la opción **WSL Bash**.
-
-Si tienes problemas para realizar alguno de estos pasos te ayudaremos durante la sesión de bienvenida del curso.
+Después de haber hecho estas dos cosas tu Windows contará con una **terminal** que funciona igual que si estuvieras trabajando en Linux.
 
 ## Ubuntu 18 (linux)
 
@@ -51,7 +39,7 @@ Si quieres trabajar en Ubuntu y no lo tienes instalado a continuación te explic
 - Instalar Ubuntu borrando todo lo que hay en el ordenador (recomendada): esta opción es obligatoria para equipos viejos que no tienen recursos para tener a la vez Windows y Linux.
 - Instalar Ubuntu junto a Windows: crearemos una partición del disco duro del ordenador para instalar Ubuntu y luego poder arrancar el ordenador desde el SO que elijamos. Esta opción es más compleja y depende del ordenador concreto que tengáis que pueda hacerse o no.
 
-> NOTA: Antes de proceder a la instalación es muy importante **hacer una copia de seguridad de los datos** que estén en el ordenador y que no queramos perder.
+> **IMPORNTANTE:** Antes de proceder a la instalación es muy importante **hacer una copia de seguridad de los datos** que estén en el ordenador y que no queramos perder.
 
 Usaremos la distribución de Ubuntu 18.04, que podemos descargar una ISO desde http://releases.ubuntu.com/18.04/ y grabaremos en un CD o pendrive. El día de la sesión de bienvenida os ayudaremos a instalarlo y llevaremos pendrives preparados con esta versión. Seguiremos los pasos de instalación para instalar y configurar el sistema.
 
@@ -63,7 +51,7 @@ Si queremos mantener Windows, tendremos que hacer una partición:
 
 > NOTA: En Adalab los profesores trabajamos con UBUNTU 18. Si quieres usar otra distribución de Linux, no podemos garantizar que sabremos resolver todos los problemas relacionados con el sistema operativo.
 
-### Problemas en la instalación de Ubuntu
+#### Posibles problemas en la instalación de Ubuntu
 
 - En equipos de la marca MSI, [suele haber problemas con los drivers de teclado / ratón en la instalación, de la tarjeta gráfico y/o de la conexión WiFi](https://gist.github.com/mari-linhares/cef4cb3440408e44963d1447a7db5ae0).
 - En algunos Asus, no funciona la conexión Wifi, y [hay que instalar los drivers](https://askubuntu.com/questions/990378/wi-fi-not-working-on-lenovo-thinkpad-e570-realtek-rtl8821ce) que podéis pasar en un pendrive o con una conexión a Internet a través de vuestro móvil.
@@ -71,6 +59,4 @@ Si queremos mantener Windows, tendremos que hacer una partición:
 
 ## Mac
 
-Aquí falta la explicación de Mac
-
-> **Nota:** Si tienes algún problema durante la instalación de ordenadores, no te preocupes, díselo a tu profesora el primer día de clase.
+Si utilizas Mac no necesitas instalar nada ya que el sistema operativo ya cuenta con una terminal adecuada para programar.
