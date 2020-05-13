@@ -21,6 +21,8 @@ Si utilizas Windows 10 o Mac ya tienes el sistema operativo y no necesitas hacer
 
 ## Ubuntu 18.04 (linux)
 
+Si has solicitado un ordenador de Adalab, te lo daremos con Ubuntu instalado, así que puedes saltarte este apartado.
+
 Si quieres trabajar en Ubuntu y no lo tienes instalado a continuación te explicamos cómo hacerlo. Hay dos opciones:
 
 - Instalar Ubuntu borrando todo lo que hay en el ordenador (recomendada): esta opción es obligatoria para equipos viejos que no tienen recursos para tener a la vez Windows y Linux.
