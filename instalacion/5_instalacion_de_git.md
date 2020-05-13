@@ -80,11 +80,11 @@ Una vez instalado Git tenemos crearnos una cuenta en GitHub y configurar nuestro
 En los 3 sistemas operativos tenemos que configurar el nombre de usuario y el email. Para ello abre una terminal y escribe los siguientes comandos un por uno. Sustituye el nombre y el email por tus datos:
 
 ```bash
-git config --global user.name "John Doe"
+git config --global user.name "Maria del Carmen"
 ```
 
 ```bash
-git config --global user.email "johndoe@example.com"
+git config --global user.email "maricarmen@gmail.com"
 ```
 
 ### Configuración en Ubuntu
@@ -148,19 +148,3 @@ git config --global credential.helper osxkeychain
 ```
 
 Una vez hayamos realizado ese paso, no necesitaremos hacer ningún cambio más.
-
-## Clonar un repositorio
-
-- GitHub se organizan en repositorio
-- Clonamos el de ejercicios de la promo
-  - Tiene permisos de escritura y lectura por ejemplo podemos clonar un repositorio que no sea nuestro
-  - Cada que vez que alguien suba algo podemos hacer git pull y bajarlo
-
-## Crear nuestro primer repositorio
-
-- Creamos nuestro propio repo
-  - Lo clonamos
-  - Añadimos la estructura de carpetas
-  - Hacemos el primer commit
-    - Un commit es una versión de código
-    - Git add, commit, push
