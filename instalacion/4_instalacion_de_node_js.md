@@ -32,7 +32,7 @@ Abre una terminal y ejecuta la siguiente línea:
 sudo brew install node@12
 ```
 
-## Comprobando si lo hemos instalado bien
+### Comprobando si lo hemos instalado bien
 
 Una vez terminada la instalación de Node JS desde cualquiera de los 3 sistemas operativos debemos comprobar que todo ha ido bien. Para ello ejecutaremos en la terminal la siguiente línea:
 
