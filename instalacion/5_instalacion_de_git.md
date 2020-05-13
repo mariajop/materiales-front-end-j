@@ -149,15 +149,18 @@ git config --global credential.helper osxkeychain
 
 Una vez hayamos realizado ese paso, no necesitaremos hacer ningún cambio más.
 
-## Crear nuestro primer repositorio
+## Clonar un repositorio
 
 - GitHub se organizan en repositorio
 - Clonamos el de ejercicios de la promo
   - Tiene permisos de escritura y lectura por ejemplo podemos clonar un repositorio que no sea nuestro
   - Cada que vez que alguien suba algo podemos hacer git pull y bajarlo
+
+## Crear nuestro primer repositorio
+
 - Creamos nuestro propio repo
   - Lo clonamos
+  - Añadimos la estructura de carpetas
   - Hacemos el primer commit
-    - Estructura de carpetas en Adalab
     - Un commit es una versión de código
     - Git add, commit, push
