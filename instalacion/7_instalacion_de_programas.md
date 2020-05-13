@@ -2,7 +2,7 @@
 
 ## Instalación de Chrome
 
-Para programar páginas web vamos a utilizar [**Google Chrome**](//www.google.com/chrome), ya que tiene herramientas para desarrolles muy buenas.
+Para programar páginas web vamos a utilizar [**Google Chrome**](https://www.google.com/chrome), ya que tiene herramientas para desarrolles muy buenas.
 
 ## Slack
 
@@ -10,7 +10,7 @@ Otra herramienta muy buena para trabajar en remoto es **Slack**. En Adalab la us
 
 Puedes usar su versión web o instalar su aplicación. Te pedimos que instales la aplicación ya que en la versión web hay cosas que no se pueden hacer.
 
-Para descargarlo desde Windows y Mac [entra aquí](//slack.com).
+Para descargarlo desde Windows y Mac [entra aquí](https://slack.com).
 
 Desde Ubuntu, la forma más cómoda es acceder al instalador de aplicaciones desde el menú, y ahí buscar **Slack** e instalarlo.
 

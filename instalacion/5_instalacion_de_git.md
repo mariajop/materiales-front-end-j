@@ -10,7 +10,7 @@ También es una herramienta para compartir código entre nuestra compañeras de 
 
 ### Qué es GitHub
 
-Si Git es el sistema o programa para compartir código [GitHub](//github.com) es una de tantas empresas que hay para usar Git. A través de su página podemos crear proyectos y compartirlos con otras personas.
+Si Git es el sistema o programa para compartir código, [GitHub](https://github.com) es una de tantas empresas que hay para usar Git. A través de su página podemos crear proyectos y compartirlos con otras personas. También funciona como red social de programación.
 
 **¡¡¡Gracias a Git y GitHub vamos a poder trabajar fácilmente en remoto desde el primer día!!!**
 
@@ -68,9 +68,9 @@ Y la terminal debe mostrar la versión de Git instalada, algo como `git version 
 
 ## Configuración de Git
 
-Una vez instalado Git tenemos crearnos una cuenta en GitHub y configurar nuestro ordenador para que el Git de nuestro ordenador y nuestra cuenta de GitHub estén enlazadas:
+Una vez instalado Git tenemos crearnos una cuenta en GitHub y configurar nuestro ordenador para que **el Git de nuestro ordenador y nuestra cuenta de GitHub estén enlazados**:
 
-1. Entra en [GitHub](//github.com).
+1. Entra en [GitHub](https://github.com).
 1. Crea una cuenta.
 1. Cuando elijas tu nombre de usuaria ten en cuenta que las empresas te pedirán tu perfil de GitHub para ver cómo programas. No pongas un nombre de usuario demasiado informal.
 1. Configura Git en tu ordenador:
