@@ -148,3 +148,10 @@ git config --global credential.helper osxkeychain
 ```
 
 Una vez hayamos realizado ese paso, no necesitaremos hacer ningún cambio más.
+
+## Clonar y crear un repositorio
+
+Con el objetivo de empezar a trabajar de manera óptima en remoto desde el primer día de curso vamos a aprender lo básico sobre Git y GitHub. Para lo cuál os pedimos que veáis y sigáis los pasos de estos dos vídeos:
+
+- [Cómo clonar un repositorio de Git](assets/videos/git-clonar-un-repositorio.mp4)
+- [Cómo crear un repositorio de Git](assets/videos/git-crear-un-repositorio.mp4)
