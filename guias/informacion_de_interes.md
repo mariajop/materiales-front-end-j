@@ -7,12 +7,12 @@ Durante el curso **los profesores vamos a ir subiendo ejercicios** de programaci
 - https://github.com/adalab/ejercicios-en-clase-j
 - https://github.com/adalab/ejercicios-extra
 
-Y os recomendamos a las alumnas que subáis vuestros ejercicios y recursos a estos repositorios para compartir vuestro conocimiento y trabajo con las demás:
+Os recomendamos que los clonéis en vuestro ordenador y hagáis **`git pull`** frecuentemente.
+
+Además os recomendamos a las alumnas que subáis vuestros ejercicios y recursos a estos repositorios para compartir vuestro conocimiento y trabajo con las demás:
 
 - https://github.com/adalab/soluciones-alumnas-j
 - https://github.com/adalab/recursos-de-las-alumnas
-
-Os recomendamos que os clonéis estos repositorios en vuestro ordenador y hagáis **`git pull`** frecuentemente.
 
 Una vez acabado el curso intensivo de Adalab os pediremos que realicéis un proyecto personal. Este es un repositorio de ejemplo de cómo enfocarlo.
 
