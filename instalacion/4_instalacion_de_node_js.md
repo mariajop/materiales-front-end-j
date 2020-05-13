@@ -2,31 +2,37 @@
 
 Node JS es un lenguaje programación que nos sirve para ejecutar JavaScript en la terminal de un ordenador. En Adalab y en muchas empresas lo utilizamos también para automatizar tareas y facilitarnos la vida mientras programamos. Vamos a instalarlo.
 
-## Node JS desde Windows 10
+### Instalación en Windows 10
 
 1. Abre VS Code.
 1. Abre una terminal.
-1. Y sigue los pasos del siguiente apartado: Node JS desde Ubuntu.
+1. Y sigue los pasos del siguiente apartado: **Instalación en Ubuntu**.
 
-## Node JS desde Ubuntu
+### Instalación en Ubuntu
 
-Ejecuta las siguientes líneas en la terminal de una en una:
+Abre una terminal y ejecuta las siguientes líneas de una en una:
 
 ```bash
 sudo apt install curl
+```
+
+```bash
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+```
+
+```bash
 sudo apt install nodejs
 ```
 
-## Node JS desde Mac
+### Instalación en Mac
 
-Ejecuta la siguiente línea en la terminal:
+Abre una terminal y ejecuta la siguiente línea:
 
 ```bash
 sudo brew install node@12
 ```
 
-## Node JS: comprobando si lo hemos instalado bien
+## Comprobando si lo hemos instalado bien
 
 Una vez terminada la instalación de Node JS desde cualquiera de los 3 sistemas operativos debemos comprobar que todo ha ido bien. Para ello ejecutaremos en la terminal la siguiente línea:
 
@@ -34,4 +40,4 @@ Una vez terminada la instalación de Node JS desde cualquiera de los 3 sistemas 
 node --version
 ```
 
-Y la terminal debe mostrar la versión de Node JS instalada, algo como `v12.16.0`. **Es importante que empiece por v12.** Si por el contrario la terminal muestra el mensaje `No se ha encontrado la orden «node»...` es que algo hemos hecho mal. Vuelve a repetir todos los pasos y si no te funciona consulta a tu profesor.
+Y la terminal debe mostrar la versión de Node JS instalada, algo como `v12.16.3`. **Es importante que empiece por v12.** Si por el contrario la terminal muestra el mensaje `No se ha encontrado la orden «node»...` es que algo hemos hecho mal. Vuelve a repetir todos los pasos y si no te funciona consulta a tu profesor.

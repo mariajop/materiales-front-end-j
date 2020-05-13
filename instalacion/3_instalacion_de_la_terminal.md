@@ -6,11 +6,11 @@ La terminal, también conocida como consola o shell, es una de nuestras herramie
 
 Hay diferentes tipos de terminales, nosotras utilizaremos la terminal **Bash**.
 
-## Instalación en Mac y Ubuntu
+### Instalación en Mac y Ubuntu
 
 Mac y Ubuntu ya vienen con una terminal bash instalada de serie. Por ello no necesitamos instalar nada más. Si quieres abrir tu terminal busca en el menú el programa **Terminal**.
 
-## Instalación en Windows 10
+### Instalación en Windows 10
 
 Windows tiene sus propias terminales como MS-DOS y Power Shell. Estas terminales no nos valen para programar así que vamos a instalar un mini Ubuntu dentro de Windows. Para ello:
 
