@@ -42,8 +42,6 @@ El objetivo del programa es que las participantes sean capaces de realizar las s
 
 ## Cómo colaborar
 
-Siempre estamos abiertos a sugerencias acerca de como mejorar este programa. Si tienes alguna, puedes [abrir un issue](https://help.github.com/articles/creating-an-issue/) y estaremos encantados de revisarlo.
-
-Otra forma de colaborar con este repositorio es [hacer un fork](https://help.github.com/articles/fork-a-repo/) y enviarnos directamente un [pull request](https://help.github.com/articles/using-pull-requests/) para solucionar cualquier error que encuentres o añadir algún recurso o información.
+Siempre estamos abiertos a sugerencias acerca de como mejorar este programa. Si tienes alguna, puedes [ponerte en contacto con nosotros](https://adalab.es/contacto/).
 
 **Cualquier ayuda es bienvenida :)**
