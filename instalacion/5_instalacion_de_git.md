@@ -155,3 +155,13 @@ Con el objetivo de empezar a trabajar de manera óptima en remoto desde el prime
 
 - [Cómo clonar un repositorio de Git](http://beta.adalab.es/materiales-front-end-j/instalacion/assets/videos/git-clonar-un-repositorio.mp4)
 - [Cómo crear un repositorio de Git](http://beta.adalab.es/materiales-front-end-j/instalacion/assets/videos/git-crear-un-repositorio.mp4)
+
+### Estructura de carpetas
+
+Os recomendamos que vuestro repositorio de `ejercicios-de-adalab` cumpla con las siguientes características:
+
+- Cada ejercicio que hagamos en una carpeta. **Nunca se deben hacer dos ejercicios en la misma carpeta**, da muchos errores.
+- El nombre de la carpeta que sea `modulo-x-leccion-y-ejercicio-z-descripcion`. Por ejemplo:
+  - `modulo-1-leccion-04-ejercicio-03-flexbox`
+  - `modulo-1-leccion-12-ejercicio-10-grid`
+- Si todas las alumnas seguís este patrón es muy fácil compartir ejercicios y códigos entre vosotras.
