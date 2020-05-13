@@ -156,7 +156,7 @@ Con el objetivo de empezar a trabajar de manera óptima en remoto desde el prime
 - [Cómo clonar un repositorio de Git](http://beta.adalab.es/materiales-front-end-j/instalacion/assets/videos/git-clonar-un-repositorio.mp4)
 - [Cómo crear un repositorio de Git](http://beta.adalab.es/materiales-front-end-j/instalacion/assets/videos/git-crear-un-repositorio.mp4)
 
-https://youtu.be/lvhkFv3GJnE
+https://www.youtube.com/watch?v=lvhkFv3GJnE
 
 ### Estructura de carpetas
 
