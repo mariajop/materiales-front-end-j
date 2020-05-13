@@ -63,7 +63,7 @@ apt install nodejs
 
 Es probable que al instalar programas la consola muestre un error diciendo que no tenemos permisos para instalarlo porque se requiere ser administrador para poder hacerlo. En los errores suele poner algo como EACCES (error de acceso):
 
-![Error en la terminal](assets/images/terminal-error-sudo.png)
+![Error en la terminal](assets/images/terminal-sudo-error.png)
 
 Cuando nos pase esto y sepamos que el error es porque se necesitan permisos de administración para instalar el programa, **usaremos el comando mágico `sudo`**.
 
