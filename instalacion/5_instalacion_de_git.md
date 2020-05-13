@@ -1,5 +1,7 @@
 # Instalación y uso de Git / GitHub
 
+![Git](assets/images/git-logo.jpg)
+
 ### Qué es Git
 
 Git es un sistema de **control de versiones** de código además de una **herramienta para compartir** código.
@@ -157,7 +159,7 @@ Con el objetivo de empezar a trabajar de manera óptima en remoto desde el prime
 
 {% embed url="https://www.youtube.com/watch?v=lvhkFv3GJnE" %}
 
-##### Cómo crear un repositorio de Git
+#### Cómo crear un repositorio de Git
 
 - [Cómo crear un repositorio de Git](http://beta.adalab.es/materiales-front-end-j/instalacion/assets/videos/git-crear-un-repositorio.mp4)
 

@@ -1,5 +1,7 @@
 # Instalación de Node JS
 
+![Node JS](assets/images/nodejs-logo.jpg)
+
 Node JS es un lenguaje programación que nos sirve para ejecutar JavaScript en la terminal de un ordenador. En Adalab y en muchas empresas lo utilizamos también para automatizar tareas y facilitarnos la vida mientras programamos. Vamos a instalarlo:
 
 ### Instalación en Windows 10 y Ubuntu
