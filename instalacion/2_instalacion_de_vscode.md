@@ -1,7 +1,5 @@
 # Instalación de VS Code
 
-## Instalación de Visual Studio Code
-
 Visual Studio Code (también conocido como VS Code o Code a secas) es el editor de código con el que vamos desarrollar nuestras páginas webs. Además dispone de un montón de extensiones y plugins que nos facilitan mucho la vida.
 
 ### Instalación en Windows 10 y Mac
@@ -14,7 +12,7 @@ Desde Ubuntu, la forma más cómoda es acceder al instalador de aplicaciones des
 
 ## Plugins de VS Code
 
-Los plugins son extensiones para ampliar y personalizar el funcionamiento de VS Code. Hay muchísimos. Nosotras vamos a utilizar las siguientes durante el curso. Accede a ellas e instálas.
+Los plugins son extensiones para ampliar y personalizar el funcionamiento de VS Code. Hay muchísimos. Nosotras vamos a utilizar las siguientes durante el curso. Accede a ellas e instálas:
 
 - [Live server:](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) para tener un servidor local en nuestro ordenador.
 - [Live share:](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) para compartir nuestro código con nuestras compañeras.

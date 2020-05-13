@@ -4,11 +4,11 @@
 
 - [Antes de empezar el curso](guias/0_antes_de_empezar_el_curso.md)
   - [Instalación de ordenadores](instalacion/1_instalacion_de_ordenadores.md)
-  - [Instalación y uso de VS Code](instalacion/2_instalacion_de_vscode.md)
+  - [Instalación de VS Code](instalacion/2_instalacion_de_vscode.md)
   - [Instalación de la terminal](instalacion/3_instalacion_de_la_terminal.md)
   - [Instalación de Node JS](instalacion/4_instalacion_de_node_js.md)
-  - [Instalación y uso de Git](instalacion/5_instalacion_de_git.md)
-  - [Instalación y uso de Zoom](instalacion/6_instalacion_de_zoom.md)
+  - [Instalación de Git](instalacion/5_instalacion_de_git.md)
+  - [Instalación de Zoom](instalacion/6_instalacion_de_zoom.md)
   - [Instalación de programas](instalacion/7_instalacion_de_programas.md)
 - Guías
   - [Código de conducta en Adalab](guias/1_codigo_de_conducta.md)

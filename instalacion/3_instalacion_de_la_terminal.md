@@ -6,19 +6,21 @@ La terminal, también conocida como consola o shell, es una de nuestras herramie
 
 Hay diferentes tipos de terminales, nosotras utilizaremos la terminal **Bash**.
 
+## Instalación de la terminal
+
 ### Instalación en Mac y Ubuntu
 
 **Mac y Ubuntu ya vienen con una terminal bash instalada de serie.** Por ello no necesitamos instalar nada más. Si quieres abrir tu terminal busca en el menú el programa **Terminal**.
 
 ### Instalación en Windows 10
 
-Windows tiene sus propias terminales como MS-DOS y Power Shell. Estas terminales no nos valen para programar así que vamos a instalar un mini Ubuntu dentro de Windows. Para ello:
+Windows tiene sus propias terminales como MS-DOS y Power Shell. Estas terminales **no** nos valen para programar así que vamos a instalar un mini Ubuntu dentro de Windows. Para ello:
 
 1. Desde el menú inicio de tu Windows busca y abre **Microsoft Store**.
 1. En el buscador del store busca **Ubuntu**.
 1. Instala **Ubuntu 18.04 LTS**.
 1. Verás que en tu menú inicio se habrá añadido un programa llamado **Ubuntu 18.04 LTS**, ábrelo.
-1. Te pedirá que añadas una nueva contraseña. **Esta contraseña es la que utilizaremos siempre para la terminal.** No la pierdas!!
+1. Te pedirá que añadas una nueva contraseña. **Esta contraseña es la que utilizaremos para instalar programas en la terminal.** No la pierdas!
 
 Una vez terminado debes:
 
@@ -47,9 +49,9 @@ Preferimos hacerlo desde dentro de VS Code porque es más cómodo. Por ejemplo l
 
 Por ello cada vez que tengamos que usar la terminal tendremos que:
 
-- Abrir VS Code.
-- Pulsar en el **menú superior > Terminal**.
-- Pulsar en **Nueva terminal**.
+1. Abrir VS Code.
+1. Pulsar en el **menú superior > Terminal**.
+1. Pulsar en **Nueva terminal**.
 
 ## Instalar programas a través de la terminal
 
@@ -63,7 +65,7 @@ Es probable que al instalar programas la consola muestre un error diciendo que n
 
 ![Error en la terminal](assets/images/terminal-error-sudo.png)
 
-Cuando nos pase esto y sepamos que el error es porque se necesitan permisos de administración para instalar el programa usaremos el comando mágico `sudo`.
+Cuando nos pase esto y sepamos que el error es porque se necesitan permisos de administración para instalar el programa, **usaremos el comando mágico `sudo`**.
 
 ### Instalar con sudo
 
