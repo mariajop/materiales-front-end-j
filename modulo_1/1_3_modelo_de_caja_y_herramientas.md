@@ -1,4 +1,4 @@
-# Modelo de caja y herramientas
+# Modelo de caja, variables CSS y herramientas
 
 ## Contenidos
 
@@ -20,28 +20,34 @@
 
 ## Introducción
 
-En esta sesión veremos dos recursos fundamentales para construir nuestra web: modelo de cajas y las herramientas de desarrollo del navegador (DevTools).
+En esta sesión veremos dos recursos fundamentales para construir nuestra web: el modelo de caja y las herramientas de desarrollo del navegador (DevTools).
 
-Uno de los objetivos de la sesión es saber que hay dos modelos de caja, en qué se diferencian y cómo aplicar uno u otro.
+Además vamos a descubrir la magia de las variables CSS o Custom Properties, algo realmente nuevo pero super útil que hará que el trabajo en proyectos muy grandes sea infinitamente más fácil de mantener sin depender de preprocesadores CSS como SASS (tranquila ya te le presentaremos más adelante ;))
+
+Uno de los objetivos de la sesión es saber que hay dos modelos de caja y que las etiquetas HTML se comportarán de manera distinta en la estructura de tu documento dependiendo de ese modelo.
 
 El navegador Google Chrome nos ofrece una serie de herramientas llamadas Chrome Dev Tools que nos permiten obtener información sobre la página actual que tenemos y realizar pruebas y modificaciones sobre ella. Estas herramientas son las siguientes:
 
-- El inspector de elementos. Nos permite ver el código de la página y los estilos que tiene aplicados a la vez que nos ofrece la posibilidad de modificarlo y cambiar los elementos de la web actual.
+- El inspector de elementos. Nos permite ver el código de la página y los estilos que tiene aplicados a la vez que nos ofrece la posibilidad de modificarlo y cambiar los elementos de la web actual para hacer el proceso de maquetación más sencillo.
 - La herramienta Network. Muestra cuales son los recursos que carga la web actual, su peso y el tiempo que necesita para cargarlos. Además nos mostrará errores en caso de que algún recurso no pueda ser cargado debido a un error.
+
+Las variables nos permitirán almacenar propiedades con un nombre y reutilizarlas a lo largo de nuestra hoja de estilos para que si, en un futuro, por ejemplo queremos cambiar un color, cambiemos solamente el valor de la variable y no el color uno por uno, en todas nuestras propiedades.
 
 ## ¿Para qué sirve lo que vamos a ver en esta sesión?
 
-1. Para comprender cómo se comportan los contenedores (cajas) cuando les cambiamos propiedades de apariencia como margen, borde, padding y ancho/alto. Y qué pasa cuando el contenido no cabe en nuestro contenedor.
+1. Para comprender cómo se comportan las etiquetas cuando les cambiamos propiedades de apariencia como margen, borde, padding y ancho/alto. Y qué pasa cuando el contenido no cabe en nuestro contenedor.
 2. Para entender cómo se aplican las imágenes de fondo.
 3. Para entender cómo se aplican los ajustes que realicemos a través de las DevTools.
+4. Para reutilizar valores CSS
 
 ## ¿En qué casos se utiliza?
 
 * Cuando tengamos que darle un aspecto determinado al contenido, es decir, siempre :)
 * Cuando tengamos un problema en nuestra página para detectar dónde está el error.
+* Cuando tengamos un proyecto mediano o grande que requiera de un mantenimiento CSS
 
 ## Modelo de caja
-En HTML cada elemento se representa visualmente como una caja, lo podemos ver fácilmente añadiendo un borde a un elemento HTML y viendo cómo lo pinta el navegador, por ejemplo:
+En HTML cada etiqueta se representa visualmente como una caja, lo podemos ver fácilmente añadiendo un borde a un elemento HTML y viendo cómo lo pinta el navegador, por ejemplo:
 
 ```html
 <h1>Encabezado 1</h1>
@@ -49,28 +55,30 @@ En HTML cada elemento se representa visualmente como una caja, lo podemos ver f�
 
 ![Caja básica](assets/images/1-3/caja-basica.png)
 
-El modelo de caja es una especificación que define las características específicas de esa caja y como infieren en el resto de elementos de la página; es el que le dice al navegador cómo debe pintar cada caja (elemento).
+El modelo de caja es una especificación que define el comportamiento de una etiqueta o elemento HTML y como interfiere en el resto de elementos de la página; es el que le dice al navegador cómo debe pintar cada elemento.
 
-Antes de entrar en profundidad con los modelos de caja tenemos que ver conceptos básicos (alto, ancho, borde, margen y padding) y las formas básicas de visualización de los elementos HTML.
+Antes de entrar en profundidad con los modelos de caja tenemos que ver conceptos básicos (alto, ancho, borde, margen y padding) y las formas básicas de visualización de los elementos HTML (display).
 
 ### Height, width, border, padding y margin
 
-Cada elemento tiene una *altura* (height) y *anchura* (width). Además, puede tener otros atributos relacionados que influyen en su tamaño y su posición, que son el padding, los márgenes y los bordes:
+Todos los elementos HTML tienen una *altura* (height) y *anchura* (width). Además, puede tener otros atributos relacionados que influyen en su tamaño y su posición, que son el padding, los márgenes y los bordes:
 - el *borde* de un elemento es una línea que puede tener distinto grosor y que encuadra el contenido del elemento
-- el *padding* es la distancia desde el contenido del elemento hasta el borde
-- el *margen* es la distancia desde borde del elemento hasta los elementos que están a su alrededor
+- el *padding* es la distancia desde el contenido del elemento hasta el borde (podría pensarse como un margen interior)
+- el *margen* es la distancia desde borde del elemento hasta los elementos que están a su alrededor (el margen exterior)
 
 
 ## Visualización (display)
 
-La propiedad CSS `display`, se encarga de definir cómo se va a visualizar un elemento HTML, cómo va a colocarse en la página y cómo se colocarán el resto de elementos respecto a este. Según el valor que tenga asignado display, un elemento puede ocupar el ancho entero de su contenedor, ocupar solo el espacio que necesite para mostrar su contenido, mostrarse como si fuese una casilla de una tabla o directamente ocultarse.
+La propiedad CSS `display`, se encarga de definir cómo se va a visualizar un elemento HTML, cómo va a colocarse en la página y cómo se colocarán el resto de elementos respecto a este. Según el valor que tenga asignado display, un elemento puede ocupar el ancho entero de su contenedor, ocupar solo el espacio que necesite para mostrar su contenido, mostrarse como si fuese una casilla de una tabla o directamente ocultarse. 
 
-Los navegadores web aplican por defecto un valor `display` a todos los elementos HTML de nuestra web. Hay muchos valores distintos para `display` pero, por el momento, nosotros solo veremos cuatro:
+Todas las etiquetas HTML tienen un valor `display` por defecto, pero por supuesto, nosotras podemos alterarlo para ajustarlo a nuestra maquetación.
 
-* block
-* inline
-* inline-block
-* none
+Hay muchos valores distintos para `display` pero, por el momento, nosotros solo veremos estos cuatro:
+
+* block (ocuparán el ancho completo del contenedor y se colocarán unas debajo de otras)
+* inline (ocuparán el ancho de su contenido, por lo que se pueden alinear unas al lado de otras)
+* inline-block (es un híbrido de las dos anteriores)
+* none (oculta el elemento, no lo muestra)
 
 ### Block
 
@@ -277,38 +285,34 @@ Nos vamos de hackaton, y la página con los detalles de nuestro equipo está sin
 
 
 ## DevTools
-Desde que aparecieron las *Devtools* en todos los navegadores decentes, la vida del front-end es mucho más tranquila. Estas herramientas nos permiten saber qué está pasando en un módulo concreto (medidas, posicionamiento, CSS aplicados) o qué está cargando nuestra web (hojas de estilos, imágenes, vídeos/audios, JavaScript).
+Desde que aparecieron las *Devtools* en todos los navegadores decentes, la vida del front-end es mucho más tranquila. Estas herramientas nos permiten saber cómo está interpretando el navegador nuestra web o qué está cargando (hojas de estilos, imágenes, vídeos/audios, JavaScript...).
 
 ## Devtools: Inspector
 El inspector es una de las muchas herramientas de desarrollo que incluye el navegador web Google Chrome. Este grupo de herramientas recibe el nombre de Chrome DevTools.
 
-### ¿Cómo lo abrimos?
-
-Para abrir el inspector tenemos varias opciones:
+**Para abrir el inspector tenemos varias opciones:**
 * Pulsando en el menú de tres puntos de la derecha superior de Chrome > más herramientas > herramientas para desarrolladores
 * Usar `Ctrl+Shift+I` en Ubuntu o Windows y `Cmd+Opción+I` en Mac
 * Pulsar con el botón derecho sobre un elemento de nuestra página y seleccionar la opción *Inspeccionar*
 
 Una vez abierto podemos moverlo y colocarlo arriba, abajo, a la derecha o sacarlo a una nueva ventana.
 
-
-### Si queremos cerrarlo...
-
+**Para cerrarlo:**
 * Pulsamos en la cruz que aparece en la esquina superior derecha del panel
 * Usamos `Ctrl++ShiftI` en Ubuntu o Windows y `Cmd+Opción+I` en Mac de nuevo
 
 ### ¿Qué es?
 
-El inspector es una herramienta que viene con nuestro navegador y por tanto es parte de la aplicación del navegador, está incluida en, prácticamente, todos los navegadores más famosos (Chrome, Firefox, Safari, Internet Explorer, Edge…) y sirve para leer, añadir, editar o eliminar tanto CSS como HTML (y sus atributos) de nuestra página. Con él haremos de cirujanos de la web, veremos sus tripas y las modificaremos a nuestro antojo.
+El inspector es una herramienta que viene con nuestro navegador y por tanto es parte de la aplicación del navegador, está incluida en, prácticamente, todos los navegadores más famosos (Chrome, Firefox, Safari, Internet Explorer, Edge…) y sirve para leer, añadir, editar o eliminar tanto CSS como HTML (y sus atributos) de nuestra página. 
 
-El inspector nos permite indagar y modificar tanto en páginas que tengamos en nuestro ordenador como otras que estén publicadas en Internet. Cuando modifiquemos estas páginas no estaremos modificando las páginas como tal, solo temporalmente para ver qué sucedería si aplicamos ciertos cambios pero la web, ya sea la de nuestro ordenador o la de Internet, no va a verse modificada. Esos cambios serán temporales y una vez que recarguemos la página se perderán y ésta volverá a su estado inicial.
+El inspector nos permite indagar y modificar cualquier web que abramos en el navegador. Nos muestra cómo se está renderizando la estructura de etiquetas y qué está cargando permitiéndonos hacer pequeños cambios rápidos. Esos cambios serán temporales y una vez que recarguemos la página se perderán y ésta volverá a su estado inicial.
 
 
 ### ¿Para qué nos sirve?
 
-Dado que nos permite controlar qué está pasando con una web, podemos ver los recursos que se están cargando y cuáles fallan. Nos permite ver el código tanto de nuestra página, para ver si está funcionando correctamente, como de otras, para ver cómo aplican ciertas técnicas o coger inspiración.
+Gracias a que "nos muestra las tripas" del HTML y la CSS de la web que inspeccionamos podemos depurar fallos (elementos que no cargan, estilos que se aplican mal...) o simplemente "cotillear" cómo han hecho algo otras webs para aprender o inspirarte :)
 
-Por otro lado nos permite investigar qué cambios queremos hacer sin guarrear nuestro CSS o HTML y corregir de forma más rápida y sencilla los errores de nuestro código.
+Por otro lado nos permite investigar qué cambios queremos hacer de forma más rápida y sencilla, y arreglar los errores de nuestro código sin tener que volver a nuestra CSS, guardar y recargar.
 
 Por ejemplo, podemos ver información del modelo de caja:
 ![HTML y Modelo de caja en las DevTools](assets/images/1-3/html-inspector-modelo-de-caja.png)
@@ -317,46 +321,7 @@ Por ejemplo, podemos ver información del modelo de caja:
 * * *
 #### EJERCICIO 8
 
-Entrar en [Wikipedia.org](http://wikipedia.org) y:
-* Cambiar el color de los enlaces a naranja
-* Sobre los idiomas destacados que aparecen sobre la imagen de la pelota de Wikipedia, añadir uno falso
-* Explicar cómo están compuestos estos módulos de idioma
-* Explicar cómo están colocados
-* Examinar la versión de tablet de Wikipedia
-* Examinar la versión de móvil de Wikipedia
-* Averiguar las dimensiones de la caja de búsqueda y
-    * Cuánto tiene de separación con el botón de buscar
-    * ¿Qué hay de raro con esa separación?
-
-* * *
-
-### Cambiando CSS con el Inspector: el atributo `style`
-Con el inspector no solo podemos consultar información sino cambiarla para hacer pruebas rápidas, en este ejemplo hemos reducido el margin-top de la "caja" con el encabezado principal de la página de  **GulpJS** de `50px` a `5px`:
-![Ejemplo de edición desde el inspector](assets/images/1-3/edicion-con-el-inspector.png)
-
-Esta edición rápida es posible gracias al atributo `style=""` que es otra forma de aplicar estilos y que se puede añadir a cualquier etiqueta HTML.
-
-> **Nota:**
-> En principio no se deben aplicar estilos usando este atributo, en su lugar usaremos selectores CSS desde la hoja de estilos correspondiente.
-
-Es una forma de aplicar estilos que ha quedado para usar principalmente desde programación (ya lo veremos más adelante) pero desde el inspector nos permite hacer cambios rápidos.
-
-Usando este atributo los estilos se escriben en línea, seguidos y separados por `;`:
-```html
-<h1 style="color:black;font-size:28px;">Encabezado 1</h1>
-```
-
-* * *
-#### EJERCICIO 9
-
-¿Sabríamos ir a la web [https://duckduckgo.com](https://duckduckgo.com), buscar el logo con el id "logo_homepage_link" y aplicarle estos estilos desde nuestro inspector?
-
-```css
-background-color: black;
-border-radius: 10px;
-width: 250px;
-```
-* * *
+1- Abre cualquier web que te apetezca e investiga su estructura con el inspector.
 
 ## Devtools: Network
 Sirve para ver qué recursos carga nuestra página y ver si se ha producido algún error cargando esos recursos. Network muestra tanto las imágenes como otros recursos que se cargan (CSS, JavaScript, fuentes, etc.)
