@@ -1,4 +1,4 @@
-# Instalación de ordenadores para el curso de Adalab
+# Instalación de ordenadores
 
 ## Requerimientos mínimos del ordenador
 
@@ -12,27 +12,14 @@ En el curso de programación front-end de Adalab necesitaremos usar un ordenador
 Para poder realizar el curso el sistema operativo (SO) del ordenador debe ser uno de los siguientes:
 
 - **Windows 10**
-- **Ubuntu 18**
 - **Mac**
+- **Ubuntu 18.04**
 
-## Windows 10 (mover a instalación de la terminal)
+## Windows 10 o Mac
 
-Si tienes Windows 10 vamos a instalar (un mini) Ubuntu dentro de tu Windows 10. Para ello:
+Si utilizas Windows 10 o Mac ya tienes el sistema operativo y no necesitas hacer nada más. Puedes pasar al [siguiente paso](0_instalacion_de_vscode.md).
 
-1. Desde el menú inicio de tu Windows busca y abre **Microsoft Store**.
-1. En el buscador del store busca **Ubuntu**.
-1. Instala **Ubuntu 18.04 LTS**.
-1. Verás que en tu menú inicio se habrá añadido un programa llamado **Ubuntu 18.04 LTS**.
-1. Al instalar te pedirá que añadas una nueva contraseña. **Esta contraseña es la que utilizaremos siempre para la terminal.** No la pierdas!!
-
-Una vez terminado debes:
-
-1. Desde el menú inicio de tu Windows busca y abre **Activar o desactivar las características de Windows**.
-1. Activa la opción **Subsistema de Windows para Linux**. Acepta y reinicia.
-
-Después de haber hecho estas dos cosas tu Windows contará con una **terminal** que funciona igual que si estuvieras trabajando en Linux.
-
-## Ubuntu 18 (linux)
+## Ubuntu 18.04 (linux)
 
 Si quieres trabajar en Ubuntu y no lo tienes instalado a continuación te explicamos cómo hacerlo. Hay dos opciones:
 
@@ -47,16 +34,12 @@ Si queremos mantener Windows, tendremos que hacer una partición:
 
 - Hacer partición e instalar Ubuntu siguiendo este tutorial (mínimo de 30GB): https://www.tecmint.com/install-ubuntu-alongside-with-windows/
 
-> NOTA: Al elegir instalar ubuntu, seleccionamos la opción de "opciones adicionales" para elegir en qué partición hacerlo. Una vez seleccionada la partición donde instalar Ubuntu, elegir que el gestor de arranque (bootloader) se instale en el disco duro principal en un desplegable abajo de la pantalla.
+> **NOTA:** Al elegir instalar ubuntu, seleccionamos la opción de "opciones adicionales" para elegir en qué partición hacerlo. Una vez seleccionada la partición donde instalar Ubuntu, elegir que el gestor de arranque (bootloader) se instale en el disco duro principal en un desplegable abajo de la pantalla.
 
-> NOTA: En Adalab los profesores trabajamos con UBUNTU 18. Si quieres usar otra distribución de Linux, no podemos garantizar que sabremos resolver todos los problemas relacionados con el sistema operativo.
+> **NOTA:** En Adalab los profesores trabajamos con UBUNTU 18. Si quieres usar otra distribución de Linux, no podemos garantizar que sabremos resolver todos los problemas relacionados con el sistema operativo.
 
 #### Posibles problemas en la instalación de Ubuntu
 
 - En equipos de la marca MSI, [suele haber problemas con los drivers de teclado / ratón en la instalación, de la tarjeta gráfico y/o de la conexión WiFi](https://gist.github.com/mari-linhares/cef4cb3440408e44963d1447a7db5ae0).
 - En algunos Asus, no funciona la conexión Wifi, y [hay que instalar los drivers](https://askubuntu.com/questions/990378/wi-fi-not-working-on-lenovo-thinkpad-e570-realtek-rtl8821ce) que podéis pasar en un pendrive o con una conexión a Internet a través de vuestro móvil.
 - También encontramos otras incompatibilidades de hardware (ordenador) con Ubuntu, [como esta que nos ha sucedido](https://askubuntu.com/questions/38780/how-do-i-set-nomodeset-after-ive-already-installed-ubuntu).
-
-## Mac
-
-Si utilizas Mac no necesitas instalar nada ya que el sistema operativo ya cuenta con una terminal adecuada para programar.
