@@ -4,7 +4,7 @@ Si estás leyendo esto es porque has sido admitida en el Curso Intensivo de Adal
 
 ## ¡¡¡🎉Enhorabuena futura programadora🥳!!!
 
-Antes de empezar te pedimos que [**pongas a punto tu ordenador**](../instalacion/1_instalacion_de_ordenadores.md) instalando y configurando todos los programas que utilizaremos durante el curso. Si tienes cualquier problema instalando los programas no te preocupes, díselo a tu profesora el primer día del curso.
+Antes de empezar te pedimos que [**pongas a punto tu ordenador**](../instalacion/1_instalacion_de_ordenadores.md) instalando y configurando todos los programas que utilizaremos durante el curso. Si tienes cualquier problema instalando los programas no te preocupes, díselo a tu profesora el primer día de clase.
 
 Y también que leas nuestras guías:
 
