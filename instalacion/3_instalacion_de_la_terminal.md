@@ -8,7 +8,7 @@ Hay diferentes tipos de terminales, nosotras utilizaremos la terminal **Bash**.
 
 ### Instalación en Mac y Ubuntu
 
-Mac y Ubuntu ya vienen con una terminal bash instalada de serie. Por ello no necesitamos instalar nada más. Si quieres abrir tu terminal busca en el menú el programa **Terminal**.
+**Mac y Ubuntu ya vienen con una terminal bash instalada de serie.** Por ello no necesitamos instalar nada más. Si quieres abrir tu terminal busca en el menú el programa **Terminal**.
 
 ### Instalación en Windows 10
 
@@ -29,7 +29,7 @@ Después de haber hecho estas dos cosas tu Windows contará con una **terminal**
 
 A continuación vamos a configurar VS Code para que siempre trabaje con esta terminal:
 
-1. Abre la configuración de VS Code pulsando en el icono de la tuerca (esquina inferior izquierda) ![VS Code settings](./assets/images/vscode-settings-icon.png) y a continuación **Settings**.
+1. Abre la configuración de VS Code pulsando en el icono de la tuerca (esquina inferior izquierda) ![VS Code settings](assets/images/vscode-settings-icon.png) y a continuación **Settings**.
 1. Busca la opción **Terminal > External: Windows exec**.
 1. Añade el texto **C:\windows\System32\cmd.exe**.
 1. Abre una terminal puslando en el menú superior > **Terminal** > **New terminal**: una nueva terminal se abrirá en la parte inferior de VS Code.
@@ -75,8 +75,8 @@ sudo apt install nodejs
 
 A continuación la terminal nos pedirá la contraseña del administrador.
 
-La contraseña en Mac y Ubuntu es la de nuestro usuario, la que escribimos al iniciar sesión cuando arrancamos el ordenador.
+La contraseña en Mac y Ubuntu **es la de nuestro usuario**, la que escribimos al iniciar sesión cuando arrancamos el ordenador.
 
-La contraseña en Windows es la que hemos escrito cuando hemos instalado el **mini ubuntu** al principio de esta página.
+La contraseña en Windows **es la que hemos escrito cuando hemos instalado el mini ubuntu** al principio de esta página.
 
 > **IMPORTANTE:** acuérdate del comando mágico `sudo` lo utilizarás a menudo en tu vída como programadora.
