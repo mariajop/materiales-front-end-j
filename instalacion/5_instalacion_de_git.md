@@ -153,14 +153,14 @@ Una vez hayamos realizado ese paso, no necesitaremos hacer ningún cambio más.
 
 Con el objetivo de empezar a trabajar de manera óptima en remoto desde el primer día de curso vamos a aprender lo básico sobre Git y GitHub. Para lo cuál os pedimos que veáis y sigáis los pasos de estos dos vídeos:
 
-- [Cómo clonar un repositorio de Git](http://beta.adalab.es/materiales-front-end-j/instalacion/assets/videos/git-clonar-un-repositorio.mp4)
-- [Cómo crear un repositorio de Git](http://beta.adalab.es/materiales-front-end-j/instalacion/assets/videos/git-crear-un-repositorio.mp4)
-
-https://www.youtube.com/watch?v=lvhkFv3GJnE
-
-1
+#### Cómo clonar un repositorio de Git
 
 {% embed url="https://www.youtube.com/watch?v=lvhkFv3GJnE" %}
+
+##### Cómo crear un repositorio de Git
+
+- [Cómo crear un repositorio de Git](http://beta.adalab.es/materiales-front-end-j/instalacion/assets/videos/git-crear-un-repositorio.mp4)
+
 
 ### Estructura de carpetas
 
