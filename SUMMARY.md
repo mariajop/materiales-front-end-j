@@ -16,7 +16,7 @@
   - [Guía para enfrentarse a problemas técnicos de manera autónoma](guias/3_busqueda_de_soluciones.md)
   - [Agile](guias/4_agile.md)
   - [Scrum](guias/5_scrum.md)
-- [Repositorios más usados](guias/repositorios_mas_usados.md)
+- [Información de interés](guias/informacion_de_interes.md)
 
 ## Módulo 1. Hola Mundo
 
