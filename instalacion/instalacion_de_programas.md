@@ -2,9 +2,13 @@
 
 ## Instalación de Chrome
 
+![Chrome](assets/images/chrome-logo.png)
+
 Para programar páginas web vamos a utilizar [**Google Chrome**](https://www.google.com/chrome), ya que tiene herramientas para desarrolles muy buenas.
 
-## Slack
+## Instalación de Slack
+
+![Slack](assets/images/slack-logo.jpg)
 
 Otra herramienta muy buena para trabajar en remoto es **Slack**. En Adalab la usamos para todo. Un par de días antes de comenzar el curso te enviaremos un enlace para que accedas al Slack de Adalab.
 
@@ -14,7 +18,9 @@ Para descargarlo desde Windows y Mac [entra aquí](https://slack.com).
 
 Desde Ubuntu, la forma más cómoda es acceder al instalador de aplicaciones desde el menú, y ahí buscar **Slack** e instalarlo.
 
-## Creación de cuentas
+## Creación de cuenta de Trello
+
+![Trello](assets/images/trello-logo.jpg)
 
 En Adalab también os vamos a enseñar a utilizar [Trello](https://trello.com/), que es un gestor de proyectos. Crea una cuenta usando el mismo email de gmail que nos has proporcionado a Adalab.
 

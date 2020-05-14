@@ -86,7 +86,7 @@ git config --global user.name "Maria del Carmen"
 ```
 
 ```bash
-git config --global user.email "maricarmen@gmail.com"
+git config --global user.email "lamary@gmail.com"
 ```
 
 ### Configuración en Ubuntu
