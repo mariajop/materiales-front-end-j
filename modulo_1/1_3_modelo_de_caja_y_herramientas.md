@@ -286,24 +286,31 @@ Nos vamos de hackaton, y la página con los detalles de nuestro equipo está sin
 ## Variables CSS
 ¿Os habéis parado a pensar lo que supone mantener un proyecto con muchas líneas CSS? Imagínate que empiezas con un proyecto que tiene una gama de colores en azul a lo largo de toda la web. Seis meses más tarde, el diseñador decide que sería genial darle un nuevo aire a la web y quiere que toda la gama de colores sea en naranja ¿Te imaginas en cuantos sitios distintos tendrías que cambiar la propiedad color?¿O el tamaño de una fuente?
 
-Pues gracias a las variables CSS podemos hacer esa tarea más fácil. El nombre exacto es Custom Properties aunque no está mal decirles variables (hasta la W3C las llama variables) aunuqe como tal no tienen relación con el comportamiento de una variable en ningún lenguaje de programación.
+Pues gracias a las variables CSS podemos hacer esa tarea más fácil. El nombre exacto es Custom Properties aunque no está mal decirles variables (hasta la W3C las llama variables) aunque como tal no tienen relación con el comportamiento de una variable en ningún lenguaje de programación.
 
 ### ¿Cómo se usa?
+Podríamos indagar mucho más en las variables CSS pero por el momento os enseñaremos el uso más común y práctico. Llamaremos a la pseudo-clase :root de CSS que selecciona la raíz de nuestro documento, sería el equivalente a nuestra etiqueta HTML. Dentro de :root, definiremos las propiedades que van a ser personalizadas, por ejemplo --brand-color.
+Cuando queramos llamar a esa propiedad utilizaremos la función var() con el nombre de la propiedad que queremos pasarle dentro de la clase CSS que va a verse afectada. Os enseñamos cómo quedaría.
+
 ```css
 :root {
-  --my-color: red
+  --brand-color: orange
 }
 
-body {
-  color: var(--my-color)
+header {
+  color: var(--brand-color)
 }
-
-/* En este caso todos los textos (párrafos, títulos, etc.)
-   serán de color rojo por herencia, porque descienden de 
-   body al resto de elementos (comportamiento propio de CSS)
-*/
 ```
+De esta manera cuando el diseñador decida que neustro color base pasará de azul a naranja, solamente tendríamos que cambiar la propiedad brand-color dentro de :root.
 
+EJERCICIO 7
+Partimos de una web con un montón de propiedades CSS repetidas por nuestra hoja de estilos, saca todas las que puedas a variables CSS y aplícalas en aquellos lugares donde ahora aparece la propiedad escrita directamente.
+El diseñador nos ha pasado el proyecto en este codepen:
+https://codepen.io/pixelmary/pen/KKdxdre
+
+
+Más información sobre las variables CSS:
+https://blog.nearsoftjobs.com/variables-en-css-9701ed9bd92d
 
 ## DevTools
 Desde que aparecieron las *Devtools* en todos los navegadores decentes, la vida del front-end es mucho más tranquila. Estas herramientas nos permiten saber cómo está interpretando el navegador nuestra web o qué está cargando (hojas de estilos, imágenes, vídeos/audios, JavaScript...).
