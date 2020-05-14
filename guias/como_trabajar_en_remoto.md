@@ -16,6 +16,6 @@ Comming soon...
 
 ### Live Share de VS Code
 
-{% embed url="https://www.youtube.com/watch?v=WFTGP6OIKD0" %}
+https://www.youtube.com/watch?v=WFTGP6OIKD0
 
 ### Zoom
