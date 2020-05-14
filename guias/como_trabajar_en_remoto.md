@@ -1,5 +1,7 @@
 # Cómo trabajar en remoto
 
+Comming soon...
+
 ## Introducción al trabajo en remoto
 
 ## Trabajo en remoto en Adalab

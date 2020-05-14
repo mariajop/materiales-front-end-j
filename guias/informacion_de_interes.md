@@ -29,5 +29,5 @@ Una vez acabado el curso intensivo de Adalab os pediremos que realicéis un proy
 
 ## Guías
 
-- [Cómo trabajar en remoto](2_como_trabajar_en_remoto.md)
-- [Guía para enfrentarse a problemas técnicos de manera autónoma](3_busqueda_de_soluciones.md)
+- [Cómo trabajar en remoto](como_trabajar_en_remoto.md)
+- [Guía para enfrentarse a problemas técnicos de manera autónoma](busqueda_de_soluciones.md)

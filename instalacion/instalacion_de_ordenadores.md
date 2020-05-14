@@ -17,7 +17,7 @@ Para poder realizar el curso el sistema operativo (SO) del ordenador debe ser un
 
 ## Windows 10 o Mac
 
-Si utilizas Windows 10 o Mac ya tienes el sistema operativo y no necesitas hacer nada más. Puedes pasar al [siguiente paso](2_instalacion_de_vscode.md).
+Si utilizas Windows 10 o Mac ya tienes el sistema operativo y no necesitas hacer nada más. Puedes pasar al [siguiente paso](instalacion_de_vscode.md).
 
 ## Ubuntu 18.04 (linux)
 

@@ -2,20 +2,20 @@
 
 ## Información de interés
 
-- [Antes de empezar el curso](guias/0_antes_de_empezar_el_curso.md)
-  - [Instalación de ordenadores](instalacion/1_instalacion_de_ordenadores.md)
-  - [Instalación de VS Code](instalacion/2_instalacion_de_vscode.md)
-  - [Instalación de la terminal](instalacion/3_instalacion_de_la_terminal.md)
-  - [Instalación de Node JS](instalacion/4_instalacion_de_node_js.md)
-  - [Instalación de Git](instalacion/5_instalacion_de_git.md)
-  - [Instalación de Zoom](instalacion/6_instalacion_de_zoom.md)
-  - [Instalación de programas](instalacion/7_instalacion_de_programas.md)
+- [Antes de empezar el curso](guias/antes_de_empezar_el_curso.md)
+  - [Instalación de ordenadores](instalacion/instalacion_de_ordenadores.md)
+  - [Instalación de VS Code](instalacion/instalacion_de_vscode.md)
+  - [Instalación de la terminal](instalacion/instalacion_de_la_terminal.md)
+  - [Instalación de Node JS](instalacion/instalacion_de_node_js.md)
+  - [Instalación de Git](instalacion/instalacion_de_git.md)
+  - [Instalación de Zoom](instalacion/instalacion_de_zoom.md)
+  - [Instalación de programas](instalacion/instalacion_de_programas.md)
 - Guías
-  - [Código de conducta en Adalab](guias/1_codigo_de_conducta.md)
-  - [Cómo trabajar en remoto](guias/2_como_trabajar_en_remoto.md)
-  - [Guía para enfrentarse a problemas técnicos de manera autónoma](guias/3_busqueda_de_soluciones.md)
-  - [Agile](guias/4_agile.md)
-  - [Scrum](guias/5_scrum.md)
+  - [Código de conducta en Adalab](guias/codigo_de_conducta.md)
+  - [Cómo trabajar en remoto](guias/como_trabajar_en_remoto.md)
+  - [Guía para enfrentarse a problemas técnicos de manera autónoma](guias/busqueda_de_soluciones.md)
+  - [Agile](guias/agile.md)
+  - [Scrum](guias/scrum.md)
 - [Información de interés](guias/informacion_de_interes.md)
 
 ## Módulo 1. Hola Mundo
