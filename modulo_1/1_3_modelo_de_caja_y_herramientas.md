@@ -283,6 +283,27 @@ Nos vamos de hackaton, y la página con los detalles de nuestro equipo está sin
 
 * * *
 
+## Variables CSS
+¿Os habéis parado a pensar lo que supone mantener un proyecto con muchas líneas CSS? Imagínate que empiezas con un proyecto que tiene una gama de colores en azul a lo largo de toda la web. Seis meses más tarde, el diseñador decide que sería genial darle un nuevo aire a la web y quiere que toda la gama de colores sea en naranja ¿Te imaginas en cuantos sitios distintos tendrías que cambiar la propiedad color?¿O el tamaño de una fuente?
+
+Pues gracias a las variables CSS podemos hacer esa tarea más fácil. El nombre exacto es Custom Properties aunque no está mal decirles variables (hasta la W3C las llama variables) aunuqe como tal no tienen relación con el comportamiento de una variable en ningún lenguaje de programación.
+
+### ¿Cómo se usa?
+```css
+:root {
+  --my-color: red
+}
+
+body {
+  color: var(--my-color)
+}
+
+/* En este caso todos los textos (párrafos, títulos, etc.)
+   serán de color rojo por herencia, porque descienden de 
+   body al resto de elementos (comportamiento propio de CSS)
+*/
+```
+
 
 ## DevTools
 Desde que aparecieron las *Devtools* en todos los navegadores decentes, la vida del front-end es mucho más tranquila. Estas herramientas nos permiten saber cómo está interpretando el navegador nuestra web o qué está cargando (hojas de estilos, imágenes, vídeos/audios, JavaScript...).
