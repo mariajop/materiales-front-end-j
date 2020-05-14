@@ -23,5 +23,5 @@ Os recomendamos que los clonéis en vuestro ordenador y hagáis **`git pull`** f
 
 ## Guías
 
-- [Cómo trabajar en remoto](como_trabajar_en_remoto.md)
+<!-- - [Cómo trabajar en remoto](como_trabajar_en_remoto.md) -->
 - [Guía para enfrentarse a problemas técnicos de manera autónoma](busqueda_de_soluciones.md)

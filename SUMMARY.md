@@ -12,7 +12,7 @@
   - [Instalación de programas](instalacion/instalacion_de_programas.md)
 - Guías
   - [Código de conducta en Adalab](guias/codigo_de_conducta.md)
-  - [Cómo trabajar en remoto](guias/como_trabajar_en_remoto.md)
+  <!-- - [Cómo trabajar en remoto](guias/como_trabajar_en_remoto.md) -->
   - [Guía para enfrentarse a problemas técnicos de manera autónoma](guias/busqueda_de_soluciones.md)
   - [Agile](guias/agile.md)
   - [Scrum](guias/scrum.md)
