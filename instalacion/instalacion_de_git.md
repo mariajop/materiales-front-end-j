@@ -163,7 +163,6 @@ Con el objetivo de empezar a trabajar de manera óptima en remoto desde el prime
 
 {% embed url="https://www.youtube.com/watch?v=UazjdwT9Xvg" %}
 
-
 ### Estructura de carpetas
 
 Os recomendamos que vuestro repositorio de `ejercicios-de-adalab` cumpla con las siguientes características:

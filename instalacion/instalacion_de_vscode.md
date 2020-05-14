@@ -17,7 +17,8 @@ Desde Ubuntu, la forma más cómoda es acceder al instalador de aplicaciones des
 Los plugins son extensiones para ampliar y personalizar el funcionamiento de VS Code. Hay muchísimos. Nosotras vamos a utilizar las siguientes durante el curso. Accede a ellas e instálas:
 
 - [Live server:](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) para tener un servidor local en nuestro ordenador.
-- [Live share:](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) para compartir nuestro código con nuestras compañeras.
+- [Live share:](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) para compartir nuestro código con nuestras compañeras. Aquí tenéis un [vídeo explicativo sobre cómo funciona](../guias/como_trabajar_en_remoto#live-share-de-vs-code) este plugin.
 - [Prettier:](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) para formatear nuestro código y que sea fácil de leer.
 - [Git Graph:](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) para trabajar con Git.
 - [ES lint:](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) para validar nuestro código y que tenga más calidad.
+
