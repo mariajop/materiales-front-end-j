@@ -1,8 +1,6 @@
 # Cómo trabajar en remoto
 
-Por qué es bueno aprender a trabajar en remoto
-
-# Introducción al trabajo en remoto
+## Introducción al trabajo en remoto
 
 Por qué es bueno aprenderlo
 
@@ -12,7 +10,7 @@ Qué no es trabajo en remoto
 
 El problema de la comunicación
 
-# Trabajo en remoto en Adalab
+## Trabajo en remoto en Adalab
 
 - Toda comunicación escrita con profes, resto de personal de Adalab, alumnas, se hará por slack, salvo que se indique lo contrario
 - Nunca por email o por otros chats como el de zoom
@@ -57,7 +55,7 @@ El problema de la comunicación
 
 ### Live Share de VS Code
 
-{% embed url="https://www.youtube.com/watch?v=UazjdwT9Xvg" %}
+https://www.youtube.com/watch?v=WFTGP6OIKD0
 
 ### GitHub
 
