@@ -127,5 +127,5 @@ Una herramienta estupenda para programar en remoto es [Live Share de VS Code](ht
 
 Aquí tenéis un vídeo de cómo se usa:
 
-{% embed url="https://www.youtube.com/watch?v=WFTGP6OIKD0" %
+{% embed url="https://www.youtube.com/watch?v=WFTGP6OIKD0" %}
 
