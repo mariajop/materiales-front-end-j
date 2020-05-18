@@ -14,9 +14,11 @@ El problema de la comunicación
 
 # Trabajo en remoto en Adalab
 
+- Toda comunicación escrita con profes, resto de personal de Adalab, alumnas, se hará por slack, salvo que se indique lo contrario
+- Nunca por email o por otros chats como el de zoom
+- Toda comunicación por vídeo se hará por Slack y Zoom
+
 ### Durante las horas de clase
-
-
 
 - Al empezar el día todas las alumnas se conectarán a zoom
 - Haremos la explicación, se grabará en zoom
@@ -41,8 +43,6 @@ El problema de la comunicación
 
 ### Otras sesiones
 
-
-
 ### Pair Programming
 
 ### Proyectos
@@ -53,9 +53,15 @@ El problema de la comunicación
 
 ### Slack
 
+- Escribir en el canal correcto
+
 ### Live Share de VS Code
 
-{% embed url="https://www.youtube.com/watch?v=WFTGP6OIKD0" %}
+{% embed url="https://www.youtube.com/watch?v=UazjdwT9Xvg" %}
+
+### GitHub
+
+- Compartir enlace al fichero / línea
 
 ### Zoom
 
