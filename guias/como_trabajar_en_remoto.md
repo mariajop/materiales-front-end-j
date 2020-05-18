@@ -123,7 +123,7 @@ Para trabajar en remoto fuera del horario de clase os recomendamos:
 
 ### Live Share de VS Code
 
-Una herramienta estupenda para programar en remoto es [Live Share de VS Code](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare). Es uno de los [plugins](../antes_de_empezar_el_curso/instalacion_de_vscode#plugins-de-vs-code) que os recomendamos instalar y que usaremos mucho durante el curso.
+Una herramienta estupenda para programar en remoto es [Live Share de VS Code](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare). Es uno de los [plugins](./antes_de_empezar_el_curso/instalacion_de_vscode#plugins-de-vs-code) que os recomendamos instalar y que usaremos mucho durante el curso.
 
 Aquí tenéis un vídeo de cómo se usa:
 
