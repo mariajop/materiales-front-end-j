@@ -9,9 +9,9 @@ Antes de empezar te pedimos que [**pongas a punto tu ordenador**](../instalacion
 Y también que leas nuestras guías:
 
 - [Código de conducta en Adalab](codigo_de_conducta.md)
-<!-- - [Cómo trabajar en remoto](como_trabajar_en_remoto.md) -->
 - [Guía para enfrentarse a problemas técnicos de manera autónoma](busqueda_de_soluciones.md)
 - [Agile](agile.md)
 - [Scrum](scrum.md)
+<!-- - [Cómo trabajar en remoto](como_trabajar_en_remoto.md) -->
 
 > **NOTA:** Si encuentras erratas, faltas de ortografía, gramática, textos que se puedan explicar mejor o tienes cualquier sugerencia, por favor dínoslo a los profesores. Estaremos encantados de mejorar estos materiales.
