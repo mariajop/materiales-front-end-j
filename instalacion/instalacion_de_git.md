@@ -159,9 +159,30 @@ Con el objetivo de empezar a trabajar de manera óptima en remoto desde el prime
 
 {% embed url="https://www.youtube.com/watch?v=iPM_yuknDjM" %}
 
+Los comandos utilizados en este vídeo son:
+
+```bash
+git clone url_del_repositorio
+```
+```bash
+git pull
+```
+
 #### Cómo crear un repositorio de Git
 
 {% embed url="https://www.youtube.com/watch?v=UazjdwT9Xvg" %}
+
+Los comandos utilizados en este vídeo son:
+
+```bash
+git add -A
+```
+```bash
+git commit -m "Mensaje del commit"
+```
+```bash
+git push
+```
 
 ### Estructura de carpetas
 
