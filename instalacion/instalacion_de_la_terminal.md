@@ -1,5 +1,7 @@
 # Instalación de la terminal
 
+## Qué es la terminal
+
 La terminal, también conocida como consola o shell, es una de nuestras herramientas principales en el desarrollo. Nos permite comunicarnos con el sistema operativo mediante pequeñas instrucciones de texto, **llamamas comandos**, sin necesidad de una interfaz gráfica. Tiene esta pinta:
 
 ![Terminal de ubuntu](assets/images/terminal-ubuntu.png)

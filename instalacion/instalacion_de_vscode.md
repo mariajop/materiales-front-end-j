@@ -1,5 +1,7 @@
 # Instalación de VS Code
 
+## Qué es VS Code
+
 ![VS Code](assets/images/vscode-logo.png)
 
 Visual Studio Code (también conocido como VS Code o Code a secas) es el editor de código con el que vamos desarrollar nuestras páginas webs. Además dispone de un montón de extensiones y plugins que nos facilitan mucho la vida.

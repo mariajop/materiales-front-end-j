@@ -2,7 +2,9 @@
 
 ![Git](assets/images/git-logo.jpg)
 
-### Qué es Git
+# Qué es Git y GitHub
+
+## Qué es Git
 
 Git es un sistema de **control de versiones** de código además de una **herramienta para compartir** código.
 
@@ -10,7 +12,7 @@ El control de versiones nos sirve para ver el histórico de cambios que hemos he
 
 También es una herramienta para compartir código entre nuestra compañeras de programación de los proyectos de Adalab, nuestros profes o la empresa en la que trabajaremos. **Es como el Drive o Dropbox de los programadores.**
 
-### Qué es GitHub
+## Qué es GitHub
 
 Si Git es el sistema o programa para compartir código, [GitHub](https://github.com) es una de tantas empresas que hay para usar Git. A través de su página podemos crear proyectos y compartirlos con otras personas. También funciona como red social de programación.
 
