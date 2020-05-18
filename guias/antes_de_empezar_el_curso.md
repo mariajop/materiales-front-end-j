@@ -10,9 +10,9 @@ Y también que leas nuestras guías:
 
 - [Código de conducta en Adalab](codigo_de_conducta.md)
 - [Guía para enfrentarse a problemas técnicos de manera autónoma](busqueda_de_soluciones.md)
+- [Cómo trabajar en remoto](como_trabajar_en_remoto.md)
 - [Agile](agile.md)
 - [Scrum](scrum.md)
-<!-- - [Cómo trabajar en remoto](como_trabajar_en_remoto.md) -->
 
 Por último en [información de interés](informacion_de_interes.md) dispones de recursos que vamos a usar durante todo el curso.
 
