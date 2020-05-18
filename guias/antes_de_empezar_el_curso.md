@@ -14,4 +14,6 @@ Y también que leas nuestras guías:
 - [Scrum](scrum.md)
 <!-- - [Cómo trabajar en remoto](como_trabajar_en_remoto.md) -->
 
+Por último en [información de interés](informacion_de_interes.md) dispones de recursos que vamos a usar durante todo el curso.
+
 > **NOTA:** Si encuentras erratas, faltas de ortografía, gramática, textos que se puedan explicar mejor o tienes cualquier sugerencia, por favor dínoslo a los profesores. Estaremos encantados de mejorar estos materiales.

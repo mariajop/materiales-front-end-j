@@ -24,7 +24,7 @@ A continuación debes instalar Zoom en tu ordenador:
 ## Crea una cuenta en Zoom
 
 - Entra en [Zoom.us](https://zoom.us/).
-- Crea una cuenta **con el mismo email que nos has proporcionado** a Adalab.
+- Crea una cuenta **con el mismo email con el que has confirmado tu plaza** en Adalab.
 - Abre la aplicación de Zoom de tu ordenador.
 - Ingresa desde el formulario de la izquierda. Esto es importante, si accedes desde el botón de la derecha **Ingresar con Google** hay cosas que no funcionan correctamente.
 

@@ -22,7 +22,7 @@ Desde Ubuntu, la forma más cómoda es acceder al instalador de aplicaciones des
 
 ![Trello](assets/images/trello-logo.jpg)
 
-En Adalab también os vamos a enseñar a utilizar [Trello](https://trello.com/), que es un gestor de proyectos. Crea una cuenta usando el mismo email de gmail que nos has proporcionado a Adalab.
+En Adalab también os vamos a enseñar a utilizar [Trello](https://trello.com/), que es un gestor de proyectos. Crea una cuenta usando **el mismo email de gmail con el que has confirmado tu plaza** en Adalab.
 
 ## Y ya estaría!!!
 
