@@ -160,9 +160,9 @@ Por ejemplo:
 
 De manera adicional, se deberá activar "GitHub Pages" en el proyecto para que este pueda ser visualizado como una web, es decir, que en el caso anterior, si alguien introdujese la dirección https://beta.adalab.es/project-promo-x-module-1-team-1-morning/ en un navegador web, este mostraría la web que se genera con el código del repositorio.
 
-**Entrega del primer sprint (sprint review):** 2 de Junio
-**Entrega del segundo sprint (sprint review):** 11 de Junio
-**Demo del proyecto (presentación final):** 18 de Junio
+- **Entrega del primer sprint (sprint review):** 2 de Junio
+- **Entrega del segundo sprint (sprint review):** 11 de Junio
+- **Demo del proyecto (presentación final):** 18 de Junio
 
 En las sprint review se revisarán que se hayan solucionado todas las tareas técnicas asociadas a la entrega de esos sprints, si algo quedara pendiente se arrastraría al siguiente sprint. 
 
