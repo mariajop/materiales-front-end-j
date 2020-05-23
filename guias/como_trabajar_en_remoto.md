@@ -118,7 +118,7 @@ Siempre usaremos la sala de Zoom **Promo J: todas las alumnas** para realizar es
 
 Y todo esto que hemos contado por escrito lo explicamos con un ejemplo en este vídeo ;)
 
-{% embed url="https://www.youtube.com/watch?v=xo0TC6q-PDA" %}
+{% embed url="https://www.youtube.com/watch?v=BRS3mCCoM3s" %}
 
 ## Trabajo en remoto fuera de las horas de clase
 
