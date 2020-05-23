@@ -76,6 +76,10 @@ Cada día seguimos los siguientes pasos:
 1. 15 minutos antes de acabar la clase nos juntamos todas en la sala de Zoom **Promo J: todas las alumnas**.
 1. Las profesoras explicamos las dudas principales y hacemos  una introducción a la clase del día siguiente si fuera necesario.
 
+> **IMPORTANTE:** Después de cada descanso todas las alumnas y profesores nos juntamos en la sala **Promo J: todas las alumnas** y desde esta sala explicaremos a qué sala nos movemos.
+
+> **IMPORTANTE:** Para te podamos enviar a las mini salas es importante que **el email con el que te has registrado en Zoom sea el mismo que nos has facilitado a Adalab**.
+
 > **NOTA:** Este procedimiento nos permite dar soporte a las dos profesoras a la vez y grabar todo el soporte por Zoom. Posteriormente el resto de alumnas podéis ver las grabaciones, repasar y resolver dudas fácilmente.
 
 ### Proyecto: qué es
@@ -106,6 +110,8 @@ Cada día seguimos los siguientes pasos:
 1. Las profesoras **os movemos de vuestra mini sala de Zoom a la sala común** para daros soporte.
 1. 15 minutos antes de acabar la clase nos juntamos todas en la sala de Zoom **Promo J: todas las alumnas**.
 
+> **IMPORTANTE:** Después de cada descanso todas las alumnas y profesores nos juntamos en la sala **Promo J: todas las alumnas** y desde esta sala explicaremos a qué sala nos movemos.
+
 ### Desarrollo profesional
 
 En las clases de desarrollo profesional practicaremos diferentes soft skills que te vienen muy bien para que te conviertas en una gran programadora.
@@ -117,7 +123,9 @@ Siempre usaremos la sala de Zoom **Promo J: todas las alumnas** para realizar es
 Para trabajar en remoto fuera del horario de clase os recomendamos:
 
 - Para comunicarte por chat usa Slack.
-- Para comunicarte por vídeo usa también Slack, funciona bien para grupos pequeños.
+- Para comunicarte por vídeo usa:
+   - **Slack para grupos pequeños**, por ejemplo para con tu pareja o equipo.
+   - La sala de Zoom **Promo J: todas las alumnas** para grupos grandes. Las alumnas solo debéis usar esta sala cuando no se esté usando para dar clase. Es decir a partir de las 14:00 horas o los fines de semana.
 
 ## Herramientas
 
