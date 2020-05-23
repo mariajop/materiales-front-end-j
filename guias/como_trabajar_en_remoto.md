@@ -116,7 +116,7 @@ Siempre usaremos la sala de Zoom **Promo J: todas las alumnas** para realizar es
 - Para que te podamos enviar a las mini salas es importante que **el email con el que te has registrado en Zoom sea el mismo que nos has facilitado a Adalab**.
 - Este no es el procedimiento más cómodo del mundo, pero sí nos permite **dar soporte a las dos profesoras a la vez y grabar todo** el soporte por Zoom. Posteriormente el resto de alumnas podéis ver las grabaciones, repasar y resolver dudas fácilmente. Si se te ocurre una forma más óptima de trabajar, dínoslo.
 
-Y todo esto que hemos contado por escrito lo explicamos con un ejemplo en este vídeo ;)
+Y todo esto que hemos contado por escrito lo explicamos con [un ejemplo en este vídeo](https://www.youtube.com/watch?v=BRS3mCCoM3s) ;)
 
 {% embed url="https://www.youtube.com/watch?v=BRS3mCCoM3s" %}
 
@@ -135,7 +135,7 @@ Para trabajar en remoto fuera del horario de clase os recomendamos:
 
 Una herramienta estupenda para programar en remoto es [Live Share de VS Code](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare). Es uno de los plugins que os recomendamos instalar y que usaremos mucho durante el curso.
 
-Aquí tenéis un vídeo de cómo se usa:
+Aquí tenéis un [vídeo de cómo se usa](https://www.youtube.com/watch?v=WFTGP6OIKD0):
 
 {% embed url="https://www.youtube.com/watch?v=WFTGP6OIKD0" %}
 
