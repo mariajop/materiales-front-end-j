@@ -22,17 +22,24 @@
 
 ## Introducción
 
-La terminal es una herramienta fundamental para el desarrollo front-end. Su finalidad es ejecutar comandos mediante instrucciones. Estos comandos serían similares a las interacciones que haríamos en una aplicación normal (clics, escribir en campos, cambiar de sección, etc.) pero en este caso se hacen escribiendo órdenes en una terminal de comandos. Muchas de las herramientas para programación están hechas sin interfaz por ser más sencillas, aprender a usar la terminal nos ayudará en el futuro a poder usar esas herramientas y mejorar nuestro flujo de trabajo gracias a ellas.
+**La terminal es una herramienta fundamental** para el desarrollo front-end. Su finalidad es ejecutar comandos u órdenes mediante instrucciones. Estos comandos serían similares a las interacciones que haríamos en una aplicación normal (clics, escribir en campos, cambiar de sección, etc.) pero en este caso se hacen escribiendo órdenes en una terminal de comandos.
 
-La terminal parece muy agresiva al principio pero poco a poco le iremos pillando cariño. Te permite hacer prácticamente todo lo que puedes hacer con la interfaz gráfica del sistema operativo y bastantes cosas más.
+Muchas de las herramientas para programación están hechas sin interfaz porque:
 
-También vamos a aprender cómo funciona el control de versiones y cómo utilizarlo para ir, poco a poco, añadiéndolo a nuestro flujo de trabajo. En esta sesión vamos a ver las dos herramientas que utilizaremos para gestionar las versiones de nuestro proyecto, git y GitHub.
+- Son tan sencillas que no merece la pena hacer un interfaz gráfica.
+- O porque son tan complejas que no se puede hacer un interfaz gráfica que tenga todas las funcionalidades posibles.
 
-_Git_ será la herramienta que utilizaremos para realizar un control de versiones sobre nuestros archivos. Es una herramienta que se utiliza a través de la línea de comandos de nuestro ordenador, es decir, para trabajar con git escribiremos comandos en nuestra Terminal.
+Aprender a usar la terminal nos ayudará en el futuro a poder usar esas herramientas y mejorar nuestro flujo de trabajo gracias a ellas.
 
-GitHub es la plataforma social más famosa a la hora de publicar y colaborar en desarrollo de código. Además, permite guardar en un servidor nuestro código y sincronizarlo con el código que tendremos en nuestro ordenador. Todo esto lo hace apoyándose en git.
+La terminal parece muy agresiva al principio pero **poco a poco le iremos pillando cariño**. Te permite hacer prácticamente todo lo que puedes hacer con la interfaz gráfica del sistema operativo y bastantes cosas más.
 
-Otra cosa que veremos durante la sesión es el servicio de GitHub Pages que ofrece GitHub. Este servicio nos permite publicar nuestro código como si se tratase de un sitio web y que la gente pueda verlo en Internet desde cualquier parte del mundo. Al final de esta sesión veremos cómo habilitarlo para poder mostrar al mundo nuestra primera página web.
+También vamos a aprender cómo funciona el **control de versiones del código** y cómo utilizarlo para ir, poco a poco, añadiéndolo a nuestro flujo de trabajo. En esta sesión vamos a ver las dos herramientas que utilizaremos para gestionar las versiones de nuestro proyecto, Git y GitHub.
+
+**Git** es la herramienta que utilizaremos para realizar un control de versiones sobre nuestros archivos. Es una herramienta que se utiliza a través de la línea de comandos de nuestro ordenador, es decir, para trabajar con Git escribiremos comandos en nuestra Terminal.
+
+**GitHub es la plataforma social** más famosa a la hora de publicar y colaborar en desarrollo de código. Además, permite guardar en la nube nuestro código y sincronizarlo con el código que tendremos en nuestro ordenador. Todo esto lo hace apoyándose en Git.
+
+Otra cosa que veremos durante la sesión es **el servicio de GitHub Pages que ofrece GitHub**. Este servicio nos permite publicar nuestro código como si se tratase de un sitio web y que la gente pueda verlo en Internet desde cualquier parte del mundo. Al final de esta sesión veremos cómo habilitarlo para poder mostrar al mundo nuestra primera página web.
 
 ## Resumen de la sesión
 
@@ -55,30 +62,18 @@ La solución a todas esas preguntas es simple: usando un control de versiones.
 
 Por su parte, GitHub, como hemos comentado, es una plataforma web que nos ofrece una serie de funcionalidades y herramientas para facilitarnos nuestro trabajo a la hora de realizar y mantener código. Algunas de las posibilidades que ofrece GitHub son las siguientes:
 
-- Usarlo como servidor donde sincronizar y hacer una copia de seguridad de nuestro proyecto
-- Formar parte de una red social que gira en torno a la programación, con perfil de usuario, posibilidad de interactuar con otros usuarios y posibilidad de usarla como portafolio de nuestros trabajos de desarrollo web
-- Acceder a herramientas para gestionar mejor los proyectos y facilitar el desarrollo del código
-- Tener una plataforma donde alojar nuestro sitio web y poder mostrarla al resto del mundo de forma sencilla (GitHub Pages)
+- Usarlo como una nube donde sincronizar y hacer una copia de seguridad de nuestro proyecto.
+- Formar parte de una red social que gira en torno a la programación, con perfil de usuario, posibilidad de interactuar con otros usuarios y posibilidad de usarla como portafolio de nuestros trabajos de desarrollo web.
+- Acceder a herramientas para gestionar mejor los proyectos y facilitar el desarrollo del código.
+- Tener una plataforma donde alojar nuestras páginas web y poder mostrarlas al resto del mundo de forma sencilla con GitHub Pages.
 
-## ¿En qué casos se utilizan?
-
-Git se utiliza tanto en los casos más simples, como un pequeño proyecto o un archivo de configuración; hasta una locura con varios compañeros y que luego os vaya a hacer ricos. Siempre y cuando queráis (y podáis) tenerlo subido y disponible para todos.
-
-Nosotros lo utilizaremos siempre que queramos llevar un control de los cambios que hemos hecho en un proyecto para no perder información. Al principio será sólo en determinados proyectos de código, pero a medida que le vayáis cogiendo el gustillo, empezaréis a sentiros vacías sin él. En Adalab, por ejemplo, lo utilizamos para gestionar el contenido del curso. Sí, este contenido que estáis leyendo ahora mismo está creado utilizando git :)
-
-Por poneros un ejemplo que hayáis vivido en vuestra piel, tendría sentido utilizar git para los pequeños ejercicios que hacemos para practicar los conocimientos. Pero sobre todo que tendría sentido usar este control de versiones para gestionar el proyecto grupal del primer módulo.
-
-Respecto a GitHub, lo utilizaremos siempre que queramos compartir un código con el resto de la comunidad o si queremos tenerlo en lo que se llama "la nube" para no perderlo y que cualquier persona con acceso y permisos de escritura pueda editarlo desde cualquier parte del mundo.
-
-Por último, GitHub Pages, al ser un servicio gratuito y sencillo para publicar páginas, es un recurso muy útil si queremos colgar en Internet algún proyecto de forma gratuita.
-
-Es importante saber que todos los servicios de GitHub son gratuitos tanto repositorios públicos como privados. Por el momento como queremos darle visibilidad al código y que otras personas puedan verlo, no tendremos ningún problema en que nuestro código sea público.
+> **NOTA:** La lección de hoy es doble, en ella hablamos de la terminal y de Git. Debemos de invertir el 50% de nuestro tiempo de estudio a la terminal y el otro 50% a Git.
 
 ## Terminal
 
 ### Introducción a la Terminal
 
-La terminal o consola es una de nuestras herramientas principales en el desarrollo front. Nos permite comunicarnos con el sistema mediante pequeñas instrucciones de texto (las llamamos _comandos_) sin necesidad de una interfaz gráfica.
+La terminal o consola es una de nuestras herramientas principales en el desarrollo front. Nos permite comunicarnos con el sistema mediante pequeñas instrucciones u órdenes de texto, llamadas **comandos**, sin necesidad de una interfaz gráfica.
 
 La terminal nos permite obtener información del sistema, realizar tareas y hasta automatizarlas, y ganar en productividad.
 
@@ -90,8 +85,7 @@ En esta ventana iremos escribiendo nuestros comandos para interactuar con el ord
 
 Por defecto la terminal nos mostrará una línea (el _prompt_) a partir de la cual podremos escribir nuestros comandos.
 
-Normalmente nuestro prompt tendra este aspecto:
-**usuario@nombre-de-equipo: ruta por defecto \$**
+Normalmente nuestro prompt tendra este aspecto: **usuario@nombre-de-equipo: ruta por defecto \$**
 
 ```shell
 ubuntu@ubuntu: ~$
@@ -99,17 +93,43 @@ ubuntu@ubuntu: ~$
 
 Esto nos dice que el usuario de nuestro equipo es **ubuntu**, que nuestro equipo se llama **ubuntu** y que estamos en la carpeta home del usuario (que se representa con `~`).
 
-### Comandos básicos de GNU/Linux
+### Rutas absolutas y relativas
+
+Como hemos dicho la terminal nos permite navegar por las rutas del ordenador. Tenemos que conocer cómo funcionan las rutas para luego poder movernos entre las carpetas. Hay dos tipos de rutas:
+
+**Las rutas absolutas** indican la **dirección completa** de una carpeta o fichero:
+
+- Siempre empiezan con `/`.
+- Por ejemplo `/user/maricarmen/adalab/proyectos/modulo-1/`.
+- Por ejemplo `/user/maricarmen/adalab/proyectos/modulo-1/index.html`.
+
+**Las rutas relativas** indican **el camino que hay que recorrer** para ir desde la carpeta en la que estoy ahora mismo a otra carpeta o fichero. Si por ejemplo tenemos las siguientes carpetas y ficheros en nuestro ordenador:
+
+```
+adalab/
+├ proyectos/
+├┬ modulo-1/
+│└┬ css/
+│ │ └ styles.css
+│ ├ images/
+│ │ └ logo.jpg
+│ └ index.html
+└─ modulo-2/
+```
+
+### Comandos básicos de la terminal
+
+A continuación vamos a explicar los comandos más usados en la terminal. Te recomendamos que abras una consola y los vayas probando.
+
+> **NOTA**: A veces, en nuestros materiales o en Internet, nos encontraremos los comandos que tenemos que escribir precedidos por el símbolo del dólar, por ejemplo `$ pwd`. Esto es una costumnbre de los programadores. No hay que escribirlo en la terminal. Si vemos el ejemplo `$ pwd` solo debemos escribir `pwd` y pulsar Intro.
 
 **PWD**
 
-Principalmente usaremos la terminal para movernos por el sistema de archivos del ordenador. Así que es fundamental saber dónde estamos en cada momento. El comando `pwd` (_Print Working Directory_) se encargará de mostrarnos en qué carpeta nos encontramos.
+Principalmente usaremos la terminal para movernos por el sistema de archivos y carpetas del ordenador. Así que es fundamental saber dónde estamos en cada momento. El comando `pwd` (_Print Working Directory_) se encargará de mostrarnos en qué carpeta nos encontramos.
 
 ```shell
 pwd
 ```
-
-> **NOTA**: Muchas veces nos encontraremos los comandos que tenemos que introducir precedidos por el símbolo `$`, pero no hay que escribirlo.
 
 Devolverá la ruta absoluta de la carpeta en la que estemos, con este aspecto:
 
@@ -117,19 +137,16 @@ Devolverá la ruta absoluta de la carpeta en la que estemos, con este aspecto:
 /user/nombre-de-usuario
 ```
 
-Esto es una ruta absoluta, que se construye a partir de la carpeta raíz de nuestro equipo, representada por el carácter inicial `/`. Nos estaría indicando que nos encontramos en la carpeta `nombre-de-usuario`, que está dentro de `user`, que está en la carpeta raíz de nuestro equipo.
+`/user/nombre-de-usuario` es una ruta absoluta, que se construye a partir de la carpeta raíz de nuestro equipo, representada por el carácter inicial `/`. Nos estaría indicando que nos encontramos en la carpeta `nombre-de-usuario`, que está dentro de `user`, que está en la carpeta raíz de nuestro equipo.
 
-Las rutas pueden ser _absolutas_, como la que nos devuelve el comando `pwd`, y empiezan por `/`. También pueden ser _relativas_, que usaremos más adelante.
-Las relativas usan los caracteres especiales `..` para referirse a la carpeta madre de nuestra carpeta actual, o `.` (o nada) para referirnos a una carpeta que está dentro de nuestra carpeta actual.
-
-```shell
-../carpeta-madre
-```
+Si estás trabajando en un Ubuntu integrado dentro de Windows 10 y pruebas `pwd` verás que el resultado es:
 
 ```shell
-./carpeta-hija
-carpeta-hija
+/mnt/c/Users/nombre-de-usuario
 ```
+
+Es decir, en Windows 10 la ruta raíz siempre es `/mnt/`. Y la letra `/c/` indica que estamos en la unidad `C:/` de Windows.
+
 
 **LS**
 
@@ -289,18 +306,18 @@ Ahora, editando el archivo `index.html` en VSCode se tiene que ver la imagen de 
 
 ## Git
 
-### Introducción a git
+### Introducción a Git
 
-Vamos a ver una pequeña introducción a git, para ello hemos seleccionado el siguiente video ya que pensamos que explica de forma breve y sencilla qué es git y algunos de sus conceptos básicos.
+Vamos a ver una pequeña introducción a Git, para ello hemos seleccionado el siguiente video ya que pensamos que explica de forma breve y sencilla qué es Git y algunos de sus conceptos básicos.
 
 - [1.- Curso Git - Introducción a Git](https://www.youtube.com/watch?v=zH3I1DZNovk)
 
-### Configurar git en nuestro ordenador
+### Configurar Git en nuestro ordenador
 
-Vamos a ver cómo configurar git en nuestro ordenador. Para llevarlo a cabo, primero comprobaremos si tenemos instalada una versión reciente de git.
+Vamos a ver cómo configurar Git en nuestro ordenador. Para llevarlo a cabo, primero comprobaremos si tenemos instalada una versión reciente de Git.
 
 > NOTA:
-> Para comprobar si tenemos instalado git en nuestro ordenador, debemos abrir la Terminal y ejecutar el comando `git --version`. Esto mostrará el texto `git version` seguido de la versión de Git que tenemos instalada. Para poder trabajar de forma correcta, lo indicado sería que tuviésemos una versión igual o posterior a la `2.11.0`.
+> Para comprobar si tenemos instalado Git en nuestro ordenador, debemos abrir la Terminal y ejecutar el comando `Git --version`. Esto mostrará el texto `Git version` seguido de la versión de Git que tenemos instalada. Para poder trabajar de forma correcta, lo indicado sería que tuviésemos una versión igual o posterior a la `2.11.0`.
 
 **1. Creamos una cuenta en [GitHub](https://github.com). Poniendo nuestro usuario de GitHub en minúsculas**
 
@@ -313,7 +330,7 @@ Abrimos la aplicación de la terminal e introducimos el siguiente comando, tal y
 **Importante:** Escribiremos nuestro nombre entre comillas para evitar problemas a la hora de ejecutar el comando.
 
 ```shell
-git config --global user.name "John Doe"
+Git config --global user.name "John Doe"
 ```
 
 **3. Configuramos nuestro email para trabajar con Git**
@@ -321,7 +338,7 @@ git config --global user.name "John Doe"
 Ahora introducimos el siguiente comando para guardar la configuración de nuestro email:
 
 ```shell
-git config --global user.email "johndoe@example.com"
+Git config --global user.email "johndoe@example.com"
 ```
 
 Sustituiremos en este caso `"johndoe@example.com"` por el email que **hemos utilizado para crear nuestra cuenta de GitHub**.
@@ -343,7 +360,7 @@ sudo apt-get install libsecret-1-0 libsecret-1-dev
 Nos solicitará una contraseña, aquí debemos introducir la contraseña de nuestro ordenador, no la de GitHub.
 
 ```shell
-cd /usr/share/doc/git/contrib/credential/libsecret
+cd /usr/share/doc/Git/contrib/credential/libsecret
 ```
 
 ```shell
@@ -355,7 +372,7 @@ cd -
 ```
 
 ```shell
-git config --global credential.helper /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
+Git config --global credential.helper /usr/share/doc/Git/contrib/credential/libsecret/Git-credential-libsecret
 ```
 
 Al hacer esto, la próxima vez que introduzcamos nuestra contraseña de GitHub, esta se almacenará de forma segura en nuestro ordenador y no será necesario volver a introducirla de nuevo.
@@ -373,7 +390,7 @@ sudo apt-get install libsecret-1-0 libsecret-1-dev
 Nos solicitará una contraseña, aquí debemos introducir la contraseña que pusimos cuando instalamos Ubuntu dentro de Windows, no la de GitHub.
 
 ```shell
-cd /usr/share/doc/git/contrib/credential/libsecret
+cd /usr/share/doc/Git/contrib/credential/libsecret
 ```
 
 ```shell
@@ -385,7 +402,7 @@ cd -
 ```
 
 ```shell
-git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe"
+Git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/Git-core/Git-credential-manager.exe"
 ```
 
 Al hacer esto, la próxima vez que introduzcamos nuestra contraseña de GitHub, esta se almacenará de forma segura en nuestro ordenador y no será necesario volver a introducirla de nuevo.
@@ -397,7 +414,7 @@ Una vez hayamos realizado ese paso, no necesitaremos hacer ningún cambio más.
 Para poder almacenar la contraseña de GitHub en Mac, simplemente ejecutamos el siguiente comando:
 
 ```shell
-git config --global credential.helper osxkeychain
+Git config --global credential.helper osxkeychain
 ```
 
 Una vez hayamos realizado ese paso, no necesitaremos hacer ningún cambio más.
@@ -407,28 +424,28 @@ Una vez hayamos realizado ese paso, no necesitaremos hacer ningún cambio más.
 **Nano** es un editor de texto que suele venir por defecto en Ubuntu en la terminal. Queremos que sea nuestro editor por defecto para trabajar con Git. Para ello abrimos la terminal e introducimos el siguiente comando. Una vez lo hayamos introducido, pulsamos intro para que se ejecute.
 
 ```shell
-git config --global core.editor nano
+Git config --global core.editor nano
 ```
 
 El editor por defecto en otros sistemas operativos es otro, pero en este curso vamos a utilizar siempre Nano para trabajar todas de la misma manera.
 
-### Cómo trabajar con git
+### Cómo trabajar con Git
 
-Para trabajar con git lo haremos usando comandos a través de la Terminal, como comentábamos en la introducción de esta sesión. Para ello tendremos que aprender unos comandos básicos.
+Para trabajar con Git lo haremos usando comandos a través de la Terminal, como comentábamos en la introducción de esta sesión. Para ello tendremos que aprender unos comandos básicos.
 
-Una vez configurado git en nuestro equipo tendremos que activar el control de versiones en nuestro proyecto, esto lo haremos con `git init`. Este comando lo usaremos solo una vez en la carpeta de nuestro proyecto y activa que se controle cada cambio que hacemos a nuestros archivos del proyecto.
+Una vez configurado Git en nuestro equipo tendremos que activar el control de versiones en nuestro proyecto, esto lo haremos con `Git init`. Este comando lo usaremos solo una vez en la carpeta de nuestro proyecto y activa que se controle cada cambio que hacemos a nuestros archivos del proyecto.
 
-A partir de este momento, cada vez que hagamos cambios, git sabrá qué archivos hemos modificado.
+A partir de este momento, cada vez que hagamos cambios, Git sabrá qué archivos hemos modificado.
 
-En cualquier momento podremos pedir que nos diga en qué estado está el proyecto con `git status`, lo que nos dirá si hemos cambiado archivos.
+En cualquier momento podremos pedir que nos diga en qué estado está el proyecto con `Git status`, lo que nos dirá si hemos cambiado archivos.
 
-Normalmente trabajaremos con cambios cortos o tareas pequeñas, y cuando hayamos terminado, querremos indicarle a git que ya hemos terminado un paquete de cambios, para lo que tenemos dos comandos:
+Normalmente trabajaremos con cambios cortos o tareas pequeñas, y cuando hayamos terminado, querremos indicarle a Git que ya hemos terminado un paquete de cambios, para lo que tenemos dos comandos:
 
-1. `git add -A` para añadir los archivos que hemos modificado. Una vez añadidos git sabrá qué cambios hemos hecho.
-1. `git commit -m "Mensaje"` nos permite crear como un paquete de cambios y "guardarlo en nuestro sistema de versiones", nos dejará escribir un mensaje corto para asociarlo al paquete de cambios o _commit_.
-1. Si queremos ver la lista de commits realizados en un proyecto usaremos `git log`. Para salir del listado usamos la tecla `q`.
+1. `Git add -A` para añadir los archivos que hemos modificado. Una vez añadidos Git sabrá qué cambios hemos hecho.
+1. `Git commit -m "Mensaje"` nos permite crear como un paquete de cambios y "guardarlo en nuestro sistema de versiones", nos dejará escribir un mensaje corto para asociarlo al paquete de cambios o _commit_.
+1. Si queremos ver la lista de commits realizados en un proyecto usaremos `Git log`. Para salir del listado usamos la tecla `q`.
 
-En el video que añadimos a continuación se explican los comandos básicos para empezar a trabajar con git.
+En el video que añadimos a continuación se explican los comandos básicos para empezar a trabajar con Git.
 
 - [3.- Curso Git - Nuestro primer proyecto](https://www.youtube.com/watch?v=vH9pkFf1D7M)
 
@@ -452,33 +469,33 @@ A la hora de escribir un mensaje para un commit hay múltiples maneras de plante
 Un ejemplo de un buen commit:
 
 ```
-$ git commit -m "Fix typo in article title"
+$ Git commit -m "Fix typo in article title"
 ```
 
 #### EJERCICIO 3
 
-Vamos a crear nuestro primer proyecto con git, al que llamaremos `testing-git`. Dentro de él, crearemos un archivo HTML con un título HEAD en el que ponga "Testing Git" y un `h1` con el mismo texto. Además, crearemos un archivo para los estilos (`main.css`) dónde añadiremos un estilo para que la familia de texto que se use en la web sea `sans-serif`. Organizaremos el proyecto siguiendo la estructura de siempre:
+Vamos a crear nuestro primer proyecto con Git, al que llamaremos `testing-Git`. Dentro de él, crearemos un archivo HTML con un título HEAD en el que ponga "Testing Git" y un `h1` con el mismo texto. Además, crearemos un archivo para los estilos (`main.css`) dónde añadiremos un estilo para que la familia de texto que se use en la web sea `sans-serif`. Organizaremos el proyecto siguiendo la estructura de siempre:
 
 ```txt
-testing-git
+testing-Git
     styles
         main.css
     images
     index.html
 ```
 
-Una vez creado el proyecto con el HTML y el CSS indicado. Inicializa el repositorio Git en el proyecto (asegurate de que estás en la carpeta testing-git), añade los archivos y haz el primer commit con el mensaje `Initial commit`
+Una vez creado el proyecto con el HTML y el CSS indicado. Inicializa el repositorio Git en el proyecto (asegurate de que estás en la carpeta testing-Git), añade los archivos y haz el primer commit con el mensaje `Initial commit`
 
 ```shell
-git init
+Git init
 ```
 
 ```shell
-git add -A
+Git add -A
 ```
 
 ```shell
-git commit -m "Initial commit"
+Git commit -m "Initial commit"
 ```
 
 \_\_\_\_\_\_\_\_\_\_
@@ -507,7 +524,7 @@ Dummy project to learn Git basics
 
 ## GitHub
 
-Como hemos explicado anteriormente, GitHub es una plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones de git. Está muy enfocada a proyectos de código abierto y la verdadera fuerza de GitHub está en la comunidad tan grande que se ha montado sobre la idea de código abierto u _open source_ :)
+Como hemos explicado anteriormente, GitHub es una plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones de Git. Está muy enfocada a proyectos de código abierto y la verdadera fuerza de GitHub está en la comunidad tan grande que se ha montado sobre la idea de código abierto u _open source_ :)
 
 #### EJERCICIO 6
 
@@ -515,7 +532,7 @@ Poneros, ambas compañeras, una imagen de perfil en vuestras cuentas de GitHub. 
 
 \_\_\_\_\_\_\_\_\_\_
 
-Hasta ahora sabemos crear un repositorio git local, ahora vamos a ver cómo creamos un repositorio remoto en GitHub, de esta forma podremos acceder al código desde cualquier equipo y podremos colaborar con nuestras compañeras.
+Hasta ahora sabemos crear un repositorio Git local, ahora vamos a ver cómo creamos un repositorio remoto en GitHub, de esta forma podremos acceder al código desde cualquier equipo y podremos colaborar con nuestras compañeras.
 
 Para ello, nos vamos a nuestro perfil y buscamos el botón `+` para crear un nuevo repositorio:
 
@@ -529,34 +546,34 @@ Una vez creado, nos llevará a la página principal de nuestro repo donde podrem
 
 ![Nuevo repositorio](assets/images/1-7/github-repo-3.png)
 
-Ahora, con esta url podemos irnos a nuestra terminal y clonarlo con `git clone`:
+Ahora, con esta url podemos irnos a nuestra terminal y clonarlo con `Git clone`:
 
 ![Nuevo repositorio](assets/images/1-7/github-repo-4.png)
 
 Esto nos generará una carpeta con nuestro proyecto. **Recordad que crea la carpeta pero no nos mete dentro** por lo que tendremos que usar el comando `cd` de nuestra terminal para cambiar la ruta actual.
 
 > **Nota**:
-> Por defecto git nos creará una carpeta con un nombre automático, si queremos un nombre específico para la carpeta de nuestro proyecto podemos declararlo tras la url que nos da GitHub:
+> Por defecto Git nos creará una carpeta con un nombre automático, si queremos un nombre específico para la carpeta de nuestro proyecto podemos declararlo tras la url que nos da GitHub:
 
 ```shell
-git clone url-del-repositorio-que-me-da-github nuevo-nombre-de-carpeta
+Git clone url-del-repositorio-que-me-da-github nuevo-nombre-de-carpeta
 ```
 
 Ahora tenemos un repositorio local en la carpeta en la que hemos clonado nuestro nuevo repositorio remoto.
 Si accedemos a la carpeta, dentro debería estar el archivo README.md.
 
-Podemos crear archivos y/o realizar cambios sobre los existentes, guardarlos en local (Ctrl+S o Cmd+S), añadirlos para que git sepa que cambios hemos hecho (`git add -A`), commitearlos con un mensaje (`git commit -m "Add main css file"`), y finalmente hacer un _push_ al repositorio remoto de GitHub (`git push origin master`) para guadar nuestros cambios allí.
+Podemos crear archivos y/o realizar cambios sobre los existentes, guardarlos en local (Ctrl+S o Cmd+S), añadirlos para que Git sepa que cambios hemos hecho (`Git add -A`), commitearlos con un mensaje (`Git commit -m "Add main css file"`), y finalmente hacer un _push_ al repositorio remoto de GitHub (`Git push origin master`) para guadar nuestros cambios allí.
 
 ### ¿Y si ya tengo un proyecto con Git en local?
 
-A la hora de conectar el repo local y el remoto lo mas cómodo es empezar creando el repo en GitHub, clonándolo y seguir a partir de ahí con la conexión ya hecha. Pero puede pasar que ya tuviésemos un proyecto en local que hubiésemos inicializado con `git init`, en este caso seguiremos estos pasos:
+A la hora de conectar el repo local y el remoto lo mas cómodo es empezar creando el repo en GitHub, clonándolo y seguir a partir de ahí con la conexión ya hecha. Pero puede pasar que ya tuviésemos un proyecto en local que hubiésemos inicializado con `Git init`, en este caso seguiremos estos pasos:
 
 1. Creamos un repo vacío en GitHub **SIN INICIALIZARLO CON README.md, GITIGNORE O LICENCIA**.
 2. Esto nos llevará a una página diferente con las instrucciones para conectar un repo local con nuestro repo remoto:
 
 ![Nuevo repositorio](assets/images/1-7/github-repo-5.png)
 
-3. Copiamos la línea con `git remote add origin url-del-repositorio-que-me-da-github`
+3. Copiamos la línea con `Git remote add origin url-del-repositorio-que-me-da-github`
 4. Desde la terminal, nos vamos a la carpeta de nuestro proyecto que ya tiene inicializado un repo local y ejecutamos la línea que hemos copiado. Esto conectará los dos repos.
 
 En el video que mostramos a continuación se hace un pequeño tour alrededor de la plataforma para ver cómo funciona y las funcionalidades que ofrece. En el video pone el nombre del repositorio con mayúsculas y minúsculas, nosotros lo pondremos en minúsculas y con el texto separado por guiones, como hacemos con las carpetas de nuestros proyectos. En el video también explica ramas, pero lo ignoraremos. De momento solo vamos a trabajar con una rama (`master`), más adelante veremos cómo es el flujo a la hora de trabajar con varias ramas, pero vayamos poco a poco.
@@ -570,8 +587,8 @@ En el video que mostramos a continuación se hace un pequeño tour alrededor de 
 
 Vamos a:
 
-1. Crear un proyecto vacío en GitHub. Le pondremos como nombre `testing-git`.
-1. Añadimos el repositorio que acabamos de crear como repositorio remoto en nuestro proyecto usando `git remote` como se muestra en el video.
+1. Crear un proyecto vacío en GitHub. Le pondremos como nombre `testing-Git`.
+1. Añadimos el repositorio que acabamos de crear como repositorio remoto en nuestro proyecto usando `Git remote` como se muestra en el video.
 1. Hacer _push_ para mandar la info del proyecto al repositorio remoto y, de esta forma, almacenar los datos del proyecto en GitHub. Comprobar tras hacerlo que, al abrir la página del proyecto en GitHub, se muestran los cambios que hemos realizado en nuestro ordenador.
 1. Realizar un cambio en el CSS del proyecto para que el texto de la cara sonriente se muestre centrado vertical y horizontalmente en la página.
 1. Una vez que estemos conforme con nuestro tipo sonriente, haremos un commit para añadir el cambio a nuestro repositorio y otro push, para sincronizar los cambios de nuestro repositorio local con los del remoto y, de esta forma, subir los cambios a GitHub.
@@ -580,13 +597,13 @@ Vamos a:
 
 #### EJERCICIO 8
 
-Puesto que trabajamos en parejas o en grupos queremos trabajar con el mismo código que tienen nuestras compañeras. Por ello si una compañera sube un cambio de código a GitHub (con `git push`) queremos poder descargarlo a nuestro ordenador (con `git pull`). Para ello:
+Puesto que trabajamos en parejas o en grupos queremos trabajar con el mismo código que tienen nuestras compañeras. Por ello si una compañera sube un cambio de código a GitHub (con `Git push`) queremos poder descargarlo a nuestro ordenador (con `Git pull`). Para ello:
 
-1. Crear un proyecto vacío en GitHub. Le pondremos como nombre `testing-git-pull`. En este proyecto vamos compartir código entre varias compañeras.
-1. Clonar el proyecto en ambos ordenadores (el tuyo y el de tu compañera) con `$ git clone url-del-repositorio-que-me-da-github` (como se explica en ejercicio 6).
+1. Crear un proyecto vacío en GitHub. Le pondremos como nombre `testing-Git-pull`. En este proyecto vamos compartir código entre varias compañeras.
+1. Clonar el proyecto en ambos ordenadores (el tuyo y el de tu compañera) con `$ Git clone url-del-repositorio-que-me-da-github` (como se explica en ejercicio 6).
 1. Una de las compañeras debe añadir el fichero `index.html` en la raíz del proyecto.
 1. La compañera que haya hecho el cambio anterior debe hacer un commit y luego un push para subir el cambio a GitHub.
-1. Después, el resto de compañeras debe hacer `git pull` (desde dentro de la carpeta del proyecto) para descargarse los cambios a su ordenador.
+1. Después, el resto de compañeras debe hacer `Git pull` (desde dentro de la carpeta del proyecto) para descargarse los cambios a su ordenador.
 1. Abrir el proyecto con VSCode para comprobar que, efectivamente, los cambios se han descargado desde GitHub.
 1. Ahora otra compañera puede hacer otro cambio en `index.html`, hacer otro commit y otro push.
 1. Repetir los pasos del 4 al 7 tantas veces como se quiera.
@@ -601,7 +618,7 @@ Un hosting es un servicio de almacenamiento de datos para poder tener tu web en 
 
 #### EJERCICIO 9
 
-Desde la página de nuestro proyecto `testing-git` en GitHub, activar GitHub Pages.
+Desde la página de nuestro proyecto `testing-Git` en GitHub, activar GitHub Pages.
 
 **Pista:** Hay que ir a la pestaña _settings_ del proyecto ;)
 
@@ -662,7 +679,7 @@ A través de la terminal:
 ### Personaliza la terminal
 
 - [Prompt coloreado](https://www.howtogeek.com/307701/how-to-customize-and-colorize-your-bash-prompt/)
-- [Prompt con información del repo GIT](https://sujipthapa.co/blog/git-pro-tip-show-your-branch-on-linux-ubuntu-terminal)
+- [Prompt con información del repo GIT](https://sujipthapa.co/blog/Git-pro-tip-show-your-branch-on-linux-ubuntu-terminal)
 
 ### Pro Git
 
@@ -670,5 +687,5 @@ Como recurso extra para aprender Git, el libro de "Pro Git" es uno de los mejore
 
 **Nota:** Es un libro bastante denso pero los capítulos 1 y 2 se centran en lo básico, por lo que puede ser interesante leer estos y en el futuro leer el resto.
 
-- [Enlace a la página del libro Pro Git (versión inglesa y más actual)](https://git-scm.com/book/en/v2)
-- [Enlace a la página del libro Pro Git (versión española, menos actual y no disponible para descargar)](https://git-scm.com/book/es/v2)
+- [Enlace a la página del libro Pro Git (versión inglesa y más actual)](https://Git-scm.com/book/en/v2)
+- [Enlace a la página del libro Pro Git (versión española, menos actual y no disponible para descargar)](https://Git-scm.com/book/es/v2)
