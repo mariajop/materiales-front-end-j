@@ -151,14 +151,13 @@ El formato de entrega de este proyecto será mediante la subida de este a la pla
 - Letra de la promoción **promo-j**.
 - Número del módulo **module-1**.
 - Número del equipo **team-1**.
-- Turno en inlés **morning** o **afternoon**.
 
 Por ejemplo:
 
-- Adalab/project-promo-j-module-1-team-1-morning
-- Adalab/project-promo-j-module-1-team-3-afternoon
+- Adalab/project-promo-j-module-1-team-1
+- Adalab/project-promo-j-module-1-team-3
 
-De manera adicional, se deberá activar "GitHub Pages" en el proyecto para que este pueda ser visualizado como una web, es decir, que en el caso anterior, si alguien introdujese la dirección https://beta.adalab.es/project-promo-x-module-1-team-1-morning/ en un navegador web, este mostraría la web que se genera con el código del repositorio.
+De manera adicional, se deberá activar "GitHub Pages" en el proyecto para que este pueda ser visualizado como una web, es decir, que en el caso anterior, si alguien introdujese la dirección https://beta.adalab.es/project-promo-j-module-1-team-1 en un navegador web, este mostraría la web que se genera con el código del repositorio.
 
 - **Entrega del primer sprint (sprint review):** 2 de Junio
 - **Entrega del segundo sprint (sprint review):** 11 de Junio
