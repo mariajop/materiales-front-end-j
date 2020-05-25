@@ -562,11 +562,11 @@ Dos enlaces sobre la especificidad más... a menos
 
 Partiendo de este [Codepen de ejemplo](https://codepen.io/oneeyedman/pen/vWEBex):
 
-1. Por qué los enlaces son verdes y no rojos
-2. Hacer que los enlaces sean rojos
+1. ¿Por qué los enlaces son verdes y no rojos?
+2. Hacer que los enlaces sean rojos.
 3. Rehacer el HTML usando `<div>` en lugar de `<ul>` y `<li>`. ¿Qué pasa?
-4. Comentar el CSS que no se puede tocar y reescribirlo usando una clase por selector para que se vea igual.
-5. BONUS: Cambiar ahora entre `<div>` y `<ul>`/`<li>`
+4. Comentar el CSS que no se puede tocar y reescribirlo usando solo selectores de clase, es decir, sin utilizar selectores de etiqueta.
+5. BONUS: Cambiar ahora entre `<div>` y `<ul>`/`<li>`.
 
 \_\_\_\_\_\_\_\_\_\_
 
