@@ -266,35 +266,35 @@ Hacer una tabla con la comida de cada día de la semana usando `<th>` para las c
 Buscar información sobre todos estos elementos en la [MDN](https://developer.mozilla.org/es/docs/Web/HTML/Elemento) para ir conociéndolos y familiarizándote con ellos
 
 - Definición de página
-  _ doctype
-  _ html
-  _ head
-  _ title
-  _ link
-  _ meta \* body
+  - doctype
+  - html
+  - head
+  - title
+  - link
+  - meta \* body
 - Secciones de página
-  _ section
-  _ header, main, footer, nav, aside, article
+  - section
+  - header, main, footer, nav, aside, article
 - Contenido
-  _ div/span
-  _ h1-h6
-  _ p
-  _ blockquote
-  _ ol/ul, li
-  _ img
-  _ a
-  _ strong, em
-  _ small, abbr, sup, sub
-  _ br, hr
+  - div/span
+  - h1-h6
+  - p
+  - blockquote
+  - ol/ul, li
+  - img
+  - a
+  - strong, em
+  - small, abbr, sup, sub
+  - br, hr
 - Tablas
-  _ table
-  _ tr
-  _ td, th
-  _ caption
-  _ thead
-  _ tbody
-  _ tfoot
-  _ col, colgroup
+  - table
+  - tr
+  - td, th
+  - caption
+  - thead
+  - tbody
+  - tfoot
+  - col, colgroup
 
 #### EJERCICIO 2
 
