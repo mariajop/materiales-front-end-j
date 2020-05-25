@@ -114,6 +114,7 @@ Siempre usaremos la sala de Zoom **Promo J: todas las alumnas** para realizar es
 
 - Una cosa importante que debemos hacer siempre es que al empezar el día y después de cada descanso todas las alumnas y profesores nos juntamos en la sala **Promo J: todas las alumnas** y desde esta sala explicaremos a qué sala nos movemos.
 - Para que te podamos enviar a las mini salas es importante que **el email con el que te has registrado en Zoom sea el mismo que nos has facilitado a Adalab**.
+- Si por lo que sea te sales de una mini sala y no puedes volver a entrar, lo que debes hacer es salir cerrar la reunión de Zoom y volver a entrar. Aparecerás en la sala principal y el profesor te meterá en la mini sala que te corresponda.
 - Este no es el procedimiento más cómodo del mundo, pero sí nos permite **dar soporte a las dos profesoras a la vez y grabar todo** el soporte por Zoom. Posteriormente el resto de alumnas podéis ver las grabaciones, repasar y resolver dudas fácilmente. Si se te ocurre una forma más óptima de trabajar, dínoslo.
 
 Y todo esto que hemos contado por escrito lo explicamos con [un ejemplo en este vídeo](https://www.youtube.com/watch?v=BRS3mCCoM3s) ;)
