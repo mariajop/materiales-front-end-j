@@ -462,6 +462,8 @@ Nos permiten validar que nuestro código HTML5 cumple con el estandar, asegurand
 
 Asegurate de que el HTML del Gazpacho cumple con el estandar utilizando un validador.
 
+\_\_\_\_\_\_\_\_\_\_
+
 ## Pair programming
 
 Es una técnica de desarrollo ágil de software muy valorada en las empresas de desarrollo digital y que estaremos practicando durante todo el curso de Adalab. Veamos de qué se trata y sus beneficios:
