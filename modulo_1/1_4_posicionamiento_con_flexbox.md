@@ -26,20 +26,7 @@ Durante esta sesión veremos
 
 ## Unidades
 
-En la lección anterior vimos los píxels (`px`), unidades absolutas, cuyo tamaño no varía. Un píxel siempre es un píxel. Veamos algunas unidades más.
-
-## Unidades relativas al *viewport*
-
-El *viewport* es la zona visible en una web. Mide `100vw` de ancho y `100vh` de alto siempre, en la pantalla pequeña de un móvil o en la grande de un portátil.
-
-Las unidades`vw` y `vh` nos permiten ajustar ancho y alto de manera relativa al *viewport*.
-
-
-```css
-.wrapper {
-	height: 100vh;
-}
-```
+En la lección anterior vimos los píxels (`px`), unidades absolutas, cuyo tamaño no varía. **Un píxel siempre es un píxel.** Veamos algunas unidades más.
 
 ## Unidad de porcentaje
 
@@ -48,6 +35,18 @@ La unidad de `%` nos permite ajustar tamaños para que sean un porcentaje del ta
 ```css
 .hero {
 	height: 33.3%;
+}
+```
+
+## Unidades relativas al viewport
+
+El **viewport** es la zona visible en una web. El viewport mide **100vw** (viewport width) de ancho y **100vh** (viewport height) de alto siempre, en la pantalla pequeña de un móvil o en la grande de un portátil.
+
+Las unidades`vw` y `vh` nos permiten ajustar ancho y alto de manera relativa al *viewport*.
+
+```css
+.wrapper {
+	height: 100vh;
 }
 ```
 
@@ -67,28 +66,60 @@ Con `max-width`, `min-width`, `max-height` y `min-height` podemos controlar los 
 
 Según la MDN, la propiedad Flexible Box, o flexbox, de CSS3 es un modo de diseño que permite colocar los elementos de una página para que se comporten de forma predecible cuando el diseño de la página debe acomodarse a diferentes tamaños de pantalla y diferentes dispositivos.
 
-Hasta que apareció Flexbox la única manera de distribuir elementos en horizontal (por ejemplo: un menú horizontal, o un bloque principal y uno secundario) era calculando el espacio que debe ocupar cada bloque y controlando mucho que ningún elemento se saliese de lo planificado.
-
-Con flexbox podemos disponer de un bloque flexible que de manera natural se ajuste dentro de unos parámetros que le indiquemos.
-
-Vamos a seguir esta guía y a ir planteando unos ejercicios para cada propiedad. Lee esta [guía completa de flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) para poder realizar los ejercicios.
-
-
-## Para qué sirve
+Hasta que apareció Flexbox la única manera de distribuir elementos en horizontal (por ejemplo: un menú horizontal, o un bloque principal y uno secundario) era calculando el espacio que debe ocupar cada bloque y controlando mucho que ningún elemento se saliese de lo planificado. Eran otros tiempos...
 
 Flexbox es una herramienta imprescindible en la maquetación actual y nos permite tener elementos HTML que se ajusten a las diferentes pantallas de los diferentes dispositivos.
 
+Os recomendamos leer la Guía de [Flexbox en CssTricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/). Por cierto [csstricks.com](https://css-tricks.com/) es una página de referencia entre maquetadores por la calidad de sus tutoriales y artículos.
+
+Una vez que hemos leído la guía en CssTricks y conocemos todo lo que se puede hacer con Flexbox os dejamos este [vídeo con un resumen de los conceptos más usados](https://youtu.be/NUZ-2unOi98).
+
+{% embed url="https://www.youtube.com/watch?v=NUZ-2unOi98" %}
+
+Hasta que dominemos Flexbox os sugerimos tener siempre a mano esta chuleta:
+
+**¿A quién afecta flex?**
+
+- Con flex solo son afectados el contenedor `.container` y sus hijos directos `.item`.
+- Los nietos del contenedor **NO** se ven afectados.
+
+**¿Dónde debemos aplicar los estilos?**
+
+- Los estilos del contenedor (dirección, distribución...) los aplicamos en el contenedor.
+- Los estilos comunes a todos los hijos los aplicamos a una clase común para todos los hijos: `.item`.
+- Si uno de los hijos tiene una disposición o tamaño diferente a la de los demás hijos, se le aplica estilos solo a ese elemento con una clase propia, por ejemplo `.item-x`.
+
+**Pasos a seguir: procedimiento normal**
+
+1. Se recomienda aplicar `box-sizing` y `border` o `background-color` al contenedor y a los hijos para visualizar cómo se comportan (después se pueden borrar estos estilos).
+1. Indicar en el contenedor: `display: flex`.
+1. **Indicar en el contenedor la dirección del eje principal:** `flex-direction`: `row`, `column`....
+No hay que confundir eje principal con eje horizontal, ni eje secundario con eje vertical.
+**Hay que tener muy muy claro cuál queremos que sea el eje principal y cuál el secundario.**
+1. **Indicar en el contenedor si queremos que los items salten de línea** o se mantengan en una sola: `flex-wrap: wrap`. A lo mejor es necesario añadir muchos hijos para poder ver el salto de línea.
+1. Indicar en el contenedor cómo se alinean o distribuyen los items en el eje principal, en el caso de que sobre o falte espacio: `justify-content: center`.
+1. Indicar en el container cómo se alinean o distribuyen los items en el eje secundario: `align-items: center`.
+   - Alguna vez pensaréis que estáis utilizando `justify-content` o `align-items` y no funciona. Es posible que sea porque no hay espacio sobrante, y por lo tanto no puede añadir espacio entre los hijos.
+1. **Indicar a todos los items el tamaño** que deben tener: ancho si el eje principal es horizontal o alto si el eje principal es vertical.
+
+**Pasos a seguir: procedimiento avanzado**
+
+10. Si queremos indicar un ancho variable en función del espacio sobrante o el espacio faltante, usamos: `flex-grow`, `flex-shring`.
+1. Si queremos indicar un ancho inicial antes de repartir el espacio sobrante o faltante, usamos: `flex-basis`.
+1. Si queremos usar un ancho fijo usamos: `width`.
+1. Para indicar en un item un tamaño especial que debe tener: `flex-grow`, `flex-shring` y `flex-basis`.
+1. Si queremos cambiar el orden de los hijos le aplicamos order a uno de ellos, teniendo en cuenta que órdenes menores de 1 se moverán a la izquierda y mayores de 1 se moverán a la derecha.
+
+> **NOTA:** aquí estamos usando los nombres de clase `container` y `item` porque nos apetece. Podríamos haber usado otros nombres de clase que queramos.
 
 ## En qué casos se utiliza
 
 Pues hay casos muy evidentes, como hacer un pie fijo cuando hay poco contenido, o un panel lateral con una parte fija y otra flexible. Pero también hay otros más simples como un menú horizontal, un listado de iconos de redes sociales o una noticia donde queremos que a veces la imagen vaya arriba o tras el texto.
-Básicamente lo podemos/querremos usar en cualquier estructura que se distribuya en vertical u horizontal y sobre la que queramos controlar el espaciado, orden o alineamiento.
-
-* * *
+Básicamente lo podemos / querremos usar en cualquier estructura que se distribuya en vertical u horizontal y sobre la que queramos controlar el espaciado, orden o alineamiento.
 
 #### EJERCICIO 1
 
-**FLEX y FLEX DIRECTION**
+**Flex y flex direction**
 
 ![Ejemplo](assets/images/1-4/ejercicio-1.png)
 
@@ -96,7 +127,7 @@ Básicamente lo podemos/querremos usar en cualquier estructura que se distribuya
 2. Hacer que se distribuyan en horizontal o vertical
 3. Indicar cuál es el eje principal
 
-* * *
+\_\_\_\_\_\_\_\_\_\_
 
 #### EJERCICIO 2
 
@@ -106,11 +137,11 @@ Básicamente lo podemos/querremos usar en cualquier estructura que se distribuya
 
 Teniendo una lista de 10 a 15 imágenes de 200x100 px, hacer un bloque flexbox donde las imágenes se distribuyan por el eje horizontal y se vayan apilando uno detrás de otro.
 
-* * *
+\_\_\_\_\_\_\_\_\_\_
 
 #### EJERCICIO 3
 
-**JUSTIFY CONTENT y ALIGN ITEMS**
+**Justify content y align items**
 
 ![Ejemplo](assets/images/1-4/ejercicio-3.png)
 
@@ -125,23 +156,23 @@ Teniendo una lista de 10 a 15 imágenes de 200x100 px, hacer un bloque flexbox d
 4. Todos los textos deben aparecer centrados verticalmente en el contenedor de 100px
 5. El espacio restante debe usarse para separar las opciones de menú, unas de otras
 
-* * *
+\_\_\_\_\_\_\_\_\_\_
 
 #### EJERCICIO 4
 
-**ORDER**
+**Order**
 
 ![Ejemplo](assets/images/1-4/ejercicio-4.png)
 
 1. Hacer un listado de noticias con imagen, título y párrafo de contenido
-2. Meterlas en un contenedor flex y hacer que se distribuyan en dos columnas
-3. Elegir una noticia, por ejemplo, la última, y ponerla como destacada, en primer lugar y ocupando las dos columnas
+1. Meterlas en un contenedor flex y hacer que se distribuyan en dos columnas
+1. Elegir una noticia, por ejemplo, la última, y ponerla como destacada, en primer lugar y ocupando las dos columnas
 
-* * *
+\_\_\_\_\_\_\_\_\_\_
 
 #### EJERCICIO 5
 
-**FLEX/GROW/SHRINK/BASIS**
+**Flex, grow, shringm y basis**
 
 ![Ejemplo](assets/images/1-4/ejercicio-5.png)
 
@@ -151,7 +182,7 @@ Si hubiese mucho contenido el footer debe colocarse tras el main, de forma natur
 > **Pista**:
 > Tendremos que apoyarnos en `min-height` y `vh` para realizar este ejercicio.
 
-* * *
+\_\_\_\_\_\_\_\_\_\_
 
 #### EJERCICIO 6
 
@@ -163,7 +194,7 @@ Convertir la imagen anterior a código usando HTML y CSS y lo que habéis aprend
 * El ancho del conjunto entero debe ser del 100% con un ancho máximo de 960px
 * Cada bloque debe de crearse con una etiqueta HTML5 (header, footer, aside...) y debe tener un título que esté centrado (como aparece en la imágen). El bloque central (que sería un article), en vez de tener un título, tendrá un párrafo con un texto aleatorio, podéis escribir dentro de él lo que queráis.
 
-* * *
+\_\_\_\_\_\_\_\_\_\_
 
 #### EJERCICIO 7
 
@@ -179,7 +210,7 @@ Para el bloque gris de la izquierda debéis buscar una imagen cuadrada y colocar
 
 Si tenéis cualquier duda, preguntad.
 
-* * *
+\_\_\_\_\_\_\_\_\_\_
 
 #### EJERCICIO 8
 
@@ -197,11 +228,11 @@ Ejemplo de la página cuando el texto es corto
 ![Ejemplo](assets/images/1-4/ejercicio-8-2.png)
 
 Es importante utilizar flexbox para los elementos del header de la página y el footer. Si tenéis cualquier duda, preguntad.
-* * *
+
+\_\_\_\_\_\_\_\_\_\_
 
 ## BONUS
 
-* * *
 #### EJERCICIO 9 BONUS
 
 En el siguiente [codepen](https://codepen.io/adalab/pen/BmQaQa) variad las dimensiones en vw y vh para:
@@ -209,13 +240,9 @@ En el siguiente [codepen](https://codepen.io/adalab/pen/BmQaQa) variad las dimen
 * hacer que el contenedor `.box` ocupe el 10% de ancho y el 10% de alto
 * hacer que el contenedor `.box` ocupe el 100% de ancho y el 80% de alto
 
-* * *
+\_\_\_\_\_\_\_\_\_\_
 
 ## Recursos externos
-
-### Teoría para aprender flexbox
-
-[Introducción a flexbox](https://www.youtube.com/watch?v=F-KCncXMPk0)
 
 ### Juegos para aprender flexbox
 
