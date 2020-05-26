@@ -28,7 +28,7 @@ Durante esta sesión veremos
 
 En la lección anterior vimos los píxels (`px`), unidades absolutas, cuyo tamaño no varía. **Un píxel siempre es un píxel.** Veamos algunas unidades más.
 
-## Unidad de porcentaje
+### Unidad de porcentaje
 
 La unidad de `%` nos permite ajustar tamaños para que sean un porcentaje del tamaño de su etiqueta madre.
 
@@ -38,7 +38,7 @@ La unidad de `%` nos permite ajustar tamaños para que sean un porcentaje del ta
 }
 ```
 
-## Unidades relativas al viewport
+### Unidades relativas al viewport
 
 El **viewport** es la zona visible en una web. El viewport mide **100vw** (viewport width) de ancho y **100vh** (viewport height) de alto siempre, en la pantalla pequeña de un móvil o en la grande de un portátil.
 
@@ -50,7 +50,7 @@ Las unidades`vw` y `vh` nos permiten ajustar ancho y alto de manera relativa al 
 }
 ```
 
-## Tamaños mínimos y máximos
+### Tamaños mínimos y máximos
 
 Con `max-width`, `min-width`, `max-height` y `min-height` podemos controlar los tamaños de los elemento para que sean fluidos, y se comporten como nosotras queremos frente a diferentes tamaños de ventanas del navegador.
 
@@ -70,26 +70,35 @@ Hasta que apareció Flexbox la única manera de distribuir elementos en horizont
 
 Flexbox es una herramienta imprescindible en la maquetación actual y nos permite tener elementos HTML que se ajusten a las diferentes pantallas de los diferentes dispositivos.
 
+### En qué casos se utiliza
+
+Pues hay casos muy evidentes, como hacer un pie fijo cuando hay poco contenido, o un panel lateral con una parte fija y otra flexible. Pero también hay otros más simples como un menú horizontal, un listado de iconos de redes sociales o una noticia donde queremos que a veces la imagen vaya arriba o tras el texto.
+Básicamente lo podemos / querremos usar en cualquier estructura que se distribuya en vertical u horizontal y sobre la que queramos controlar el espaciado, orden o alineamiento.
+
+### Guía de Flexbox
+
 Os recomendamos leer la Guía de [Flexbox en CssTricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/). Por cierto [csstricks.com](https://css-tricks.com/) es una página de referencia entre maquetadores por la calidad de sus tutoriales y artículos.
 
 Una vez que hemos leído la guía en CssTricks y conocemos todo lo que se puede hacer con Flexbox os dejamos este [vídeo con un resumen de los conceptos más usados](https://youtu.be/NUZ-2unOi98).
 
 {% embed url="https://www.youtube.com/watch?v=NUZ-2unOi98" %}
 
+### Pasos a seguir para hacer un buen Flexbox
+
 Hasta que dominemos Flexbox os sugerimos tener siempre a mano esta chuleta:
 
-**¿A quién afecta flex?**
+#### ¿A quién afecta flex?
 
 - Con flex solo son afectados el contenedor `.container` y sus hijos directos `.item`.
 - Los nietos del contenedor **NO** se ven afectados.
 
-**¿Dónde debemos aplicar los estilos?**
+#### ¿Dónde debemos aplicar los estilos?
 
 - Los estilos del contenedor (dirección, distribución...) los aplicamos en el contenedor.
 - Los estilos comunes a todos los hijos los aplicamos a una clase común para todos los hijos: `.item`.
 - Si uno de los hijos tiene una disposición o tamaño diferente a la de los demás hijos, se le aplica estilos solo a ese elemento con una clase propia, por ejemplo `.item-x`.
 
-**Pasos a seguir: procedimiento normal**
+#### Procedimiento normal
 
 1. Se recomienda aplicar `box-sizing` y `border` o `background-color` al contenedor y a los hijos para visualizar cómo se comportan (después se pueden borrar estos estilos).
 1. Indicar en el contenedor: `display: flex`.
@@ -102,20 +111,15 @@ No hay que confundir eje principal con eje horizontal, ni eje secundario con eje
    - Alguna vez pensaréis que estáis utilizando `justify-content` o `align-items` y no funciona. Es posible que sea porque no hay espacio sobrante, y por lo tanto no puede añadir espacio entre los hijos.
 1. **Indicar a todos los items el tamaño** que deben tener: ancho si el eje principal es horizontal o alto si el eje principal es vertical.
 
-**Pasos a seguir: procedimiento avanzado**
+#### Procedimiento avanzado
 
-10. Si queremos indicar un ancho variable en función del espacio sobrante o el espacio faltante, usamos: `flex-grow`, `flex-shring`.
+8. Si queremos indicar un ancho variable en función del espacio sobrante o el espacio faltante, usamos: `flex-grow`, `flex-shring`.
 1. Si queremos indicar un ancho inicial antes de repartir el espacio sobrante o faltante, usamos: `flex-basis`.
 1. Si queremos usar un ancho fijo usamos: `width`.
 1. Para indicar en un item un tamaño especial que debe tener: `flex-grow`, `flex-shring` y `flex-basis`.
 1. Si queremos cambiar el orden de los hijos le aplicamos order a uno de ellos, teniendo en cuenta que órdenes menores de 1 se moverán a la izquierda y mayores de 1 se moverán a la derecha.
 
 > **NOTA:** aquí estamos usando los nombres de clase `container` y `item` porque nos apetece. Podríamos haber usado otros nombres de clase que queramos.
-
-## En qué casos se utiliza
-
-Pues hay casos muy evidentes, como hacer un pie fijo cuando hay poco contenido, o un panel lateral con una parte fija y otra flexible. Pero también hay otros más simples como un menú horizontal, un listado de iconos de redes sociales o una noticia donde queremos que a veces la imagen vaya arriba o tras el texto.
-Básicamente lo podemos / querremos usar en cualquier estructura que se distribuya en vertical u horizontal y sobre la que queramos controlar el espaciado, orden o alineamiento.
 
 #### EJERCICIO 1
 
