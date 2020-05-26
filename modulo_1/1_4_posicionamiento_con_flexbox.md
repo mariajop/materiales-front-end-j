@@ -248,16 +248,15 @@ En el siguiente [codepen](https://codepen.io/adalab/pen/BmQaQa) variad las dimen
 
 ## Recursos externos
 
-### Juegos para aprender flexbox
+##### Juegos para aprender flexbox
 
-[Flexbox froggy - juego](http://flexboxfroggy.com/#es)
+- [Flexbox froggy - juego](http://flexboxfroggy.com/#es)
+- [Flexbox defense - juego (inglés)](http://www.flexboxdefense.com/)
 
-[Flexbox defense - juego (inglés)](http://www.flexboxdefense.com/)
+##### Página interactiva para aprender flexbox
 
-### Página interactiva para aprender flexbox
+- [Página interactiva para aprender flexbox](http://codepen.io/enxaneta/full/adLPwv/)
 
-[Página interactiva para aprender flexbox](http://codepen.io/enxaneta/full/adLPwv/)
+##### Guía completa de Flexbox (inglés)
 
-### Guía completa de Flexbox (inglés)
-
-[Guía completa de Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [Guía completa de Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
