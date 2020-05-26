@@ -369,6 +369,8 @@ Entrar en [Wikipedia.org](http://wikipedia.org) y
 
 De momento veremos hasta ahí. Las herramientas para desarrolladores de Google Chrome ofrecen un sinfín de posibilidades más pero iremos viendo cada una en el momento en el que la necesitemos.
 
+**Un truco importante para evitar problemas** es que en activemos la opción **Disable cache**. Es opción lo que hace es que cuando tengamos DevTools abierto no cachea los archivos que se trae del servidor, **cada vez que refrescamos la página se trae la última versión del los html, css, imágenes...** Si estamos modificando dichos ficheros es importante tener siempre la última versión. Esta opción está en la parte superior de la pestaña Network del DevTools.
+
 ## BONUS
 
 ### Usando fuentes de Google Fonts
