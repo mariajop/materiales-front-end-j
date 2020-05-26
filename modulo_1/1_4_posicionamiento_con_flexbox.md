@@ -79,7 +79,7 @@ Básicamente lo podemos / querremos usar en cualquier estructura que se distribu
 
 Os recomendamos leer la Guía de [Flexbox en CssTricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/). Por cierto [csstricks.com](https://css-tricks.com/) es una página de referencia entre maquetadores por la calidad de sus tutoriales y artículos.
 
-Una vez que hemos leído la guía en CssTricks y conocemos todo lo que se puede hacer con Flexbox os dejamos este [vídeo con un resumen de los conceptos más usados](https://youtu.be/NUZ-2unOi98).
+Una vez que hemos leído la guía en CssTricks y conocemos todo lo que se puede hacer con Flexbox os dejamos este [vídeo con un resumen de los conceptos más usados](https://youtu.be/NUZ-2unOi98) y el [código que usamos en el vídeo](https://github.com/Adalab/ejercicios-extra/tree/master/css-flexbox).
 
 {% embed url="https://www.youtube.com/watch?v=NUZ-2unOi98" %}
 
