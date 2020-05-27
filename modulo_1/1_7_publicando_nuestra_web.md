@@ -61,7 +61,7 @@ maricarmen@portatil-del-trabajo: /mnt/c/Users/maricarmen/Desktop/Adalab/ejercici
 
 Y ya que hemos hablado de las rutas no podemos continuar con la explicación de la terminal, sin antes explicar lo qué son la rutas absolutas y relativas.
 
-### Las rutas absolutas
+### Rutas absolutas
 
 Las rutas absolutas indican la **dirección completa** de una carpeta o fichero:
 
@@ -71,7 +71,7 @@ Las rutas absolutas indican la **dirección completa** de una carpeta o fichero:
 - Por ejemplo `/user/maricarmen/adalab/proyectos/modulo-1/index.html`.
 - Por ejemplo `/mnt/c/Users/maricarmen/adalab/proyectos/modulo-1/index.html`.
 
-### Las rutas relativas
+### Rutas relativas
 
 - Las rutas relativas indican **el camino que hay que recorrer** para ir desde la carpeta en la que estoy ahora mismo a otra carpeta o fichero.
 - La ruta relativa más simple es `../` (dos puntos barra). Esta ruta **indica la carpeta madre o carpeta superior respecto a la carpeta actual**. Si la ruta relativa es el camino a recorrer, escribiendo la ruta `../` vamos de la carpeta actual a la carpeta madre. Si escribimos la ruta `../../` vamos de la carpeta actual a la carpeta abuela. Y así sucesivamente...

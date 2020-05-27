@@ -39,6 +39,7 @@
 - [1.14 Accesibilidad y Sistemas de diseño](modulo_1/1_14_accesibilidad_sistemas_de_diseno.md)
 - [Repaso final](modulo_1/1_repaso.md)
 - [Recursos](modulo_1/1_recursos.md)
+  - [Comandos de Git](modulo_1/1_git.md)
 
 ## Módulo 2. Programando la web
 

@@ -25,3 +25,9 @@ Os recomendamos que los clonéis en vuestro ordenador y hagáis **`git pull`** f
 
 - [Cómo trabajar en remoto](como_trabajar_en_remoto.md)
 - [Guía para enfrentarse a problemas técnicos de manera autónoma](busqueda_de_soluciones.md)
+
+## Recursos
+
+- [Comandos de Git](../modulo_1/1_git.md)
+- [Sintaxis de JavaScript](../modulo_2/2_sintaxis_de_js.md)
+- [Fases de la programación](../modulo_2/2_fases_de_un_programa_js.md)
