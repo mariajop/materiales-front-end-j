@@ -28,7 +28,7 @@ La lección de hoy es amplia y variada. Vamos a aprender a trabajar con la termi
 
 ## La terminal
 
-> **Nota:** Antes de comenzar a trabajar con la terminal debes haber realizado la [Guía de instalación de la terminal](../informacion-de-interes/antes_de_empezar_el_curso/instalacion_de_la_terminal).
+> **Nota:** Antes de comenzar a trabajar con la terminal debes haber realizado la [Guía de instalación de la terminal](../instalacion/instalacion_de_la_terminal.md).
 
 **La terminal, también llamada consola de comandos, es una herramienta fundamental** para la programación. Su finalidad es ejecutar **comandos u órdenes** mediante instrucciones. Estos comandos son similares a las interacciones que haríamos en una aplicación normal (clics, escribir en campos, cambiar de sección, etc.) pero en este caso se hacen **escribiendo órdenes** en una terminal de comandos.
 
