@@ -3,7 +3,7 @@ En esta guía **estamos recopilando todo lo que enseñamos en los tres módulos*
 
 Git es una herramienta que **se aprende con el uso y la práctica**.
 
-Está guía está dividida en tres partes: principales comandos de Git, vídeos y git stash.
+Está guía está dividida en tres partes: principales comandos de Git, vídeos y Git stash.
 
 # Principales comandos de Git
 
@@ -129,7 +129,7 @@ git remote add origin url-del-repositorio-que-me-da-github
 
 {% embed url="https://www.youtube.com/watch?v=jDOVhbgc8Ec" %}
 
-# git stash
+# Git stash
 
 Git stash es una herramienta muy útil pero un poco avanzada. No la explicamos durante el curso, pero os la explicamos aquí para que cuando estéis muy aburridas podáis aprender algo nuevo :)
 
