@@ -316,353 +316,7 @@ Ahora, editando el archivo `index.html` en VSCode se tiene que ver la imagen de 
 
 \_\_\_\_\_\_\_\_\_\_
 
-
-
-
-
-
-
-## Git
-
-### Introducción a Git
-
-Vamos a ver una pequeña introducción a Git, para ello hemos seleccionado el siguiente video ya que pensamos que explica de forma breve y sencilla qué es Git y algunos de sus conceptos básicos.
-
-- [1.- Curso Git - Introducción a Git](https://www.youtube.com/watch?v=zH3I1DZNovk)
-
-### Configurar Git en nuestro ordenador
-
-Vamos a ver cómo configurar Git en nuestro ordenador. Para llevarlo a cabo, primero comprobaremos si tenemos instalada una versión reciente de Git.
-
-> NOTA:
-> Para comprobar si tenemos instalado Git en nuestro ordenador, debemos abrir la Terminal y ejecutar el comando `Git --version`. Esto mostrará el texto `Git version` seguido de la versión de Git que tenemos instalada. Para poder trabajar de forma correcta, lo indicado sería que tuviésemos una versión igual o posterior a la `2.11.0`.
-
-**1. Creamos una cuenta en [GitHub](https://github.com). Poniendo nuestro usuario de GitHub en minúsculas**
-
-> Esto es súper importante y lo agradeceréis más adelante.
-
-**2. Añadimos nuestro nombre a la configuración de Git**
-
-Abrimos la aplicación de la terminal e introducimos el siguiente comando, tal y como se muestra abajo, sustituyendo `"John Doe"` por vuestro nombre. Una vez lo hayamos introducido, pulsamos intro para que se ejecute.
-
-**Importante:** Escribiremos nuestro nombre entre comillas para evitar problemas a la hora de ejecutar el comando.
-
-```shell
-Git config --global user.name "John Doe"
-```
-
-**3. Configuramos nuestro email para trabajar con Git**
-
-Ahora introducimos el siguiente comando para guardar la configuración de nuestro email:
-
-```shell
-Git config --global user.email "johndoe@example.com"
-```
-
-Sustituiremos en este caso `"johndoe@example.com"` por el email que **hemos utilizado para crear nuestra cuenta de GitHub**.
-
-**Nota:** Es importante que el email coincida con el que hemos utilizado en GitHub, ya que se utilizará para comprobar nuestros credenciales a la hora de subir información a un repositorio en esta plataforma.
-
-**4. Añadimos la configuración para que se guarde nuestra contraseña para GitHub**
-
-Por defecto, cada vez que intentamos conectarnos con GitHub, el servidor de GitHub nos pedirá la contraseña de nuestro usuario. Como vamos a subir y descargar cambios de GitHub de forma constante, puede ser un poco molesto tener que introducir la contraseña cada vez que queramos conectarnos con el servidor. Para evitar esto, vamos a almacenar la contraseña de forma segura en nuestro ordenador.
-
-**En Ubuntu**
-
-Para poder almacenar la contraseña de GitHub en Ubuntu, realizaremos los siguientes comandos uno por uno:
-
-```shell
-sudo apt-get install libsecret-1-0 libsecret-1-dev
-```
-
-Nos solicitará una contraseña, aquí debemos introducir la contraseña de nuestro ordenador, no la de GitHub.
-
-```shell
-cd /usr/share/doc/Git/contrib/credential/libsecret
-```
-
-```shell
-sudo make
-```
-
-```shell
-cd -
-```
-
-```shell
-Git config --global credential.helper /usr/share/doc/Git/contrib/credential/libsecret/Git-credential-libsecret
-```
-
-Al hacer esto, la próxima vez que introduzcamos nuestra contraseña de GitHub, esta se almacenará de forma segura en nuestro ordenador y no será necesario volver a introducirla de nuevo.
-
-Una vez hayamos realizado ese paso, no necesitaremos hacer ningún cambio más.
-
-**En Windows 10**
-
-Para poder almacenar la contraseña de GitHub en Windows, realizaremos los siguientes comandos uno por uno, en la terminal de Ubuntu que instalamos el primer día del curso en la instalación de ordenadores:
-
-```shell
-sudo apt-get install libsecret-1-0 libsecret-1-dev
-```
-
-Nos solicitará una contraseña, aquí debemos introducir la contraseña que pusimos cuando instalamos Ubuntu dentro de Windows, no la de GitHub.
-
-```shell
-cd /usr/share/doc/Git/contrib/credential/libsecret
-```
-
-```shell
-sudo make
-```
-
-```shell
-cd -
-```
-
-```shell
-Git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/Git-core/Git-credential-manager.exe"
-```
-
-Al hacer esto, la próxima vez que introduzcamos nuestra contraseña de GitHub, esta se almacenará de forma segura en nuestro ordenador y no será necesario volver a introducirla de nuevo.
-
-Una vez hayamos realizado ese paso, no necesitaremos hacer ningún cambio más.
-
-**En Mac**
-
-Para poder almacenar la contraseña de GitHub en Mac, simplemente ejecutamos el siguiente comando:
-
-```shell
-Git config --global credential.helper osxkeychain
-```
-
-Una vez hayamos realizado ese paso, no necesitaremos hacer ningún cambio más.
-
-**5. Configuramos el editor de texto para trabajar con Git**
-
-**Nano** es un editor de texto que suele venir por defecto en Ubuntu en la terminal. Queremos que sea nuestro editor por defecto para trabajar con Git. Para ello abrimos la terminal e introducimos el siguiente comando. Una vez lo hayamos introducido, pulsamos intro para que se ejecute.
-
-```shell
-Git config --global core.editor nano
-```
-
-El editor por defecto en otros sistemas operativos es otro, pero en este curso vamos a utilizar siempre Nano para trabajar todas de la misma manera.
-
-### Cómo trabajar con Git
-
-Para trabajar con Git lo haremos usando comandos a través de la Terminal, como comentábamos en la introducción de esta sesión. Para ello tendremos que aprender unos comandos básicos.
-
-Una vez configurado Git en nuestro equipo tendremos que activar el control de versiones en nuestro proyecto, esto lo haremos con `Git init`. Este comando lo usaremos solo una vez en la carpeta de nuestro proyecto y activa que se controle cada cambio que hacemos a nuestros archivos del proyecto.
-
-A partir de este momento, cada vez que hagamos cambios, Git sabrá qué archivos hemos modificado.
-
-En cualquier momento podremos pedir que nos diga en qué estado está el proyecto con `Git status`, lo que nos dirá si hemos cambiado archivos.
-
-Normalmente trabajaremos con cambios cortos o tareas pequeñas, y cuando hayamos terminado, querremos indicarle a Git que ya hemos terminado un paquete de cambios, para lo que tenemos dos comandos:
-
-1. `Git add -A` para añadir los archivos que hemos modificado. Una vez añadidos Git sabrá qué cambios hemos hecho.
-1. `Git commit -m "Mensaje"` nos permite crear como un paquete de cambios y "guardarlo en nuestro sistema de versiones", nos dejará escribir un mensaje corto para asociarlo al paquete de cambios o _commit_.
-1. Si queremos ver la lista de commits realizados en un proyecto usaremos `Git log`. Para salir del listado usamos la tecla `q`.
-
-En el video que añadimos a continuación se explican los comandos básicos para empezar a trabajar con Git.
-
-- [3.- Curso Git - Nuestro primer proyecto](https://www.youtube.com/watch?v=vH9pkFf1D7M)
-
-> **Nota:** En el video pone los mensajes de los commits en español pero nosotros los escribiremos en inglés.
-
-**Mensaje del commit**
-
-Es importante acompañar el commit con un mensaje. Este mensaje debe ser suficientemente corto para que no sea una locura leerlo y, a la vez, explique qué cambio se ha hecho de forma clara.
-
-Normalmente trabajaremos con otras compañeras en un mismo proyecto y será fundamental que todas entiendan qué se ha hecho en cada paso para poder trabajar de forma más rápida y no tener que estar preguntando qué es cada cosa.
-Crear mensajes claros en los commits, nos servirá también para que si volvemos a ver un commit del pasado, podamos entender qué es lo que hicimos.
-
-A la hora de escribir un mensaje para un commit hay múltiples maneras de plantearlo e infinidad de guías. Como estamos empezando tengamos en cuenta sólo la siguiente serie de normas para crear un mensaje lo suficientemente bueno:
-
-- Debe estar escrito en inglés
-- Tiene que ser corto. Máximo 72 caracteres
-- Debe explicar brevemente y a nivel general los cambios que se han hecho (añade el footer, corrige los enlaces del artículo, etc.)
-- No tiene que detallar los cambios hechos en el código, sino en general. Recordemos que ya tenemos un control de versiones que muestra, exactamente, qué se ha hecho. (Ejemplo: no pongáis "Add 2 paragraph tags", poned mejor "Add introduction text")
-- Usaremos el imperativo (Ejemplo: `Change header styles` - Cambia los estilos del header) para decir qué hace el commit.
-
-Un ejemplo de un buen commit:
-
-```
-$ Git commit -m "Fix typo in article title"
-```
-
 #### EJERCICIO 3
-
-Vamos a crear nuestro primer proyecto con Git, al que llamaremos `testing-Git`. Dentro de él, crearemos un archivo HTML con un título HEAD en el que ponga "Testing Git" y un `h1` con el mismo texto. Además, crearemos un archivo para los estilos (`main.css`) dónde añadiremos un estilo para que la familia de texto que se use en la web sea `sans-serif`. Organizaremos el proyecto siguiendo la estructura de siempre:
-
-```txt
-testing-Git
-    styles
-        main.css
-    images
-    index.html
-```
-
-Una vez creado el proyecto con el HTML y el CSS indicado. Inicializa el repositorio Git en el proyecto (asegurate de que estás en la carpeta testing-Git), añade los archivos y haz el primer commit con el mensaje `Initial commit`
-
-```shell
-Git init
-```
-
-```shell
-Git add -A
-```
-
-```shell
-Git commit -m "Initial commit"
-```
-
-\_\_\_\_\_\_\_\_\_\_
-
-#### EJERCICIO 4
-
-Modificar el archivo `index.html` para que en el título de la página ponga "My first Git project" y en el texto de la cabecera aparezca una sonrisa `:)`. Añadir los cambios y hacer un commit para guardarlos.
-
-**Nota:** El mensaje del commit deberá explicar de forma clara los cambios que hemos realizado
-
-\_\_\_\_\_\_\_\_\_\_
-
-#### EJERCICIO 5
-
-Vamos a realizar un tercer cambio dónde añadiremos un archivo `README.md` en la raíz de nuestro proyecto. Este archivo se utiliza para poner información acerca de nuestro código y, por defecto, la web GitHub lo muestra en la página principal de nuestro proyecto. Dentro de ese archivo escribiremos el siguiente texto:
-
-```markdown
-## My first Git project
-
-Dummy project to learn Git basics
-```
-
-**Nota:** El mensaje del commit deberá explicar de forma clara los cambios que hemos realizado
-
-\_\_\_\_\_\_\_\_\_\_
-
-## GitHub
-
-Como hemos explicado anteriormente, GitHub es una plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones de Git. Está muy enfocada a proyectos de código abierto y la verdadera fuerza de GitHub está en la comunidad tan grande que se ha montado sobre la idea de código abierto u _open source_ :)
-
-#### EJERCICIO 6
-
-Poneros, ambas compañeras, una imagen de perfil en vuestras cuentas de GitHub. No tiene por qué ser una fotografía.
-
-\_\_\_\_\_\_\_\_\_\_
-
-Hasta ahora sabemos crear un repositorio Git local, ahora vamos a ver cómo creamos un repositorio remoto en GitHub, de esta forma podremos acceder al código desde cualquier equipo y podremos colaborar con nuestras compañeras.
-
-Para ello, nos vamos a nuestro perfil y buscamos el botón `+` para crear un nuevo repositorio:
-
-![Nuevo repositorio](assets/images/1-7/github-repo-1.png)
-
-Rellenamos los datos que nos piden: nombre del repositorio, descripción y marcamos que queremos inicializarlo con un `Readme.md`:
-
-![Nuevo repositorio](assets/images/1-7/github-repo-2.png)
-
-Una vez creado, nos llevará a la página principal de nuestro repo donde podremos conseguir la url para descargarlo en nuestro equipo. Esta es una descarga especial que llamamos, clonar, que nos hace una copia local del proyecto conectada con la versión remota.
-
-![Nuevo repositorio](assets/images/1-7/github-repo-3.png)
-
-Ahora, con esta url podemos irnos a nuestra terminal y clonarlo con `Git clone`:
-
-![Nuevo repositorio](assets/images/1-7/github-repo-4.png)
-
-Esto nos generará una carpeta con nuestro proyecto. **Recordad que crea la carpeta pero no nos mete dentro** por lo que tendremos que usar el comando `cd` de nuestra terminal para cambiar la ruta actual.
-
-> **Nota**:
-> Por defecto Git nos creará una carpeta con un nombre automático, si queremos un nombre específico para la carpeta de nuestro proyecto podemos declararlo tras la url que nos da GitHub:
-
-```shell
-Git clone url-del-repositorio-que-me-da-github nuevo-nombre-de-carpeta
-```
-
-Ahora tenemos un repositorio local en la carpeta en la que hemos clonado nuestro nuevo repositorio remoto.
-Si accedemos a la carpeta, dentro debería estar el archivo README.md.
-
-Podemos crear archivos y/o realizar cambios sobre los existentes, guardarlos en local (Ctrl+S o Cmd+S), añadirlos para que Git sepa que cambios hemos hecho (`Git add -A`), commitearlos con un mensaje (`Git commit -m "Add main css file"`), y finalmente hacer un _push_ al repositorio remoto de GitHub (`Git push origin master`) para guadar nuestros cambios allí.
-
-### ¿Y si ya tengo un proyecto con Git en local?
-
-A la hora de conectar el repo local y el remoto lo mas cómodo es empezar creando el repo en GitHub, clonándolo y seguir a partir de ahí con la conexión ya hecha. Pero puede pasar que ya tuviésemos un proyecto en local que hubiésemos inicializado con `Git init`, en este caso seguiremos estos pasos:
-
-1. Creamos un repo vacío en GitHub **SIN INICIALIZARLO CON README.md, GITIGNORE O LICENCIA**.
-2. Esto nos llevará a una página diferente con las instrucciones para conectar un repo local con nuestro repo remoto:
-
-![Nuevo repositorio](assets/images/1-7/github-repo-5.png)
-
-3. Copiamos la línea con `Git remote add origin url-del-repositorio-que-me-da-github`
-4. Desde la terminal, nos vamos a la carpeta de nuestro proyecto que ya tiene inicializado un repo local y ejecutamos la línea que hemos copiado. Esto conectará los dos repos.
-
-En el video que mostramos a continuación se hace un pequeño tour alrededor de la plataforma para ver cómo funciona y las funcionalidades que ofrece. En el video pone el nombre del repositorio con mayúsculas y minúsculas, nosotros lo pondremos en minúsculas y con el texto separado por guiones, como hacemos con las carpetas de nuestros proyectos. En el video también explica ramas, pero lo ignoraremos. De momento solo vamos a trabajar con una rama (`master`), más adelante veremos cómo es el flujo a la hora de trabajar con varias ramas, pero vayamos poco a poco.
-
-> **Nota:**
-> Sólo veremos hasta el min 21:34. Porque en el resto del video habla de cosas que no vamos a aprender por el momento.
-
-- [Curso Git - Empezando con GitHub](https://www.youtube.com/watch?v=Qn186NyDqOk)
-
-#### EJERCICIO 7
-
-Vamos a:
-
-1. Crear un proyecto vacío en GitHub. Le pondremos como nombre `testing-Git`.
-1. Añadimos el repositorio que acabamos de crear como repositorio remoto en nuestro proyecto usando `Git remote` como se muestra en el video.
-1. Hacer _push_ para mandar la info del proyecto al repositorio remoto y, de esta forma, almacenar los datos del proyecto en GitHub. Comprobar tras hacerlo que, al abrir la página del proyecto en GitHub, se muestran los cambios que hemos realizado en nuestro ordenador.
-1. Realizar un cambio en el CSS del proyecto para que el texto de la cara sonriente se muestre centrado vertical y horizontalmente en la página.
-1. Una vez que estemos conforme con nuestro tipo sonriente, haremos un commit para añadir el cambio a nuestro repositorio y otro push, para sincronizar los cambios de nuestro repositorio local con los del remoto y, de esta forma, subir los cambios a GitHub.
-
-\_\_\_\_\_\_\_\_\_\_
-
-#### EJERCICIO 8
-
-Puesto que trabajamos en parejas o en grupos queremos trabajar con el mismo código que tienen nuestras compañeras. Por ello si una compañera sube un cambio de código a GitHub (con `Git push`) queremos poder descargarlo a nuestro ordenador (con `Git pull`). Para ello:
-
-1. Crear un proyecto vacío en GitHub. Le pondremos como nombre `testing-Git-pull`. En este proyecto vamos compartir código entre varias compañeras.
-1. Clonar el proyecto en ambos ordenadores (el tuyo y el de tu compañera) con `$ Git clone url-del-repositorio-que-me-da-github` (como se explica en ejercicio 6).
-1. Una de las compañeras debe añadir el fichero `index.html` en la raíz del proyecto.
-1. La compañera que haya hecho el cambio anterior debe hacer un commit y luego un push para subir el cambio a GitHub.
-1. Después, el resto de compañeras debe hacer `Git pull` (desde dentro de la carpeta del proyecto) para descargarse los cambios a su ordenador.
-1. Abrir el proyecto con VSCode para comprobar que, efectivamente, los cambios se han descargado desde GitHub.
-1. Ahora otra compañera puede hacer otro cambio en `index.html`, hacer otro commit y otro push.
-1. Repetir los pasos del 4 al 7 tantas veces como se quiera.
-
-> **NOTA:** Cada vez que ejecutamos un comando de Git en la terminal es muy interesante leer la información que aparece en la terminal para saber lo que está haciendo Git.
-
-## GitHub Pages
-
-Como hemos comentado previamente, GitHub ofrece un servicio llamado [GitHub Pages](https://pages.GitHub.com) que pueden utilizar los usuarios como hosting gratuito para los proyectos que estén alojados en GitHub.
-
-Un hosting es un servicio de almacenamiento de datos para poder tener tu web en un servidor y que esté disponible en Internet y esto es lo que ofrece exactamente GitHub Pages.
-
-#### EJERCICIO 9
-
-Desde la página de nuestro proyecto `testing-Git` en GitHub, activar GitHub Pages.
-
-**Pista:** Hay que ir a la pestaña _settings_ del proyecto ;)
-
-\_\_\_\_\_\_\_\_\_\_
-
-## Github Classroom
-
-GitHub Classroom es un "módulo" de GitHub que permite automatizar el control de acceso y la creación de repositorios. Durante este curso lo usaremos para asignar ejercicios.
-
-Classroom permite asignar repositorios vacíos o con un código inicial.
-
-#### EJERCICIO 10
-
-Haz clic en el siguiente enlace [https://classroom.github.com/a/cdZUSdeT](https://classroom.github.com/a/cdZUSdeT) para crear tu primer repositorio a través de GitHub Classroom, y luego:
-
-1. Clónalo en tu equipo
-2. Crea un archivo `README.md`
-3. Dentro, escribe tu nombre precedido de un `#`: `# PEPA HERRERA`
-4. Haz `add` y `commit`
-5. Haz un `push` al repo remoto :)
-
-\_\_\_\_\_\_\_\_\_\_
-
-## Más ejercicios de la terminal
-
-#### EJERCICIO 11
 
 A través de la terminal entra en la carpeta del ejercicio 1 y investiga el comando `ls` para conseguir:
 
@@ -675,7 +329,7 @@ En cada caso mira detenidamente toda la información que muestra la columna.
 
 \_\_\_\_\_\_\_\_\_\_
 
-#### EJERCICIO 12
+#### EJERCICIO 4
 
 A través de la terminal:
 
@@ -684,7 +338,7 @@ A través de la terminal:
 
 \_\_\_\_\_\_\_\_\_\_
 
-#### EJERCICIO 13
+#### EJERCICIO 5
 
 A través de la terminal:
 
@@ -692,18 +346,161 @@ A través de la terminal:
 
 \_\_\_\_\_\_\_\_\_\_
 
+## Git y GitHub
+
+> **Nota:** Antes de comenzar a trabajar con Git y GitHub debes haber realizado la [Guía de instalación de Git](../instalacion/instalacion_de_la_terminal.md).
+
+Como hemos explicado anteriormente, [GitHub](https://github.com) es una **plataforma de desarrollo colaborativo** para alojar proyectos utilizando el sistema de control de versiones de Git. Está muy enfocada a proyectos de código abierto y la verdadera fuerza de GitHub está en la comunidad tan grande que se ha montado sobre la idea de código abierto u **open source** :)
+
+Hay que tener en cuenta que GitHub es una empresa que ofrece el servicio de repositorios Git, pero hay muchas otras plataformas que hacen lo mismo como por ejemplo [Bitbucket](https://bitbucket.org/) o [GitLab](https://gitlab.com).
+
+#### EJERCICIO 6
+
+Poneros, ambas compañeras, una imagen de perfil en vuestras cuentas de GitHub. No tiene por qué ser una fotografía.
+
+\_\_\_\_\_\_\_\_\_\_
+
+### Crear un repositorio
+
+Con Git hay dos formas de crear un repositorio, lo podemos crear en nuestro ordenador y luego enlazarlo con GitHub o bien lo podemos crear en GitHub y luego clonarlo en nuestro ordenador. Es más cómoda la segunda opción, así que vamos a ver un [vídeo sobre cómo crear un repositorio en GitHub](https://www.youtube.com/watch?v=MGf3K6qxptg):
+
+{% embed url="https://www.youtube.com/watch?v=MGf3K6qxptg" %}
+
+### Añadir cambios a un repositorio
+
+Una vez que hemos creado y clonado un repo, vamos a empezar a trabajar con él en [este vídeo](https://www.youtube.com/watch?v=QQOHttHNtY0):
+
+{% embed url="https://www.youtube.com/watch?v=QQOHttHNtY0" %}
+
+**Mensaje del commit**
+
+Hemos visto que cada commit lleva su mensaje. Este mensaje debe ser suficientemente corto para que no sea una locura leerlo y, a la vez, explique qué cambio se ha hecho de forma clara.
+
+Normalmente **trabajamos con otras compañeras** en un mismo proyecto y **es fundamental que todas entiendan qué se ha hecho en cada paso** para poder trabajar de forma más rápida y no tener que estar preguntando qué es cada cosa. Crear mensajes claros en los commits, nos servirá también para que si volvemos a ver un commit del pasado, podamos entender qué es lo que hicimos.
+
+A la hora de escribir un mensaje para un commit hay múltiples maneras de plantearlo e infinidad de guías. Como estamos empezando tengamos en cuenta sólo la siguiente serie de normas para crear un mensaje lo suficientemente bueno:
+
+- Debe estar escrito en **inglés**.
+- Tiene que ser corto. Máximo 72 caracteres.
+- Debe explicar brevemente y a nivel general los cambios que se han hecho (añade el footer, corrige los enlaces del artículo, etc.).
+- No tiene que detallar los cambios hechos en el código, sino en general. Recordemos que ya tenemos un control de versiones que muestra, exactamente, qué se ha hecho. (Ejemplo: no pongáis "Add 2 paragraph tags", poned mejor "Add introduction text").
+- **Usaremos el imperativo** (Ejemplo: `Change header styles` - Cambia los estilos del header) para decir qué hace el commit.
+
+Un ejemplo de un buen commit:
+
+```
+$ Git commit -m "Fix typo in article title"
+```
+
+Hemos creado una [Guía con todos los comandos de Git](1_git.md) que usaremos durante el curso y alguna cosita más.
+
+#### EJERCICIO 7
+
+1. Vamos a crear un repositorio en GitHub, al que llamaremos `testing-git`.
+1. Lo clonamos en nuestro ordenador.
+1. Dentro de él, creamos un archivo HTML con un título HEAD en el que ponga "Testing Git" y un `h1` con el mismo texto.
+1. Además, crearemos un archivo para los estilos (`main.css`) dónde añadiremos un estilo para que la familia de texto que se use en la web sea `sans-serif`. Organizaremos el proyecto siguiendo la estructura de siempre:
+    ```txt
+    testing-Git
+    styles
+        main.css
+    index.html
+    ```
+1. Vamos a añadir los cambios al futuro commit con `git add`.
+1. A continuación creamos el primer commit con `git commit`.
+1. Subimos nuestro código al repositorio remoto con `git push`.
+1. Observa si se han subido los cambios a GitHub.
+
+#### EJERCICIO 8
+
+Modificar el archivo `index.html` para que en el título de la página ponga "My first Git project" y en el texto de la cabecera aparezca una sonrisa `:)`. Añadir los cambios y hacer un commit para guardarlos.
+
+> **Nota:** El mensaje del commit deberá explicar de forma clara los cambios que hemos realizado.
+
+\_\_\_\_\_\_\_\_\_\_
+
+#### EJERCICIO 9
+
+Vamos a realizar un tercer cambio dónde añadiremos un archivo `README.md` en la raíz de nuestro proyecto. Este archivo se utiliza para poner información acerca de nuestro código y, por defecto, la web GitHub lo muestra en la página principal de nuestro proyecto. Dentro de ese archivo escribiremos el siguiente texto:
+
+```markdown
+## My first Git project
+
+Dummy project to learn Git basics.
+```
+
+\_\_\_\_\_\_\_\_\_\_
+
+#### EJERCICIO 10
+
+1. Vamos a clonarnos el repositorio que ha hecho nuestra compañera.
+1. A continuación modificamos su index.html añadiendo un párrafo con el texto: **¡¡¡Esto es un proyecto colaborativo!!!**.
+1. Subimos el código al repositorio remoto.
+
+> **Nota:** si al intentar subirlo te da un error diciendo que no tienes permisos, la propietaria del repo debe ir al repo de GitHub > Settings > Manage access > Invitar a su compañera al repositorio.
+
+\_\_\_\_\_\_\_\_\_\_
+
+### Crear un repo en local y conectarlo
+
+Algunas veces, vamos a querer crear un repositorio en local y conectarlo con GitHub. Os vamos a explicar cómo hacerlo. Esta es una opción que se usa poco, por ello queremos que sepáis que existe, para que si algún día necesitamos hacerlo, en ese momento, buscamos la información en esta lección o en Internet, lo aprendemos en el momento y lo hacemos.
+
+Básicamente tenemos que **crear un repositorio en una carpeta de mi ordenador** con el comando `git init`:
+
+```bash
+git init nombre-de-carpeta
+```
+
+A continuación entramos en la carpeta creada y empezamos a trabajar. Cuando queramos hacemos `git add -A` y `git commit -m "My message"`. No podemos hacer `git push` porque no tenemos un repo remoto donde subir el código.
+
+A continuación creamos un repo en GitHub y lo enlazamos con el repo de nuestro ordenador, con el comando:
+
+```bash
+git remote add origin url-del-repositorio-que-me-da-github
+```
+
+A partir de este momento ya podemos trabajar normalmente y hacer `git push`, `git pull` o lo que queramos.
+
+## GitHub Pages
+
+Como hemos comentado previamente, GitHub ofrece un servicio llamado [GitHub Pages](https://pages.GitHub.com) que pueden utilizar los usuarios como hosting gratuito para los proyectos que estén alojados en GitHub.
+
+Un hosting es un servicio de almacenamiento de ficheros para poder tener tu web en un servidor y que esté disponible en Internet y esto es lo que ofrece exactamente GitHub Pages.
+
+#### EJERCICIO 11
+
+Desde la página de nuestro proyecto `testing-Git` en GitHub, activar GitHub Pages.
+
+**Pista:** Hay que ir a la pestaña _settings_ del proyecto ;)
+
+## Github Classroom
+
+GitHub Classroom es un "módulo" de GitHub que permite automatizar el control de acceso y la creación de repositorios. Durante este curso lo usaremos para asignar ejercicios.
+
+#### EJERCICIO 12
+
+Haz clic en el siguiente enlace [https://classroom.github.com/a/cdZUSdeT](https://classroom.github.com/a/cdZUSdeT) para crear tu primer repositorio a través de GitHub Classroom, y luego:
+
+1. Clónalo en tu equipo.
+1. Crea un archivo `README.md`.
+1. Dentro, escribe tu nombre precedido de un `#`: `# PEPA HERRERA`.
+1. Haz `add` y `commit`.
+1. Haz un `push` al repo remoto :)
+
+\_\_\_\_\_\_\_\_\_\_
+
 ## Recursos extra
 
-### Personaliza la terminal
+##### Personaliza la terminal
 
 - [Prompt coloreado](https://www.howtogeek.com/307701/how-to-customize-and-colorize-your-bash-prompt/)
 - [Prompt con información del repo GIT](https://sujipthapa.co/blog/Git-pro-tip-show-your-branch-on-linux-ubuntu-terminal)
 
-### Pro Git
+##### Pro Git
 
 Como recurso extra para aprender Git, el libro de "Pro Git" es uno de los mejores. Está escrito por dos desarrolladores que trabajaron en implementar libgit, el sistema que utiliza GitHub en el núcleo de su plataforma para lidiar con Git. Aparte, ambos han formado parte del desarrollo de Git y la comunidad que mantiene este software, por lo que saben muy bien de lo que hablan. El libro está explicado de forma sencilla y fácil de entender y es gratuito.
 
-**Nota:** Es un libro bastante denso pero los capítulos 1 y 2 se centran en lo básico, por lo que puede ser interesante leer estos y en el futuro leer el resto.
+> **Nota:** Es un libro bastante denso pero los capítulos 1 y 2 se centran en lo básico, por lo que puede ser interesante leer estos y en el futuro leer el resto.
 
 - [Enlace a la página del libro Pro Git (versión inglesa y más actual)](https://Git-scm.com/book/en/v2)
 - [Enlace a la página del libro Pro Git (versión española, menos actual y no disponible para descargar)](https://Git-scm.com/book/es/v2)
