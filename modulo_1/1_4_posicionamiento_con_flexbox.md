@@ -176,7 +176,7 @@ Teniendo una lista de 10 a 15 imágenes de 200x100 px, hacer un bloque flexbox d
 
 #### EJERCICIO 5
 
-**Flex, grow, shringm y basis**
+**Flex, grow, shrink y basis**
 
 ![Ejemplo](assets/images/1-4/ejercicio-5.png)
 
