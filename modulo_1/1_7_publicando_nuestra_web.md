@@ -22,88 +22,63 @@
 
 ## Introducción
 
-**La terminal es una herramienta fundamental** para el desarrollo front-end. Su finalidad es ejecutar comandos u órdenes mediante instrucciones. Estos comandos serían similares a las interacciones que haríamos en una aplicación normal (clics, escribir en campos, cambiar de sección, etc.) pero en este caso se hacen escribiendo órdenes en una terminal de comandos.
+La lección de hoy es amplia y variada. Vamos a aprender a trabajar con la terminal, una herramienta fundamental en la programación. También vamos continuar avanzando con nuestros conocimientos de Git y GitHub. Y al final de la lección vamos a aprender cómo publicar nuestra web en el servidor de GitHub Pages.
 
-Muchas de las herramientas para programación están hechas sin interfaz porque:
+> **NOTA:** La lección de hoy es doble, en ella hablamos de la terminal y de Git / GitHub. Debemos repartir nuestro tiempo de estudio entre ambas partes.
 
-- Son tan sencillas que no merece la pena hacer un interfaz gráfica.
-- O porque son tan complejas que no se puede hacer un interfaz gráfica que tenga todas las funcionalidades posibles.
+## La terminal
 
-Aprender a usar la terminal nos ayudará en el futuro a poder usar esas herramientas y mejorar nuestro flujo de trabajo gracias a ellas.
+> **Nota:** Antes de comenzar a trabajar con la terminal debes haber realizado la [Guía de instalación de la terminal](../informacion-de-interes/antes_de_empezar_el_curso/instalacion_de_la_terminal).
 
-La terminal parece muy agresiva al principio pero **poco a poco le iremos pillando cariño**. Te permite hacer prácticamente todo lo que puedes hacer con la interfaz gráfica del sistema operativo y bastantes cosas más.
+**La terminal, también llamada consola de comandos, es una herramienta fundamental** para la programación. Su finalidad es ejecutar **comandos u órdenes** mediante instrucciones. Estos comandos son similares a las interacciones que haríamos en una aplicación normal (clics, escribir en campos, cambiar de sección, etc.) pero en este caso se hacen **escribiendo órdenes** en una terminal de comandos.
 
-También vamos a aprender cómo funciona el **control de versiones del código** y cómo utilizarlo para ir, poco a poco, añadiéndolo a nuestro flujo de trabajo. En esta sesión vamos a ver las dos herramientas que utilizaremos para gestionar las versiones de nuestro proyecto, Git y GitHub.
+Muchas de las herramientas para programación están hechas sin interfaz porque son **tan sencillas que no merece la pena** hacer un interfaz o **son tan complejas que no se puede hacer un interfaz gráfica** que tenga todas las funcionalidades posibles. La solución es usar la terminal.
 
-**Git** es la herramienta que utilizaremos para realizar un control de versiones sobre nuestros archivos. Es una herramienta que se utiliza a través de la línea de comandos de nuestro ordenador, es decir, para trabajar con Git escribiremos comandos en nuestra Terminal.
-
-**GitHub es la plataforma social** más famosa a la hora de publicar y colaborar en desarrollo de código. Además, permite guardar en la nube nuestro código y sincronizarlo con el código que tendremos en nuestro ordenador. Todo esto lo hace apoyándose en Git.
-
-Otra cosa que veremos durante la sesión es **el servicio de GitHub Pages que ofrece GitHub**. Este servicio nos permite publicar nuestro código como si se tratase de un sitio web y que la gente pueda verlo en Internet desde cualquier parte del mundo. Al final de esta sesión veremos cómo habilitarlo para poder mostrar al mundo nuestra primera página web.
-
-## Resumen de la sesión
-
-En esta sesión se intenta acercar el control de versiones para que lo acabemos incluyendo en nuestro flujo de trabajo.
-
-Además presentamos la plataforma GitHub y su servicio de hosting: GitHub Pages.
-
-## ¿Para qué sirve lo que vamos a ver en esta sesión?
-
-En la terminal hoy solo vamos a aprender a movernos por las carpetas y crear algún archivo pero más adelante será una herramienta fundamental al trabajar en grupo y con control de versiones.
-
-Por ahora solo hemos empezado a arañar el mundo front-end pero el uso de un control de versiones nos ofrece algo que antes no teníamos:
-
-- Si me dejé el trabajo en casa, ¿cómo puedo continuar trabajando?
-- ¿Cómo puedo deshacer un cambio que acabo de realizar?
-- ¿Cómo puedo saber de forma clara en qué punto hice un cambio concreto?
-- ¿Cómo trabajo con otros sin que sea un caos y nos estemos pisando todo el rato?
-
-La solución a todas esas preguntas es simple: usando un control de versiones.
-
-Por su parte, GitHub, como hemos comentado, es una plataforma web que nos ofrece una serie de funcionalidades y herramientas para facilitarnos nuestro trabajo a la hora de realizar y mantener código. Algunas de las posibilidades que ofrece GitHub son las siguientes:
-
-- Usarlo como una nube donde sincronizar y hacer una copia de seguridad de nuestro proyecto.
-- Formar parte de una red social que gira en torno a la programación, con perfil de usuario, posibilidad de interactuar con otros usuarios y posibilidad de usarla como portafolio de nuestros trabajos de desarrollo web.
-- Acceder a herramientas para gestionar mejor los proyectos y facilitar el desarrollo del código.
-- Tener una plataforma donde alojar nuestras páginas web y poder mostrarlas al resto del mundo de forma sencilla con GitHub Pages.
-
-> **NOTA:** La lección de hoy es doble, en ella hablamos de la terminal y de Git. Debemos de invertir el 50% de nuestro tiempo de estudio a la terminal y el otro 50% a Git.
-
-## Terminal
-
-### Introducción a la Terminal
-
-La terminal o consola es una de nuestras herramientas principales en el desarrollo front. Nos permite comunicarnos con el sistema mediante pequeñas instrucciones u órdenes de texto, llamadas **comandos**, sin necesidad de una interfaz gráfica.
-
-La terminal nos permite obtener información del sistema, realizar tareas y hasta automatizarlas, y ganar en productividad.
-
-La terminal de nuestro ordenador tiene este aspecto:
+Cuando una persona utiliza un programa como VS Code o Chrome está utilizando **una interfaz gráfica que transforma nuestras acciones en órdenes** que le envía al sistema operativo a través de una terminal. Es decir las aplicaciones son intermediarias. Cuando utilizamos la terminal directamente **no hay nada que se interponga entre el sistema operativo y nosotras**. Tenemos todo el poder, y toda la responbilidad claro ;)
 
 ![Terminal de ubuntu](assets/images/1-7/terminal-ubuntu.png)
 
-En esta ventana iremos escribiendo nuestros comandos para interactuar con el ordenador o con aplicaciones que no tengan una interfaz gráfica.
+Como vemos en la imagen, la terminal nos muestra una línea, el **prompt**, a partir de la cual podemos escribir nuestros comandos. El prompt está compuesto por:
 
-Por defecto la terminal nos mostrará una línea (el _prompt_) a partir de la cual podremos escribir nuestros comandos.
+- Nombre del usuario con el que hemos iniciado sesión en el ordenador.
+- @
+- Nombre del equipo u ordenador.
+- Ruta de la carpeta en la que está ahora mismo la terminal:
+   - Puede ser la ruta absoluta de una carpeta.
+   - Puede ser `~` que es una abreviatura de la carpeta **home** del usuario.
+- Por último el símbolo del dólar, que es simplemente para saber dónde termina el prompt y dónde podemos empezar a escribir un comando.
 
-Normalmente nuestro prompt tendra este aspecto: **usuario@nombre-de-equipo: ruta por defecto \$**
+Ejemplos:
 
 ```shell
 ubuntu@ubuntu: ~$
 ```
 
-Esto nos dice que el usuario de nuestro equipo es **ubuntu**, que nuestro equipo se llama **ubuntu** y que estamos en la carpeta home del usuario (que se representa con `~`).
+```shell
+maricarmen@hp: /mnt/c/Users/maricarmen/Desktop/Adalab/ejercicios$
+```
 
-### Rutas absolutas y relativas
+> **NOTA**: A veces, en nuestros materiales o en Internet, encontraremos ejemplos de comandos precedidos por el símbolo del dólar, por ejemplo `$ pwd`. Es una manera de decir que es un comando de terminal. Nosotras no debemos escribir el `$` en la consola.
 
-Como hemos dicho la terminal nos permite navegar por las rutas del ordenador. Tenemos que conocer cómo funcionan las rutas para luego poder movernos entre las carpetas. Hay dos tipos de rutas:
+Y ya que hemos hablado de las rutas no podemos continuar con la explicación de la terminal, sin antes explicar lo qué son la rutas absolutas y relativas.
 
-**Las rutas absolutas** indican la **dirección completa** de una carpeta o fichero:
+### Las rutas absolutas
 
-- Siempre empiezan con `/`.
+Las rutas absolutas indican la **dirección completa** de una carpeta o fichero:
+
+- Siempre empiezan con `/`. La `/` es la ruta raíz del ordenador.
+- Si usamos una ruta absoluta **indicamos el camino que hay que recorrer desde la carpeta raíz** del ordenador a una carpeta o fichero.
 - Por ejemplo `/user/maricarmen/adalab/proyectos/modulo-1/`.
 - Por ejemplo `/user/maricarmen/adalab/proyectos/modulo-1/index.html`.
+- Por ejemplo `/mnt/c/Users/maricarmen/adalab/proyectos/modulo-1/index.html`.
 
-**Las rutas relativas** indican **el camino que hay que recorrer** para ir desde la carpeta en la que estoy ahora mismo a otra carpeta o fichero. Si por ejemplo tenemos las siguientes carpetas y ficheros en nuestro ordenador:
+### Las rutas relativas
+
+- Las rutas relativas indican **el camino que hay que recorrer** para ir desde la carpeta en la que estoy ahora mismo a otra carpeta o fichero.
+- La ruta relativa más simple es `../` (dos puntos barra). Esta ruta **indica la carpeta madre o carpeta superior respecto a la carpeta actual**. Si la ruta relativa es el camino a recorrer, escribiendo la ruta `../` vamos de la carpeta actual a la carpeta madre. Si escribimos la ruta `../../` vamos de la carpeta actual a la carpeta abuela. Y así sucesivamente...
+- Otra ruta relativa muy simple es `./` (punto barra). Esta ruta indica la carpeta en la que estoy, mi carpeta actual. Si la ruta relativa es el camino a recorrer, escribiendo la ruta `./` vamos de la carpeta actual a la carpeta actual. Esto parece que no tiene mucho sentido, en seguida veremos que sí lo tiene.
+
+Vamos a ver un ejemplo de rutas relativas:
 
 ```
 adalab/
@@ -117,15 +92,29 @@ adalab/
 └─ modulo-2/
 ```
 
-### Comandos básicos de la terminal
+Pensemos que estoy en la carpeta `proyectos/` y quiero *caminar* hasta la carpeta `modulo-1/`. La ruta a usar es `./modulo-1/`. Es decir, desde `proyectos/` entro en `modulo-1/`.
 
-A continuación vamos a explicar los comandos más usados en la terminal. Te recomendamos que abras una consola y los vayas probando.
+Ahora pensemos que estoy en la carpeta `proyectos/` y quiero *caminar* hasta la carpeta `images/`. La ruta a usar es `./modulo-1/images/`. Es decir, desde `proyectos/` entro en `modulo-1/`. Después desde `modulo-1/` entro en `images/`.
 
-> **NOTA**: A veces, en nuestros materiales o en Internet, nos encontraremos los comandos que tenemos que escribir precedidos por el símbolo del dólar, por ejemplo `$ pwd`. Esto es una costumnbre de los programadores. No hay que escribirlo en la terminal. Si vemos el ejemplo `$ pwd` solo debemos escribir `pwd` y pulsar Intro.
+Ahora pensemos que estoy en la carpeta `css/` y quiero entrar en la carpeta `images/`. La ruta a usar es `../images/`. Primero subo a la carpeta madre que es `modulo-1/` pero no necesito saber el nombre de la carpeta madre porque me vale con poner `../`. Desde la carpeta madre entro en la carpeta `images/`.
 
-**PWD**
+### Rutas dentro de ficheros
 
-Principalmente usaremos la terminal para movernos por el sistema de archivos y carpetas del ordenador. Así que es fundamental saber dónde estamos en cada momento. El comando `pwd` (_Print Working Directory_) se encargará de mostrarnos en qué carpeta nos encontramos.
+Cuando nos movemos por la terminal podemos usar rutas absolutas o relativas.
+
+Pero **cuando escribimos la ruta desde dentro de un fichero a otro fichero debemos usar siempre rutas relativas**. Esto se debe a que cuando estamos programando una página, los ficheros están en mi ordenador. Pero si los subo a GitHub y una compañera se los baja, ella los tendrá en una ruta absoluta diferente a la mía.
+
+Por ejemplo desde un `index.html` importamos la hoja de estilos usando `<link rel="stylesheet" href="./css/styles.css">`. Usamos `./css/` para ir desde `index.html` a `styles.css`.
+
+Pasa lo mismo cuando desde un fichero `styles.css` usamos una ruta a una imagen de fondo `background-image: url('../images/hero.png);`. Usamos `../images/` para ir desde `index.html` a `styles.css`.
+
+> **BRICONSEJO:** Acuérdate de este importante consejo. Cuando pongas la ruta de un fichero dentro de otro, la ruta debe empezar con `./` o `../`. Siempre. Sin excepciones. Si alguna vez no lo haces, antes o después tendrás problemas y acabarás acordándote de este briconsejo.
+
+Y ahora que ya sabemos cómo funcionan las rutas podemos aprender los principales comandos de la terminal. Te recomendamos que abras una consola y los pruebes.
+
+### pwd (print working directory)
+
+Principalmente usaremos la terminal para movernos por el sistema de archivos y carpetas del ordenador. Así que es fundamental saber dónde estamos en cada momento. El comando `pwd`se encargará de mostrarnos en qué carpeta nos encontramos.
 
 ```shell
 pwd
@@ -137,7 +126,7 @@ Devolverá la ruta absoluta de la carpeta en la que estemos, con este aspecto:
 /user/nombre-de-usuario
 ```
 
-`/user/nombre-de-usuario` es una ruta absoluta, que se construye a partir de la carpeta raíz de nuestro equipo, representada por el carácter inicial `/`. Nos estaría indicando que nos encontramos en la carpeta `nombre-de-usuario`, que está dentro de `user`, que está en la carpeta raíz de nuestro equipo.
+Nos estaría indicando que nos encontramos en la carpeta `nombre-de-usuario`, que está dentro de `user`, que está en la carpeta raíz de nuestro equipo.
 
 Si estás trabajando en un Ubuntu integrado dentro de Windows 10 y pruebas `pwd` verás que el resultado es:
 
@@ -145,116 +134,139 @@ Si estás trabajando en un Ubuntu integrado dentro de Windows 10 y pruebas `pwd`
 /mnt/c/Users/nombre-de-usuario
 ```
 
-Es decir, en Windows 10 la ruta raíz siempre es `/mnt/`. Y la letra `/c/` indica que estamos en la unidad `C:/` de Windows.
+Es decir, en Windows 10 las unidades de nuestro ordenador como `c:\` se montan dentro de `/mnt/`, por ello la ruta `c:\Users\maricarmen` corresponde con `/mnt/c/Users/maricarmen`.
 
+### ls (list)
 
-**LS**
+El comando `ls` nos muestra un listado de los archivos y carpetas que hay en la carpeta actual. Podemos usar la opción especial `ls -a` para listar también los ficheros y carpetas ocultos. Los ficheros y carpetas ocultos empiezan por `.` y por defecto no se ven ;). Por ejemplo un fichero oculto es `.gitignore`.
 
-El comando `ls` nos muestra un listado de los archivos y carpetas que hay en nuestra carpeta actual.
+### cd (change directory)
 
-Podemos usar la opción especial `ls -a` para listar también los ficheros y carpetas ocultos, que su nombre comienza por `.` y por defecto no se ven.
-
-**CD**
-
-El comando `cd` (Change Directory) nos ofrece diferentes posibilidades a la hora de cambiar de carpeta:
+El comando `cd` nos ofrece diferentes posibilidades a la hora de cambiar de carpeta. Para entrar en una carpeta hija de la carpeta actual usamos:
 
 ```shell
-cd nombre-de-carpeta
+cd nombre-de-carpeta-hija
 ```
 
-Nos permite entrar en la carpeta `nombre-de-carpeta` que estaría en nuestra carpeta actual.
+O lo que es lo mismo:
+
+```shell
+cd ./nombre-de-carpeta-hija
+```
 
 Podemos encadenar varios nombres de subcarpetas separadas por `/` para llegar hasta una ruta más profunda:
 
 ```shell
-cd nombre-de-carpeta/carpeta-hija/carpeta-nieta
-```
-
-> **NOTA**: la terminal de comandos nos permite autocompletar los comandos como `cd` usando la tecla tabulador (Tab); por ejemplo, si escribimos `cd a` y damos a tabulador, aparecerán las opciones de carpetas o ficheros en la carpeta actual que comienza por 'a'.
-
-```shell
-cd /ruta/absoluta/a/una/carpeta
+cd nombre-de-carpeta-hija/carpeta-nieta/carpeta-bisnieta
 ```
 
 También podemos escribir la ruta absoluta desde la raíz de nuestro equipo `/` a la carpeta a la que queremos entrar.
 
 ```shell
+cd /ruta/absoluta/a/una/carpeta
+```
+
+Podemos escribir solo `cd` y nos mueve a la carpeta de nuestro usuario:
+
+```shell
 cd
 ```
 
-`cd` solo nos devuelve a la carpeta de nuestro usuario (esta es la localización por defecto donde se abrirá nuestra terminal)
+`..` nos permite subir a la carpeta madre, esto es, ir a la carpeta que contiene nuestra carpeta actual
 
 ```shell
 cd ..
 ```
 
-`..` nos permite subir un nivel, esto es, ir a la carpeta que contiene nuestra carpeta actual
+O lo que es lo mismo:
+
+```shell
+cd ../
+```
+
+Y para ir a la carpeta hija de mi carpeta madre, lo que en cristiano significa ir a la carpeta prima:
+
+```shell
+cd ../carpeta-de-mi-prima-hermana
+```
+
+Este comando permite **deshacer o desandar** el último `cd` realizado. Vuelve a la localización anterior al último cambio de carpeta.
 
 ```shell
 cd -
 ```
 
-Este comando permite "deshacer" el último cd realizado: vuelve a la localización anterior al último cambio de carpeta.
+### mkdir (make directory)
 
-**MKDIR**
+Nos permite crear una carpeta. Pero no entra en la carpeta, solo la crea.
 
-Nos permite crear una carpeta. PERO NO ENTRA EN LA CARPETA NUEVA.
+Para crear la carpeta `proyecto` escribimos el comando:
 
-Si no especificamos una ruta se creará en la localización actual pero se puede indicar la ruta usando `/` y `..`. Por ejemplo, vamos a crear una carpeta "proyecto" en la carpeta madre de la carpeta actual:
+```shell
+mkdir proyecto
+```
+
+Casi todos los comandos los podemos combinar con lo que ya sabemos de las rutas. Por ejemplo para crear una carpeta `proyecto` en la carpeta superior escribimos el comando:
 
 ```shell
 mkdir ../proyecto
 ```
 
-**TOUCH**
+Y por ejemplo para crear una carpeta `proyecto` en la raíz del ordenador escribimos el comando:
 
-Nos permite crear un nuevo archivo.
+```shell
+mkdir /proyecto
+```
 
-Si no especificamos una ruta se creará en la localización actual pero se puede indicar la ruta usando `/` y `..`. Por ejemplo, vamos a crear un archivo "index.html" en la carpeta actual (estará vacío):
+### touch
+
+Nos permite crear un nuevo archivo. Al igual que el comando `mkdir` se puede combinar con lo que ya sabemos sobre rutas. Para crear el fichero `index.html` usamos el comando:
 
 ```shell
 touch index.html
 ```
 
-**CLEAR**
+En algunas terminales de Ubuntu y Windows también podemos limpiar usando los atajos de teclado `ctrl + l` o `ctrl + k`. Si estamos en Mac son `cmd + l` o `cmd + k`.
 
-A veces va a pasar que hemos introducido muchos comandos y sería genial poder "limpiar" la ventana. Para eso existe el comando `clear`, que nos limpia la ventana de la terminal.
+### cp (copy)
 
-**CP y MV**
-
-Si queremos copiar o mover archivos usaremos los comandos `cp` o `mv`. El formato será `cp`/`mv` archivo-de-origen archivo_de_destino.
-
-Vamos a mover el archivo index.html de nuestra carpeta actual a la carpeta madre:
+Para copiar ficheros (o carpetas) usamos el comando `cp` seguido del fichero (o carpeta) de origen, un espacio y la ruta del fichero (o carpeta) de destino:
 
 ```shell
-mv index.html ../index.html
+cp fichero-de-origen.html ../carpeta-de-destino/fichero-de-destino.html
 ```
 
-> **NOTA**: `mv` también sirve para renombrar ficheros o carpetas
+### mv (move)
 
-**Abrir nuestra carpeta actual en el explorador de archivos desde la terminal**
-
-A veces nos interesará abrir nuestra carpeta actual en el explorador de archivos (que en Ubuntu se llama Nautilus) y esto se puede hacer fácilmente desde la terminal con el comando:
+Para mover ficheros (o carpetas) usamos el comando `mv` seguido del fichero (o carpeta) de origen, un espacio y la ruta del fichero (o carpeta) de destino:
 
 ```shell
-nautilus .
+mv fichero-de-origen.html ../carpeta-de-destino/fichero-de-destino.html
 ```
 
-y sí, `$ nautilus ..` nos abrirá nuestra carpeta madre en el explorador de archivos ;)
+Este comando también sirve para renombrar, ya que renombrar un fichero de `a.html` a `b.html` es lo mismo que moverlo.
 
-> **NOTA**: en Mac podemos abrir el explorador de archivos (Finder) con `open`
+```shell
+mv a.html b.html
+```
 
-> **NOTA**: igual que con `nautilus` podemos abrir el explorador de archivos en una ruta, también podemos abrir programas como VSCode en una ruta. Por ejemplo, con `code .` abrimos una ventana de Code en la carpeta actual. Para que funcione también en Mac debemos [instalar el comando con estas instrucciones](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line).
+### clear
 
-**Volver a los últimos comandos**
+A veces pasa que hemos introducido muchos comandos y sería genial poder limpiar la ventana. Para eso existe el comando `clear`.
 
-Para volver a los últimos comandos ejecutados podemos usar la tecla de flecha para arriba ⬆️.
+```shell
+clear
+```
 
-Si queremos buscar un comando en el historial, podemos usar Ctrl + R y comenzar a escribir el comando para buscarlo.
+### Historial de comandos
 
-**Ayuda y opciones**
+Para movernos por los últimos comandos ejecutados usamos la teclas de flecha para arriba ⬆️ y para abajo ⬇️. Así nos ahorramos volver a escribir lo mismo muchas veces.
 
-Si no sabemos cómo funciona un comando pediremos ayuda al terminal. Por ejemplo para saber cómo funciona el comando LS escribimos:
+Si queremos buscar un comando en el historial, podemos usar `ctrl+r` y comenzar a escribir el comando para buscarlo.
+
+### Ayuda y opciones
+
+Si no sabemos cómo funciona un comando pediremos ayuda al terminal. Por ejemplo para saber cómo funciona el comando `ls` escribimos:
 
 ```shell
 ls --help
@@ -303,6 +315,12 @@ Ahora, editando el archivo `index.html` en VSCode se tiene que ver la imagen de 
 ¿Es diferente en los dos casos? ¿Por qué?
 
 \_\_\_\_\_\_\_\_\_\_
+
+
+
+
+
+
 
 ## Git
 

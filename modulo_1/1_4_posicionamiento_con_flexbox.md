@@ -113,10 +113,10 @@ No hay que confundir eje principal con eje horizontal, ni eje secundario con eje
 
 #### Procedimiento avanzado
 
-8. Si queremos indicar un ancho variable en función del espacio sobrante o el espacio faltante, usamos: `flex-grow`, `flex-shring`.
+8. Si queremos indicar un ancho variable en función del espacio sobrante o el espacio faltante, usamos: `flex-grow`, `flex-shrink`.
 1. Si queremos indicar un ancho inicial antes de repartir el espacio sobrante o faltante, usamos: `flex-basis`.
 1. Si queremos usar un ancho fijo usamos: `width`.
-1. Para indicar en un item un tamaño especial que debe tener: `flex-grow`, `flex-shring` y `flex-basis`.
+1. Para indicar en un item un tamaño especial que debe tener: `flex-grow`, `flex-shrink` y `flex-basis`.
 1. Si queremos cambiar el orden de los hijos le aplicamos order a uno de ellos, teniendo en cuenta que órdenes menores de 1 se moverán a la izquierda y mayores de 1 se moverán a la derecha.
 
 > **NOTA:** aquí estamos usando los nombres de clase `container` y `item` porque nos apetece. Podríamos haber usado otros nombres de clase que queramos.
