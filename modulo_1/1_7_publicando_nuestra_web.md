@@ -54,7 +54,7 @@ ubuntu@ubuntu: ~$
 ```
 
 ```shell
-maricarmen@hp: /mnt/c/Users/maricarmen/Desktop/Adalab/ejercicios$
+maricarmen@portatil-del-trabajo: /mnt/c/Users/maricarmen/Desktop/Adalab/ejercicios$
 ```
 
 > **NOTA**: A veces, en nuestros materiales o en Internet, encontraremos ejemplos de comandos precedidos por el símbolo del dólar, por ejemplo `$ pwd`. Es una manera de decir que es un comando de terminal. Nosotras no debemos escribir el `$` en la consola.
@@ -82,12 +82,12 @@ Vamos a ver un ejemplo de rutas relativas:
 ```
 adalab/
 ├ proyectos/
-├┬ modulo-1/
-│└┬ css/
-│ │ └ styles.css
-│ ├ images/
-│ │ └ logo.jpg
-│ └ index.html
+├─┬ modulo-1/
+│ └┬─ css/
+│  │  └─ styles.css
+│  ├─ images/
+│  │  └─ logo.jpg
+│  └─ index.html
 └─ modulo-2/
 ```
 
@@ -137,7 +137,17 @@ Es decir, en Windows 10 las unidades de nuestro ordenador como `c:\` se montan d
 
 ### ls (list)
 
-El comando `ls` nos muestra un listado de los archivos y carpetas que hay en la carpeta actual. Podemos usar la opción especial `ls -a` para listar también los ficheros y carpetas ocultos. Los ficheros y carpetas ocultos empiezan por `.` y por defecto no se ven ;). Por ejemplo un fichero oculto es `.gitignore`.
+El comando `ls` nos muestra un listado de los archivos y carpetas que hay en la carpeta actual.
+
+```shell
+ls
+```
+
+Podemos usar la opción especial `ls -a` para listar también los ficheros y carpetas ocultos. Los ficheros y carpetas ocultos empiezan por `.` y por defecto no se ven ;). Por ejemplo un fichero oculto es `.gitignore`.
+
+```shell
+ls -la
+```
 
 ### cd (change directory)
 
@@ -265,7 +275,7 @@ Si queremos buscar un comando en el historial, podemos usar `ctrl+r` y comenzar 
 
 ### Ayuda y opciones
 
-Si no sabemos cómo funciona un comando pediremos ayuda al terminal. Por ejemplo para saber cómo funciona el comando `ls` escribimos:
+Si no sabemos cómo funciona un comando pediremos ayuda a la terminal. Por ejemplo para saber cómo funciona el comando `ls` escribimos:
 
 ```shell
 ls --help
@@ -283,35 +293,41 @@ o
 ls -r
 ```
 
+Os aconsejamos que cada vez que aprendáis un comando nuevo miréis la ayuda para ver qué posiblidades tiene.
+
 #### EJERCICIO 1
 
-Desde la terminal, id a vuestra carpeta de documentos y cread la siguiente estructura de carpetas y archivos (vacíos):
+Utilizando solo la terminal, id a vuestra carpeta de ejercicios de esta lección y cread la siguiente estructura de carpetas y archivos (vacíos):
 
 ```txt
 nombre
-    datos
-        mis-datos.txt
-    proyecto
-        ruta-del-proyecto.txt
+└┬─ datos
+ │ └─ mis-datos.txt
+ └─ proyecto
+   └─ ruta-del-proyecto.txt
 ```
-
-- En el archivo **mis-datos.txt** vamos a escribir el Nombre y la comida favorita.
-- En el archivo **ruta-del-proyecto.txt** pondremos la ruta del archivo desde nuestra carpeta de `Documentos`
-- Mover los dos archivos a la carpeta principal, que sería **nombre**
 
 \_\_\_\_\_\_\_\_\_\_
 
 #### EJERCICIO 2
 
-Desde la terminal, vamos a crear un nuevo proyecto en nuestra carpeta de proyectos que se llame `rutas-relativas`, con las carpetas `images` y `styles`. Y los archivos `index.html` (en la raíz del proyecto), `style.css` (en la carpeta `styles`) y `imagen-de-prueba.jpg` (en la carpeta `images`, la podéis descargar desde [este enlace](assets/images/1-7/imagen-de-prueba.jpg)).
+Desde la terminal, vamos a crear un nuevo proyecto en nuestra carpeta de ejercicios que se llame `rutas-relativas`, con la siguiente estructura
 
-Ahora, editando el archivo `index.html` en VSCode se tiene que ver la imagen de dos formas:
+```
+rutas-relativas/
+├─ styles/
+│  └─ styles.css
+├─ images/
+│  └─ mi-foto.jpg
+└─ index.html
+```
 
-1. Con un `<img>`
-2. Como fondo de un `div` del mismo tamaño que la imagen
+A continuación, editando el archivo `index.html` en VS Code se tiene que ver la imagen de dos formas:
 
-¿Cómo es la ruta de ambas imágenes? ¿Absoluta? ¿Relativa?
-¿Es diferente en los dos casos? ¿Por qué?
+1. Con un `<img>`.
+1. Como fondo de un `div` del mismo tamaño que la imagen.
+1. ¿Cómo es la ruta de ambas imágenes? ¿Absoluta? ¿Relativa?
+1. ¿Es diferente en los dos casos? ¿Por qué?
 
 \_\_\_\_\_\_\_\_\_\_
 
@@ -322,7 +338,7 @@ A través de la terminal entra en la carpeta del ejercicio 1 y investiga el coma
 - Listar el contenido de la carpeta para ver los nombres, propietarios y tamaño de los ficheros y carpetas.
 - Listar el contenido de la carpeta para mostrar solo el nombre de los ficheros y carpetas en formato columna.
 - Listar (con un solo comando) el contenido de la carpeta para ver los nombres, propietarios y tamaño de los ficheros y carpetas, incluyendo las subcarpetas y subarchivos.
-- Repertir los ejercicios anteriores en la carpeta del ejercicio 7, mostrando también los archivos y carpetas ocultas.
+- Repertir los ejercicios anteriores pero además mostrando los ficheros ocultos.
 
 En cada caso mira detenidamente toda la información que muestra la columna.
 
@@ -341,7 +357,7 @@ A través de la terminal:
 
 A través de la terminal:
 
-- Renombra (o mueve) la carpeta `rutas-relativas-2` del ejercicio 12, y ponle el nombre `nuevas-rutas-relativas`.
+- Renombra (o mueve) la carpeta `rutas-relativas-2` del ejercicio anterior, y ponle el nombre `nuevas-rutas-relativas`.
 
 \_\_\_\_\_\_\_\_\_\_
 
@@ -397,13 +413,13 @@ Hemos creado una [Guía con todos los comandos de Git](1_git.md) que usaremos du
 
 1. Vamos a crear un repositorio en GitHub, al que llamaremos `testing-git`.
 1. Lo clonamos en nuestro ordenador.
-1. Dentro de él, creamos un archivo HTML con un título HEAD en el que ponga "Testing Git" y un `h1` con el mismo texto.
+1. Dentro de él, creamos un archivo `index.html` con un título en el `<head>` en el que ponga "Testing Git" y un `h1` con el mismo texto.
 1. Además, crearemos un archivo para los estilos (`main.css`) dónde añadiremos un estilo para que la familia de texto que se use en la web sea `sans-serif`. Organizaremos el proyecto siguiendo la estructura de siempre:
     ```txt
-    testing-Git
-    styles
-        main.css
-    index.html
+    testing-git
+    ├─ styles
+    │  └─ main.css
+    └─ index.html
     ```
 1. Vamos a añadir los cambios al futuro commit con `git add`.
 1. A continuación creamos el primer commit con `git commit`.
@@ -466,11 +482,25 @@ Como hemos comentado previamente, GitHub ofrece un servicio llamado [GitHub Page
 
 Un hosting es un servicio de almacenamiento de ficheros para poder tener tu web en un servidor y que esté disponible en Internet y esto es lo que ofrece exactamente GitHub Pages.
 
+Para activar el servicio de GitHub Pages en un repositorio hay que:
+
+1. Ir al repositorio en GitHub.
+1. Ir a la pestaña settings.
+1. Ir al apartado GitHub Pages.
+1. Seleccionar la opción **Master branch**.
+1. Al hacerlo nos genera una URL donde podemos ver nuestro repositorio.
+1. Normalmente tarda 5 minutos en publicar el repositorio, así que espera 5 minutos y...
+1. Entra en la URL que ha generado, verás tu página.
+   - Si ves el contenido del README.md es porque no tienes un fichero `index.html`.
+1. Para facilitarle la vida a los usuarios que vean tu repo vamos poner la URL en la portada del repo:
+   1. Vamos a la página principal del repo.
+   1. Debajo de la pestaña de **Settings** hay un botón que pone **Edit**, púlsalo.
+   1. Ahí puedes editar la descripción y URL del proyecto.
+   1. Pega la URL que te ha generado GitHub Pages en Website.
+
 #### EJERCICIO 11
 
-Desde la página de nuestro proyecto `testing-Git` en GitHub, activar GitHub Pages.
-
-**Pista:** Hay que ir a la pestaña _settings_ del proyecto ;)
+Publica tu repo `testing-git` con GitHub Pages y pon la URL en la portada del repo.
 
 ## Github Classroom
 
