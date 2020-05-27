@@ -18,6 +18,7 @@
   - [Guía para enfrentarse a problemas técnicos de manera autónoma](guias/busqueda_de_soluciones.md)
   - [Agile](guias/agile.md)
   - [Scrum](guias/scrum.md)
+  - [Git](guias/git.md)
 - [Información de interés](guias/informacion_de_interes.md)
 
 ## Módulo 1. Hola Mundo
@@ -39,7 +40,6 @@
 - [1.14 Accesibilidad y Sistemas de diseño](modulo_1/1_14_accesibilidad_sistemas_de_diseno.md)
 - [Repaso final](modulo_1/1_repaso.md)
 - [Recursos](modulo_1/1_recursos.md)
-  - [Comandos de Git](modulo_1/1_git.md)
 
 ## Módulo 2. Programando la web
 

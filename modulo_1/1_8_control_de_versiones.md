@@ -16,6 +16,19 @@
 
 <!-- /TOC -->
 
+- readme
+- gitignore
+- licencia
+- dar permisos a las compañeras
+
+Vídeo de merge
+- buena práctica hacer git pull frecuentemente
+- sube miguel la linea 1 y todo bien
+- sube maricarmen la línea 2 y todo bien
+- sube miguel la línea 1
+- sube maricarmen la línea 1 a la vez
+- ohh conflicto
+
 ## Introducción
 
 Hasta ahora hemos hecho una primera aproximación a Git, nada menor.
