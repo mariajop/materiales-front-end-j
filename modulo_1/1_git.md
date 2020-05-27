@@ -1,6 +1,18 @@
 # Principales comandos de Git
 
-#### git clone
+### git *command* --help
+
+Obtener ayuda sobre un comando:
+
+```bash
+git clone --help
+```
+
+```bash
+git commit --help
+```
+
+### git clone
 
 Clonar un repo en nuestro ordenador desde un repo remoto:
 
@@ -8,7 +20,7 @@ Clonar un repo en nuestro ordenador desde un repo remoto:
 git clone url-de-repo-en-github
 ```
 
-#### git add
+### git add
 
 Añadir todos los ficheros modificados al próximo commit:
 
@@ -26,13 +38,13 @@ git add nombre-de-fichero
 git add nombre-de-una-carpeta/*
 ```
 
-#### git commit
+### git commit
 
 ```bash
 git commit -m "Add footer styles"
 ```
 
-#### git push
+### git push
 
 Subir uno o varios commits al repositorio remoto:
 
@@ -40,7 +52,7 @@ Subir uno o varios commits al repositorio remoto:
 git push
 ```
 
-#### git pull
+### git pull
 
 Bajar los últimos commits desde el repositorio remoto:
 
@@ -48,7 +60,7 @@ Bajar los últimos commits desde el repositorio remoto:
 git pull
 ```
 
-#### git status
+### git status
 
 Ver el estado de nuestro repo local:
 
@@ -56,7 +68,7 @@ Ver el estado de nuestro repo local:
 git status
 ```
 
-#### git fetch
+### git fetch
 
 Sincroniza la información (de commits, ramas...) entre el repo remoto y el local, sin hacer ningún cambio en nuestro código ni en nuestro historial local de commits, lo podemos hacer siempre que queramos:
 
@@ -64,7 +76,7 @@ Sincroniza la información (de commits, ramas...) entre el repo remoto y el loca
 git fetch
 ```
 
-#### git log
+### git log
 
 Ver el listado de commits realizados:
 
@@ -74,7 +86,7 @@ git log
 
 Para salir de `git log` y volver a la terminal hay que pulsar `q`.
 
-#### git init
+### git init
 
 Crea un repositorio desde cero en nuestro ordenador:
 
@@ -82,7 +94,7 @@ Crea un repositorio desde cero en nuestro ordenador:
 git init
 ```
 
-#### git add remote
+### git add remote
 
 Enlaza un repositorio de nuestro ordenadro con un repositorio remoto:
 
