@@ -1,11 +1,9 @@
 
-En esta guía estamos recopilando todo lo que enseñamos en los tres módulos del curso sobre Git y GitHub.
+En esta guía **estamos recopilando todo lo que enseñamos en los tres módulos** del curso sobre Git y GitHub. No es necesario conocer ni dominar Git antes de empezar el curso de Adalab, os lo iremos enseñando poco a poco. Mucha de esta información y de estos vídeos están también en algunas de las lecciones de los módulos 1 y 2.
 
-Está guía está dividida en tres partes:
+Git es una herramienta que **se aprende con el uso y la práctica**.
 
-- Principales comandos de Git.
-- Vídeos sobre Git.
-- Git stash.
+Está guía está dividida en tres partes: principales comandos de Git, vídeos y git stash.
 
 # Principales comandos de Git
 
@@ -119,13 +117,13 @@ git remote add origin url-del-repositorio-que-me-da-github
 
 {% embed url="https://www.youtube.com/watch?v=MGf3K6qxptg" %}
 
-### Añadir cambios a un repositorio
+## Añadir cambios a un repositorio
 
 [Vídeo](https://www.youtube.com/watch?v=QQOHttHNtY0) sobre cómo añadir commits a un repositorio con los comandos `add`, `commit`, `push` y `pull`:
 
 {% embed url="https://www.youtube.com/watch?v=QQOHttHNtY0" %}
 
-### Merges blandos y duros
+## Merges blandos y duros
 
 [Vídeo](https://www.youtube.com/watch?v=jDOVhbgc8Ec) sobre cómo trabajar dos personas en paralelo en un repositorio y cómo solucionar merges blandos (cuando ambas personas tocan diferentes líneas de código) y merges duros (cuando ambas personas tocan la misma línea):
 
@@ -135,7 +133,7 @@ git remote add origin url-del-repositorio-que-me-da-github
 
 Git stash es una herramienta muy útil pero un poco avanzada. No la explicamos durante el curso, pero os la explicamos aquí para que cuando estéis muy aburridas podáis aprender algo nuevo :)
 
-## ¿Qué es git stash?
+## ¿Qué es?
 
 Git nos permite guardar el código modificado y no commiteado a una especie de cajón temporal, al que llamaremos **stash** y recuperarlo más tarde.
 
