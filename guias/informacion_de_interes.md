@@ -17,17 +17,21 @@ Os recomendamos que los clonéis en vuestro ordenador y hagáis **`git pull`** f
 
 - Documentación sobre HTML, CSS y JS: [MDN](https://developer.mozilla.org/es/).
 - Documentación sobre HTML, CSS y JS: [Devdocs](https://devdocs.io/).
+- Artículos y tutoriales sobre HTML y CSS: [CssTricks](https://css-tricks.com/).
 - Documentación de [React](https://es.reactjs.org/).
 - Resolución de dudas y búsqueda de errores: [Stack Overflow](https://stackoverflow.com).
 - Resolución de dudas y búsqueda de errores: [Google](https://google.com).
 
 ## Guías
 
+- [Código de conducta en Adalab](codigo_de_conducta.md)
 - [Cómo trabajar en remoto](como_trabajar_en_remoto.md)
 - [Guía para enfrentarse a problemas técnicos de manera autónoma](busqueda_de_soluciones.md)
+- [Agile](agile.md)
+- [Scrum](scrum.md)
 
 ## Recursos
 
 - [Git](git.md)
-- [Sintaxis de JavaScript](../modulo_2/2_sintaxis_de_js.md)
-- [Fases de la programación](../modulo_2/2_fases_de_un_programa_js.md)
+- [Sintaxis de JavaScript](sintaxis_de_js.md)
+- [Fases de la programación](fases_de_un_programa_js.md)
