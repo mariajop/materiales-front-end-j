@@ -43,8 +43,7 @@
 - [Repaso final](modulo_1/1_repaso.md)
 - [Recursos](modulo_1/1_recursos.md)
 
-## Módulo 2. Programando la web
-
+- Módulo 2. Programando la web
   - [2.1 Intro a la programación](modulo_2/2_1_intro_a_la_programacion.md)
   - [2.2 Intro a la programación 2](modulo_2/2_2_intro_a_la_programacion_2.md)
   - [2.3 Condicionales](modulo_2/2_3_condicionales.md)
@@ -63,8 +62,7 @@
   - [Repaso final](modulo_2/2_repaso.md)
   - [Recursos](modulo_2/2_recursos.md)
 
-## Módulo 3
-
+- Módulo 3. React
   - [3.1 Clases de ES6](modulo_3/3_1_clases_es6.md)
   - [3.2 Intro a React](modulo_3/3_2_intro_react.md)
   - [3.3 Intro a React II](modulo_3/3_3_intro_react_2.md)
