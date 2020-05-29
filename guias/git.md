@@ -129,6 +129,18 @@ git remote add origin url-del-repositorio-que-me-da-github
 
 {% embed url="https://www.youtube.com/watch?v=jDOVhbgc8Ec" %}
 
+## Trabajar con varias ramas
+
+[Vídeo](https://www.youtube.com/watch?v=MnaRLneoiSo) sobre cómo trabajar con varias ramas, movernos entre ramas, publicarlas y mergear una rama en otra:
+
+{% embed url="https://www.youtube.com/watch?v=MnaRLneoiSo" %}
+
+## Flujo de ramas
+
+[Vídeo](https://www.youtube.com/watch?v=t-GbqNDrJ4A) sobre qué ramas debemos usar y cómo y cuándo debemos mover el código entre las diferentes ramas para mantener la mejor calidad de código:
+
+{% embed url="https://www.youtube.com/watch?v=t-GbqNDrJ4A" %}
+
 # Git stash
 
 Git stash es una herramienta muy útil pero un poco avanzada. No la explicamos durante el curso, pero os la explicamos aquí para que cuando estéis muy aburridas podáis aprender algo nuevo :)
