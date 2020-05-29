@@ -59,6 +59,12 @@ Subir uno o varios commits al repositorio remoto:
 git push
 ```
 
+Subir los últimos commits al remoto después de crear una rama:
+
+```bash
+git pull -u origin nombre-de-rama
+```
+
 ## git pull
 
 Bajar los últimos commits desde el repositorio remoto:
@@ -77,10 +83,52 @@ git status
 
 ## git fetch
 
-Sincroniza la información (de commits, ramas...) entre el repo remoto y el local, sin hacer ningún cambio en nuestro código ni en nuestro historial local de commits, lo podemos hacer siempre que queramos:
+Sincroniza la información (de commits, ramas...) desde el repo remoto al local, sin hacer ningún cambio en nuestro código ni en nuestro historial local de commits, lo podemos hacer siempre que queramos:
 
 ```bash
 git fetch
+```
+
+## git branch
+
+Listar las ramas locales:
+
+```bash
+git branch
+```
+
+Listar las ramas remotas:
+
+```bash
+git branch -r
+```
+
+Crear una rama (sin movernos a ella):
+
+```bash
+git branch nombre-de-la-nueva-rama
+```
+
+## git checkout
+
+Movernos desde la rama actual a otra rama:
+
+```bash
+git checkout nombre-de-otra-rama
+```
+
+Crear y movernos a una rama en un solo comando:
+
+```bash
+git checkout -b nombre-de-la-nueva-rama
+```
+
+## git merge
+
+Mover el código desde la rama de origen hacia la rama en la que estoy:
+
+```bash
+git merge nombre-de-rama-origen
 ```
 
 ## git log
