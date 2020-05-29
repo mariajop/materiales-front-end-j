@@ -11,8 +11,7 @@
 - [EJERCICIO 5](#ejercicio-5)
 - [EJERCICIO 6](#ejercicio-6)
 - [EJERCICIO 7](#ejercicio-7)
-- [EJERCICIO 8.1](#ejercicio-81)
-- [EJERCICIO 8.2](#ejercicio-82)
+- [EJERCICIO 9](#ejercicio-9)
 
 <!-- /TOC -->
 
