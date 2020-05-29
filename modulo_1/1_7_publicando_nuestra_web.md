@@ -407,7 +407,7 @@ Un ejemplo de un buen commit:
 $ Git commit -m "Fix typo in article title"
 ```
 
-Hemos creado una [guía sobre Git](../guias/git.md) que usaremos durante el curso y alguna cosita más.
+> **NOTA:** Hemos creado una [guía sobre Git](../guias/git.md) donde recopilamos todos los contenidos que aprendemos durante el curso.
 
 #### EJERCICIO 7
 
