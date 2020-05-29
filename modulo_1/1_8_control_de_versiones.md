@@ -18,66 +18,46 @@
 
 ## Introducción
 
-Hasta ahora hemos hecho una primera aproximación a Git, nada menor.
+Hasta ahora hemos hecho una primera aproximación a Git, nada menor. Sabemos crear un repositorio y subir y bajar cambios a través de:
 
-1. Primero vimos cómo crear un repositorio local con `git init` y mantener nuestros cambios con `git add -A` y `git commit -m "Mensaje del commit"`.
-1. Pero no solo eso, también hemos aprendido a conectar nuestro proyecto local con un repositorio remoto alojado en GitHub con `git remote add`
-1. O directamente, a crearlo en Github y clonarlo en nuestro equipo con `git clone`.
+```bash
+git add -A
+git commit -m "Message commit"
+git push
+```
 
-También vimos cómo publicar nuestro trabajo a través del sistema de hosting propio de GitHub: **GitHub Pages**.
+También sabemos cómo publicar nuestro trabajo a través del sistema de hosting de GitHub: **GitHub Pages**.
 
-Hoy vamos a ver cómo trabajar en grupo sobre el mismo proyecto y sus archivos.
+Hoy vamos a ver cómo mejorar nuestros repos y trabajar en grupo sobre el mismo proyecto y sus archivos.
 
-## Repaso del proceso de creación de un proyecto Git
+## Mejorando nuestros repositorios
 
-### Inicio de un repositorio desde Github
-Lo más sencillo es crear el proyecto de cero desde nuestro servicio de Git, en este caso, GitHub:
-
-1. Vamos a nuestro perfil
-1. Creamos un nuevo repositorio
-1. Rellenamos el nombre y la descripción
-1. Ahora podemos elegir tres acciones (se pueden elegir las tres, alguna o ninguna):
-	1. Añadir un archivo `README.md`
-	1. Añadir un archivo `.gitignore`
-	1. Añadir una licencia
-1. Una vez creado solo faltaría clonarlo a nuestro ordenador para trabajar con él, hay dos formas:
-	1. Desde la terminal voy a la carpeta donde quiero clonar el proyecto y, con la url que me da GitHub para clonar, escribo: `git clone url-del-repositorio-que-me-da-github`.
-	1. Si quiero clonarlo y usar un nombre específico para la carpeta de mi repositorio sigo el paso uno pero escribo: `git clone url-del-repositorio-que-me-da-github nuevo-nombre-de-carpeta`
-
-### Inicio de repositorio desde un proyecto existente
-¿Cómo? ¿Que ya teníamos un proyecto local y queremos subirlo a GitHub? Bueno, tampoco es tan malo:
-
-1. **IMPORTANTE**: Antes de inicializar un repositorio debemos estar en la carpeta correcta. **Desde la terminal, con `cd`, nos desplazaremos dentro de la carpeta de nuestro proyecto.**
-2. Inicializamos el repositorio local Git con `git init` (se hace desde la terminal y tenemos que asegurarnos de estar en la carpeta correcta).
-3. Vamos a GitHub.com y creamos un repositorio nuevo (esta vez no añadiremos ni licencia, ni `README.md`, ni `.gitignore`) y GitHub nos redirigirá a una página con las instrucciones a seguir
-4. Como ya hemos inicializado nuestro proyecto Git simplemente añadiremos el repositorio remoto. Usaremos `git remote add origin url-del-repositorio-que-me-da-github`.
-5. Creamos cómodamente el `README.md` desde nuestro editor de código.
-5. Añadimos los archivos con `git add -A`
-6. Hacemos un primer commit `git commit -m "Initial commit"`
-7. Y subimos, esta primera vez, con `git push -u origin master`
-
-![Instrucciones para añadir el repositorio remoto](assets/images/1-8/new-repo-instructions.png)
+A continuación vamos a aprender 3 ficheros que usamos en los repositorios para gestionarlos mejor y añadir información útil para las personas que vean nuestros repos.
 
 ### README.md
-El archivo `README.md` es un documento escrito en [markdown](https://es.wikipedia.org/wiki/Markdown) que se presenta en la página principal del repositorio y tiene como objeto aportar una primera documentación o presentación del proyecto.
-Esto es una convención, pero hay que tenerla en cuenta.
 
-> **NOTA**: Markdown es un lenguaje de marcado como HTML pero más simple.
+El archivo `README.md` es un documento escrito en [markdown](https://es.wikipedia.org/wiki/Markdown) que se presenta en la página principal del repositorio y tiene como objeto aportar una primera documentación o presentación del proyecto.
+
+Markdown es un lenguaje de marcado como HTML pero más simple. Al ser más simple y permitirnos menos opciones, nos resulta más fácil de aprender y además todos los proyectos que hay en GitHub tiene un formato común.
 
 Ejemplos de readme.md:
-* [Sistema de plantillas PUG](https://github.com/pugjs/pug)
-* [Editor de código VSCode](https://github.com/Microsoft/vscode)
+
+* [React](https://github.com/facebook/react)
+* [Editor de código VS Code](https://github.com/Microsoft/vscode)
 * [Gulp (Automatizador de tareas)](https://github.com/gulpjs/gulp)
 
+Os recomendamos que cuando tengáis tiempo le pongáis un buen README.md a todos vuestros repositorios. Las empresas que están buscando Adalabers lo agradecerán.
+
 ### .gitignore
-Git tiene un sistema para poder ignorar archivos de un proyecto.
-**¿Y por qué querríamos hacer esto?** Porque habrá archivos que necesitemos en nuestra carpeta de trabajo local pero que no queramos subir al repositorio ni controlar sus cambios.
 
-En proyectos pequeños como los que tenemos ahora vamos a querer siempre subir al repositorio remoto todos nuestros archivos. Pero podría pasar que tuviésemos una carpeta con los archivos de diseño de ciertas partes del proyecto o archivos comprimidos que usamos para enviar a nuestro cliente los avances.
+Git tiene un sistema para poder ignorar archivos de un repositorio.
+**¿Y por qué querríamos hacer esto?** Porque **hay archivos** que necesitemos en nuestra carpeta de trabajo local pero **que no queremos subir al repositorio ni controlar sus cambios**.
 
-> **NOTA**:	Es muy común que el propio sistema operativo cree en cada carpeta una serie de archivos o carpetas ocultas que le ayudan a realizar tareas como la búsqueda de archivos.
+En proyectos pequeños como los que tenemos ahora vamos a querer siempre subir al repositorio remoto todos nuestros archivos. Pero pronto pasará que tendremos una carpeta con los archivos de diseño de ciertas partes del proyecto o archivos comprimidos que usamos para enviar a nuestro cliente los avances.
 
-Estos archivos, que no tiene sentido tener "controlados" pero que en nuestra carpeta local queremos mantener, se listan en este archivo especial, `.gitignore` para decirle al algoritmo de Git que no los tenga en cuenta.
+> **NOTA**:	Es muy común que el propio sistema operativo cree en cada carpeta una serie de archivos o carpetas ocultas que le ayudan a realizar tareas como la búsqueda de archivos. Estos archivos del sistema operativo no queremos subirlos al repositorio remoto.
+
+Estos archivos, que no tiene sentido tener "controlados" pero que en nuestra repo local queremos mantener, se listan en este archivo especial, `.gitignore` para decirle al algoritmo de Git que no los tenga en cuenta.
 
 En [gitignore.io](https://www.gitignore.io) podemos encontrar una serie de configuraciones ya hechas que nos ayudan a ignorar tipos de archivos comunes según el sistema operativo o el lenguaje en el que trabajemos.
 
@@ -89,35 +69,39 @@ GitHub nos ofrece un enlace donde nos intenta orientar sobre qué licencia elegi
 
 
 ## Compartir código con mi equipo
-Otras de las bondades de Git es que hace que trabajar en grupo sea seguro y más fácil. Nos evita por ejemplo: tener que compartir archivos a través del email, perder código cuando una compañera lo sobreescribe por error...
 
-Desde la página de nuestro repositorio accedemos a `settings` y desde allí a `Collaborators & teams` donde podremos añadir a nuestras colaboradoras favoritas, o a las que nos toquen ;)
+Otras de las bondades de Git es que hace que trabajar en grupo sea **seguro y más fácil**. Nos evita por ejemplo: tener que compartir archivos a través del email, perder código cuando una compañera lo sobreescribe por error...
+
+Las primeras semanas de utilizar Git **nos equivocamos de vez en cuando** y creemos que hemos perdido un montón de código que nos ha costado la vida crear. Y lo que es peor, a veces nos pasa eso con el código de nuestras compañeras. Pues gracias a Git **todo lo que esté dentro de un commit no se pierde nunca**. Git nos permite viajar al pasado, recuperar el código y volver al presente.
+
+El primer paso es permitir a nuestras compañeras modificar nuestro repo. Desde el GitHub de nuestro repositorio accedemos a **Settings** y desde allí a **Manage access** donde podremos añadir a nuestras colaboradoras favoritas, o a las que nos toquen ;)
 
 ### Modificar archivos en local y subir a remoto los cambios
+
 Ya lo hemos ido viendo estos días:
 
-1. Se modifican archivos y se guardan los cambios en el editor.
-2. Se añaden para su control con `git add -A` (añade todos los archivos modificados) o con `git add nombre-de-archivo` (añade solo el archivo especificado)
-3. Creamos el commit con `git commit -m "Short description of the commit"`
+1. Se modifican archivos y **se guardan los cambios en el editor**.
+2. **Se añaden para su control** con `git add -A` (añade todos los archivos modificados) o con `git add nombre-de-archivo` (añade solo el archivo especificado).
+3. **Creamos el commit** con `git commit -m "Short description of the commit"`
 
-Hasta aquí todo normal. Ahora llega el momento de subir el commit (o los commits, si hemos hecho varios) con nuestros cambios al repositorio remoto con `git push origin master`, pero pueden pasar varias cosas:
+Hasta aquí todo normal. Ahora llega el momento de **subir el commit** (o los commits, si hemos hecho varios) con nuestros cambios al repositorio remoto con `git push origin master`, pero pueden pasar varias cosas:
 
-1. Que se suba bien, sin problemas ni conflictos. Yay!
-2. Que no podamos subir nuestros cambios porque no estemos trabajando con la última versión. En este caso tendremos que hacer `git pull` para actualizar nuestro repositorio local con la última versión que se encuentra en remoto, es decir, nos traeremos los últimos cambios hechos por otras personas a nuestro ordenador.
+1. Que se suba bien, **sin problemas ni conflictos**. Yay!
+2. Que no podamos subir nuestros cambios porque **no estemos trabajando con la última versión**. Lo sabremos porque la terminal nos muestra un error. En este caso tendremos que hacer `git pull` para actualizar nuestro repositorio local con la última versión que se encuentra en remoto, es decir, **nos traemos los últimos cambios** hechos por otras personas a nuestro ordenador.
 
-> **NOTA**: Antes de comenzar a trabajar (antes de empezar a hacer cambios en nuestros archivos) es una buena práctica hacer `git pull` y actualizar nuestro repositorio local con los cambios que otras personas han subido al repositorio remoto. Aun así, ocurrirá que tras hacer nuestros cambios y commitearlos, al intentar hacer `git push` el terminal nos indique que tenemos que hacer `git pull` primero, esto ocurre por que alguna compañera ha subido cambios mientras nosotras trabajábamos.
+> **NOTA**: Antes de comenzar a trabajar, de vez en cuando y antes de hacer un commit **es una buena práctica hacer `git pull`** y actualizar nuestro repositorio local con los cambios que otras personas han subido al repositorio remoto. Aun así, ocurrirá que tras hacer nuestros cambios y commitearlos, al intentar hacer `git push` el terminal nos indique que tenemos que hacer `git pull` primero, esto ocurre por que alguna compañera ha subido cambios mientras nosotras trabajábamos.
 
 
 ### ¿Qué pasa cuando hacemos un `git pull`?
 Pasan varias cosas:
 
 1. Git comprueba si en el repositorio remoto hay una versión posterior (más nueva) a la que se encuentra en nuestro repositorio local.
-2. Si encuentra cambios posteriores, se los baja e la intenta mezclarlos con los de nuestros commits.
+2. Si encuentra cambios posteriores, se los baja e intenta mezclarlos con los de nuestros commits.
 
 Y aquí tenemos dos escenarios diferentes:
 
-1. Los cambios que se han bajado de remoto (realizados por mis compañeras) y los míos se pueden mezclar (o mergear) automaticamente, Git crea un commit automático con esta mezcla (o merge) y nos lo muestra usando el editor por defecto que tenemos configurado en nuestra terminal (NANO, vim...).
-2. Otra posibilidad es que Git no pueda mezclar los cambios automáticamente. Entonces nos avisa de que hay conflictos que tendremos que resolver nosotras manualmente. Nos mostrará una lista de archivos donde se encuentran los conflictos.
+1. Los cambios que se han bajado de remoto (realizados por mis compañeras) y los míos se pueden mezclar (o mergear) automaticamente, Git crea un commit automático con esta mezcla (o merge) y nos lo muestra usando el editor por defecto que tenemos configurado en nuestra terminal (NANO, vim...). A esto se le llama un **soft merge**.
+2. Otra posibilidad es que Git no pueda mezclar los cambios automáticamente. Entonces nos avisa de que hay conflictos que tendremos que resolver nosotras manualmente. Nos mostrará una lista de archivos donde se encuentran los conflictos. Es importante leer toda la info que nos muestra la terminal. A esto se le llama un **hard merge**.
 
 > **NOTA**: En el primer caso podremos cambiar el mensaje del commit automático o poner uno nuevo. Guardamos aceptando el nombre que nos propone, salimos, y hacemos un push (se subirá el commit con nuestros cambios y el commit con el merge o mezcla).
 
@@ -131,17 +115,21 @@ Un conflicto ocurre cuando git se encuentra con dos versiones del mismo bloque d
 >>>>>>>
 ```
 
-**<<<<<<<**: Indica el inicio de la zona de conflicto, en la línea siguiente muestra el primer bloque en conflicto.
+`<<<<<<<`: Indica el inicio de la zona de conflicto, en la línea siguiente muestra el primer bloque en conflicto.
 
-**=======**: Separa las dos versiones, seguidamente muestra el bloque alternativo que está dando conflicto.
+`=======`: Separa las dos versiones, seguidamente muestra el bloque alternativo que está dando conflicto.
 
-**>>>>>>>**: Indica el final e la zona de conflicto
+`>>>>>>>`: Indica el final e la zona de conflicto
 
 Aquí puede pasar que queramos la primera opción, la segunda, las dos, o una mezcla de las dos.
 
 La manera de **afrontar este conflicto** es elegir lo que queremos que ponga en ese bloque, quitar los separadores que añade Git, guardar el archivo y hacer add, commit y push con normalidad.
 
-Los conflictos más pequeños los resolveremos sobre la marcha, en los más complicados tendremos que hablar con la compañera que haya hecho los cambios para decidir qué hacer.
+Los conflictos más pequeños los resolveremos sobre la marcha, en **los más complicados tendremos que hablar con la compañera que haya hecho los cambios para decidir qué hacer**. No queremos machacar el código de una compañera sin su permiso.
+
+[Vídeo](https://www.youtube.com/watch?v=jDOVhbgc8Ec) sobre cómo trabajar dos personas en paralelo en un repositorio y cómo solucionar merges blandos (cuando ambas personas tocan diferentes líneas de código) y merges duros (cuando ambas personas tocan la misma línea):
+
+{% embed url="https://www.youtube.com/watch?v=jDOVhbgc8Ec" %}
 
 ## Ramas
 
@@ -154,13 +142,11 @@ Git nos permite crear versiones paralelas de nuestro proyecto para poder desarro
 
 Cuando iniciamos un repositorio git se crea una primera rama, y se llama `master` por convención. En la última sesión trabajamos en esa rama.
 
-Vamos a ver el trabajo en ramas a través de un ejemplo, como un mini proyecto de grupo, porque al fin y al cabo, git va de trabajar en grupo.
-
-* * *
+Vamos a ver el trabajo en ramas a través de un ejemplo, como un mini proyecto de grupo, porque al fin y al cabo, Git va de trabajar en grupo.
 
 #### EJERCICIO 1
 
-1. Vamos crear un repositorio por pareja, donde ambas debéis tener acceso al repositorio (la que lo crea debe dar acceso al usuario de GitHub de la otra)
+1. Vamos crear un repositorio por pareja, donde ambas debéis tener acceso al repositorio (la que lo crea debe dar acceso al usuario de GitHub de la otra).
 2. Crearemos una primera versión de nuestra web (solo en HTML) que tendrá:
 	1. Un `<header>` con un `<h1>` con el nombre del grupo
 	2. Un `<main>` con dos secciones:
@@ -192,12 +178,18 @@ Nos tiene que quedar algo así:
 </html>
 ```
 
-* * *
+\_\_\_\_\_\_\_\_\_\_
 
 ### Creando ramas
-Para crear ramas escribimos `git branch nombre-de-la-rama` y nos movemos a ella con `git checkout nombre-de-la-rama`.
+Para crear ramas escribimos y movernos a ella tenemos dos comandos:
 
-Tenemos un atajo para crear la rama y cambiarnos a ella directamente
+```bash
+git branch nombre-de-la-rama
+git checkout nombre-de-la-rama
+```
+
+Tenemos un atajo para crear la rama y cambiarnos a ella directamente:
+
 ```
 git checkout -b nombre-de-la-rama
 ```
@@ -216,25 +208,24 @@ La primera vez usaremos el git push con `-u`:
 git push -u origin nombre-de-la-rama
 ```
 
-* * *
 #### EJERCICIO 2
 
 1. Una de la pareja creará una rama `footer`, nos movemos a ella y modificamos un poco nuestro proyecto. Añadiremos a nuestro footer el enlace a la web de Adalab, quedando así:
-```html
-<footer>
-	<p>Maquetado en grupo en <a href="http://adalab.es">Adalab</a></p>
-</footer>
-```
-2. Como siempre, añadimos, commiteamos y hacemos push, esta vez usando `git push -u origin footer`.
-3. Si ahora cambiamos a la rama `master` veremos que permanece como la dejamos y que el cambio del enlace solo está hecho en nuestra rama `footer`.
+   ```html
+   <footer>
+   	<p>Maquetado en grupo en <a href="http://adalab.es">Adalab</a></p>
+   </footer>
+   ```
+1. Como siempre, añadimos, commiteamos y hacemos push, esta vez usando `git push -u origin footer`.
+1. Si ahora cambiamos a la rama `master` veremos que permanece como la dejamos y que el cambio del enlace solo está hecho en nuestra rama `footer`.
 
 ![Resultado de los ejercicios 1 y 2](assets/images/1-8/ramas-1.png)
 
-* * *
-
+\_\_\_\_\_\_\_\_\_\_
 
 ### Fusionar ramas
-Una vez que hemos terminado el trabajo en nuestra nueva rama y lo hemos subido al servidor remoto querremos aplicar estos cambios en nuestra rama principal, `master`.
+
+Una vez que hemos terminado el trabajo en nuestra nueva rama y lo hemos subido al servidor remoto queremos aplicar estos cambios en nuestra rama principal, `master`.
 
 Para ello nos vamos a la rama destino (en este caso `master`) con `git checkout master`,  y escribiremos:
 
@@ -244,23 +235,20 @@ git merge nombre-de-la-rama
 
 Esto nos mezclará nuestra versión local de la rama `nombre-de-la-rama` con la rama donde estemos, en este caso, `master`. Si todo va bien nos mezclará las ramas, creará un commit automático y si hacemos un `git status` nos dirá que solo queda hacer un `git push origin master` y ya.
 
-> **NOTA**:	Es importante haber hecho un `git pull origin nombre-de-la-rama` en la rama que vamos a fusionar, en este caso `nombre-de-la-rama` antes de empezar el proceso de fusión para asegurarnos de que tenemos la última versión en ambas ramas.
-
-
-* * *
+> **NOTA**:	Es importante haber hecho un `git pull` en la rama que vamos a fusionar, en este caso `nombre-de-la-rama` antes de empezar el proceso de fusión para asegurarnos de que tenemos la última versión en ambas ramas.
 
 #### EJERCICIO 3
 
 Vamos a fusionar nuestra rama `footer` con `master` para que nuestra web tenga el enlace que hemos añadido anteriormente.
 Para ello:
 
-1. Nos movemos a la rama `footer`
-2. Comprobamos que está correcto y tenemos la última versión
-3. Nos movemos a la rama `master` (sí, es super buena idea asegurarnos de que también tenemos la última versión)
-4. Hacernos un merge de la rama `footer`
-5. Resolvemos los conflictos si los hay
-6. Comprobamos que los cambios está hechos
-7. Y subimos al repositorio remoto
+1. Nos movemos a la rama `footer`.
+2. Comprobamos que está correcto y tenemos la última versión.
+3. Nos movemos a la rama `master` (sí, es super buena idea asegurarnos de que también tenemos la última versión).
+4. Hacernos un merge de la rama `footer`.
+5. Resolvemos los conflictos si los hay.
+6. Comprobamos que los cambios está hechos.
+7. Y subimos al repositorio remoto.
 
 ```html
 <footer>
@@ -281,7 +269,7 @@ Ahora que hemos hecho un primer acercamiento a las ramas, vamos a hacer lo mismo
 Como refleja la imagen vamos a hacer dos ampliaciones de contenido:
 
 1. una alumna de cada pareja tiene que añadir el contenido de la sección con una frase motivadora
-2. la otra alumna de la pareja tiene que añadir el contenido de la sección con un título y un pequeño párrafo
+1. la otra alumna de la pareja tiene que añadir el contenido de la sección con un título y un pequeño párrafo
 
 **Sección con frase motivadora**
 ```html
@@ -302,22 +290,18 @@ Como refleja la imagen vamos a hacer dos ampliaciones de contenido:
 
 Ahora realmente da igual el orden, la que acabe su trabajo, que suba su rama al repositorio remoto, y siga los pasos para fusionarlo con master. **¡A por ello!**
 
-* * *
+\_\_\_\_\_\_\_\_\_\_
 
-## Entonces, ¿cómo se supone que tengo que trabajar con Git?
-Lo normal es que antes de empezar a trabajar comprobemos si tenemos la última versión. También puede no hacerse y seguir trabajando en lo que se estuviese trabajando.
-En cualquier caso, podemos comprobar si hay una versión nueva del proyecto con `git fetch` o comprobar y descargar una versión nueva con `git pull`.
+[Vídeo](https://www.youtube.com/watch?v=MnaRLneoiSo) sobre cómo trabajar con varias ramas, movernos entre ramas, publicarlas y mergear una rama en otra:
 
-Luego seguimos trabajando con normalidad, recordando guardar frecuentemente con `Ctrl+S`. y cuando creamos conveniente 'stageamos' (añadimos los cambios) con `git add` y 'commiteamos' (creamos nueva version) con `git commit`. **Siempre es buena idea hacer commit tras pequeñas tareas o cambios**.
-
-Y pusheamos (subimos los commits) con `git push` cuando terminemos la tarea que nos toca.
+{% embed url="https://www.youtube.com/watch?v=MnaRLneoiSo" %}
 
 ## ¡Oh, dios mío! ¡¡He hecho un commit que no quería hacer!!
 ¿Qué pasa si hago un cambio, lo añado, hago commit y luego... querría no haberlo hecho? Pues no pasa nada, para eso trabajamos con un control de versiones.
 
-Esto pasará de vez en cuando, unas veces por inexperiencia, otras por descuido y otras por otras razones, pero no hay miedo porque cada commit queda registrado y siempre podemos volver a consultar uno anterior o revertir el último. Vamos a ver cómo.
+Esto pasará de vez en cuando, unas veces por inexperiencia, otras por descuido y otras por otras razones, pero **no hay miedo** porque cada commit queda registrado y siempre podemos volver a consultar uno anterior o revertir el último. Vamos a ver cómo.
 
-Si queremos ver nuestra actividad en el proyecto usaremos `git log`, esto nos mostrará un listado de los commits realizados.
+Si queremos ver nuestra actividad en el proyecto usamos el comando `git log`, esto nos muestra un listado de los commits realizados.
 
 ![Ejemplo de Git log](assets/images/1-8/git-log.png)
 
@@ -339,12 +323,10 @@ Si ahora hacemos un `git log` podemos ver cómo queda el historial de commits:
 
 ![Git revert paso 3](assets/images/1-8/commit-revert-3.png)
 
-
 ## Issues
-Github, como otros servicios de control de versiones tienen un sistema de tickets, los issues. Te permiten crear pequeñas tareas donde solicitas información, avisar de un problema o de alguna mejora. Además, nos permiten asignar responsables, clasificarlas por etiquetas...
 
+Github, como otros servicios de control de versiones, tiene un sistema de tickets, los issues. Te permiten crear pequeñas tareas donde solicitas información, avisar de un problema o de alguna mejora. Además, nos permiten asignar responsables, clasificarlas por etiquetas... Es un sistema similar a las tarjetas de Trello.
 
-* * *
 #### EJERCICIO 5
 
 **Crear repositorio en GitHub**
@@ -353,7 +335,7 @@ Hay que crear un repositorio vacío en GitHub:
 - ¿Qué licencia hemos elegido?
 - ¿Por qué es importante añadir un README.md?
 
-* * *
+\_\_\_\_\_\_\_\_\_\_
 
 #### EJERCICIO 6
 
@@ -361,7 +343,7 @@ Hay que crear un repositorio vacío en GitHub:
 
 Clonaremos el repositorio de nuestra compañera y le pondremos o abriremos un issue a través de la web de GitHub para que nos añada como colaboradora con permisos de escritura.
 
-* * *
+\_\_\_\_\_\_\_\_\_\_
 
 #### EJERCICIO 7
 
@@ -369,37 +351,15 @@ Clonaremos el repositorio de nuestra compañera y le pondremos o abriremos un is
 
 No es tan habitual pero de tanto en tanto querremos hacer limpieza en nuestra cuenta de GitHub. ¿Seremos capaces de borrar el repositorio que acabamos de crear? ¿Sí, no? :)
 
-* * *
+\_\_\_\_\_\_\_\_\_\_
 
-#### EJERCICIO 8.1
-
-**Crear un repositorio local y conectarlo con remoto**
-
-Ahora vamos a trabajar de una manera menos habitual y un poco más complicada, pero a veces pasa: crearemos un proyecto en nuestro equipo, algo sencillito. Podemos elegir entre:
-- Un html básico con un "hola, mundo" centrado en la ventana del navegador
-- Un html básico con una sonrisa centrada en la ventana -> :) o :D
-
-Una vez conseguido vamos a:
-
-1. Inicializar un repositorio local `git init`
-1. Hacer algún cambio y un commit.
-
-Y ahora, ¿no sería genial conectarlo con un repositorio remoto y tenerlo siempre accesible en Github? Claro que sí.
-
-1. En Github creamos un repo vacío SIN añadir licencia ni README.me (¿Por qué?).
-2. Seguimos las instrucciones para conectarlo.
-3. Hacemos push de los cambios hechos.
-4. Añadimos a nuestra compañera como colaboradora y ella se clonará el repositorio.
-
-* * *
-
-#### EJERCICIO 8.2
+#### EJERCICIO 9
 
 **Solucionar un conflicto**
 
 Una vez que tenemos las dos el repositorio en nuestro equipo vamos a modificar index.html a la vez. Cada miembro del equipo hará un cambio, su commit y lo subirá. El conflicto lo resolveréis entre las dos :)
 
-* * *
+\_\_\_\_\_\_\_\_\_\_
 
 ## BONUS: Paquete de Code para Git
 
@@ -407,16 +367,16 @@ Code trae por defecto un paquete para integración con Git y GitHub que nos ayud
 
 En el explorador (menú de la izquierda), aparecen:
 
-- de color verde los ficheros nuevos respecto al último commit local
-- de color amarillo los ficheros modificados desde el último commit local
+- Con color verde los ficheros nuevos respecto al último commit local.
+- Con color amarillo los ficheros modificados desde el último commit local.
 
 También en el panel principal, el editor del fichero que estamos editando, aparece a la izquierda del número de línea una franja de color:
 
-- amarillo para las líneas modificadas desde el último commit
-- verde las líneas nuevas desde el último commit
+- Amarillo para las líneas modificadas desde el último commit.
+- Verde las líneas nuevas desde el último commit.
 
 Este paquete también facilita una herramienta gráfica para resolver conflictos, que ayuda a elegir la versión del código que nos interesa mantener.
 
-Además nos permite ver qué se ha modificado en nuestro proyecto solo haciendo click en el icono lateral
+Además nos permite ver qué se ha modificado en nuestro proyecto solo haciendo click en el icono lateral: ![VS Code & Git](./assets/images/1-8/vscode-git.png)
 
 Podéis leer más sobre las posibilidades de [VS Code y Git](https://code.visualstudio.com/docs/introvideos/versioncontrol).

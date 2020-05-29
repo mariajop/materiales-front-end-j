@@ -381,11 +381,35 @@ Con Git hay dos formas de crear un repositorio, lo podemos crear en nuestro orde
 
 {% embed url="https://www.youtube.com/watch?v=MGf3K6qxptg" %}
 
+En este vídeo hemos aprendido a clonar un repo:
+
+```bash
+git clone url-del-repositorio
+```
+
 ### Añadir cambios a un repositorio
 
 Una vez que hemos creado y clonado un repo, vamos a empezar a trabajar con él en [este vídeo](https://www.youtube.com/watch?v=QQOHttHNtY0):
 
 {% embed url="https://www.youtube.com/watch?v=QQOHttHNtY0" %}
+
+En este vídeo hemos aprendido a añadir todos los cambios al un futuro commit:
+
+```bash
+git add -A
+```
+
+O añadir los cambios solo de algunos ficheros al futuro commit:
+
+```bash
+git add index.html
+```
+
+También hemos aprendido a crear una nueva versión de nuestro código, a la que llamamos commit:
+
+```bash
+git commit -m "Commit message"
+```
 
 **Mensaje del commit**
 
@@ -405,6 +429,24 @@ Un ejemplo de un buen commit:
 
 ```
 $ Git commit -m "Fix typo in article title"
+```
+
+Hemos aprendido a subir el código al repo remoto:
+
+```bash
+git push
+```
+
+Y por último hemos aprendido a bajar el código desde repo remoto:
+
+```bash
+git pull
+```
+
+Madre mía qué útil es el comando status, lo uso sin parar:
+
+```bash
+git status
 ```
 
 > **NOTA:** Hemos creado una [guía sobre Git](../guias/git.md) donde recopilamos todos los contenidos que aprendemos durante el curso.
