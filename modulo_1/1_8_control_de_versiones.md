@@ -296,6 +296,10 @@ Ahora realmente da igual el orden, la que acabe su trabajo, que suba su rama al 
 
 {% embed url="https://www.youtube.com/watch?v=MnaRLneoiSo" %}
 
+[Vídeo](https://www.youtube.com/watch?v=t-GbqNDrJ4A) sobre qué ramas debemos usar y cómo y cuándo debemos mover el código entre las diferentes ramas para mantener la mejor calidad de código:
+
+{% embed url="https://www.youtube.com/watch?v=t-GbqNDrJ4A" %}
+
 ## ¡Oh, dios mío! ¡¡He hecho un commit que no quería hacer!!
 ¿Qué pasa si hago un cambio, lo añado, hago commit y luego... querría no haberlo hecho? Pues no pasa nada, para eso trabajamos con un control de versiones.
 
