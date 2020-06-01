@@ -33,7 +33,7 @@ La lección de hoy es amplia y variada. Vamos a aprender a trabajar con la termi
 
 Muchas de las herramientas para programación están hechas sin interfaz porque son **tan sencillas que no merece la pena** hacer un interfaz o **son tan complejas que no se puede hacer un interfaz gráfica** que tenga todas las funcionalidades posibles. La solución es usar la terminal.
 
-Cuando una persona utiliza un programa como VS Code o Chrome está utilizando **una interfaz gráfica que transforma nuestras acciones en órdenes** que le envía al sistema operativo a través de una terminal. Es decir las aplicaciones son intermediarias. Cuando utilizamos la terminal directamente **no hay nada que se interponga entre el sistema operativo y nosotras**. Tenemos todo el poder, y toda la responbilidad claro ;)
+Cuando una persona utiliza un programa como VS Code o Chrome está utilizando **una interfaz gráfica que transforma nuestras acciones en órdenes** que le envía al sistema operativo a través de una terminal. Es decir las aplicaciones son intermediarias. Cuando utilizamos la terminal directamente **no hay nada que se interponga entre el sistema operativo y nosotras**. Tenemos todo el poder, y toda la responsabilidad claro ;)
 
 ![Terminal de ubuntu](assets/images/1-7/terminal-ubuntu.png)
 
