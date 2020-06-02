@@ -61,6 +61,8 @@ El comando usado en el vídeo es:
 npm -g install gulp-cli
 ```
 
+> **NOTA:** La opción `-g` indica que el módulo `gulp-cli` se va a instalar globalmente, es decir, que es accesible desde cualquier carpeta del ordenador.
+
 Y ahora que ya sabemos cómo funcionan Node JS, NPM y Gulp, vamos a trabajar con un proyecto que os hemos preparado que usa estas tres herramientas... y alguna más.
 
 ## Adalab web starter kit
@@ -152,8 +154,8 @@ Hoy a venido la desarrolladora DevOps de la empresa y nos pide que la carpeta de
 1. Para `npm start` con `ctrl+c` y borra la carpeta `public/`.
 1. Edita el fichero `config.json` > `images` > `dest` cambiando `public/assets/images/` por `public/assets/img/`.
 1. Vuelve a arrancar el proyecto y busca en qué carpeta se han creado ahora las imágenes.
-1. Como siempre, después de cualquier cambio tenemos que comprobar que no se ha roto nada. Mira la página en el navegador y verás que las imágenes han desaparecido :(. OMG!! pues tenemos que arreglarlo.
-1. Abre el _Devtools_ de _Chrome_, entra en la pestaña de _Console_ y mira el mensaje de error que aparece. ¿Qué nos está diciendo?
+1. Como siempre, después de cualquier cambio tenemos que comprobar que no se ha roto nada. Mira la página en el navegador y verás que las imágenes han desaparecido :( OMG!! pues tenemos que arreglarlo.
+1. Abre el Devtools de Chrome, entra en la pestaña de Console y mira el mensaje de error que aparece. ¿Qué nos está diciendo?
 1. Arregla este error sin modificar el fichero `config.json`.
 
 \_\_\_\_\_\_\_\_\_\_
