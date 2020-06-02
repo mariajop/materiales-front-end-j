@@ -163,3 +163,9 @@ Hoy a venido la desarrolladora DevOps de la empresa y nos pide que la carpeta de
 ## Recursos externos
 
 - [Gulp for beginners](https://css-tricks.com/Gulp-for-beginners/)
+- [Ejemplo de iniciación de Gulp](https://github.com/luisddm/Gulp-adalab) creado por un voluntario para Adalab.
+- [Plugin de Gulp para trabajar con imágenes](https://www.npmjs.com/package/gulp-imagemin)
+- [Plugin de JSLint](http://www.jslint.com/)
+- [Plugin de CSSLint](http://csslint.net/)
+
+> **NOTA:** Un **linter** es un programa que detecta errores de uso y/o estilo en un código
