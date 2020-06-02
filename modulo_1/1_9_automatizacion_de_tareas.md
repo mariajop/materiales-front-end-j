@@ -94,6 +94,8 @@ Además, **aplica automáticamente autoprefixer a nuestros estilos**, es decir, 
 
 Esta tarea se ejecuta una sola vez y no lanza servidores web ni watchers, pero genera una versión lista para producción (para subirla a un servidor, activar GitHub Pages o enviar a nuestra clienta) en la carpeta **`docs/`**.
 
+Normalmente a esta tarea también se le llama **deploy**, ya que lo que hace es **desplegar** el código en un servidor.
+
 #### EJERCICIO 1
 
 Vamos a empezar a trabajar con el Web starter kit:
