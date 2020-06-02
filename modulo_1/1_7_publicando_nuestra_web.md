@@ -411,6 +411,8 @@ También hemos aprendido a crear una nueva versión de nuestro código, a la que
 git commit -m "Commit message"
 ```
 
+> **IMPORTANTE:** Antes de hacer un commit debemos repasar que el código que vamos a subir está bien, es decir, debemos limpiarlo con el fin de tener el historial de Git lo mejor posible. ¿Y qué es limpiar el código? pues por ejemplo eliminar comentarios que no hagan falta, borrar propiedades CSS duplicadas, reorganizar el código para que sea más fácil de leer por otra persona, formatear el cógido...
+
 **Mensaje del commit**
 
 Hemos visto que cada commit lleva su mensaje. Este mensaje debe ser suficientemente corto para que no sea una locura leerlo y, a la vez, explique qué cambio se ha hecho de forma clara.
