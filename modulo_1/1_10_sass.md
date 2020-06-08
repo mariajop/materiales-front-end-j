@@ -11,7 +11,6 @@
 - [EJERCICIO BONUS 5](#ejercicio-bonus-5)
 - [EJERCICIO BONUS 6](#ejercicio-bonus-6)
 - [EJERCICIO BONUS 7](#ejercicio-bonus-7)
-- [EJERCICIO BONUS 8](#ejercicio-bonus-8)
 
 <!-- /TOC -->
 
@@ -80,7 +79,7 @@ body {
 }
 ```
 **¡Vamos a ponerlo en práctica!**
-***
+
 #### EJERCICIO 1
 
 **Variables, variables everywhere**
@@ -97,7 +96,8 @@ En el siguiente [codepen](https://codepen.io/adalab/pen/aVrxYY) tenemos un ejemp
 	4. Fondo de header y footer a `yellow`
 	5. Alto de header y footer a `50px`
 	6. Fondo de `.main` a `cyan`
-***
+
+\_\_\_\_\_\_\_\_\_\_
 
 **¿Cuándo hacemos variables y cuándo no?**
 Quizás el primer impulso es empezar a crear variables como si no hubiera mañana pero el truco está en ver qué valores reutilizamos (misma altura para diferentes elementos, algunos márgenes, colores) y empezar creando sólo esas.
@@ -163,8 +163,6 @@ a:hover {color: blue;}
 .footer a:hover {color: green;}
 ```
 En este [codepen](https://codepen.io/adalab/pen/JOqQGG) podéis verlo funcionando.
-
-***
 
 ###  SASS & BEM. Una bonita pareja
 
@@ -247,7 +245,7 @@ Utilizando el editor online https://sass.js.org/ y el operador `&` hay que reesc
 }
 ```
 
-***
+\_\_\_\_\_\_\_\_\_\_
 
 ### Mediaqueries
 La posibilidad de anidar selectores nos permite una flexibilidad extra. Hasta ahora sólo podíamos meter selectores completos dentro de nuestras Mediaqueries, pero con Sass podemos incluir mediaqueries en nuestros selectores y hacer cosas como esta.
@@ -283,8 +281,6 @@ Y que generaría el siguiente CSS:
 
 ```
 
-***
-
 #### EJERCICIO 3
 
 **¡Medias a mi!**
@@ -309,7 +305,7 @@ Seguimos con el editor online https://sass.js.org/, hay que reescribir el siguie
 }
 ```
 
-***
+\_\_\_\_\_\_\_\_\_\_
 
 ### Imports y cómo organizar nuestro proyecto
 Bueno, ¿qué más podemos hacer con Sass? Importar archivos. Esto es otra ventaja importante ya que nos permite modularizar nuestros estilos y trabajar en pequeños parciales que luego se unirán en el archivo final. Esto es gracias al `@import`.
@@ -379,8 +375,6 @@ En nuestro `main.scss` llamaríamos a todos estos archivos en orden:
 
 Una ventaja directa de trabajar con parciales es la cantidad de conflictos de git que nos vamos a ahorrar por no estar modificando el mismo fichero ;)
 
-***
-
 #### EJERCICIO 4
 
 **Cada mochuelo a su olivo**
@@ -393,7 +387,8 @@ Para el ejercicio querremos:
 	- Una sección con un título y un botón rojo, con bordes de 5px de radio y 45px de altura
 
 > Por ejemplo: En la carpeta `core` siempre tendremos nuestras variables pero si no tenemos mixins o funciones pues no existirán esos parciales.
-***
+
+\_\_\_\_\_\_\_\_\_\_
 
 Y hasta aquí el contenido de la sesión, pero si quieres saber más tenemos contenido extra...
 
@@ -401,7 +396,6 @@ Y hasta aquí el contenido de la sesión, pero si quieres saber más tenemos con
 
 ### Mixins y funciones
 Vale, ¿qué es esto de mixins y funciones? ¡Lo mejor!
-
 
 ### Mixins
 
@@ -469,7 +463,7 @@ Que generará el siguiente CSS:
 
 Crea 3 mixins con tu compañera. Pensad en casos de uso comunes, como: propiedades de background, estilos de texto o media queries.
 
-***
+\_\_\_\_\_\_\_\_\_\_
 
 #### EJERCICIO BONUS 6
 
@@ -495,7 +489,7 @@ Queremos rehacer el ejercicio 3 para poder escribir nuestro código así:
 
 **PISTA**: investiga la directiva `@content`
 
-***
+\_\_\_\_\_\_\_\_\_\_
 
 ### Funciones
 Sass viene con un un [juego de funciones](http://sass-lang.com/documentation/Sass/Script/Functions.html) y además podemos crear las nuestras propias.
@@ -531,32 +525,13 @@ p {
 
 Mola, ¿o qué?
 
-***
-
 #### EJERCICIO BONUS 7
 
 **Hágase la luz**
 
 Investigad la función `lighten` en la docu de Sass, comentadla y probadla para ver su utilidad.
 
-***
-
-### Autoprefixer
-Para entender **Autoprefixer**, primero tenemos que entender qué son los _vendor-prefixers_. Son prefijos que utilizan los navegadores en propiedades experimentales o que no son estándar. Esto lo hacen para permitir a los desarrolladores probar funcionalidades de CSS antes de que se estandaricen. El caso es que al final un montón de navegadores antiguos necesitan estos prefijos en las propiedades para que éstas funcionen correctamente.
-
-Pero, escribir todos los prefijos es un un trabajo muy tedioso, y estar pendiente de cuál necesitamos para cada navegador sería muy agotador. Por suerte tenemos **Autoprefixer** que hace este trabajo por nosotros. Nos permite olvidarnos de ese problema pudiendo especificar cuántos navegadores o versiones de navegador queremos que controle y, una vez que se genere nuestro CSS, colocará los prefijos necesarios en cada caso.
-
-> Por dejar claro, autoprefixer sería un post-procesador. Como hemos visto, Sass lo que hace es convertir un código con una sintaxis a CSS. Autoprefixer, en cambio, parte de un código CSS y lo post-procesa para convertirlo en un CSS con una serie de propiedades añadidas.
-
-***
-
-#### EJERCICIO BONUS 8
-
-**Crossbrowser**
-
-Autoprefixer viene configurado en el Kit, ¿sabrías encontrar donde se configura? Pista: empieza por G y acaba por ulpfile.js ;)
-Hagamos que tenga en cuenta las 5 últimas versiones de los navegadores.
-***
+\_\_\_\_\_\_\_\_\_\_
 
 ## Recursos externos
 
