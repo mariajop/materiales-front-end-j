@@ -12,15 +12,17 @@
   - [Instalación de Chrome](instalacion/instalacion_de_chrome.md)
   - [Instalación de Slack](instalacion/instalacion_de_slack.md)
   - [Creación de cuenta en Trello](instalacion/creacion_de_cuenta_en_trello.md)
+
 - Guías
   - [Código de conducta en Adalab](guias/codigo_de_conducta.md)
   - [Cómo trabajar en remoto](guias/como_trabajar_en_remoto.md)
   - [Guía para enfrentarse a problemas técnicos de manera autónoma](guias/busqueda_de_soluciones.md)
   - [Agile](guias/agile.md)
   - [Scrum](guias/scrum.md)
-  - [Git](guias/git.md)
+  - [Comandos de Git](guias/comandos_de_git.md)
   - [Sintaxis de JavaScript](guias/sintaxis_de_js.md)
   - [Fases de la programación](guias/fases_de_un_programa_js.md)
+  - [Preguntas de entrevista](guias/preguntas_de_entrevista.md)
 - [Información de interés](guias/informacion_de_interes.md)
 
 ## Módulo 1. Hola Mundo
@@ -41,7 +43,6 @@
 - [1.13 Animaciones CSS](modulo_1/1_13_animaciones_CSS.md)
 - [1.14 Accesibilidad y Sistemas de diseño](modulo_1/1_14_accesibilidad_sistemas_de_diseno.md)
 - [Repaso final](modulo_1/1_repaso.md)
-- [Recursos](modulo_1/1_recursos.md)
 
 ## Módulo 2
 
@@ -62,7 +63,6 @@
   - [2.13 Métodos funcionales de array](modulo_2/2_13_metodos_funcionales_array.md)
   - [2.14 Asincronía y temporizadores](modulo_2/2_14_asincronia.md)
   - [Repaso final](modulo_2/2_repaso.md)
-  - [Recursos](modulo_2/2_recursos.md)
 
 ## Módulo 3
 
@@ -83,7 +83,6 @@
   - [3.13 Testing con JavaScript](modulo_3/3_13_testing_js.md)
   - [3.14 Refactoring](modulo_3/3_14_refactoring.md)
   - [Repaso final](modulo_3/3_repaso.md)
-  - [Recursos](modulo_3/3_recursos.md)
 
 ## Proyectos
 

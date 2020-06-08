@@ -451,7 +451,7 @@ Madre mía qué útil es el comando status, lo uso sin parar:
 git status
 ```
 
-> **NOTA:** Hemos creado una [guía sobre Git](../guias/git.md) donde recopilamos todos los contenidos que aprendemos durante el curso.
+> **NOTA:** Hemos creado una [guía sobre Git](../guias/comandos_de_git.md) donde recopilamos todos los contenidos que aprendemos durante el curso.
 
 #### EJERCICIO 7
 
