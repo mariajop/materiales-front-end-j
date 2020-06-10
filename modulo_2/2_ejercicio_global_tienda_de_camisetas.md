@@ -1,4 +1,4 @@
-# Ejercicio global: La tienda de camisetas
+## La tienda de camisetas
 
 En las lecciones de estos materiales solemos trabajar sobre ejercicios pequeños y aislados con los que practicamos los conocimientos aprendidos en un día.
 
@@ -49,9 +49,9 @@ Este ejercicio se grabó con público en directo en clase, durante el **módulo 
 
 {% embed url="https://www.youtube.com/watch?v=8v3wb2GqorA" %}
 
-## T1E2 Eventos
+## T1E2: Eventos
 
-### [En capítulos anteriores](https://www.youtube.com/watch?v=bCkAZNwc_7A)
+### [En capítulos anteriores...](https://www.youtube.com/watch?v=bCkAZNwc_7A)
 
 {% embed url="https://www.youtube.com/watch?v=bCkAZNwc_7A" %}
 
@@ -67,12 +67,25 @@ Este ejercicio se grabó con público en directo en clase, durante el **módulo 
 
 {% embed url="https://www.youtube.com/watch?v=BIFqQQ137jQ" %}
 
-<!--- Temporada 1 capítulo 3: Objetos
-   - [Qué es un objeto](./temporada-01-capitulo-03/videos/01-que-es-un-objeto.mp4)
-   - [Crear nuestro primer objeto](./temporada-01-capitulo-03/videos/02-crear-nuestro-primer-objeto.mp4)
-   - [Formas de crear un objeto](./temporada-01-capitulo-03/videos/03-formas-de-crear-un-objeto.mp4)
-   - [Bonus: métodos y this](./temporada-01-capitulo-03/videos/04-bonus-metodos-y-this.mp4)
-- Temporada 1 capítulo 3: Arrays
+## T1E3: Objetos
+
+### [Qué es un objeto](https://www.youtube.com/watch?v=A9WwI375pa0)
+
+{% embed url="https://www.youtube.com/watch?v=A9WwI375pa0" %}
+
+### [Crear nuestro primer objeto](https://www.youtube.com/watch?v=_CoVS300gZY)
+
+{% embed url="https://www.youtube.com/watch?v=_CoVS300gZY" %}
+
+### [Formas de crear un objeto](https://www.youtube.com/watch?v=eGrVfK1NyLo)
+
+{% embed url="https://www.youtube.com/watch?v=eGrVfK1NyLo" %}
+
+### [Bonus: métodos y this](https://www.youtube.com/watch?v=VlkbwK8dblo)
+
+{% embed url="https://www.youtube.com/watch?v=VlkbwK8dblo" %}
+
+<!---  Temporada 1 capítulo 3: Arrays
    - [En capítulos anteriores](./temporada-01-capitulo-04/videos/01-en-capitulos-anteriores.mp4)
    - [Qué es un array](./temporada-01-capitulo-04/videos/02-que-es-un-array.mp4)
    - [Recorrer arrays con un for of (primera parte)](./temporada-01-capitulo-04/videos/03-recorrer-arrays-con-for-of-a.mp4)
