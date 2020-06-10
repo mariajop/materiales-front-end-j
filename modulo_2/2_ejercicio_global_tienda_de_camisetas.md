@@ -24,7 +24,7 @@ Este ejercicio se grabó con público en directo en clase, durante el **módulo 
 ### Capítulos
 
 - Cada temporada está compuesta de 5 capítulos.
-- El código fuente HTML, JS y CSS de cada capítulo está en su respectiva carpeta en el [repositorio de ejercicios extra > tienda de camisetas](https://github.com/Adalab/ejercicios-extra/tree/master/js-tienda-de-camisetas).
+- El código fuente HTML, JS y CSS de cada capítulo está en su respectiva carpeta en el [repositorio de ejercicios extra > tienda de camisetas](https://github.com/Adalab/ejercicios-extra/tree/master/js-tshirt-eshop).
 - El código fuente que hay en estas carpetas es código que hay al final de cada capítulo.
 
 ### Vídeos
@@ -87,7 +87,7 @@ Este ejercicio se grabó con público en directo en clase, durante el **módulo 
 
 ## T1E4: Arrays
 
-### [En capítulos anteriores](https://www.youtube.com/watch?v=wyl_pV0aF_U)
+### [En capítulos anteriores...](https://www.youtube.com/watch?v=wyl_pV0aF_U)
 
 {% embed url="https://www.youtube.com/watch?v=wyl_pV0aF_U" %}
 
@@ -105,7 +105,7 @@ Este ejercicio se grabó con público en directo en clase, durante el **módulo 
 
 ## T1E5: Peticiones al servidor
 
-### [En capítulos anteriores](https://www.youtube.com/watch?v=s8e0ZPWSSkM)
+### [En capítulos anteriores...](https://www.youtube.com/watch?v=s8e0ZPWSSkM)
 
 {% embed url="https://www.youtube.com/watch?v=s8e0ZPWSSkM" %}
 
@@ -113,6 +113,98 @@ Este ejercicio se grabó con público en directo en clase, durante el **módulo 
 
 {% embed url="https://www.youtube.com/watch?v=o2276PjYIcs" %}
 
-### [Bonus: crear un servidor / API local](https://www.youtube.com/watch?v=8qJfOsafzDE)
+### [Bonus: crear un servidor o API local](https://www.youtube.com/watch?v=8qJfOsafzDE)
 
 {% embed url="https://www.youtube.com/watch?v=8qJfOsafzDE" %}
+
+## T2: Diagrama de flujo
+
+![Diagrama de flujo de la tienda de camisetas](./assets/images/ejercicio-global/diagrama-de-flujo.svg)
+
+## T2E1: Obtener datos del API y pintarlos
+
+### [Introducción](https://www.youtube.com/watch?v=TsTQBkF-y2w)
+
+{% embed url="https://www.youtube.com/watch?v=TsTQBkF-y2w" %}
+
+### [Obtener productos del API de GitHub Pages](https://www.youtube.com/watch?v=dKehsRSnMvo)
+
+{% embed url="https://www.youtube.com/watch?v=dKehsRSnMvo" %}
+
+### [Obtener productos del API local](https://www.youtube.com/watch?v=B5zzYnHEtaE)
+
+{% embed url="https://www.youtube.com/watch?v=B5zzYnHEtaE" %}
+
+### [Pintar productos](https://www.youtube.com/watch?v=4poyJw6wJYA)
+
+{% embed url="https://www.youtube.com/watch?v=4poyJw6wJYA" %}
+
+## T2E2: Eventos
+
+### [Escuchar el evento click](https://www.youtube.com/watch?v=4on3yF98gfE)
+
+{% embed url="https://www.youtube.com/watch?v=4on3yF98gfE" %}
+
+### [Identificar un producto clickado](https://www.youtube.com/watch?v=ZuwfcX12OtQ)
+
+{% embed url="https://www.youtube.com/watch?v=ZuwfcX12OtQ" %}
+
+### [Añadirlo al array de la cesta](https://www.youtube.com/watch?v=gNnaF2iQXZ8)
+
+{% embed url="https://www.youtube.com/watch?v=gNnaF2iQXZ8" %}
+
+### [Pintar la cesta de la compra](https://www.youtube.com/watch?v=B2VqxV_vpqU)
+
+{% embed url="https://www.youtube.com/watch?v=B2VqxV_vpqU" %}
+
+### [Comprobar si el producto está en la cesta](https://www.youtube.com/watch?v=Knfdcos_KeE)
+
+{% embed url="https://www.youtube.com/watch?v=Knfdcos_KeE" %}
+
+### [Qué pasa si me atasco](https://www.youtube.com/watch?v=ETnZOhKNrP8)
+
+{% embed url="https://www.youtube.com/watch?v=ETnZOhKNrP8" %}
+
+## T2E3: Más eventos
+
+### [Escuchar click en incrementar](https://www.youtube.com/watch?v=ZQmwElypMtE)
+
+{% embed url="https://www.youtube.com/watch?v=ZQmwElypMtE" %}
+
+### [Escuchar click en decrementar](https://www.youtube.com/watch?v=VSs6B1WxZT8)
+
+{% embed url="https://www.youtube.com/watch?v=VSs6B1WxZT8" %}
+
+### [Limpiar código](https://www.youtube.com/watch?v=zreRs2RhpA0)
+
+{% embed url="https://www.youtube.com/watch?v=zreRs2RhpA0" %}
+
+## T2E4: Local storage
+
+### [Guardar en el local storage](https://www.youtube.com/watch?v=2i6HyR8yi4Q)
+
+{% embed url="https://www.youtube.com/watch?v=2i6HyR8yi4Q" %}
+
+### [Leer del local storage](https://www.youtube.com/watch?v=QpbiW20wXrk)
+
+{% embed url="https://www.youtube.com/watch?v=QpbiW20wXrk" %}
+
+### [Buenas prácticas](https://www.youtube.com/watch?v=J0PaxYMi82M)
+
+{% embed url="https://www.youtube.com/watch?v=J0PaxYMi82M" %}
+
+## T2E5: Refactorizar
+
+### [Unificar addEventListener](https://www.youtube.com/watch?v=1r9_sivUYMI)
+
+{% embed url="https://www.youtube.com/watch?v=1r9_sivUYMI" %}
+
+### [Métodos funcionales de array](https://www.youtube.com/watch?v=NNwTRnOnJWs)
+
+{% embed url="https://www.youtube.com/watch?v=NNwTRnOnJWs" %}
+
+### [Funciones que deciden vs funciones que ejecutan](https://www.youtube.com/watch?v=V3qlrzjP--g)
+
+{% embed url="https://www.youtube.com/watch?v=V3qlrzjP--g" %}
+
+
