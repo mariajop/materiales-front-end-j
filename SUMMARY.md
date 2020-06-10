@@ -63,6 +63,7 @@
   - [2.13 Métodos funcionales de array](modulo_2/2_13_metodos_funcionales_array.md)
   - [2.14 Asincronía y temporizadores](modulo_2/2_14_asincronia.md)
   - [Repaso final](modulo_2/2_repaso.md)
+  - [Ejercicio global](modulo_2/2_ejercicio_global_tienda_de_camisetas.md)
 
 ## Módulo 3
 
