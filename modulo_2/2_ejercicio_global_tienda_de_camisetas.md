@@ -102,3 +102,17 @@ Este ejercicio se grabó con público en directo en clase, durante el **módulo 
 ### [Recorrer arrays con un for clásico](https://www.youtube.com/watch?v=int-_ULESrU)
 
 {% embed url="https://www.youtube.com/watch?v=int-_ULESrU" %}
+
+## T1E5: Peticiones al servidor
+
+### [En capítulos anteriores](https://www.youtube.com/watch?v=s8e0ZPWSSkM)
+
+{% embed url="https://www.youtube.com/watch?v=s8e0ZPWSSkM" %}
+
+### [Fetch](https://www.youtube.com/watch?v=o2276PjYIcs)
+
+{% embed url="https://www.youtube.com/watch?v=o2276PjYIcs" %}
+
+### [Bonus: crear un servidor / API local](https://www.youtube.com/watch?v=8qJfOsafzDE)
+
+{% embed url="https://www.youtube.com/watch?v=8qJfOsafzDE" %}
