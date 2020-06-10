@@ -206,5 +206,3 @@ Este ejercicio se grabó con público en directo en clase, durante el **módulo 
 ### [Funciones que deciden vs funciones que ejecutan](https://www.youtube.com/watch?v=V3qlrzjP--g)
 
 {% embed url="https://www.youtube.com/watch?v=V3qlrzjP--g" %}
-
-
