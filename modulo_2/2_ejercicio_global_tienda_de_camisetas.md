@@ -119,7 +119,7 @@ Este ejercicio se grabó con público en directo en clase, durante el **módulo 
 
 ## T2: Diagrama de flujo
 
-![Diagrama de flujo de la tienda de camisetas](./assets/images/ejercicio-global/diagrama-de-flujo.svg)
+![Diagrama de flujo de la tienda de camisetas](./assets/images/ejercicio-global/diagrama-de-flujo.jpg)
 
 ## T2E1: Obtener datos del API y pintarlos
 
