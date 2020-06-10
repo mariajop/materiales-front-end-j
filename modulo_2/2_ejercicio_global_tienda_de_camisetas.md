@@ -85,10 +85,20 @@ Este ejercicio se grabó con público en directo en clase, durante el **módulo 
 
 {% embed url="https://www.youtube.com/watch?v=VlkbwK8dblo" %}
 
-<!---  Temporada 1 capítulo 3: Arrays
-   - [En capítulos anteriores](./temporada-01-capitulo-04/videos/01-en-capitulos-anteriores.mp4)
-   - [Qué es un array](./temporada-01-capitulo-04/videos/02-que-es-un-array.mp4)
-   - [Recorrer arrays con un for of (primera parte)](./temporada-01-capitulo-04/videos/03-recorrer-arrays-con-for-of-a.mp4)
-   - [Recorrer arrays con un for of (segunda parte)](./temporada-01-capitulo-04/videos/03-recorrer-arrays-con-for-of-b.mp4)
-   - [Recorrer arrays con un for clásico (primera parte)](./temporada-01-capitulo-04/videos/04-recorrer-arrays-con-for-clasico-a.mp4)
-   - [Recorrer arrays con un for clásico (segunda parte)](./temporada-01-capitulo-04/videos/04-recorrer-arrays-con-for-clasico-b.mp4) -->
+## T1E4: Arrays
+
+### [En capítulos anteriores](https://www.youtube.com/watch?v=wyl_pV0aF_U)
+
+{% embed url="https://www.youtube.com/watch?v=wyl_pV0aF_U" %}
+
+### [Qué es un array](https://www.youtube.com/watch?v=SeElRGix1Fk)
+
+{% embed url="https://www.youtube.com/watch?v=SeElRGix1Fk" %}
+
+### [Recorrer arrays con un for...of](https://www.youtube.com/watch?v=SsENDfG0G0w)
+
+{% embed url="https://www.youtube.com/watch?v=SsENDfG0G0w" %}
+
+### [Recorrer arrays con un for clásico](https://www.youtube.com/watch?v=int-_ULESrU)
+
+{% embed url="https://www.youtube.com/watch?v=int-_ULESrU" %}
