@@ -7,7 +7,7 @@ Durante el curso vamos a utilizar los siguientes repositorios:
 - **https://github.com/adalab/soluciones-alumnas-j:** repositorio para que alumnas subáis las soluciones de los ejercicios que queráis compartir con las compañeras.
 - **https://github.com/adalab/ejercicios-en-clase-j:** repositorio donde los profesores vamos a subir los ejercicios hechos en clase de esta promoción.
 - **https://github.com/adalab/ejercicios-extra:** repositorio con enunciados y ejercicios extras resueltos de todas las promociones.
-- **https://github.com/Adalab/Adalab-web-starter-kit:** repositorio con el proyecto base que utilizaremos en el módulo 1 y 2.
+- **https://github.com/adalab/adalab-web-starter-kit:** repositorio con el proyecto base que utilizaremos en el módulo 1 y 2.
 - **https://github.com/adalab/recursos-de-las-alumnas:** recursos técnicos de las alumnas.
 - **https://github.com/adalab/ejemplo-de-proyecto-personal:** una vez acabado el curso intensivo de Adalab os pediremos que realicéis un proyecto personal. Este es un repositorio de ejemplo de cómo enfocarlo.
 
