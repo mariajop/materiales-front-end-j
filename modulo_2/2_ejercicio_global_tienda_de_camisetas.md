@@ -24,7 +24,7 @@ Este ejercicio se grabó con público en directo en clase, durante el **módulo 
 ### Capítulos
 
 - Cada temporada está compuesta de 5 capítulos.
-- El código fuente HTML, JS y CSS de cada capítulo está en su respectiva carpeta en el [repositorio de ejercicios extra > tienda de camisetas](https://github.com/Adalab/ejercicios-extra/tree/master/js-tshirt-eshop).
+- El código fuente HTML, JS y CSS de cada capítulo está en su respectiva carpeta en el [repositorio de ejercicios extra > tshirt eshop](https://github.com/Adalab/ejercicios-extra/tree/master/js-tshirt-eshop).
 - El código fuente que hay en estas carpetas es código que hay al final de cada capítulo.
 
 ### Vídeos
