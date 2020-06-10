@@ -8,14 +8,9 @@ Este ejercicio se grabó con público en directo en clase, durante el **módulo 
 
 ![La tienda de camisetas](./assets/images/ejercicio-global/tshirt-eshop.jpg)
 
-#### Código
+### Temporadas
 
-El código fuente de este ejercicio está en la [carpeta js-tshirt-eshop del repositorio de ejercicios extra](https://github.com/Adalab/ejercicios-extra/tree/master/js-tshirt-eshop). Te recomendamos que te clones este repo y que veas los vídeos mientras lees el código.
-
-Tanto el código como los vídeos están divididos en temporadas y capítulos. **El código que hay en cada carpeta del repo es el código que hay al final de cada capítulo.**
-
-#### Temporadas
-
+- El ejercicio está compuesto de 2 temporadas.
 - Temporada 1:
    - Esta temporada se grabó en clase.
    - **Los capítulos siguen el mismo orden que las lecciones** del temario de Adalab.
@@ -26,31 +21,53 @@ Tanto el código como los vídeos están divididos en temporadas y capítulos. *
   - **Los capítulos siguen el orden lógico que usamos cuando ya tenemos todos los conocimentos necesarios para hacer un ejercicio** como este.
   - Este es el mismo orden que usamos normalmente cuando trabajamos.
 
+### Capítulos
+
+- Cada temporada está compuesta de 5 capítulos.
+- El código fuente HTML, JS y CSS de cada capítulo está en su respectiva carpeta en el [repositorio de ejercicios extra > tienda de camisetas](https://github.com/Adalab/ejercicios-extra/tree/master/js-tienda-de-camisetas).
+- El código fuente que hay en estas carpetas es código que hay al final de cada capítulo.
+
+### Vídeos
+
+- Cada capítulo está dividido en varios vídeos.
+
 ## T1E1: Funciones
 
-### [Crear mi primera función](https://youtu.be/dJVQEwj4DAw)
+### [Crear mi primera función](https://www.youtube.com/watch?v=dJVQEwj4DAw)
 
 {% embed url="https://www.youtube.com/watch?v=dJVQEwj4DAw" %}
 
-### [Parámetros y argumentos de una función](https://youtu.be/52PYwK8Pzp0)
+### [Parámetros y argumentos de una función](https://www.youtube.com/watch?v=52PYwK8Pzp0)
 
 {% embed url="https://www.youtube.com/watch?v=52PYwK8Pzp0" %}
 
-### [Retorno de una función](https://youtu.be/rT23aCe_GdA)
+### [Retorno de una función](https://www.youtube.com/watch?v=rT23aCe_GdA)
 
 {% embed url="https://www.youtube.com/watch?v=rT23aCe_GdA" %}
 
-### [Reutilizar una función](https://youtu.be/8v3wb2GqorA)
+### [Reutilizar una función](https://www.youtube.com/watch?v=8v3wb2GqorA)
 
 {% embed url="https://www.youtube.com/watch?v=8v3wb2GqorA" %}
 
-<!--
-- Temporada 1 capítulo 2: Eventos
-   - [En capítulos anteriores](./temporada-01-capitulo-02/videos/01-en-capitulos-anteriores.mp4)
-   - [Escuchar un evento de un elemento](./temporada-01-capitulo-02/videos/02-escuchar-un-evento-de-un-elemento.mp4)
-   - [Obtener información del evento o elemento](./temporada-01-capitulo-02/videos/03-obtener-informacion-del-evento-o-elemento.mp4)
-   - [Escuchar eventos después de pintarlos](./temporada-01-capitulo-02/videos/04-escuchar-eventos-despues-de-pintarlos.mp4)
-- Temporada 1 capítulo 3: Objetos
+## T1E2 Eventos
+
+### [En capítulos anteriores](https://www.youtube.com/watch?v=bCkAZNwc_7A)
+
+{% embed url="https://www.youtube.com/watch?v=bCkAZNwc_7A" %}
+
+### [Escuchar un evento de un elemento](https://www.youtube.com/watch?v=I6cMxIyJM5w)
+
+{% embed url="https://www.youtube.com/watch?v=I6cMxIyJM5w" %}
+
+### [Obtener información del evento o elemento](https://www.youtube.com/watch?v=FylFQzFv0_M)
+
+{% embed url="https://www.youtube.com/watch?v=FylFQzFv0_M" %}
+
+### [Escuchar eventos después de pintarlos](https://www.youtube.com/watch?v=BIFqQQ137jQ)
+
+{% embed url="https://www.youtube.com/watch?v=BIFqQQ137jQ" %}
+
+<!--- Temporada 1 capítulo 3: Objetos
    - [Qué es un objeto](./temporada-01-capitulo-03/videos/01-que-es-un-objeto.mp4)
    - [Crear nuestro primer objeto](./temporada-01-capitulo-03/videos/02-crear-nuestro-primer-objeto.mp4)
    - [Formas de crear un objeto](./temporada-01-capitulo-03/videos/03-formas-de-crear-un-objeto.mp4)
