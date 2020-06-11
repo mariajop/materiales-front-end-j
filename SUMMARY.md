@@ -20,7 +20,6 @@
   - [Agile](guias/agile.md)
   - [Scrum](guias/scrum.md)
   - [Comandos de Git](guias/comandos_de_git.md)
-  - [Sintaxis de JavaScript](guias/sintaxis_de_js.md)
   - [Fases de la programación](guias/fases_de_un_programa_js.md)
   - [Preguntas de entrevista](guias/preguntas_de_entrevista.md)
 - [Información de interés](guias/informacion_de_interes.md)
@@ -63,7 +62,8 @@
   - [2.13 Métodos funcionales de array](modulo_2/2_13_metodos_funcionales_array.md)
   - [2.14 Asincronía y temporizadores](modulo_2/2_14_asincronia.md)
   - [Repaso final](modulo_2/2_repaso.md)
-  - [Ejercicio global de JS](modulo_2/2_ejercicio_global_tienda_de_camisetas.md)
+  - [Sintaxis de JavaScript](modulo_2/sintaxis_de_js.md)
+  - [Ejercicio: tienda de camisetas](modulo_2/2_ejercicio_global_tienda_de_camisetas.md)
 
 ## Módulo 3
 
