@@ -89,7 +89,7 @@ Puedes leer más sobre landmarks en [https://olgacarreras.blogspot.com/2014/03/n
 
    - **Focussable buttons**: Hacer siempre los botones de nuestra web visualmente destacados cuando nos posicionemos sobre ellos a través del foco. No deberíamos quitar nunca el `:focus` de nuestros botones.
 
-   - **Tabbable elements:** Muchas veces el orden visual de los elemtnos de nuestras webs no se corresponde con el orden lógico en el que queremos que se navegue por ella, por ejemplo los campos de formulario. Para solucionar esto existe la propiedad `tabindex`.
+   - **Tabbable elements:** Muchas veces el orden visual de los elementos de nuestras webs no se corresponde con el orden lógico en el que queremos que se navegue por ella, por ejemplo los campos de formulario. Para solucionar esto existe la propiedad `tabindex`.
 
 ```html
 <a href="https://www.w3schools.com/" tabindex="2">W3Schools</a>
@@ -170,7 +170,7 @@ La idea principal del sistema es que cualquiera que lo analice sepa con claridad
 
 Y ahora pensarás _«vale sí muy bien, pero sigues hablándome en chino, ¿podrías ponerme un ejemplo?»_. Sin duda, el ejemplo más claro y que todos conocemos es [Material Design](https://material.io/guidelines/material-design/introduction.html) de Google, que es el sistema que se utiliza para diseñar la mayoría de aplicaciones de Google y que muchas otras empresas han utilizado para diseñar las suyas propias.
 
-Este sistema establece un [conjunto de reglas y principios](https://material.io/guidelines/), [estilos](https://material.io/guidelines/style) y [componentes](https://material.io/guidelines/components/#).
+Este sistema establece un [conjunto de reglas y principios](https://material.io/guidelines/), [estilos](https://material.io/guidelines/style) y [componentes](https://material.io/components).
 
 Durante esta sesión veremos cómo nos afecta esto de los sistemas a la hora de desarrollar páginas, aprenderemos técnicas para aplicarlos de forma sencilla y veremos los pros y los contras de usar esta herramienta.
 
