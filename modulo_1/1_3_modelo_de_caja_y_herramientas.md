@@ -74,10 +74,10 @@ Todas las etiquetas HTML tienen un valor `display` por defecto, pero por supuest
 
 Hay muchos valores distintos para `display` pero, por el momento, nosotros solo veremos estos cuatro:
 
-* **block** (ocuparán el ancho completo del contenedor y se colocarán unas debajo de otras).
-* **inline** (ocuparán el ancho de su contenido, por lo que se pueden alinear unas al lado de otras).
-* **inline-block** (es un híbrido de las dos anteriores).
-* **none** (oculta el elemento, no lo muestra).
+- **block** (ocuparán el ancho completo del contenedor y se colocarán unas debajo de otras).
+- **inline** (ocuparán el ancho de su contenido, por lo que se pueden alinear unas al lado de otras).
+- **inline-block** (es un híbrido de las dos anteriores).
+- **none** (oculta el elemento, no lo muestra).
 
 ### Block
 

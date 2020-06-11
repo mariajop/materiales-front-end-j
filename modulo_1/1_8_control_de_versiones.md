@@ -257,7 +257,7 @@ Para ello:
 
 ![Resultado del ejercicio 3](assets/images/1-8/ramas-2.png)
 
-* * *
+\_\_\_\_\_\_\_\_\_\_
 
 #### EJERCICIO 4
 
