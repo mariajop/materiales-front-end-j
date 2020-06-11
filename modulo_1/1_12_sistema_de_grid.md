@@ -61,7 +61,7 @@ A continuación, indicaremos a los elementos si queremos que ocupen una o varias
 
 Esto indica que se expande desde la primera línea de grid hasta la cuarta, es decir, ocupa las 3 primeras columnas.
 
-> NOTA: si tenemos 4 columnas, tendremos 5 líneas de grid. Es decir, siempre vamos a tener una más que el número de filas o columnas.
+> **Nota:** si tenemos 4 columnas, tendremos 5 líneas de grid. Es decir, siempre vamos a tener una más que el número de filas o columnas.
 
 Podemos escribir lo anterior de una forma simplificada:
 
@@ -194,8 +194,7 @@ Por ahora vamos a usar el `<link>` que [Bootstrap nos da en su página de inicio
 
 Por ahora vamos a ver que Bootstrap cuenta con un sistema de grid sencillo de 12 columnas.
 
-> **Nota:**
-> Lo llamamos sistema de grid pero solo dispone las columnas.
+> **Nota:** lo llamamos sistema de grid pero solo dispone las columnas.
 
 Siempre partimos de la base de 12 columnas para distribuir el espacio disponible en la web. En el CSS que hemos importado, tenemos una serie de clases que nos van a permitir construir nuestra web con un grid responsive de acuerdo a unos breakpoints que bootstrap tiene definidos.
 
@@ -234,10 +233,10 @@ Con Bootstrap, vamos a crear la típica distribución de columnas que se usa par
 Con suficientes divs (las cajas verdes) vamos a mostrar las columnas y opciones que nos ofrece bootstrap:
 
 1. 12 columnas
-2. 6 columnas
-3. 3 columnas
-4. 2 columnas
-5. 1 columna
+1. 6 columnas
+1. 3 columnas
+1. 2 columnas
+1. 1 columna
 
 \_\_\_\_\_\_\_\_\_\_
 

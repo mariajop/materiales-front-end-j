@@ -52,11 +52,9 @@ La etiquetas HTML nos permiten estructurar nuestro contenido según su función 
 
 ## Secciones
 
-Normalmente no vamos a querer meter nuestro contenido en la página y ya está, querremos darle una estructura y agruparlo en bloques. Para ello tenemos la etiqueta `<section>`.
-Usaremos una sección para agrupar contenidos por temática:
+Normalmente no vamos a querer meter nuestro contenido en la página y ya está, querremos darle una estructura y agruparlo en bloques. Para ello tenemos la etiqueta `<section>`. Usaremos una sección para agrupar contenidos por temática:
 
-    EJEMPLO:
-    En la página de un producto agruparemos la descripción del producto por un lado y los comentarios de los compradores/usuarios por otro.
+Por ejemplo, en la página de un producto agruparemos la descripción del producto por un lado y los comentarios de los compradores/usuarios por otro.
 
 Hay una serie de secciones especiales que tienen asignado un significado semántico predeterminado:
 

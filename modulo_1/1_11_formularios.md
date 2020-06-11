@@ -76,8 +76,7 @@ Junto con el atributo `type`, tenemos otro atributo especial llamado `name` que 
 </form>
 ```
 
-> **Nota:**
-> La etiqueta input es una etiqueta sin contenido, por lo que no es necesario escribir la etiqueta de cierre. Otro detalle que podemos apreciar es que los campos se muestran en línea ya que por defecto los navegadores lo muestran con `display: inline-block;`. Podemos asignarles `display: block` para hacer que se apilen en vertical, uno debajo de otro.
+> **Nota:** la etiqueta input es una etiqueta sin contenido, por lo que no es necesario escribir la etiqueta de cierre. Otro detalle que podemos apreciar es que los campos se muestran en línea ya que por defecto los navegadores lo muestran con `display: inline-block;`. Podemos asignarles `display: block` para hacer que se apilen en vertical, uno debajo de otro.
 
 Ya tenemos nuestro formulario con los dos campos necesarios para que funcione, pero nos falta lo más importante, poder enviar el formulario. Para esto vamos a usar también una etiqueta input pero en este caso va a ser del tipo `submit` (`type="submit"`). Si introducimos esta etiqueta en nuestro formulario se mostrará un botón que, al ser pulsado, enviará el formulario. Para establecer qué texto queremos que vaya dentro del botón, usaremos el atributo `value`. Otra cosa a destacar es que el botón tiene una serie de estilos CSS aplicados por defecto pero que podemos modificar añadiéndole unos nuevos que sobrescriban a los anteriores.
 
@@ -109,8 +108,7 @@ Para decirle al navegador que nuestra etiqueta `<label>` está relacionada con u
 
 ![Ejemplo de cómo se muestran los labels](assets/images/1-11/labels.png)
 
-> **Nota:**
-> Es importante apreciar que dentro del input el atributo `name` y el `id` pueden ser distintos, pero el `for` del label siempre debe coincidir con el `id` del input.
+> **Nota:** es importante apreciar que dentro del input el atributo `name` y el `id` pueden ser distintos, pero el `for` del label siempre debe coincidir con el `id` del input.
 
 El atributo `placeholder` se puede asignar a un input y sirve para establecer el texto que se mostrará en el campo cuando este esté vacío. Es una buena práctica usarlo como pista para que la persona que está rellenando el formulario sepa qué información debe introducir. Por ejemplo, podemos darle pistas sobre cómo debe escribir los datos para que no pase un error típico que escribir el nombre y el apellido en el mismo campo (poner Jon Nieve puede ser una opción).
 
@@ -209,8 +207,7 @@ El atributo `required` sirve para establecer que un campo es obligatorio y debe 
 
 ![Error cuando un elemento es obligatorio y está vacío](assets/images/1-11/required-form.png)
 
-> **Nota:**
-> El atributo required solo puede ser verdadero o falso, por lo tanto no tendrá un valor asignado. Simplemente si una etiqueta tiene el atributo `required` (sin más) indicará que este elemento es obligatorio y si no lo tiene indicará que no lo es.
+> **Nota:** el atributo required solo puede ser verdadero o falso, por lo tanto no tendrá un valor asignado. Simplemente si una etiqueta tiene el atributo `required` (sin más) indicará que este elemento es obligatorio y si no lo tiene indicará que no lo es.
 
 ```html
 <!-- Campo obligatorio -->
@@ -237,8 +234,7 @@ Ejemplo de uso:
 
 El atributo `disabled` sirve para desactivar un campo de un formulario.
 
-> **Nota:**
-> En el caso de disabled pasa como con el atributo `required`, con añadir el atributo sin ningún valor es suficiente para indicar que un elemento está desactivado.
+> **Nota:** en el caso de disabled pasa como con el atributo `required`, con añadir el atributo sin ningún valor es suficiente para indicar que un elemento está desactivado.
 
 ```html
 <input
@@ -517,15 +513,15 @@ input {
 
 En la vida en general hay muchas cosas que cumplen patrones y en particular en programación queremos identificar o encontrar esos patrones. Hay millones de ejemplos de patrones que se pueden identificar con expresiones regulares:
 
-* Email: `nombre` + `@` + `dominio` + `.` + `extensión de dominio`. Si un email no tiene alguno de estos campos en este orden, no es un email válido.
-* Matrícula de los coches: `4 números` + `3 letras`.
-* DNI: `de 1 a 7 números` + `1 letra`.
-* CSS: `.` + `nombre de la clase` + `{` + `nombre de la propiedad` + `:` + `valor de la propiedad` + `;` + `}`. Para saber si nuestro código está bien escribo VSCode, el servidor, chrome... utilizan muchas regex.
-* Colores RGB: `#` + `6 números o letras de la A a F`.
-* La terminal: cuando escribimos `cp -r /carpetaA /carpetaB` la terminal sabe `-r` es una opción (y no una carpeta) porque tiene un guión delante.
-* Idiomas: un programa puede deducir si un texto está en español si contiene letras como ñ, acentos... y no contiene otras letras como &#20320;.
-* Nombres y apellidos: solo pueden tener letras, espacios y guiones.
-* Precio de un producto: `número entero` + `,` + `número decimal` + `€`. Si tiene letras u otros símbolos no es un precio válido.
+- Email: `nombre` + `@` + `dominio` + `.` + `extensión de dominio`. Si un email no tiene alguno de estos campos en este orden, no es un email válido.
+- Matrícula de los coches: `4 números` + `3 letras`.
+- DNI: `de 1 a 7 números` + `1 letra`.
+- CSS: `.` + `nombre de la clase` + `{` + `nombre de la propiedad` + `:` + `valor de la propiedad` + `;` + `}`. Para saber si nuestro código está bien escribo VSCode, el servidor, chrome... utilizan muchas regex.
+- Colores RGB: `#` + `6 números o letras de la A a F`.
+- La terminal: cuando escribimos `cp -r /carpetaA /carpetaB` la terminal sabe `-r` es una opción (y no una carpeta) porque tiene un guión delante.
+- Idiomas: un programa puede deducir si un texto está en español si contiene letras como ñ, acentos... y no contiene otras letras como &#20320;.
+- Nombres y apellidos: solo pueden tener letras, espacios y guiones.
+- Precio de un producto: `número entero` + `,` + `número decimal` + `€`. Si tiene letras u otros símbolos no es un precio válido.
 
 > Los inputs de HTML también pueden evaluar si el texto que la usuaria ha introducido cumple con un patrón o no.
 
@@ -533,12 +529,12 @@ En la vida en general hay muchas cosas que cumplen patrones y en particular en p
 
 Las expresiones regulares tienen la siguiente pinta `^[0-9]{4}[a-zA-Z]{3}$`. Si evaluamos la matrícula _1234CDC_ con esta regex nos dirá que sí cumple el patrón. Vamos a analizar lo que espera la esta regex:
 
-* ^: el acento circunflejo ^ indica el inicio de la regex.
-* [0-9]: la regex espera caracteres del 0 al 9, es decir, números.
-* {4}: la regex espera 4 caracteres de los anteriores, es decir, 4 números.
-* [a-zA-Z]: a continuación de los 4 números, porque el orden es importante, la regex espera caracteres de la _a_ a la _z_ (en minúsuclas) y / o de la _A_ a la _Z_ en mayúsculas.
-* {3}: cuántas letras de las anteriores espera, pues 3.
-* $: aquí debe acabar la regex, es decir si hubiese más caracteres después de las 3 letras, entonces no sería una matrícula.
+- ^: el acento circunflejo ^ indica el inicio de la regex.
+- [0-9]: la regex espera caracteres del 0 al 9, es decir, números.
+- {4}: la regex espera 4 caracteres de los anteriores, es decir, 4 números.
+- [a-zA-Z]: a continuación de los 4 números, porque el orden es importante, la regex espera caracteres de la _a_ a la _z_ (en minúsuclas) y / o de la _A_ a la _Z_ en mayúsculas.
+- {3}: cuántas letras de las anteriores espera, pues 3.
+- $: aquí debe acabar la regex, es decir si hubiese más caracteres después de las 3 letras, entonces no sería una matrícula.
 
 > A lo largo de vuestra vida como programadoras a veces odiaréis las regexp hasta que un día os solucionen de forma simple un problema complejo y entonces... **I ♥ RegExp**.
 

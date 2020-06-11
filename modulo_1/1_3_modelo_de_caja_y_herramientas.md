@@ -16,7 +16,6 @@
 
 <!-- /TOC -->
 
-
 ## Introducción
 
 En esta sesión veremos dos recursos fundamentales para construir nuestra web: el modelo de caja y las herramientas de desarrollo del navegador (DevTools).
@@ -35,15 +34,15 @@ Las variables nos permitirán almacenar propiedades con un nombre y reutilizarla
 ## ¿Para qué sirve lo que vamos a ver en esta sesión?
 
 1. Para comprender **cómo se comportan las etiquetas** cuando les cambiamos propiedades de apariencia como margen, borde, padding y ancho/alto. Y qué pasa cuando el contenido no cabe en nuestro contenedor.
-2. Para entender cómo se aplican **las imágenes de fondo**.
-3. Para entender cómo se aplican los ajustes que realicemos a través de las DevTools.
-4. Para reutilizar valores de las propiedades CSS.
+1. Para entender cómo se aplican **las imágenes de fondo**.
+1. Para entender cómo se aplican los ajustes que realicemos a través de las DevTools.
+1. Para reutilizar valores de las propiedades CSS.
 
 ## ¿En qué casos se utiliza?
 
-* Cuando tengamos que darle un aspecto determinado al contenido, es decir, siempre :)
-* Cuando tengamos un problema en nuestra página para detectar dónde está el error.
-* Cuando tengamos un proyecto mediano o grande que requiera de un mantenimiento CSS.
+- Cuando tengamos que darle un aspecto determinado al contenido, es decir, siempre :)
+- Cuando tengamos un problema en nuestra página para detectar dónde está el error.
+- Cuando tengamos un proyecto mediano o grande que requiera de un mantenimiento CSS.
 
 ## Modelo de caja
 
@@ -242,13 +241,14 @@ Pueden pasar dos cosas, que el contenido se pueda adaptar, como pasa con el text
 Podemos controlar cómo se comporta un contenedor en los casos en que el contenido se salga, tenemos 3 opciones:
 
 1. No hacer nada y lidiar con las consecuencias
-2. Ocultar todo lo que se salga
-3. Incluir scroll en el contenedor
+1. Ocultar todo lo que se salga
+1. Incluir scroll en el contenedor
 
 Podéis leer sobre la propiedad _overflow_:
-* [overflow](http://devdocs.io/css/overflow)
-* [overflow-x](http://devdocs.io/css/overflow-x)
-* [overflow-y](http://devdocs.io/css/overflow-y)
+
+- [overflow](http://devdocs.io/css/overflow)
+- [overflow-x](http://devdocs.io/css/overflow-x)
+- [overflow-y](http://devdocs.io/css/overflow-y)
 
 #### EJERCICIO 6
 
@@ -317,15 +317,17 @@ Desde que aparecieron las *Devtools* en todos los navegadores decentes, la vida 
 El inspector es una de las muchas herramientas de desarrollo que incluye el navegador web Google Chrome. Este grupo de herramientas recibe el nombre de Chrome DevTools.
 
 **Para abrir el inspector tenemos varias opciones:**
-* Pulsando en el menú de tres puntos de la derecha superior de Chrome > más herramientas > herramientas para desarrolladores
-* Usar `Ctrl+Shift+I` en Ubuntu o Windows y `Cmd+Opción+I` en Mac
-* Pulsar con el botón derecho sobre un elemento de nuestra página y seleccionar la opción *Inspeccionar*
+
+- Pulsando en el menú de tres puntos de la derecha superior de Chrome > más herramientas > herramientas para desarrolladores
+- Usar `Ctrl+Shift+I` en Ubuntu o Windows y `Cmd+Opción+I` en Mac
+- Pulsar con el botón derecho sobre un elemento de nuestra página y seleccionar la opción *Inspeccionar*
 
 Una vez abierto podemos moverlo y colocarlo arriba, abajo, a la derecha o sacarlo a una nueva ventana.
 
 **Para cerrarlo:**
-* Pulsamos en la cruz que aparece en la esquina superior derecha del panel
-* Usamos `Ctrl++ShiftI` en Ubuntu o Windows y `Cmd+Opción+I` en Mac de nuevo
+
+- Pulsamos en la cruz que aparece en la esquina superior derecha del panel
+- Usamos `Ctrl++ShiftI` en Ubuntu o Windows y `Cmd+Opción+I` en Mac de nuevo
 
 ### ¿Qué es?
 
@@ -361,9 +363,10 @@ Otro recurso muy interesante que nos ofrece Network es que nos permite ver cuán
 #### EJERCICIO 9
 
 Entrar en [Wikipedia.org](http://wikipedia.org) y
-* Averiguar el peso total de la página principal de Wikipedia
-* Averiguar cuánto ha tardado en cargar la página
-* Averiguar cuántas imágenes usa la página principal de Wikipedia
+
+- Averiguar el peso total de la página principal de Wikipedia
+- Averiguar cuánto ha tardado en cargar la página
+- Averiguar cuántas imágenes usa la página principal de Wikipedia
 
 \_\_\_\_\_\_\_\_\_\_
 

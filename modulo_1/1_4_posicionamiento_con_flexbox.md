@@ -128,8 +128,8 @@ No hay que confundir eje principal con eje horizontal, ni eje secundario con eje
 ![Ejemplo](assets/images/1-4/ejercicio-1.png)
 
 1. Crear un contenedor flex de 500px por 500px y con 6 o más elementos.
-2. Hacer que se distribuyan en horizontal o vertical
-3. Indicar cuál es el eje principal
+1. Hacer que se distribuyan en horizontal o vertical
+1. Indicar cuál es el eje principal
 
 \_\_\_\_\_\_\_\_\_\_
 
@@ -150,15 +150,15 @@ Teniendo una lista de 10 a 15 imágenes de 200x100 px, hacer un bloque flexbox d
 ![Ejemplo](assets/images/1-4/ejercicio-3.png)
 
 1. Hacer un menú horizontal con un contenedor flex de 100px de alto
-2. Las opciones de menú serán:
+1. Las opciones de menú serán:
 	* Home
 	* Proyectos
 	* Equipo
 	* Blog
 	* Contacto
-3. Hacer que se distribuyan horizontalmente ocupando todo el espacio disponible, que la primera opción esté a 20px del borde izquierdo, y la última esté a 20px del borde derecho
-4. Todos los textos deben aparecer centrados verticalmente en el contenedor de 100px
-5. El espacio restante debe usarse para separar las opciones de menú, unas de otras
+1. Hacer que se distribuyan horizontalmente ocupando todo el espacio disponible, que la primera opción esté a 20px del borde izquierdo, y la última esté a 20px del borde derecho
+1. Todos los textos deben aparecer centrados verticalmente en el contenedor de 100px
+1. El espacio restante debe usarse para separar las opciones de menú, unas de otras
 
 \_\_\_\_\_\_\_\_\_\_
 
@@ -183,8 +183,7 @@ Teniendo una lista de 10 a 15 imágenes de 200x100 px, hacer un bloque flexbox d
 Hacer una página con `<header>`, `<main>` y `<footer>` y hacer que aunque haya poco contenido el footer siempre está abajo de la página y el main ocupe todo el espacio disponible.
 Si hubiese mucho contenido el footer debe colocarse tras el main, de forma natural.
 
-> **Pista**:
-> Tendremos que apoyarnos en `min-height` y `vh` para realizar este ejercicio.
+> **Pista**: Tendremos que apoyarnos en `min-height` y `vh` para realizar este ejercicio.
 
 \_\_\_\_\_\_\_\_\_\_
 
@@ -194,9 +193,9 @@ Si hubiese mucho contenido el footer debe colocarse tras el main, de forma natur
 
 Convertir la imagen anterior a código usando HTML y CSS y lo que habéis aprendido hoy de Flexbox. Los requisitos son los siguientes:
 
-* Las medidas tienen que ser relativas, es decir, los elementos de la página deben adaptarse al ancho de la ventana del navegador web. Si el tamaño de la ventana aumenta, el tamaño de los elementos debe aumentar.
-* El ancho del conjunto entero debe ser del 100% con un ancho máximo de 960px
-* Cada bloque debe de crearse con una etiqueta HTML5 (header, footer, aside...) y debe tener un título que esté centrado (como aparece en la imágen). El bloque central (que sería un article), en vez de tener un título, tendrá un párrafo con un texto aleatorio, podéis escribir dentro de él lo que queráis.
+- Las medidas tienen que ser relativas, es decir, los elementos de la página deben adaptarse al ancho de la ventana del navegador web. Si el tamaño de la ventana aumenta, el tamaño de los elementos debe aumentar.
+- El ancho del conjunto entero debe ser del 100% con un ancho máximo de 960px
+- Cada bloque debe de crearse con una etiqueta HTML5 (header, footer, aside...) y debe tener un título que esté centrado (como aparece en la imágen). El bloque central (que sería un article), en vez de tener un título, tendrá un párrafo con un texto aleatorio, podéis escribir dentro de él lo que queráis.
 
 \_\_\_\_\_\_\_\_\_\_
 
@@ -206,11 +205,10 @@ Convertir la imagen anterior a código usando HTML y CSS y lo que habéis aprend
 
 Convertir la imagen anterior a código usando HTML y CSS y lo que habéis aprendido hoy de Flexbox. Los requisitos son los siguientes:
 
-* En este caso si el tamaño de la ventana aumenta solo aumentará el tamaño del bloque central, el bloque gris de la izquierda y el grupo que compone la puntuación, texto y estrella de la derecha siempre tendrán el mismo tamaño (ejemplo abajo)
-* El ancho del conjunto entero debe ser del 100% con un ancho máximo de 840px
-Para el bloque gris de la izquierda debéis buscar una imagen cuadrada y colocarla ahí
-* No os preocupeis por el tamaño de cada elemento, lo importante es que el resultado tenga una composición similar
-* Para redondear los bordes debéis usar border-radius con unidades en píxel (por ejemplo, border-radius: 5px)
+- En este caso si el tamaño de la ventana aumenta solo aumentará el tamaño del bloque central, el bloque gris de la izquierda y el grupo que compone la puntuación, texto y estrella de la derecha siempre tendrán el mismo tamaño (ejemplo abajo)
+- El ancho del conjunto entero debe ser del 100% con un ancho máximo de 840px. Para el bloque gris de la izquierda debéis buscar una imagen cuadrada y colocarla ahí
+- No os preocupeis por el tamaño de cada elemento, lo importante es que el resultado tenga una composición similar
+- Para redondear los bordes debéis usar border-radius con unidades en píxel (por ejemplo, border-radius: 5px)
 
 Si tenéis cualquier duda, preguntad.
 
@@ -226,7 +224,6 @@ Ejemplo de la página cuando el texto es largo
 
 ![Ejemplo](assets/images/1-4/ejercicio-8-1.png)
 
-
 Ejemplo de la página cuando el texto es corto
 
 ![Ejemplo](assets/images/1-4/ejercicio-8-2.png)
@@ -240,9 +237,10 @@ Es importante utilizar flexbox para los elementos del header de la página y el 
 #### EJERCICIO 9 BONUS
 
 En el siguiente [codepen](https://codepen.io/adalab/pen/BmQaQa) variad las dimensiones en vw y vh para:
-* hacer que el contenedor `.box` ocupe el 50% de ancho y el 100% de alto
-* hacer que el contenedor `.box` ocupe el 10% de ancho y el 10% de alto
-* hacer que el contenedor `.box` ocupe el 100% de ancho y el 80% de alto
+
+- hacer que el contenedor `.box` ocupe el 50% de ancho y el 100% de alto
+- hacer que el contenedor `.box` ocupe el 10% de ancho y el 10% de alto
+- hacer que el contenedor `.box` ocupe el 100% de ancho y el 80% de alto
 
 \_\_\_\_\_\_\_\_\_\_
 

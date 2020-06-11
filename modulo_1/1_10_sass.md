@@ -16,18 +16,20 @@
 
 
 ## Introducción
+
 Con CSS podemos personalizar al píxel el aspecto de nuestra página y como hemos visto tiene una serie de reglas y de formas de hacer todo esto. Sin embargo el sector ha ido madurando y nos encontramos con que necesitaríamos poder trabajar con las hojas de estilos de una manera más ágil: permitiendo el uso de variables, pudiendo dividir los archivos en bloques más pequeños, pudiendo crear bloques de estilos que se repitan o incluso pequeñas funciones simples. Esto es posible con los preprocesadores CSS.
 
 ## ¿Qué es un preprocesador CSS?
+
 Un preprocesador CSS es un lenguaje parecido al CSS pero que nos permite tener acceso a funcionalidades que no tiene el CSS y, tras el procesado, generar un CSS válido.
 
 De esta manera ya no trabajaremos directamente el CSS sino con este preprocesador que, automáticamente, generará nuestros CSS finales.
 
 Actualmente hay varios preprocesadores, realmente lo que los diferencia es la sintaxis de cada uno pero vienen a hacer un poco lo mismo. Los preprocesadores CSS más famosos son:
 
-* [Sass (el que vamos a ver en Adalab)](http://sass-lang.com)
-* [LESS](http://lesscss.org)
-* [Stylus](http://learnboost.github.io/stylus/)
+- [Sass (el que vamos a ver en Adalab)](http://sass-lang.com)
+- [LESS](http://lesscss.org)
+- [Stylus](http://learnboost.github.io/stylus/)
 
 Nosotros vamos a usar Sass, concretamente SCSS, que es la sintaxis nueva :)
 
@@ -37,11 +39,12 @@ Pues esto se instala y se ejecuta por terminal, pero para no sufrir lo tenemos i
 
 Al arrancarlo todo el SCSS de la carpeta **_src/assets/scss** se procesará en la carpeta **public/assets/css**, automáticamente y se recargará el navegador.
 
-
 ### Me estás liando, ¿Sass o SCSS?
+
 El preprocesador CSS que vamos a usar se llama Sass (Syntactically Awesome StyleSheets) pero tiene dos sintaxis, Sass y SCSS. Usaremos SCSS porque es más parecida a CSS y no depende tantísimo de estar todo bien tabulado ya que usa las mismas llaves a las que estamos acostumbrados ya. Así que diremos `sass` pero usaremos `scss` ;)
 
 ## ¿Y qué puedo hacer con Sass/SCSS?
+
 Maravillas, con Sass se pueden hacer maravillas.
 
 Bueno, se pueden hacer muchas cosas, hoy vamos a ver las variables, como se anida, el símbolo `&` y las media queries, imports y mixins/funciones.
@@ -49,12 +52,15 @@ Bueno, se pueden hacer muchas cosas, hoy vamos a ver las variables, como se anid
 **¡Vamos a ello!**
 
 ### Variables
+
 Se usan muy parecido a JavaScript, pero precedidas por el símbolo `$` y se asignan con los `:`
+
 ```scss
 $colorLink: blue;
 ```
 
 Ahora podríamos hacer algo como:
+
 ```scss
 $color_link: blue;
 
@@ -62,9 +68,11 @@ a {
 	color: $color_link;
 }
 ```
+
 El uso de variables nos da una serie de ventajas. Podemos definir al principio del documento todas nuestras variables y si una vez avanzados, o terminados, nuestros estilos queremos cambiar algún valor pues se cambia el valor de la variable que toque y se vuelve a generar el CSS.
 
 ¿Qué podemos usar como variables? Lo que queramos de los **valores** de las propiedades CSS.
+
 ```scss
 $headerHeight: 100px;
 $fontText: 'Roboto', arial, sans-serif;
@@ -78,6 +86,7 @@ body {
 	height: $headerHeight;
 }
 ```
+
 **¡Vamos a ponerlo en práctica!**
 
 #### EJERCICIO 1
@@ -87,22 +96,23 @@ body {
 En el siguiente [codepen](https://codepen.io/adalab/pen/aVrxYY) tenemos un ejemplo en css que vamos a reescribir a SCSS y modificar un poco.
 
 1. Lo primero es configurarlo para usar SCSS: en la rueda de CSS, desplegar las opciones y elegir SCSS como preprocesador
-2. Convertir a variables los valores de las líneas indicadas
-3. Hacer los siguientes cambios sólo tocando la variables:
-
+1. Convertir a variables los valores de las líneas indicadas
+1. Hacer los siguientes cambios sólo tocando la variables:
 	1. Color del texto de `#414141` a `#010101`;
-	2. Tamaño de fuente de la página a `18px`
-	3. El margen de `.wrapper` a `0 60px`
-	4. Fondo de header y footer a `yellow`
-	5. Alto de header y footer a `50px`
-	6. Fondo de `.main` a `cyan`
+	1. Tamaño de fuente de la página a `18px`
+	1. El margen de `.wrapper` a `0 60px`
+	1. Fondo de header y footer a `yellow`
+	1. Alto de header y footer a `50px`
+	1. Fondo de `.main` a `cyan`
 
 \_\_\_\_\_\_\_\_\_\_
 
 **¿Cuándo hacemos variables y cuándo no?**
+
 Quizás el primer impulso es empezar a crear variables como si no hubiera mañana pero el truco está en ver qué valores reutilizamos (misma altura para diferentes elementos, algunos márgenes, colores) y empezar creando sólo esas.
 
 **Sobre los colores**
+
 Lo ideal es usar variables que indiquen el tipo de elemento al que se va a aplicar un color y no tanto el color en sí. Es mejor `$colorLink` en lugar de variables tipo `$colorBlue` que tarde o temprano acaban valiendo un color diferente y va a desconcertar a quien coja el proyecto después. Aunque hay un término medio: definimos nuestros colores como el color que son y asignamos nuestra variable a otra variable que indique el elemento donde se va a usar.
 
 ```scss
@@ -115,9 +125,11 @@ a {
 	color: $colorLink;
 }
 ```
+
 De esta manera tenemos un poco lo mejor de dos mundos.
 
 ### Nesting o anidado, y el símbolo `&`
+
 Una maravilla que nos permite hacer Sass es anidar nuestros estilos.
 
 Si queremos indicar que todos los `<p>` dentro de un elemento `.content` van a ser de color azul y si llevan enlace, éste, se mostrará en rojo, podemos escribir:
@@ -131,16 +143,25 @@ Si queremos indicar que todos los `<p>` dentro de un elemento `.content` van a s
 	}
 }
 ```
+
 Esto nos generará el siguiente CSS:
+
 ```css
-.content p {color:blue;}
-.content p a {color:red;}
+.content p {
+	color:blue;
+}
+.content p a {
+	color:red;
+}
 ```
+
 El anidado nos permite anidar bloques asimilándose un poco a la jerarquía visual de HTML. Esto nos permite ver algunos bloques más claros o agrupar clases que nos interese ver juntas. Pero atención: anidar genera estilos más específicos y hay que usarlo con mucho cuidado.
 Una buena regla es, cuando vayamos a añadir un cuarto nivel de anidación, pararnos a repensar si realmente es necesario. Pero con el uso iremos viendo cuándo usarlo y cuándo no ;)
 
 ### Referenciando al selector padre o madre: `&`
+
 ¡Pero no todo es tener cuidado! Una de las ventajas que nos ofrece el anidado es poder referenciar al selector padre o madre. Por ejemplo: queremos que los enlaces de nuestra página sean rojos, y el hover en azul, pero los enlaces del footer deben ser naranjas con el hover en verde.
+
 ```scss
 a {
 	color: red;
@@ -155,13 +176,16 @@ a {
 	}
 }
 ```
+
 Esto generaría el siguiente CSS:
+
 ```css
 a {color: red;}
 a:hover {color: blue;}
 .footer a {color: orange;}
 .footer a:hover {color: green;}
 ```
+
 En este [codepen](https://codepen.io/adalab/pen/JOqQGG) podéis verlo funcionando.
 
 ###  SASS & BEM. Una bonita pareja
@@ -193,16 +217,20 @@ Supongamos que tenemos que crear tres botones en nuestro `header`. Uno llevaría
    <button class="header__button--small"></button>
 </header>
 ```
+
 Siendo `.header` nuestro contenedor principal o “block”, `button` nuestro elemento principal “element”
 y `success / small` nuestros *modifiers*.
 
 Como puedes ver, para unir estos tres elementos utilizamos doble guión bajo y doble guión medio en todos los casos.
+
 ```css
 .header__button--small {}
 ```
+
 ¿Y cómo traducimos esto a SCSS con SASS?
 
 Pues gracias a la anidación o *nesting* de los elementos y a los selectores madre (&).
+
 ```scss
 /***SCSS***/
 .header {
@@ -216,6 +244,7 @@ Pues gracias a la anidación o *nesting* de los elementos y a los selectores mad
 .header__button {}
 .header__button--success {}
 ```
+
 Como ya sabéis el selector `&` aplica estilos específicos a una etiqueta anidada dentro de un selector madre. Esto hace que el marco de trabajo que nos ofrece BEM sea el ideal para trabajar con SASS, pudiendo crear hojas de estilo limpias y ordenadas, así que a partir de ahora, las adalabers utilizaremos BEM para nombrar nuestras etiquetas y dar estilo a nuestros proyectos. Veréis qué fácil se hace mantener nuestra css y encontrar selectores concretos a medida que crece nuestro código ;)
 
 > **Nota:** Os recomendamos leer la [documentación oficial de BEM](http://getbem.com/introduction/).
@@ -248,6 +277,7 @@ Utilizando el editor online https://sass.js.org/ y el operador `&` hay que reesc
 \_\_\_\_\_\_\_\_\_\_
 
 ### Mediaqueries
+
 La posibilidad de anidar selectores nos permite una flexibilidad extra. Hasta ahora sólo podíamos meter selectores completos dentro de nuestras Mediaqueries, pero con Sass podemos incluir mediaqueries en nuestros selectores y hacer cosas como esta.
 
 ```scss
@@ -262,7 +292,9 @@ La posibilidad de anidar selectores nos permite una flexibilidad extra. Hasta ah
 	}
 }
 ```
+
 Y que generaría el siguiente CSS:
+
 ```css
 .wrapper {
 	margin: 0 25px;
@@ -278,7 +310,6 @@ Y que generaría el siguiente CSS:
 		max-width: 1200px;
 	}
 }
-
 ```
 
 #### EJERCICIO 3
@@ -308,41 +339,38 @@ Seguimos con el editor online https://sass.js.org/, hay que reescribir el siguie
 \_\_\_\_\_\_\_\_\_\_
 
 ### Imports y cómo organizar nuestro proyecto
+
 Bueno, ¿qué más podemos hacer con Sass? Importar archivos. Esto es otra ventaja importante ya que nos permite modularizar nuestros estilos y trabajar en pequeños parciales que luego se unirán en el archivo final. Esto es gracias al `@import`.
 
 Espera, CSS ya tiene un sistema de ´@import´ que todas sabemos que se colocan al principio del archivo CSS, ¿no? Pues sí, pero el ´@import´ de Sass lo puedes poner donde quieras del documento lo que nos permite plantear una estructura de componentes para llevar un orden en nuestros desarrollos. Hay muchas maneras de plantearlo así que os vamos a proponer una.
 
 ```
 scss
-	|
-	|- main.scss/index.scss (archivo principal)
-	|
-  |- core
-  |  |- _functions.scss
-  |  |- _mixins.scss
-  |  `- _variables.scss
-  |
-  |- components
-  |  |- _buttons.scss
-  |  |- _forms.scss
-  |  |- _hero.scss
-  |  |- _newsletter.scss
-  |  `- _typography.scss
-  |
-  |- layout
-  |  |- _header.scss
-  |  |- _footer.scss
-  |  |- _grid.scss
-  |
-  `- pages
-     |- _about-us.scss
-     |- _contact.scss
-     `- _home.scss
+	├─ main.scss o index.scss (archivo principal)
+  ├─ core
+  │  ├─ _functions.scss
+  │  ├─ _mixins.scss
+  │  └─ _variables.scss
+  ├─ components
+  │  ├─ _buttons.scss
+  │  ├─ _forms.scss
+  │  ├─ _hero.scss
+  │  ├─ _newsletter.scss
+  │  └─ _typography.scss
+  ├─ layout
+  │  ├─ _header.scss
+  │  ├─ _footer.scss
+  │  └─ _grid.scss
+  └─ pages
+     ├─ _about-us.scss
+     ├─ _contact.scss
+     └─ _home.scss
 ```
 
 Tendríamos cuatro bloques de archivos: los de **core** como son las variables, nuestros mixins y funciones; el bloque principal de **layout** con la estructura del site y los componentes principales como header y footer; los diferentes **componentes** como puede ser un bloque de noticias, el formulario de contacto o los botones; y por último el bloque de **páginas** donde tendríamos los ajustes particulares de cada página.
 
 En nuestro `main.scss` llamaríamos a todos estos archivos en orden:
+
 ```scss
 // Core
 @import 'core/functions';
@@ -367,11 +395,9 @@ En nuestro `main.scss` llamaríamos a todos estos archivos en orden:
 @import 'pages/home';
 ```
 
-> **Nota 1:**
-> Si ponemos un archivo con un guión bajo delante Sass no lo procesará para convertirlo a CSS. La idea es que todos los nombres de archivos que vayamos a importar los escribamos con un guión bajo delante. Estos archivos a menudo se suelen llamar `parciales`, porque son partes del código final.
+> **Nota 1:** si ponemos un archivo con un guión bajo delante Sass no lo procesará para convertirlo a CSS. La idea es que todos los nombres de archivos que vayamos a importar los escribamos con un guión bajo delante. Estos archivos a menudo se suelen llamar `parciales`, porque son partes del código final.
 
-> **Nota 2:**
-> Es importante saber que el orden de los imports es importante y que tal como se carguen será como se importen y como se ejecuten para convertirse a CSS. ¡Recordad la cascada de CSS!
+> **Nota 2:** es importante saber que el orden de los imports es importante y que tal como se carguen será como se importen y como se ejecuten para convertirse a CSS. ¡Recordad la cascada de CSS!
 
 Una ventaja directa de trabajar con parciales es la cantidad de conflictos de git que nos vamos a ahorrar por no estar modificando el mismo fichero ;)
 
@@ -395,11 +421,13 @@ Y hasta aquí el contenido de la sesión, pero si quieres saber más tenemos con
 ## BONUS
 
 ### Mixins y funciones
+
 Vale, ¿qué es esto de mixins y funciones? ¡Lo mejor!
 
 ### Mixins
 
 Los **mixins** son bloques de código que vamos a querer reutilizar y/o personalizar. Veamos un ejemplo.
+
 ```scss
 @mixin absoluteCentered() {
 	position: absolute;
@@ -416,7 +444,9 @@ Los **mixins** son bloques de código que vamos a querer reutilizar y/o personal
 	@include absoluteCentered();
 }
 ```
+
 Y esto generará:
+
 ```css
 .container {
 	position: relative;
@@ -443,7 +473,9 @@ También podemos crear mixins "personalizables" con parámetros. Otro ejemplo.
 	@include t(18px, 24px);
 }
 ```
+
 Que generará el siguiente CSS:
+
 ```css
 .main__title {
 	font-size: 32px;
@@ -454,8 +486,6 @@ Que generará el siguiente CSS:
 	line-height: 24px;
 }
 ```
-
-***
 
 #### EJERCICIO BONUS 5
 
@@ -487,18 +517,18 @@ Queremos rehacer el ejercicio 3 para poder escribir nuestro código así:
 
 ¿Te animas a hacer los mixins 'tablet' y 'desktop' para que funcione?
 
-**PISTA**: investiga la directiva `@content`
+**Pista**: investiga la directiva `@content`
 
 \_\_\_\_\_\_\_\_\_\_
 
 ### Funciones
+
 Sass viene con un un [juego de funciones](http://sass-lang.com/documentation/Sass/Script/Functions.html) y además podemos crear las nuestras propias.
 Por ejemplo, vamos a crear una función para poder escribir nuestras unidades en rem, pero elegantemente. ¿O qué?
 
 Recordemos que `rem` es una medida relativa al tamaño de fuente especificado en nuestra etiqueta `<html>`, por defecto este tamaño es de 16px.
 
 Vamos a crear una función a la que le pasemos los pixels que queremos y que ella se busque la vida para transformarlo a los `rem` correctos.
-
 
 ```scss
 // Esta es la variable que usaremos como tamaño por defecto

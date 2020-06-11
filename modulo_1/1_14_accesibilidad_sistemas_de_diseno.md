@@ -1,4 +1,4 @@
-# Accesibilidad y Sistemas de diseño
+# Accesibilidad y sistemas de diseño
 
 ## Contenidos
 
@@ -53,59 +53,44 @@ Esto tiene una respuesta sencilla, por un lado, escribiendo un **HTML semántico
 **Pautas esenciales para mejorar la semántica de nuestro HTML**
 
 1. HTML5 incorpora un montón de etiquetas nuevas que hacen que tu web sea mucho más semántica, lo que hace que puedas usar dichas etiquetas en función del significado más específico y correcto para su tarea. **No abuses del uso de la etiqueta div**, cuando tienes etiquetas HTML creadas especialmente para el tipo de contenido que van a agrupar. Por ejemplo `<input>` dentro de etiquetas `<form>`, `<li>` en listas `<ul>` o `<ol>`...
-
-2. **Mantener una estructura lógica de ordenación de contenidos en titulares**, por ejemplo cuando manejamos jerarquías de titulares, `<h1> <h2> <h3>`...
-
-3. Utilizar las **listas para contenidos que siguen una pauta de repetición y constituyen un listado**:
-
+1. **Mantener una estructura lógica de ordenación de contenidos en titulares**, por ejemplo cuando manejamos jerarquías de titulares, `<h1> <h2> <h3>`...
+1. Utilizar las **listas para contenidos que siguen una pauta de repetición y constituyen un listado**:
    - Menús (cada item es un elemento de lista `<li>`)
    - Migas de pan
    - Categorías/Tags...
-
-4. En etiquetas `<input>`, especificar siempre su `type`, `value` y `name`, además, asociar siempre etiquetas `<label>` a sus respectivos `<input>`.
-
-```html
-<label for="male">Male</label> <input type="radio" name="gender" id="male" value="male" />
-```
-
-5. Incorporar **textos alternativos** en imágenes y vídeos
+1. En etiquetas `<input>`, especificar siempre su `type`, `value` y `name`, además, asociar siempre etiquetas `<label>` a sus respectivos `<input>`.
+   ```html
+   <label for="male">Male</label> <input type="radio" name="gender" id="male" value="male" />
+   ```
+1. Incorporar **textos alternativos** en imágenes y vídeos
 
 **Pautas para mejorar la accesibilidad**
 
-1.  **Los landmarks.** Se usan para identificar áreas de tu página y transmitir la naturaleza de la mismas. Así añadimos características útiles de navegación que transmiten información sobre la estructura de la página. Simplemente tenemos que añadir al elemento contenedor (el “div” por ejemplo) el código role=”[tipo_landmark]”. Por ejemplo, `<div role=”main”>` para marcar el "div" que contiene la zona de contenido principal. ¿Verdad que es sencillo? Hay varios tipos de landmarks dependiendo de la etiqueta HTML a la que acompañen los más importantes son los que os indicamos aquí abajo:
-
-        <header> / banner
-        <aside> / complementary
-        <main> / main
-        <footer> / contentinfo
-        <nav> / navigation
-        <form> / form
-
-Puedes leer más sobre landmarks en [https://olgacarreras.blogspot.com/2014/03/navegacion-mas-accesible-y-semantica-en.html](https://olgacarreras.blogspot.com/2014/03/navegacion-mas-accesible-y-semantica-en.html)
-
-2. **Color**. Una buena práctica es ofrecer opciones de alto contraste en nuestra web para usuarios con problemas visuales. Si el diseño de nuestro proyecto se ve interferido por el uso de colores muy contrastados siempre podremos incorporar un pequeño botón que altere la gama de colores de manera que todo el mundo pueda leer el contenido de nuestra web. Para usuarios con problemas de percepción del color, deberíamos utilizar texturas adicionales como rayados o punteados.
-
-3. **Navegación con teclado**
-
+1. **Los landmarks.** Se usan para identificar áreas de tu página y transmitir la naturaleza de la mismas. Así añadimos características útiles de navegación que transmiten información sobre la estructura de la página. Simplemente tenemos que añadir al elemento contenedor (el “div” por ejemplo) el código role=”[tipo_landmark]”. Por ejemplo, `<div role=”main”>` para marcar el "div" que contiene la zona de contenido principal. ¿Verdad que es sencillo? Hay varios tipos de landmarks dependiendo de la etiqueta HTML a la que acompañen los más importantes son los que os indicamos aquí abajo:
+   ```html
+     <header> / banner
+     <aside> / complementary
+     <main> / main
+     <footer> / contentinfo
+     <nav> / navigation
+     <form> / form
+   ```
+   Puedes leer más sobre landmarks en [https://olgacarreras.blogspot.com/2014/03/navegacion-mas-accesible-y-semantica-en.html](https://olgacarreras.blogspot.com/2014/03/navegacion-mas-accesible-y-semantica-en.html)
+1. **Color**. Una buena práctica es ofrecer opciones de alto contraste en nuestra web para usuarios con problemas visuales. Si el diseño de nuestro proyecto se ve interferido por el uso de colores muy contrastados siempre podremos incorporar un pequeño botón que altere la gama de colores de manera que todo el mundo pueda leer el contenido de nuestra web. Para usuarios con problemas de percepción del color, deberíamos utilizar texturas adicionales como rayados o punteados.
+1. **Navegación con teclado:**
    - **Focussable buttons**: Hacer siempre los botones de nuestra web visualmente destacados cuando nos posicionemos sobre ellos a través del foco. No deberíamos quitar nunca el `:focus` de nuestros botones.
-
    - **Tabbable elements:** Muchas veces el orden visual de los elementos de nuestras webs no se corresponde con el orden lógico en el que queremos que se navegue por ella, por ejemplo los campos de formulario. Para solucionar esto existe la propiedad `tabindex`.
-
-```html
-<a href="https://www.w3schools.com/" tabindex="2">W3Schools</a>
-<a href="http://www.google.com/" tabindex="1">Google</a>
-<a href="http://www.microsoft.com/" tabindex="3">Microsoft</a>
-```
-
-Puedes leer más sobre el uso correcto de tabindex en [https://developers.google.com/web/fundamentals/accessibility/focus/using-tabindex?hl=es](https://developers.google.com/web/fundamentals/accessibility/focus/using-tabindex?hl=es)
-
-4. **Etiquetas ARIA**. Las etiquetas ARIA sirven para añadir descripciones y etiquetas a elementos para volverlos accesibles cuando por sí mismos no lo son. Vamos a ver un ejemplo. más abajo se aplica estilo a un botón para que parezca un típico botón "cerrar", con una X en medio. Al no haber nada que indique que el propósito del botón es cerrar el diálogo, se usa el atributo `aria-label` para proporcionar una etiqueta a cualquier lector de pantalla.
-
-```html
-<button aria-label="Close" onclick="myDialog.close()">X</button>
-```
-
-Conoce más sobre este tipo de etiquetas en [https://developers.google.com/web/fundamentals/accessibility/semantics-aria/aria-labels-and-relationships?hl=es](https://developers.google.com/web/fundamentals/accessibility/semantics-aria/aria-labels-and-relationships?hl=es)
+   ```html
+   <a href="https://www.w3schools.com/" tabindex="2">W3Schools</a>
+   <a href="http://www.google.com/" tabindex="1">Google</a>
+   <a href="http://www.microsoft.com/" tabindex="3">Microsoft</a>
+   ```
+   Puedes leer más sobre el uso correcto de tabindex en [https://developers.google.com/web/fundamentals/accessibility/focus/using-tabindex?hl=es](https://developers.google.com/web/fundamentals/accessibility/focus/using-tabindex?hl=es)
+1. **Etiquetas ARIA**. Las etiquetas ARIA sirven para añadir descripciones y etiquetas a elementos para volverlos accesibles cuando por sí mismos no lo son. Vamos a ver un ejemplo. más abajo se aplica estilo a un botón para que parezca un típico botón "cerrar", con una X en medio. Al no haber nada que indique que el propósito del botón es cerrar el diálogo, se usa el atributo `aria-label` para proporcionar una etiqueta a cualquier lector de pantalla.
+   ```html
+   <button aria-label="Close" onclick="myDialog.close()">X</button>
+   ```
+   Conoce más sobre este tipo de etiquetas en [https://developers.google.com/web/fundamentals/accessibility/semantics-aria/aria-labels-and-relationships?hl=es](https://developers.google.com/web/fundamentals/accessibility/semantics-aria/aria-labels-and-relationships?hl=es)
 
 **¡Vamos a practicar!**
 
@@ -154,7 +139,7 @@ La empresa Bacon Yummy tiene una página anticuada que no sigue ninguna pauta de
 </html>
 ```
 
-> **Pista**: Sustituye cada div por su respectiva etiqueta HTML5, revisa la indentación...
+> **Pista:** Sustituye cada div por su respectiva etiqueta HTML5, revisa la indentación...
 
 ## ¿Qué es un sistema de diseño?
 
@@ -188,27 +173,24 @@ Bien, ya tenemos una idea básica de qué es un sistema. Ahora vamos a ver cómo
 
 ```
 scss
-  |- core
-  |  |- _functions.scss
-  |  |- _mixins.scss
-  |  `- _variables.scss
-  |
-  |- components
-  |  |- _buttons.scss
-  |  |- _forms.scss
-  |  |- _hero.scss
-  |  |- _newsletter.scss
-  |  `- _typography.scss
-  |
-  |- layout
-  |  |- _header.scss
-  |  |- _footer.scss
-  |  |- _grid.scss
-  |
-  `- pages
-     |- _about-us.scss
-     |- _contact.scss
-     `- _home.scss
+  ├─ core
+  │  ├─ _functions.scss
+  │  ├─ _mixins.scss
+  │  └─ _variables.scss
+  ├─ components
+  │  ├─ _buttons.scss
+  │  ├─ _forms.scss
+  │  ├─ _hero.scss
+  │  ├─ _newsletter.scss
+  │  └─ _typography.scss
+  ├─ layout
+  │  ├─ _header.scss
+  │  ├─ _footer.scss
+  │  ├─ _grid.scss
+  └─ pages
+     ├─ _about-us.scss
+     ├─ _contact.scss
+     └─ _home.scss
 ```
 
 > **Nota:** En el fichero `_typography.scss` debemos meter los estilos y clases de las fuentes, no las variables de las fuentes. Las variables SASS de las fuentes van dentro del fichero `_variables.scss` junto con el resto de variables.
@@ -304,7 +286,7 @@ Además, crearemos un archivo `scss/core/_variables.scss` donde crearemos variab
 
 Para finalizar, vamos a cambiar los colores que tenemos por los de esta página: http://flatuicolors.com/. Sustituiremos el turquesa que tenemos actualmente en la web por el turquesa de FlatUIColors y el negro por el Wet Asphalt.
 
-> NOTA: Si hemos realizado bien el código, cada uno de estos cambios de color lo podremos llevar a cabo cambiando solo una línea.
+> **Nota:** Si hemos realizado bien el código, cada uno de estos cambios de color lo podremos llevar a cabo cambiando solo una línea.
 
 \_\_\_\_\_\_\_\_\_\_
 
@@ -475,22 +457,18 @@ Recordando el ejemplo de la estructura que vimos para Sass, este componente debe
 
 ```
 scss
-	|
-	|- main.scss/index.scss (archivo principal)
-	|
-  |- core
-  |  |- _functions.scss
-  |  |- _mixins.scss
-  |  `- _variables.scss
-  |
-  |- components
-  |  |- _buttons.scss
-  |  |- _forms.scss
-  |  |- _hero.scss
-  |  |- _newsletter.scss
-  |  `- _typography.scss
+  ├─ main.scss/index.scss (archivo principal)
+  ├─ core
+  │  ├─ _functions.scss
+  │  ├─ _mixins.scss
+  │  └─ _variables.scss
+  ├─ components
+  │  ├─ _buttons.scss
+  │  ├─ _forms.scss
+  │  ├─ _hero.scss
+  │  ├─ _newsletter.scss
+  │  └─ _typography.scss
   ...
-
 ```
 
 Bien, una vez creado el archivo vamos a crear un par de clases para nuestro botón. La idea es que, tras crear todas las clases CSS, tengamos los estilos suficientes para poder obtener el resultado que aparece en la imagen siguiente sin tener que añadir ni una línea de CSS adicional.
@@ -662,7 +640,6 @@ Como se muestra en el ejemplo, en este caso ya estamos modificando algo más que
 Y con estos estilos para cambiar el tamaño de los botones terminamos esta sección de cómo crear componentes. Sí que es importante tener en cuenta dos cosas:
 
 - No nos debemos volver locos creando estilos sino crear solo los justos y necesarios en función del diseño. Por ejemplo, si tenemos los titulares (`h1`) con una Times New Roman y 42px de tamaño y siempre van así y tenemos por otro lado los títulos de sección (`h3`) con una Arial de 18px de tamaño no tiene sentido que creemos cuatro estilos (font-arial, font-times, txt-xxl, txt-l) sino que sería más recomendable tener dos estilos porque un título siempre va a ir con Times New Roman y un `h3` siempre con Arial.
-
 - No hay una única solución para nombrar y organizar los estilos. Nosotros os planteamos más abajo algunas soluciones pero, como sucede muchas veces en programación, no existe la forma única sino que dependerá de cada caso. Por tanto, no te preocupes si no estás segura de cómo nombrar o qué clases utilizar para tus componentes, puedes preguntarnos en clase o hacerlo como mejor consideres y nosotros siempre te daremos consejo en los ejercicios.
 
 #### EJERCICIO 4

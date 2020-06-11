@@ -42,7 +42,7 @@ Algunos casos concretos son:
 ## Objetivos de la sesión
 
 1. Recordar los principales modos de presentación de los elementos HTML: `inline`, `inline-block` y `block`.
-2. Conocer los modos de posicionamiento: `static`, `relative`, `absolute` y `fixed`.
+1. Conocer los modos de posicionamiento: `static`, `relative`, `absolute` y `fixed`.
 
 ## Visualización (display)
 
@@ -63,10 +63,12 @@ Los navegadores web aplican por defecto un valor `display` a todos los elementos
 
 Crea una lista de cinco elementos que se muestre en línea y con espacios entre cada elemento de 12 píxeles.
 
-Vista de la lista sin estilos
+Vista de la lista sin estilos:
+
 ![Menu sin estilos](assets/images/1-5/1_5_ejercicio_10_menu_sin_estilo.png)
 
-Vista de la lista con estilos
+Vista de la lista con estilos:
+
 ![Menu con estilos](assets/images/1-5/1_5_ejercicio_10_menu_con_estilo.png)
 
 \_\_\_\_\_\_\_\_\_\_
@@ -103,7 +105,7 @@ Cuando las cajas se superponen por encima de otras, se están posicionando en ca
 
 La posición Z de cada capa representa el orden de apilamiento. Podemos modificarlo con la propiedad **z-index**. Números más grandes significan mayor cercanía a la observadora.
 
-- Video para entender [z-index](https://www.youtube.com/watch?v=u2O_ys4X1cQ)
+- Video para entender [z-index](https://www.youtube.com/watch?v=u2O_ys4X1cQ).
 
 #### EJERCICIO 2
 
@@ -111,11 +113,9 @@ La posición Z de cada capa representa el orden de apilamiento. Podemos modifica
 
 Define un documento HTML con un div padre (divPadre), dentro del cual existan otras 3 cajas contenedoras div (div1, div2 y div3), cada una de ellas con unas dimensiones de 300x300px, 40 píxeles de margin en todas direcciones, 30 píxeles de padding en todas direcciones y un background color diferente. Usando posicionamiento relativo genera un desplazamiento de los div de la siguiente manera:
 
-a) El div 1 deberá desplazarse 100 píxeles a la derecha y 50 píxeles hacia abajo respecto a lo que sería su posición normal.
-
-b) El div 2 deberá desplazarse 150 píxeles a la izquierda y 320 píxeles hacia arriba respecto a lo que sería su posición normal.
-
-c) El div 3 deberá desplazarse 180 píxeles a la derecha y 240 píxeles hacia arriba respecto a lo que sería su posición normal.
+1. El div 1 deberá desplazarse 100 píxeles a la derecha y 50 píxeles hacia abajo respecto a lo que sería su posición normal.
+1. El div 2 deberá desplazarse 150 píxeles a la izquierda y 320 píxeles hacia arriba respecto a lo que sería su posición normal.
+1. El div 3 deberá desplazarse 180 píxeles a la derecha y 240 píxeles hacia arriba respecto a lo que sería su posición normal.
 
 \_\_\_\_\_\_\_\_\_\_
 
@@ -125,11 +125,9 @@ c) El div 3 deberá desplazarse 180 píxeles a la derecha y 240 píxeles hacia a
 
 Crear un documento HTML con una cabecera y un contenedor principal con varios párrafos que contengan suficiente texto como para que la página se muestre con scroll (barras de desplazamiento).
 
-a) Añadir fondo morado a la cabecera y hacer que se mantenga fija arriba.
-
-b) Hacer que la cabecera no tape el contenedor principal cuando no hemos hecho scroll, sin utilizar `margin` ni `padding` (PISTA: posiciona el contenedor principal).
-
-c) Hacer que cuando la usuaria haga scroll, la cabecera se apile o superponga por encima del contenedor principal.
+1. Añadir fondo morado a la cabecera y hacer que se mantenga fija arriba.
+1. Hacer que la cabecera no tape el contenedor principal cuando no hemos hecho scroll, sin utilizar `margin` ni `padding` (PISTA: posiciona el contenedor principal).
+1. Hacer que cuando la usuaria haga scroll, la cabecera se apile o superponga por encima del contenedor principal.
 
 \_\_\_\_\_\_\_\_\_\_
 

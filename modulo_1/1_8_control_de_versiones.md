@@ -41,9 +41,9 @@ Markdown es un lenguaje de marcado como HTML pero más simple. Al ser más simpl
 
 Ejemplos de readme.md:
 
-* [React](https://github.com/facebook/react)
-* [Editor de código VS Code](https://github.com/Microsoft/vscode)
-* [Gulp (Automatizador de tareas)](https://github.com/gulpjs/gulp)
+- [React](https://github.com/facebook/react)
+- [Editor de código VS Code](https://github.com/Microsoft/vscode)
+- [Gulp (Automatizador de tareas)](https://github.com/gulpjs/gulp)
 
 Os recomendamos que cuando tengáis tiempo le pongáis un buen README.md a todos vuestros repositorios. Las empresas que están buscando Adalabers lo agradecerán.
 
@@ -66,7 +66,6 @@ Uno de los puntos claves en un entorno social donde poner al alcance de todos tu
 
 GitHub nos ofrece un enlace donde nos intenta orientar sobre qué licencia elegir en cada caso: [choosealicense.com](https://choosealicense.com).
 
-
 ## Compartir código con mi equipo
 
 Otras de las bondades de Git es que hace que trabajar en grupo sea **seguro y más fácil**. Nos evita por ejemplo: tener que compartir archivos a través del email, perder código cuando una compañera lo sobreescribe por error...
@@ -80,31 +79,32 @@ El primer paso es permitir a nuestras compañeras modificar nuestro repo. Desde 
 Ya lo hemos ido viendo estos días:
 
 1. Se modifican archivos y **se guardan los cambios en el editor**.
-2. **Se añaden para su control** con `git add -A` (añade todos los archivos modificados) o con `git add nombre-de-archivo` (añade solo el archivo especificado).
-3. **Creamos el commit** con `git commit -m "Short description of the commit"`
+1. **Se añaden para su control** con `git add -A` (añade todos los archivos modificados) o con `git add nombre-de-archivo` (añade solo el archivo especificado).
+1. **Creamos el commit** con `git commit -m "Short description of the commit"`
 
 Hasta aquí todo normal. Ahora llega el momento de **subir el commit** (o los commits, si hemos hecho varios) con nuestros cambios al repositorio remoto con `git push origin master`, pero pueden pasar varias cosas:
 
 1. Que se suba bien, **sin problemas ni conflictos**. Yay!
-2. Que no podamos subir nuestros cambios porque **no estemos trabajando con la última versión**. Lo sabremos porque la terminal nos muestra un error. En este caso tendremos que hacer `git pull` para actualizar nuestro repositorio local con la última versión que se encuentra en remoto, es decir, **nos traemos los últimos cambios** hechos por otras personas a nuestro ordenador.
+1. Que no podamos subir nuestros cambios porque **no estemos trabajando con la última versión**. Lo sabremos porque la terminal nos muestra un error. En este caso tendremos que hacer `git pull` para actualizar nuestro repositorio local con la última versión que se encuentra en remoto, es decir, **nos traemos los últimos cambios** hechos por otras personas a nuestro ordenador.
 
 > **Nota:** Antes de comenzar a trabajar, de vez en cuando y antes de hacer un commit **es una buena práctica hacer `git pull`** y actualizar nuestro repositorio local con los cambios que otras personas han subido al repositorio remoto. Aun así, ocurrirá que tras hacer nuestros cambios y commitearlos, al intentar hacer `git push` el terminal nos indique que tenemos que hacer `git pull` primero, esto ocurre por que alguna compañera ha subido cambios mientras nosotras trabajábamos.
 
-
 ### ¿Qué pasa cuando hacemos un `git pull`?
+
 Pasan varias cosas:
 
 1. Git comprueba si en el repositorio remoto hay una versión posterior (más nueva) a la que se encuentra en nuestro repositorio local.
-2. Si encuentra cambios posteriores, se los baja e intenta mezclarlos con los de nuestros commits.
+1. Si encuentra cambios posteriores, se los baja e intenta mezclarlos con los de nuestros commits.
 
 Y aquí tenemos dos escenarios diferentes:
 
 1. Los cambios que se han bajado de remoto (realizados por mis compañeras) y los míos se pueden mezclar (o mergear) automaticamente, Git crea un commit automático con esta mezcla (o merge) y nos lo muestra usando el editor por defecto que tenemos configurado en nuestra terminal (NANO, vim...). A esto se le llama un **soft merge**.
-2. Otra posibilidad es que Git no pueda mezclar los cambios automáticamente. Entonces nos avisa de que hay conflictos que tendremos que resolver nosotras manualmente. Nos mostrará una lista de archivos donde se encuentran los conflictos. Es importante leer toda la info que nos muestra la terminal. A esto se le llama un **hard merge**.
+1. Otra posibilidad es que Git no pueda mezclar los cambios automáticamente. Entonces nos avisa de que hay conflictos que tendremos que resolver nosotras manualmente. Nos mostrará una lista de archivos donde se encuentran los conflictos. Es importante leer toda la info que nos muestra la terminal. A esto se le llama un **hard merge**.
 
 > **Nota:** En el primer caso podremos cambiar el mensaje del commit automático o poner uno nuevo. Guardamos aceptando el nombre que nos propone, salimos, y hacemos un push (se subirá el commit con nuestros cambios y el commit con el merge o mezcla).
 
 ### ¿Qué pinta tiene un conflicto?
+
 Un conflicto ocurre cuando git se encuentra con dos versiones del mismo bloque de código. Entonces, marca en el documento que hay un conflicto y muestra las dos opciones para que nosotros elijamos qué hacer:
 ```
 <<<<<<<
@@ -135,6 +135,7 @@ Los conflictos más pequeños los resolveremos sobre la marcha, en **los más co
 Cuando subimos los commits habréis visto que escribimos `$ git push origin master`, lo que estamos diciendo es que suba muestra **rama master** al repositorio remoto.
 
 ### Madre de CROM, ¿¿qué es una rama???
+
 Git nos permite crear versiones paralelas de nuestro proyecto para poder desarrollar o probar varias funcionalidades a la vez sin miedo a perder lo hecho hasta ahora:
 
 ![Trabajo sin ramas y trabajo con ramas](assets/images/1-8/trabajo-en-ramas.png)
@@ -146,15 +147,16 @@ Vamos a ver el trabajo en ramas a través de un ejemplo, como un mini proyecto d
 #### EJERCICIO 1
 
 1. Vamos crear un repositorio por pareja, donde ambas debéis tener acceso al repositorio (la que lo crea debe dar acceso al usuario de GitHub de la otra).
-2. Crearemos una primera versión de nuestra web (solo en HTML) que tendrá:
+1. Crearemos una primera versión de nuestra web (solo en HTML) que tendrá:
 	1. Un `<header>` con un `<h1>` con el nombre del grupo
-	2. Un `<main>` con dos secciones:
+	1. Un `<main>` con dos secciones:
 		1. `<section class="motivacion"></section>`
-		2. `<section class="contenido"></section>`
-	3. Un `<footer>` con un `<p>` con el texto: "Maquetado en grupo en Adalab"
-3. Lo subiremos a GitHub
+		1. `<section class="contenido"></section>`
+	1. Un `<footer>` con un `<p>` con el texto: "Maquetado en grupo en Adalab"
+1. Lo subiremos a GitHub
 
 Nos tiene que quedar algo así:
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -180,6 +182,7 @@ Nos tiene que quedar algo así:
 \_\_\_\_\_\_\_\_\_\_
 
 ### Creando ramas
+
 Para crear ramas escribimos y movernos a ella tenemos dos comandos:
 
 ```bash

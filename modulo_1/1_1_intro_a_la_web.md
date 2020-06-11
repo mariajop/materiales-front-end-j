@@ -504,17 +504,13 @@ Para este curso vamos a plantear unas que dan bastante buen resultado para empez
 Para la estructura del proyecto usaremos estas carpetas:
 
 ```
-/project-folder
- │
- ├── images
- │    └── background.jpg
- │
- ├── scripts
- │
- ├── styles
- │   └── main.css
- │
- └── index.html
+project-folder
+ ├─ images
+ │  └─ background.jpg
+ ├─ scripts
+ ├─ styles
+ │  └─ main.css
+ └─ index.html
 ```
 
 ## La paleta de comandos de Code
