@@ -685,7 +685,7 @@ A continuación generaremos un HTML en el que probaremos que funciona cada uno d
 <input class="input" type="number" name="creditcard" disabled />
 ```
 
-> **NOTA**: No es necesario que los estilos sean idénticos a los que aparecen en la foto, pero si deben de estar definidos los estilos para cada uno de los estados y para cada una de las variaciones.
+> **Nota:** No es necesario que los estilos sean idénticos a los que aparecen en la foto, pero si deben de estar definidos los estilos para cada uno de los estados y para cada una de las variaciones.
 
 \_\_\_\_\_\_\_\_\_\_
 

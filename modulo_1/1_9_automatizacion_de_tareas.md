@@ -61,7 +61,7 @@ El comando usado en el vídeo es:
 npm -g install gulp-cli
 ```
 
-> **NOTA:** La opción `-g` indica que el módulo `gulp-cli` se va a instalar globalmente, es decir, que es accesible desde cualquier carpeta del ordenador.
+> **Nota:** La opción `-g` indica que el módulo `gulp-cli` se va a instalar globalmente, es decir, que es accesible desde cualquier carpeta del ordenador.
 
 Y ahora que ya sabemos cómo funcionan Node JS, NPM y Gulp, vamos a trabajar con un proyecto que os hemos preparado que usa estas tres herramientas... y alguna más.
 
@@ -144,7 +144,7 @@ En tu vida como programadora a menudo migrarás proyectos, desde una versión vi
 1. Usa los ficheros del Starter kit dentro de tu nueva rama para migrarlo.
 1. Pushealo a la rama.
 
-> **NOTA:** No mergees la rama `migration` a la rama `master` hasta que los profes hayamos terminado de corregir tu evaluación.
+> **Nota:** No mergees la rama `migration` a la rama `master` hasta que los profes hayamos terminado de corregir tu evaluación.
 
 \_\_\_\_\_\_\_\_\_\_
 
@@ -170,4 +170,4 @@ Hoy a venido la desarrolladora DevOps de la empresa y nos pide que la carpeta de
 - [Plugin de JSLint](http://www.jslint.com/)
 - [Plugin de CSSLint](http://csslint.net/)
 
-> **NOTA:** Un **linter** es un programa que detecta errores de uso y/o estilo en un código
+> **Nota:** Un **linter** es un programa que detecta errores de uso y/o estilo en un código

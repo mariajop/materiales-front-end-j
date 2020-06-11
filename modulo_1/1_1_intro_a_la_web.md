@@ -102,7 +102,7 @@ Haciendo doble clic sobre el archivo se abrirá en la aplicación asignada, en e
 
 También podemos, con una aplicación destinada para ello, enviar nuestro archivo HTML a uno de estos servidores y que todo el mundo pueda consultar nuestro archivo.
 
-> **NOTA**: Los archivos se nombran con el formato "nombre.extensión", donde la extensión indica qué tipo de archivo es. Por ejemplo: `video-de-gatitos.mp4`
+> **Nota:** Los archivos se nombran con el formato "nombre.extensión", donde la extensión indica qué tipo de archivo es. Por ejemplo: `video-de-gatitos.mp4`
 
 ## Herramientas para desarrollar en la web
 
@@ -113,7 +113,7 @@ A lo largo de las lecciones iremos viendo información valiosa para sacarle el m
 
 Un valor importante en una desarrolladora es la organización. Normalmente solemos hacer montones de proyectos, algunos grandes y que requieren tiempo, otros pequeños que nos llevan unos minutos, como pruebas de conceptos o ejercicios para probar una nueva herramienta. Lo ideal es tener una carpeta en nuestro ordenador para tenerlos localizados y organizados.
 
-> **Nota**: El nombre de esta carpeta es personal, y cada desarrolladora elige el que mejor le encaja, algunas ideas: `Projects`, `Work`, `Trabajo`...
+> **Nota:** El nombre de esta carpeta es personal, y cada desarrolladora elige el que mejor le encaja, algunas ideas: `Projects`, `Work`, `Trabajo`...
 
 ### Creando un proyecto
 
@@ -154,9 +154,9 @@ Cuando lleguemos al paso 5, copiaremos el siguiente código en el archivo `index
 
 Para realizar el paso 6 podemos cambiar el texto 'Hola Mundo' por 'Hola mundo, día 1 en Adalab'.
 
-> **Nota**: En esta documentación cada ejemplo de código tiene un botón arriba a la derecha para copiar. Te recomendamos que lo utilices ya que a veces con el copiado manual nos llevamos caracteres escondidos que hacen que el código no funcione.
+> **Nota:** En esta documentación cada ejemplo de código tiene un botón arriba a la derecha para copiar. Te recomendamos que lo utilices ya que a veces con el copiado manual nos llevamos caracteres escondidos que hacen que el código no funcione.
 
-> **Nota**: Observa como cuando realizas algún cambio sobre un archivo en _Code_, en la pestaña superior del archivo, junto al nombre, aparece una bolita, esta nos indica que hay cambios sin guardar. Como consejo nunca deberías pasar mucho tiempo sin guardar los cambios realizados sobre un archivo.
+> **Nota:** Observa como cuando realizas algún cambio sobre un archivo en _Code_, en la pestaña superior del archivo, junto al nombre, aparece una bolita, esta nos indica que hay cambios sin guardar. Como consejo nunca deberías pasar mucho tiempo sin guardar los cambios realizados sobre un archivo.
 
 \_\_\_\_\_\_\_\_\_\_
 
@@ -176,7 +176,7 @@ Con el atributo "lang" indicamos que este párrafo está en español:
 <p lang="es">Párrafo</p>
 ```
 
-> **Nota**: Hay una serie de elementos HTML que no necesitan etiqueta de cierre, los veremos más adelante.
+> **Nota:** Hay una serie de elementos HTML que no necesitan etiqueta de cierre, los veremos más adelante.
 
 A los elementos HTML los vamos a llamar "etiquetas", para abreviar.
 
@@ -201,7 +201,7 @@ Justo antes de la etiqueta `<html>` se debe añadir una etiqueta especial que in
 
 En el siguiente ejemplo vemos la misma página, un poco más definida, con su doctype, un atributo en el `<html>` que indica que está en español y dos etiquetas en la cabecera: una que indica la codificación del texto y otra que indica el título del documento.
 
-> **NOTA**: Es importante acostumbrarnos a usar el atributo "lang" en nuestras etiquetas `<html>` para indicar el idioma en el que está escrito nuestro contenido.
+> **Nota:** Es importante acostumbrarnos a usar el atributo "lang" en nuestras etiquetas `<html>` para indicar el idioma en el que está escrito nuestro contenido.
 
 ```html
 <!DOCTYPE html>
@@ -214,7 +214,7 @@ En el siguiente ejemplo vemos la misma página, un poco más definida, con su do
 </html>
 ```
 
-> **NOTA**: `<meta>` es una de esas etiquetas que no necesita cerrarse.
+> **Nota:** `<meta>` es una de esas etiquetas que no necesita cerrarse.
 
 ### Codificación de una página HTML
 
@@ -226,7 +226,7 @@ La codificación de un documento se indica en dos pasos:
 1. El archivo se guarda usando una codificación.
 2. En el `<head>` de la página se incluye una etiqueta `<meta charset="">` indicando al navegador qué juego de caracteres hemos usado al guardar el archivo.
 
-> **NOTA**: Code (y la mayoría de editores de código) ya guardan los documentos en `utf-8` por defecto. Esto es más algo a comprobar ;).
+> **Nota:** Code (y la mayoría de editores de código) ya guardan los documentos en `utf-8` por defecto. Esto es más algo a comprobar ;).
 
 ### Etiquetas de contenido
 
@@ -358,7 +358,7 @@ Para aplicar estilos a uno o varios elementos de nuestra web, la estructura que 
 - A continuación añadiremos unas llaves
 - Dentro de esas llaves escribiremos los atributos CSS, estos son un conjunto de reglas formadas por una clave y un valor, separados por `:` y acabados en `;`. Estas reglas son las que definirán los estilos que aplicaremos al selector que hemos definido previamente.
 
-> **NOTA**: Como norma general escribiremos un espacio después de los dos puntos `:` en cada atributo CSS para facilitar la lectura del código. Esta es una práctica muy típica y se lleva a cabo en muchas de las empresas de programación.
+> **Nota:** Como norma general escribiremos un espacio después de los dos puntos `:` en cada atributo CSS para facilitar la lectura del código. Esta es una práctica muy típica y se lleva a cabo en muchas de las empresas de programación.
 
 Para el selector se puede usar:
 
@@ -485,7 +485,7 @@ Al principio te costará ver los beneficios del trabajo en parejas, pero tienes 
 - Mejora las habilidades comunicativas y la empatía de las desarrolladoras, herramientas claves para el trabajo en un equipo.
 - Aumenta el foco, es más difícil procrastinar cuando estamos trabajando activamente con otra persona, también desde el exterior el resto de personas tienden a interrumpir menos a dos personas hablando que a una callada.
 
-> **Nota**: el rol de la copiloto es clave en Pair Programming, tiene que estar activa guiando a la compañera: compartiendo ideas y conocimiento, indicando pasos a seguir y errores, proponiendo alternativas más optimas... Para que la conductora se pueda centrar en escribir. ¡Nada de desconectar mirando el móvil!
+> **Nota:** el rol de la copiloto es clave en Pair Programming, tiene que estar activa guiando a la compañera: compartiendo ideas y conocimiento, indicando pasos a seguir y errores, proponiendo alternativas más optimas... Para que la conductora se pueda centrar en escribir. ¡Nada de desconectar mirando el móvil!
 
 ## Notas finales sobre cómo organizar nuestro proyecto
 

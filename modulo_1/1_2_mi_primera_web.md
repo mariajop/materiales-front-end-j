@@ -26,7 +26,7 @@ La etiquetas HTML nos permiten estructurar nuestro contenido según su función 
 - para identificar semánticamente el **contenido**
 - para crear **tablas de datos**
 
-> **NOTA**: Todavía no lo hemos dicho expresamente pero lo normal es anidarlas, meter etiquetas dentro de etiquetas.
+> **Nota:** Todavía no lo hemos dicho expresamente pero lo normal es anidarlas, meter etiquetas dentro de etiquetas.
 
 ```html
 <html>
@@ -69,7 +69,7 @@ Hay una serie de secciones especiales que tienen asignado un significado semánt
 
 Estos bloques especiales se pueden usar unos dentro de otros según tenga sentido: por ejemplo, un `<article>` puede tener cabecera y pie, mientras que una cabecera no debería tener pie.
 
-> **NOTA**: Si usamos mal estos elementos el navegador no va a dar error, pero estaremos haciendo un favor muy pobre a aquellos usuarios que necesiten este extra semántico para navegar (por ejemplo, una usuaria ciega).
+> **Nota:** Si usamos mal estos elementos el navegador no va a dar error, pero estaremos haciendo un favor muy pobre a aquellos usuarios que necesiten este extra semántico para navegar (por ejemplo, una usuaria ciega).
 
 ## Contenido
 
@@ -190,7 +190,7 @@ Con `<em>` resaltas un texto importante, y con `<strong>` resaltas un texto más
 </p>
 ```
 
-> **NOTA**: El aspecto visual de estas etiquetas es una convención entre los diferentes navegadores y, como veremos, se puede cambiar.
+> **Nota:** El aspecto visual de estas etiquetas es una convención entre los diferentes navegadores y, como veremos, se puede cambiar.
 
 ### Imágenes
 
@@ -315,7 +315,7 @@ Realizar una página semántica explicando algunos de los lenguajes de programac
 
 Todos los elementos HTML tienen una apariencia que comparte cada navegador, con pequeñas variaciones. Por defecto, el tamaño de texto es de 16px, con un interlineado de 1.15. Los encabezados y párrafos tienen un margen superior e inferior relacionado con el tamaño de texto: el `<h1>` se muestra con un tamaño de 32px y tiene 22px de margen. El fondo de la página es blanco y el color del texto es negro...
 
-> **NOTA**: La medida básica en web es el pixel o px, cada dispositivo tiene su pantalla que tiene unas dimensiones definidas en pixels, por ejemplo, la pantalla de móvil más pequeña tiene 320x480px (si no se indica lo contrario siempre es "alto por ancho").
+> **Nota:** La medida básica en web es el pixel o px, cada dispositivo tiene su pantalla que tiene unas dimensiones definidas en pixels, por ejemplo, la pantalla de móvil más pequeña tiene 320x480px (si no se indica lo contrario siempre es "alto por ancho").
 
 ### Hojas de CSS reset y normalización
 
@@ -328,7 +328,7 @@ Ahora mismo hay parte de la comunidad de desarrollo que no considera que estas h
 - Las últimas versiones de los navegadores son bastante decentes y la época dura de los navegadores antiguos, ya pasó
 - No hay un método estándar de reseteo de CSS
 
-> **NOTA**: Aún así, en algunos casos puede interesar usar una o incluso hacerse una propia, así que conocerlas es importante.
+> **Nota:** Aún así, en algunos casos puede interesar usar una o incluso hacerse una propia, así que conocerlas es importante.
 
 - [Reset CSS](https://es.wikipedia.org/wiki/Reset_CSS)
 - [Normalice CSS](https://github.com/necolas/normalize.css)
@@ -657,7 +657,7 @@ La propiedad background se construye con estos posibles valores:
 }
 ```
 
-> **NOTA:**
+> **Nota:**
 > El orden no tiene que ser necesariamente ese, pero os proponemos usarlo.
 
 Realmente, la propiedad _background_ es una versión acortada de estas propiedades:

@@ -367,10 +367,10 @@ En nuestro `main.scss` llamaríamos a todos estos archivos en orden:
 @import 'pages/home';
 ```
 
-> **NOTA 1:**
+> **Nota 1:**
 > Si ponemos un archivo con un guión bajo delante Sass no lo procesará para convertirlo a CSS. La idea es que todos los nombres de archivos que vayamos a importar los escribamos con un guión bajo delante. Estos archivos a menudo se suelen llamar `parciales`, porque son partes del código final.
 
-> **NOTA 2:**
+> **Nota 2:**
 > Es importante saber que el orden de los imports es importante y que tal como se carguen será como se importen y como se ejecuten para convertirse a CSS. ¡Recordad la cascada de CSS!
 
 Una ventaja directa de trabajar con parciales es la cantidad de conflictos de git que nos vamos a ahorrar por no estar modificando el mismo fichero ;)

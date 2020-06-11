@@ -166,7 +166,7 @@ Tenéis la documentación completa de las sub propiedades de `animation` en la M
 - [WWDC 2015 CSS](https://codepen.io/donovanh/pen/pvMeeB?q=css+animation&limit=all&type=type-pens)
 - [Cloudy Spiral CSS animation](https://codepen.io/hakimel/pen/aIhkf?q=css+animation&limit=all&type=type-pens)
 
-> **NOTA**:
+> **Nota:**
 > Animar es un trabajo en sí mismo y aunque, de entrada, nadie nos va a pedir que seamos animadoras profesionales está bien conocer las posibilidades que nos da CSS para tener un repertorio más amplio de opciones a la hora de desarrollar una web. Otra cosa es que nos guste y CSS es suficientemente potente para hacer locuras.
 
 #### EJERCICIO 4

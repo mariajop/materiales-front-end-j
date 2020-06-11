@@ -23,7 +23,7 @@
 
 La lección de hoy es amplia y variada. Vamos a aprender a trabajar con la terminal, una herramienta fundamental en la programación. También vamos continuar avanzando con nuestros conocimientos de Git y GitHub. Y al final de la lección vamos a aprender cómo publicar nuestra web en el servidor de GitHub Pages.
 
-> **NOTA:** La lección de hoy es doble, en ella hablamos de la terminal y de Git / GitHub. Debemos repartir nuestro tiempo de estudio entre ambas partes.
+> **Nota:** La lección de hoy es doble, en ella hablamos de la terminal y de Git / GitHub. Debemos repartir nuestro tiempo de estudio entre ambas partes.
 
 ## La terminal
 
@@ -57,7 +57,7 @@ ubuntu@ubuntu: ~$
 maricarmen@portatil-del-trabajo: /mnt/c/Users/maricarmen/Desktop/Adalab/ejercicios$
 ```
 
-> **NOTA**: A veces, en nuestros materiales o en Internet, encontraremos ejemplos de comandos precedidos por el símbolo del dólar, por ejemplo `$ pwd`. Es una manera de decir que es un comando de terminal. Nosotras no debemos escribir el `$` en la consola.
+> **Nota:** A veces, en nuestros materiales o en Internet, encontraremos ejemplos de comandos precedidos por el símbolo del dólar, por ejemplo `$ pwd`. Es una manera de decir que es un comando de terminal. Nosotras no debemos escribir el `$` en la consola.
 
 Y ya que hemos hablado de las rutas no podemos continuar con la explicación de la terminal, sin antes explicar lo qué son la rutas absolutas y relativas.
 
@@ -451,7 +451,7 @@ Madre mía qué útil es el comando status, lo uso sin parar:
 git status
 ```
 
-> **NOTA:** Hemos creado una [guía sobre Git](../guias/comandos_de_git.md) donde recopilamos todos los contenidos que aprendemos durante el curso.
+> **Nota:** Hemos creado una [guía sobre Git](../guias/comandos_de_git.md) donde recopilamos todos los contenidos que aprendemos durante el curso.
 
 #### EJERCICIO 7
 

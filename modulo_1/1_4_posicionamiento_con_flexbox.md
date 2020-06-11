@@ -119,7 +119,7 @@ No hay que confundir eje principal con eje horizontal, ni eje secundario con eje
 1. Para indicar en un item un tamaño especial que debe tener: `flex-grow`, `flex-shrink` y `flex-basis`.
 1. Si queremos cambiar el orden de los hijos le aplicamos order a uno de ellos, teniendo en cuenta que órdenes menores de 1 se moverán a la izquierda y mayores de 1 se moverán a la derecha.
 
-> **NOTA:** aquí estamos usando los nombres de clase `container` y `item` porque nos apetece. Podríamos haber usado otros nombres de clase que queramos.
+> **Nota:** aquí estamos usando los nombres de clase `container` y `item` porque nos apetece. Podríamos haber usado otros nombres de clase que queramos.
 
 #### EJERCICIO 1
 

@@ -258,7 +258,7 @@ Con la información de los enlaces anteriores, ¿sabrías resolver los casos de 
 
 \_\_\_\_\_\_\_\_\_\_
 
-> **NOTA:** recordad que para que el overflow se active, el contenedor tiene que tener definidas dimensiones (o ser un elemento de bloque y que el contenido sobrepase el ancho del contenedor)
+> **Nota:** recordad que para que el overflow se active, el contenedor tiene que tener definidas dimensiones (o ser un elemento de bloque y que el contenido sobrepase el ancho del contenedor)
 
 ### Alineando elementos en linea
 
@@ -419,7 +419,7 @@ Cada vez que modifiquemos los ficheros usados en la web que estamos visualizando
 
 Para lanzar el servidor, podemos usar los shortcuts (`Alt+L Alt+O`), hacerlo a través (`Ctrl+Shift+P`) buscando *Live Sever*, o pulsando en el botón *Go Live* situado en la barra inferior de Code. Si no le decimos lo contrario, el servidor se está ejecutando todo el rato en nuestro ordenador. Si cambiamos de proyecto o tenemos algún problema, es importante pararlo con `Alt+L Alt+C`, desde la paleta o en la barra inferiror de Code.
 
-> **NOTA**: podemos acceder al área de extensiones a través del icono `Extensiones` localizado en la barra izquierda de Code, o con el atajo `Ctrl+Shift+X`.
+> **Nota:** podemos acceder al área de extensiones a través del icono `Extensiones` localizado en la barra izquierda de Code, o con el atajo `Ctrl+Shift+X`.
 
 ## Recursos externos
 

@@ -34,7 +34,7 @@ Con el paso del tiempo, hemos visto que el problema ya no se resuelve teniendo a
 
 El responsive, o Responsive Web Design (RWD) es un concepto de desarrollo orientado a que los sitios web se vean y comporten correctamente en todos los dispositivos y pantallas.
 
-> **NOTA:** Responsive no es solo móvil, tablet y escritorio, también es un navegador que ocupe la mitad de la pantalla por alguna razón. Por ejemplo, estamos escribiendo un artículo en nuestro editor de textos y tenemos al lado una web donde consultamos información.
+> **Nota:** Responsive no es solo móvil, tablet y escritorio, también es un navegador que ocupe la mitad de la pantalla por alguna razón. Por ejemplo, estamos escribiendo un artículo en nuestro editor de textos y tenemos al lado una web donde consultamos información.
 
 Esto se consigue combinando varios enfoques:
 - Maquetaremos ciertas zonas usando porcentajes
@@ -218,7 +218,7 @@ Veremos que el div `.box` ocupará el ancho disponible y tendrá 100px de alto, 
 
 Si ahora redimensionamos la ventana del navegador veremos que a partir de 550px de ancho nuestro elemento `.box` se vuelve azul.
 
-> **NOTA:** A cada una de estas medidas que ponemos en los mediaqueries las llamamos breakpoints, o puntos de ruptura.
+> **Nota:** A cada una de estas medidas que ponemos en los mediaqueries las llamamos breakpoints, o puntos de ruptura.
 
 3) Abramos ahora las herramientas de desarrollo de Chrome y lancemos el simulador de dispositivos móviles. Probemos varios dispositivos o resoluciones. ¿Qué pasa? ¿Cuándo se vuelve azul? ¿Cuándo se vuelve rojo?
 
@@ -326,7 +326,7 @@ Un ejemplo sería la típica página que tiene una primera sección con una imag
 
 En el CSS esto se representa escribiendo primero los CSS que se verán en las pantallas/ventanas de navegador más pequeñas. Posteriormente añadiremos, dentro de mediaqueries, los ajustes necesarios para los tamaños mayores de pantalla o ventana.
 
-> **NOTA**: Recordemos que responsive no es solo tema de dispositivos. Claro que hay móviles de 320, tablets de 768 y pantallas desde 1336 a 2560 de ancho. Pero responsive también es un tipo en una pantalla más modesta, por ejemplo cuando una usuaria pone el navegador en la mitad de la pantalla mientras trabaja y en la otra mitad pone un reproductor de vídeo porque está enganchada a Juego de Tronos...
+> **Nota:** Recordemos que responsive no es solo tema de dispositivos. Claro que hay móviles de 320, tablets de 768 y pantallas desde 1336 a 2560 de ancho. Pero responsive también es un tipo en una pantalla más modesta, por ejemplo cuando una usuaria pone el navegador en la mitad de la pantalla mientras trabaja y en la otra mitad pone un reproductor de vídeo porque está enganchada a Juego de Tronos...
 
 ### Entonces, ¿cuántos breakpoints hay? ¿hay unos más estándar que otros?
 

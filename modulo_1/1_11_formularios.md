@@ -195,7 +195,7 @@ Vamos a crear un formulario de envío con los siguientes campos:
 
 Todos los elementos deberán de tener un atributo `placeholder` e ir acompañados de un `label` para definir qué se debe introducir en cada uno de ellos
 
-> **NOTA**: en los ejercicios largos como este, recordad cambiar quién está a los mandos en el pair programming a mitad del ejercicio.
+> **Nota:** en los ejercicios largos como este, recordad cambiar quién está a los mandos en el pair programming a mitad del ejercicio.
 
 \_\_\_\_\_\_\_\_\_\_
 
