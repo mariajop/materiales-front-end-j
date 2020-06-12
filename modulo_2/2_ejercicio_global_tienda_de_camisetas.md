@@ -19,7 +19,7 @@ Este ejercicio se grabó con público en directo en clase, durante el **módulo 
 - Temporada 2:
   - Esta temporada se grabó después de terminar el módulo, cuando ya sabíamos programar en Javascript.
   - **Los capítulos siguen el orden lógico que usamos cuando ya tenemos todos los conocimentos necesarios para hacer un ejercicio** como este.
-  - Este es el mismo orden que usamos normalmente cuando trabajamos.
+  - Este es el mismo orden que usamos normalmente cuando trabajamos en un proyecto real.
 
 ### Capítulos
 

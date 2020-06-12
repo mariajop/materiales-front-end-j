@@ -182,6 +182,8 @@ console.log('totalAges', totalAges);
 console.log('Exercises completed', sum(2, 6, 9));
 ```
 
+Ahora que ya hemos visto bastante teoría sobre funciones vamos a ver un poco de práctica. Os hemos preparado un [ejercicio global grabado](./2_ejercicio_global_tienda_de_camisetas.md) donde cada día vamos a ir aplicando los conocimientos que vamos aprendiendo.
+
 #### EJERCICIO 1
 
 **Función multiplicación**
