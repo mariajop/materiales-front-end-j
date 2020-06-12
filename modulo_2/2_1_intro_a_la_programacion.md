@@ -195,6 +195,8 @@ Una vez que lo hayáis realizado podéis enviárselo a algún amigo o familiar y
 
 > **Importante:** después de realizar cualquier ejercicio con JS debemos ir al inspector de Chrome y analizar el código que hemos generado o modificado. Viendo el resultado en el inspector nuestro cerebro asimila mucho mejor lo que estamos programando.
 
+> **Nota:** como no estamos usando el web starter kit, debemos utilizar **Live server / Go live** para visualizar nuestras páginas.
+
 ## Variables
 
 Uno de los problemas que no sabemos resolver aún es cómo guardar los datos de una operación o un texto para poder utilizarlo en otra operación posterior. JavaScript tiene un recurso para poder hacer esto, las variables.
@@ -586,6 +588,10 @@ Aparte de ver qué es programar también hemos visto:
 - Cómo usar variables y constantes en JavaScript para guardar valores y poder utilizarlos después y además que nuestro código sea legible por otras programadoras.
 - Cómo leer y modificar el contenido de las etiquetas de HTML.
 - Cómo añadir y quitar clases de las etiquetas de HTML.
+
+## Recursos
+
+Al igual que ya hicimos con [Git](../guias/comandos_de_git.md) hemos recopilado [toda la sintaxis de JS que vemos durante el curso en una página](./sintaxis_de_js.md) para que os sirva de guía.
 
 ## Sabemos lo que estás pensando...
 

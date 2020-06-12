@@ -28,9 +28,21 @@ Durante esta sesión vamos a ver algunos tipos de datos para poder operar con el
 
 ## La consola de JavaScript
 
-En las herramientas para desarrolladoras de Chrome (las DevTools) hay una pestaña que es una consola JavaScript. La consola nos permite escribir instrucciones JavaScript que al pulsar la tecla 'Enter' se ejecutan. En la consola puedes probar a hacer sumas, declarar variables, etc.
+A menudo queremos saber **qué valor tiene una constante o una variable** en un momento dado. Ya sabemos ver el valor de dicha variable pintándola en el HTML con `document.querySelector()`. El problema es que es un poco tedioso, porque tenemos que crear una etiqueta en el HTML y modificarla desde JS con `document.querySelector('.selector-de-mi-etiqueta').innerHTML = myVar;`.
 
-> **NOTA:** A veces no siempre vemos todos los mensajes que mostramos en consola con `console.log('...');`. Esto es porque DevTools los está filtrando y solo muestra algunos. Para ver todos los mensajes tenemos que seleccionar la opción **No messages** como se muestra en la siguiente imagen:
+No es ni cómodo ni rápido. Además luego tendríamos que borrar la etiqueta del HTML y el código de JS para que no se quedase ahí para siempre, y las usuarias vieran algo que no queremos que vean.
+
+Para saber qué valor tiene una variable, constante o cualquier otra cosa de JS en un momento dado tenemos una herramienta más sencilla. La consola de DevTools.
+
+La consola de DevTools nos permite:
+
+- Ver los errores de sintaxis que tenemos en nuestro código. Un error de sintaxis es que hemos escrito el código mal y el navegador no lo entiende. Por ejemplo se nos ha olvidado un punto y coma.
+- Ver los valores de una variable o constante escribiendo el código `console.log(nombreDeMiVariableOConstante);` en nuestro fichero de JS.
+- Ejecutar código JS diretamente en la consola para ver el resultado. Es más rápido que escribirlo en el fichero `main.js`, guardarlo y refrescar la página.
+
+En las herramientas para desarrollar de Chrome (las DevTools) hay una pestaña que es una consola JavaScript.
+
+> **Nota:** No siempre vemos todos los mensajes que mostramos en consola con `console.log('...');`. Esto es porque DevTools los está filtrando y solo muestra algunos. Para ver todos los mensajes tenemos que seleccionar la opción **No messages** como se muestra en la siguiente imagen:
 
 ![assets/images/2_2_console_filter.png](assets/images/2_2_console_filter.png)
 
@@ -40,12 +52,12 @@ En las herramientas para desarrolladoras de Chrome (las DevTools) hay una pesta�
 
 Tenemos que abrirla y:
 
-- Realizar una suma sencilla con nuestro número favorito y el de nuestra compañera.
+- Realizar una suma sencilla con nuestro número favorito y el de nuestra compañera y pulsar Intro.
 - Hacer lo mismo, pero guardando los números en constantes y utilizando estas para sumar.
 
 \_\_\_\_\_\_\_\_\_\_
 
-Con la consola también podemos interactuar desde nuestro programa JavaScript, es decir, desde el código que escribimos en nuestro fichero `.js`. Una de las cosas que podemos hacer es escribir información, esto se denomina comúnmente _loguear_ información. Lo hacemos mediante la función `console.log()`, en la que lo que pongamos entre paréntesis será lo que se escriba en la consola.
+Como hemos dicho la consola también podemos interactuar desde nuestro programa JavaScript, es decir, desde el código que escribimos en nuestro fichero `main.js`. Una de las cosas que podemos hacer es escribir información, esto se denomina comúnmente _loguear_ información. Lo hacemos mediante la función `console.log()`, en la que lo que pongamos entre paréntesis será lo que se escriba en la consola.
 
 ```js
 console.log('Hola');
@@ -65,9 +77,9 @@ console.log('welcomeParagraph: ', welcomeParagraph);
 welcomeParagraph.innerHTML = 'Bienvenida Adalaber';
 ```
 
-La consola del navegador es a JavaScript lo que el inspector de elementos a HTML y CSS, es decir, herramientas indispensables para desarrollar.
+**La consola del navegador es a JavaScript lo que el inspector de elementos a HTML y CSS, es decir, herramientas indispensables para desarrollar.**
 
-A partir de ahora cada vez que escribamos código JavaScript y sirvamos nuestra página en el navegador, por defecto abriremos la consola, ya que sin ella estaremos programando "a ciegas".
+A partir de ahora cada vez que escribamos código JavaScript y sirvamos nuestra página en el navegador, siempre abriremos la consola, ya que sin ella estaremos programando **a ciegas**.
 
 #### EJERCICIO 2
 
@@ -114,19 +126,24 @@ const superWave = document.querySelector('.super-wave');
 Tenemos que crear una clase nueva para destacar el texto `OLA!` y añadirla con JavaScript al elemento con clase `super-wave`.
 A por ello!
 
+Prueba a loguear la constante `superWave`.
+
+\_\_\_\_\_\_\_\_\_\_
+
 ## Tipos de datos
 
-En JavaScript existen por defecto siete tipos distintos de datos, casi todos ellos los veremos a lo largo del curso, pero por el momento vamos a centrarnos en tres: `string` (cadena de caracteres), `number` (número) y `undefined` (sin definir).
+En JavaScript existen por defecto siete tipos distintos de datos, casi todos ellos los veremos a lo largo del curso, pero por el momento vamos a centrarnos en tres: `string` (cadena de caracteres / texto), `number` (número) y `undefined` (sin definir).
 
 Cada uno de ellos, según sus características, se utilizará para representar un tipo de valor concreto. El tipo `number`, como habrás podido deducir, se utilizará para representar números, el tipo `string` se utilizará para representar texto, compuesto de varios caracteres que unidos entre sí forman una cadena (string), y el tipo `undefined` representa un valor aún sin definir.
+
 
 ### Number
 
 Como su nombre indica, el tipo de valor _number_ comprende cualquier tipo de número utilizado en JavaScript. Hay varios subtipos de números en JavaScript pero de momento aprenderemos los más importantes, números enteros o _integers_ y números decimales o _floating point numbers (comúnmente llamados float)_.
 
-En JavaScript los números enteros se representan directamente con cifras, por lo que es totalmente válido escribir `14232` o `-42` en nuestro código. Por otro lado, los números decimales se escriben igual que en inglés, es decir, utilizando puntos en vez de comas. Por ejemplo, podemos representar el número _1,32_ escribiendo `1.32`.
+En JavaScript los números enteros se representan directamente con cifras, por lo que es totalmente válido escribir `14232` o `-42` en nuestro código. Por otro lado, los números decimales se escriben igual que en inglés, es decir, utilizando puntos en vez de comas. Por ejemplo, podemos representar el número _1,32_ escribiendo `1.32` (formato inglés).
 
-Las anteriores son las únicas reglas gramaticales a la hora de escribir números enteros y decimales. Pero escribir números sin hacer nada con ellos no tiene ninguna utilidad, lo que queremos es poder obtener otros números, es decir, poder operar con ellos. Esto lo podemos conseguir mediante los operadores de suma, resta, multiplicación, división y módulo.
+Las anteriores son las únicas reglas de sintaxis a la hora de escribir números enteros y decimales. Pero escribir números sin hacer nada con ellos no tiene ninguna utilidad, lo que queremos es poder obtener otros números, es decir, poder operar con ellos. Esto lo podemos conseguir mediante los operadores de suma, resta, multiplicación, división y módulo.
 
 ### Suma, resta, multiplicación y división
 
@@ -153,8 +170,8 @@ En JavaScript, los operadores de suma (`+`), resta (`-`), multiplicación (`*`) 
 El orden en el que se ejecutan los operadores también es igual que el utilizado en matemáticas. De izquierda a derecha y evaluándolos en el siguiente orden:
 
 1. Operaciones entre paréntesis.
-2. Multiplicación y división.
-3. Suma y resta.
+1. Multiplicación y división.
+1. Suma y resta.
 
 Los paréntesis en JavaScript, a la hora de aplicarlos a los números, funcionan igual que en matemáticas.
 
@@ -164,17 +181,30 @@ Los paréntesis en JavaScript, a la hora de aplicarlos a los números, funcionan
 (4 + 4) * (4 / 8) // Devuelve 4 también
 ```
 
+A lo mejor te estás preguntando por qué existen los tipos de datos en los lenguajes de programación. O a lo mejor no. Existen porque en una web tenemos que gestionar muchos datos, como el nombre e email de una usuaria, o el precio de la cesta de compra de Amazon. Hay diferentes tipos para JS sepa cómo debe operar los datos. Por ejemplo:
+
+```js
+const name = 'Paquita';
+const surname = ' Salas';
+console.log(name + surname); // esto pinta en consola 'Paquita Salas'
+const price = 10;
+const shipping = 3;
+console.log(price + shipping); // esto pinta en consola 13
+```
+
+Si te das cuenta cuando usamos `+` con textos los concatena. Cuando usamos `+` con números los suma. Esto es gracias a que JS sabe que unas constantes son de tipo texto y otras de tipo número.
+
 #### EJERCICIO 3
 
 **El precio de la fruta**
 
 Imagina que vamos a la frutería y compramos lo siguiente:
 
-- 2 kilos de kiwis a 5€/kg
-- 3 kilos de peras conferencia (no una cualquiera) a 2€/kg
-- medio kilo de uvas a 4€/kg
+- 2 kilos de kiwis a 5€ / kg
+- 3 kilos de peras conferencia (no una cualquiera) a 2€ / kg
+- Medio kilo de uvas a 4€ / kg
 
-Con lo que hemos visto durante los ejemplos y textos anteriores y usando JavaScript, vamos a calcular el precio total como si lo hiciésemos en una hoja de toda la vida pero de manera mucho más guay. El resultado debe mostrarse en la consola del navegador.
+Con lo que hemos visto durante los ejemplos y textos anteriores y usando JavaScript, vamos a calcular el precio total como si lo hiciésemos en una hoja de papel toda la vida pero de manera mucho más guay. El resultado debe mostrarse en la consola del navegador.
 
 \_\_\_\_\_\_\_\_\_\_
 
@@ -190,7 +220,7 @@ Nos vamos de cena de Navidad, ¡qué alegría! Somos en total 9 personas y la cu
 
 **Calcular el número total de horas que hemos vivido**
 
-En este caso vamos a crear un código que nos diga cuantas horas en total hemos vivido. Por ejemplo, si alguien tiene 60 años, este código debería de mostrar un mensaje con el número "525600".
+En este caso vamos a crear un código que nos diga cuantas horas en total hemos vivido. Por ejemplo, si alguien tiene 60 años, este código debería de mostrar un mensaje con el número **525600**.
 
 \_\_\_\_\_\_\_\_\_\_
 
@@ -198,7 +228,7 @@ En este caso vamos a crear un código que nos diga cuantas horas en total hemos 
 
 _String_ traducido al español significa cadena y como su nombre indica es el tipo de valor utilizado para representar cadenas de caracteres, que viene a ser básicamente texto. Cualquier tipo de texto, ya sean caracteres sueltos ("a", "b", "0") o en conjunto ("hola", "las 13:40", "2312312") estará incluido dentro de este tipo de valor.
 
-En los ejercicios anteriores, siempre que hemos escrito entre comillas (`''`) un texto, lo que hemos hecho es incluir en el código un _string_, decirle al programa encargado de ejecutar nuestro código que eso es un texto y que debe utilizarlo como tal en vez de entenderlo como una orden (como hace con `console.log` o con `document.querySelector()`).
+En los ejercicios anteriores, siempre que hemos escrito entre comillas (`''`) un texto, lo que hemos hecho es incluir en el código un _string_, decirle a JS que eso es un texto y que debe utilizarlo como tal en vez de entenderlo como una orden (como hace con `console.log` o con `document.querySelector()`).
 
 Para representar un string en JavaScript, se puede utilizar tanto texto envuelto entre comillas simples (`''`) como dobles (`""`). Ambas son totalmente válidas y funcionan de la misma manera salvo que las comillas simples no pueden contener dentro otras comillas simples y las dobles no pueden contener dobles. De esta forma, `'Esto es un 'bug''` da error porque el navegador al ejecutar el código entiende que un texto termina antes de `bug` y comienza otro texto después de `bug`. Pasaría lo mismo si usamos `"Esto es un "bug""`.
 
@@ -214,7 +244,7 @@ Otra regla es que debe coincidir el estilo de la comilla de apertura con la de c
 'esto no es válido"
 ```
 
-> **Nota:** Como sabemos que os gustan las normas y las cosas claras, a la hora de trabajar con distintos tipos de comillas, la opción recomendable es usar un único tipo a lo largo de todo el código de tu programa y usar `\` para "escapar" (convertir a un carácter normal) las comillas anidadas (ej: `'What\'s up!'`).
+> **Nota:** como sabemos que os gustan las normas y las cosas claras, a la hora de trabajar con distintos tipos de comillas, la opción recomendable es usar un único tipo a lo largo de todo el código de tu programa y usar `\` para "escapar" (convertir a un carácter normal) las comillas anidadas (ej: `'What\'s up!'`).
 
 Ejemplos de `string`s válidos en JavaScript:
 
@@ -367,14 +397,14 @@ Como hemos visto el operador `+` nos permite sumar números y concatenar strings
 
 ### Convirtiendo strings a números
 
-Cuando recogemos valores de HTML, aunque sean números, (el contenido entre dos etiquetas, el valor de un input...) su tipo será string.
+Cuando recogemos valores de HTML, aunque sean números, (el contenido entre dos etiquetas, el valor de un input...) su tipo será string. Recuérda esto, siempre será un string.
 
 Con `parseInt()` podemos convertir una cadena en un número entero.
 
 ```js
 const userAge = document.querySelector('.user__age');
+console.log(userAge.innerHTML); // esto es un string
 const yearsToRetirement = 67 - parseInt(userAge.innerHTML);
-
 console.log(`Te quedan ${yearsToRetirement} años para jubilarte`);
 ```
 
@@ -404,6 +434,20 @@ Ahora realiza lo mismo con esta otra:
 
 Compara y comenta los resultado con tu compañera.
 
+A continuación escribe en consola el número (sin comillas):
+
+```js
+123
+```
+
+Y ahora escrib el texto con comillas:
+
+```js
+'123'
+```
+
+Observa con qué color se muestran en la consola para indicarnos que uno es un número y el otro un texto.
+
 \_\_\_\_\_\_\_\_\_\_
 
 ### Type of
@@ -430,7 +474,7 @@ console.log('y ahora ' + text + ' es del tipo ' + typeof(text))
 
 ### NaN
 
-Es un valor de tipo numérico un poco especial, ya que su nombre los describe como Not-a-Number. `NaN` es el valor que JavaScript devuelve cuando intentamos realizar operaciones matemáticas con valores no numéricos o que no se pueden convertir a número. Veamos ejemplos:
+Es un valor de tipo numérico un poco especial, ya que su nombre lo describe como Not-a-Number. `NaN` es el valor que JavaScript devuelve cuando intentamos realizar operaciones matemáticas con valores no numéricos o que no se pueden convertir a número. Veamos ejemplos:
 
 ```js
 
