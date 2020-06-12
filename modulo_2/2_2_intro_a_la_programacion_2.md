@@ -505,3 +505,5 @@ En esta sesión hemos visto cómo apoyarnos en la consola del navegador cuando p
 También hemos conocido algunos de los tipos de valores que se usan en JavaScript, como `string` y `number` y cómo operar con ellos para obtener distintos resultados. Y el valor de una variable vacía, cuyo tipo se llama igual que el valor, `undefined`.
 
 Con esto hemos iniciado nuestro viaje en el mundo de la programación y hemos empezado a aprender las bases, pero ya podemos crear pequeños programas que tienen utilidad, y podemos mostrar los resultados en el navegador, todo en un par de días con este lenguaje de programación.
+
+Como estarás observando, en la lección de hoy hemos usado cosas que aprendimos ayer. Aprender a programar consiste en aprender muchas mini herramientas como tipos de datos, tipos de órdenes... Eso es fácil. Lo que es un poco más complejo es saber dónde debemos usar cada herramienta. Lo bueno es que esto también os lo vamos a enseñar en Adalab.
