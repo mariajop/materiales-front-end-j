@@ -17,7 +17,7 @@
 
 ## Antes de comenzar
 
-A lo largo de estas lecciones se mostrarán ejemplos de código. Te recomendamos sin lugar a dudas, que pruebes dichos ejemplos (más adelante te enseñaremos cómo hacerlo). La idea de estas pequeñas partes de código es que juegues con ellas en el navegador y así puedas ver cómo funcionan y probar qué pasaría si las modificas, todo esto hará que interiorices mejor el aprendizaje. Se trata de descubrir los horizontes de la programación y saber cómo funciona el lenguaje de JavaScript en concreto, saber qué se puede hacer y qué no.
+A lo largo de estas lecciones se mostrarán ejemplos de código. Te recomendamos sin lugar a dudas, que pruebes dichos ejemplos (más adelante te enseñaremos cómo hacerlo). La idea de estas pequeñas partes de código es que juegues con ellas en el navegador y así puedas ver cómo funcionan y **probar qué pasaría si las modificas, todo esto hará que interiorices mejor el aprendizaje**. Se trata de descubrir los horizontes de la programación y saber cómo funciona el lenguaje de JavaScript en concreto, saber qué se puede hacer y qué no.
 
 ## ¿Qué es programar?
 
@@ -25,37 +25,34 @@ La programación consiste básicamente en realizar unas operaciones con unos dat
 
 Por lo tanto, cuando programamos:
 
-1. Tenemos unos datos iniciales
-2. Realizamos operaciones con esos datos (el conjunto de operaciones se llama algoritmo)
-3. Obtenemos un resultado que puede ser un dato nuevo, algo que se muestra en una pantalla, un sonido, etc.
+1. Tenemos unos datos iniciales.
+1. Realizamos operaciones con esos datos (el conjunto de operaciones se llama algoritmo).
+1. Obtenemos un resultado que puede ser un dato nuevo, algo que se muestra en una pantalla, un sonido, etc.
 
 Algunos ejemplos en los que se ven claramente estos pasos:
 
 - El traductor de Google:
-  1. En el traductor de Google introducimos una palabra (datos iniciales)
-  2. Realiza una serie de operaciones para traducir esa palabra a otro idioma (operaciones)
-  3. Se muestra en la pantalla la palabra traducida (resultado)
-
+  1. En el traductor de Google introducimos una palabra (datos iniciales).
+  1. Realiza una serie de operaciones para traducir esa palabra a otro idioma (operaciones).
+  1. Se muestra en la pantalla la palabra traducida (resultado).
 - Contador:
-  1. Tenemos la cantidad inicial, que es cero (datos iniciales)
-  2. Si pulsamos en la tecla "+" o la tecla "-" esa cantidad aumenta o disminuye (operaciones)
-  3. Se actualiza el mensaje que muestra la cantidad total (resultado)
-
+  1. Tenemos la cantidad inicial, que es cero (datos iniciales).
+  1. Si pulsamos en la tecla "+" o la tecla "-" esa cantidad aumenta o disminuye (operaciones).
+  1. Se actualiza el mensaje que muestra la cantidad total (resultado).
 - Pestañas:
-  1. Tenemos varios textos y una pestaña asociada a cada uno de ellos (datos iniciales)
-  2. Si pulsamos en cualquiera de las pestañas, se muestra el texto que tiene asociado (operaciones)
-  3. Vemos el texto que necesitamos (resultado)
-
+  1. Tenemos varios textos y una pestaña asociada a cada uno de ellos (datos iniciales).
+  1. Si pulsamos en cualquiera de las pestañas, se muestra el texto que tiene asociado (operaciones).
+  1. Vemos el texto que necesitamos (resultado).
 - Cámara de un teléfono:
-  1. Recibimos unos datos captados por el sensor de la cámara de fotos del teléfono
-  2. El teléfono realiza una serie de operaciones para convertir esos datos en una imagen y corregir los desperfectos
-  3. Obtenemos la imagen como resultado
+  1. Recibimos unos datos captados por el sensor de la cámara de fotos del teléfono.
+  1. El teléfono realiza una serie de operaciones para convertir esos datos en una imagen y corregir los desperfectos.
+  1. Obtenemos la imagen como resultado.
 
 Podemos hacer este tipo de cosas y otras más complejas pero visuales como esta [demo](https://codepen.io/trhino/pen/JFmiK?limit=all&page=2&q=canvas). En este caso los datos iniciales que recibe son colores, a partir de estos se realizan operaciones que generan círculos con tamaño y posición aleatoria y el resultado son los distintos círculos que se muestran en la pantalla.
 
 Si pensamos en cualquier aplicación, veremos que todas ellas siguen este patrón. Obviamente, los procesos que hemos descrito están simplificados, pero el resto de las fases que no mencionamos no dejan de ser procesos aplicados sobre datos para obtener otros datos o acciones que llevar a cabo, en otras palabras, más de lo mismo.
 
-Queda claro con esto que programar es decir a un ordenador lo que tiene que hacer paso a paso, esto es lo más parecido a la magia que vamos a tener, pero no es otra cosa que operaciones realizadas por máquinas que son muy tontas pero muy rápidas y precisas. ¿Y por qué digo que son tontas? Porque pueden realizar millones de operaciones por segundo pero no saben qué operaciones realizar a no ser que se lo digamos nosotros mediante código.
+Queda claro con esto que programar es decir a un ordenador lo que tiene que hacer paso a paso, esto es lo más parecido a la magia que vamos a tener, pero no es otra cosa que operaciones realizadas por máquinas que son muy tontas pero muy rápidas y precisas. ¿Y por qué decimos que son tontas? Porque pueden realizar millones de operaciones por segundo pero no saben qué operaciones realizar a no ser que se lo digamos nosotros mediante código.
 
 Hasta ahora hemos estado trabajando con HTML y CSS y, aunque mucha gente se refiere a ellos como lenguajes de programación, realmente son un lenguaje de marcado y un lenguaje de estilos respectivamente. Estos lenguajes encapsulan datos y estilos que el navegador web traduce en páginas pero tenemos que tener claro que HTML y CSS no son lenguajes de programación y no permiten programar sino estructurar información y darle estilos. Ahora es el momento de meternos de lleno en un lenguaje de programación como tal, JavaScript.
 
@@ -66,6 +63,15 @@ JavaScript, a diferencia de HTML y CSS, sí que es un lenguaje de programación.
 JavaScript en su día fue creado para realizar validaciones sobre datos en un formulario, pero ese tiempo quedó ya muy atrás. Hoy en día es uno de los lenguajes más populares y gran parte de ese mérito se debe a que es el lenguaje de la web, es decir, es el único lenguaje de programación que entienden los navegadores (debemos recordar que HTML y CSS no son lenguajes de programación). Desde su inicio se ha expandido y sus fronteras han ido más allá de la web hasta llegar al punto en el que se utiliza JavaScript para programar aplicaciones para ordenador, servidores, robots e incluso proyectos espaciales llevados a cabo por la NASA.
 
 En lo que a nosotros nos respecta y enfocándonos en la web, JavaScript va a ser la herramienta que nos permita hacer páginas dinámicas. Nos va a permitir realizar tareas como cambiar el contenido de una web en función de eventos (al hacer clic en el ratón, con el paso del tiempo, pulsando una tecla, etc.), obtener datos de un servidor para mostrarlos en la página o mostrar una información u otra en función de una serie de datos. Pero dejémonos de teoría, es el momento de crear nuestro primer código.
+
+## ¿Cómo le damos vida a una web?
+
+Desde JavaScript tenemos el control absoluto sobre una web, y como veremos durante todo el módulo con JS podemos:
+
+1. Escuchar eventos de las usuarios, como un click en un botón, la pulsación de una tecla en un campo de texto...
+1. Desde JS reaccionamos a esos eventos, obtenedremos información de lo que se ha clickado o del texto que se ha escrito.
+1. A continuación manipulamos los datos que hemos obtenido y actualizamos el código HTML desde JS, pudiendo modificar textos, etiquetas de HTML, clases de CSS...
+1. La usuaria verá los cambios que hemos realizado en el HTML automáticamente.
 
 ## Nuestro primer código en JavaScript
 
@@ -86,7 +92,11 @@ Lo primero que debemos hacer es crear un archivo HTML. Al igual que pasa con CSS
 </html>
 ```
 
-Hasta aquí todo normal, ahora viene la parte interesante. ¿Cómo utilizamos un código JavaScript dentro de esta página? Por norma general, de momento enlazaremos JavaScript al final de la web, antes del cierre de la etiqueta `body`. Más adelante veremos el por qué, pero de momento tienes que confiar en nosotros. Al igual que sucedía con CSS, podemos introducir JavaScript de dos formas en nuestra página, escribiendo el código directamente dentro de una etiqueta o escribiendo código en un archivo distinto y enlazándolo. Para hacerlo de la primera manera, simplemente creamos una etiqueta `<script>` y metemos el código JavaScript dentro de ella:
+Hasta aquí todo normal, ahora viene la parte interesante.
+
+¿Cómo utilizamos un código JavaScript dentro de esta página? Por norma general, de momento enlazaremos JavaScript al final de la web, antes del cierre de la etiqueta `body`. Más adelante veremos el por qué, pero de momento tienes que confiar en nosotros. Al igual que sucedía con CSS, podemos introducir JavaScript de dos formas en nuestra página, escribiendo el código directamente dentro de una etiqueta o escribiendo código en un archivo distinto y enlazándolo.
+
+Para hacerlo de la primera manera, simplemente creamos una etiqueta `<script>` y metemos el código JavaScript dentro de ella:
 
 ```html
 <!DOCTYPE html>
@@ -108,7 +118,6 @@ Hasta aquí todo normal, ahora viene la parte interesante. ¿Cómo utilizamos un
 > **Nota:** Como puedes ver, dentro del archivo de JavaScript hemos escrito un mensaje precedido del texto `//`. Esta combinación escrita al principio de una linea, marca esa línea como un comentario de JavaScript, esto funciona igual que los comentarios en CSS y HTML. De esta forma podemos ponernos anotaciones sin que se ejecuten o produzca un error en el código. En JavaScript existen también comentarios multilínea, estos son mensajes envueltos entre `/*` (al comienzo) y `*/` (al final) (ejemplo: `/* Este es un comentario */`). Este tipo de comentarios se utilizan cuando queremos escribir mensajes que ocupen más de una línea dentro de nuestro código.
 
 En el caso de enlazar un JavaScript externo, utilizaremos también la etiqueta `<script>` pero esta vez le añadiremos un atributo HTML `src=""` en el que escribiremos como valor la ruta del archivo JavaScript que hemos creado. El resultado sería el siguiente (imaginando que el archivo `main.js` está en la misma carpeta que el archivo HTML que hemos creado):
-
 
 **main.js**
 
