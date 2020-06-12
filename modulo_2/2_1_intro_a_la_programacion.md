@@ -52,7 +52,7 @@ Podemos hacer este tipo de cosas y otras más complejas pero visuales como esta 
 
 Si pensamos en cualquier aplicación, veremos que todas ellas siguen este patrón. Obviamente, los procesos que hemos descrito están simplificados, pero el resto de las fases que no mencionamos no dejan de ser procesos aplicados sobre datos para obtener otros datos o acciones que llevar a cabo, en otras palabras, más de lo mismo.
 
-Queda claro con esto que programar es decir a un ordenador lo que tiene que hacer paso a paso, esto es lo más parecido a la magia que vamos a tener, pero no es otra cosa que operaciones realizadas por máquinas que son muy tontas pero muy rápidas y precisas. ¿Y por qué decimos que son tontas? Porque pueden realizar millones de operaciones por segundo pero no saben qué operaciones realizar a no ser que se lo digamos nosotros mediante código.
+Queda claro con esto que programar es decir a un ordenador lo que tiene que hacer paso a paso, esto es lo más parecido a la magia que vamos a tener, pero no es otra cosa que operaciones realizadas por máquinas que son muy tontas pero muy rápidas y precisas. ¿Y por qué decimos que son tontas? Porque pueden realizar millones de operaciones por segundo pero **no saben qué operaciones realizar a no ser que se lo digamos nosotras mediante código**.
 
 Hasta ahora hemos estado trabajando con HTML y CSS y, aunque mucha gente se refiere a ellos como lenguajes de programación, realmente son un lenguaje de marcado y un lenguaje de estilos respectivamente. Estos lenguajes encapsulan datos y estilos que el navegador web traduce en páginas pero tenemos que tener claro que HTML y CSS no son lenguajes de programación y no permiten programar sino estructurar información y darle estilos. Ahora es el momento de meternos de lleno en un lenguaje de programación como tal, JavaScript.
 
@@ -62,15 +62,15 @@ JavaScript, a diferencia de HTML y CSS, sí que es un lenguaje de programación.
 
 JavaScript en su día fue creado para realizar validaciones sobre datos en un formulario, pero ese tiempo quedó ya muy atrás. Hoy en día es uno de los lenguajes más populares y gran parte de ese mérito se debe a que es el lenguaje de la web, es decir, es el único lenguaje de programación que entienden los navegadores (debemos recordar que HTML y CSS no son lenguajes de programación). Desde su inicio se ha expandido y sus fronteras han ido más allá de la web hasta llegar al punto en el que se utiliza JavaScript para programar aplicaciones para ordenador, servidores, robots e incluso proyectos espaciales llevados a cabo por la NASA.
 
-En lo que a nosotros nos respecta y enfocándonos en la web, JavaScript va a ser la herramienta que nos permita hacer páginas dinámicas. Nos va a permitir realizar tareas como cambiar el contenido de una web en función de eventos (al hacer clic en el ratón, con el paso del tiempo, pulsando una tecla, etc.), obtener datos de un servidor para mostrarlos en la página o mostrar una información u otra en función de una serie de datos. Pero dejémonos de teoría, es el momento de crear nuestro primer código.
+En lo que a nosotros nos respecta y enfocándonos en la web, JavaScript va a ser la herramienta que nos permita hacer páginas dinámicas. Nos va a permitir realizar tareas como cambiar el contenido de una web en función de eventos (al hacer clic en el ratón, pulsando una tecla, etc.), obtener datos de un servidor para mostrarlos en la página o mostrar una información u otra en función de una serie de datos. Pero dejémonos de teoría, es el momento de crear nuestro primer código.
 
 ## ¿Cómo le damos vida a una web?
 
-Desde JavaScript tenemos el control absoluto sobre una web, y como veremos durante todo el módulo con JS podemos:
+Desde JavaScript tenemos el control absoluto sobre una web, y por lo tanto podemos hacer lo que queramos. Como veremos durante todo el módulo con JS podemos:
 
-1. Escuchar eventos de las usuarios, como un click en un botón, la pulsación de una tecla en un campo de texto...
-1. Desde JS reaccionamos a esos eventos, obtenedremos información de lo que se ha clickado o del texto que se ha escrito.
-1. A continuación manipulamos los datos que hemos obtenido y actualizamos el código HTML desde JS, pudiendo modificar textos, etiquetas de HTML, clases de CSS...
+1. **Escuchar eventos** de las usuarios, como un click en un botón, la pulsación de una tecla en un campo de texto...
+1. Desde JS reaccionamos a esos eventos, **obtenemos información** de lo que se ha clickado o del texto que se ha escrito.
+1. A continuación **manipulamos los datos** que hemos obtenido y **actualizamos el código HTML** desde JS, pudiendo modificar textos, etiquetas de HTML, clases de CSS...
 1. La usuaria verá los cambios que hemos realizado en el HTML automáticamente.
 
 ## Nuestro primer código en JavaScript
@@ -94,7 +94,9 @@ Lo primero que debemos hacer es crear un archivo HTML. Al igual que pasa con CSS
 
 Hasta aquí todo normal, ahora viene la parte interesante.
 
-¿Cómo utilizamos un código JavaScript dentro de esta página? Por norma general, de momento enlazaremos JavaScript al final de la web, antes del cierre de la etiqueta `body`. Más adelante veremos el por qué, pero de momento tienes que confiar en nosotros. Al igual que sucedía con CSS, podemos introducir JavaScript de dos formas en nuestra página, escribiendo el código directamente dentro de una etiqueta o escribiendo código en un archivo distinto y enlazándolo.
+¿Cómo utilizamos un código JavaScript dentro de esta página? Por norma general, de momento **enlazamos JavaScript al final de la web, antes del cierre de la etiqueta `body`**. Más adelante veremos el por qué, pero de momento tienes que confiar en nosotros. Al igual que sucedía con CSS, podemos introducir JavaScript de dos formas en nuestra página, escribiendo el código directamente dentro de una etiqueta o escribiendo código en un archivo distinto y enlazándolo.
+
+### Añadir JS dentro del HTML
 
 Para hacerlo de la primera manera, simplemente creamos una etiqueta `<script>` y metemos el código JavaScript dentro de ella:
 
@@ -109,7 +111,7 @@ Para hacerlo de la primera manera, simplemente creamos una etiqueta `<script>` y
     <h1></h1>
     <!-- De momento, colocaremos la etiqueta script justo antes de cerrar la etiqueta body -->
     <script type="text/javascript">
-      // Aquí iría el código JavaScript
+      // Aquí va el código JavaScript
     </script>
   </body>
 </html>
@@ -117,12 +119,16 @@ Para hacerlo de la primera manera, simplemente creamos una etiqueta `<script>` y
 
 > **Nota:** Como puedes ver, dentro del archivo de JavaScript hemos escrito un mensaje precedido del texto `//`. Esta combinación escrita al principio de una linea, marca esa línea como un comentario de JavaScript, esto funciona igual que los comentarios en CSS y HTML. De esta forma podemos ponernos anotaciones sin que se ejecuten o produzca un error en el código. En JavaScript existen también comentarios multilínea, estos son mensajes envueltos entre `/*` (al comienzo) y `*/` (al final) (ejemplo: `/* Este es un comentario */`). Este tipo de comentarios se utilizan cuando queremos escribir mensajes que ocupen más de una línea dentro de nuestro código.
 
-En el caso de enlazar un JavaScript externo, utilizaremos también la etiqueta `<script>` pero esta vez le añadiremos un atributo HTML `src=""` en el que escribiremos como valor la ruta del archivo JavaScript que hemos creado. El resultado sería el siguiente (imaginando que el archivo `main.js` está en la misma carpeta que el archivo HTML que hemos creado):
+### Enlazar un fichero JS dentro del HTML
+
+**En el caso de enlazar un JavaScript externo**, utilizaremos también la etiqueta `<script>` pero esta vez le añadiremos un atributo HTML `src=""` en el que escribiremos como valor la ruta relativa del archivo JavaScript que hemos creado. La etiqueta `<script src="...">` es a JavaScript lo que la etiqueta `<link href="...">` al CSS.
+
+El resultado sería el siguiente (imaginando que el archivo `main.js` está en la misma carpeta que el archivo HTML que hemos creado):
 
 **main.js**
 
 ```js
-// Aquí iría el código JavaScript
+// Aquí va el código JavaScript
 ```
 
 **index.html**
@@ -136,7 +142,7 @@ En el caso de enlazar un JavaScript externo, utilizaremos también la etiqueta `
   </head>
   <body>
     <h1></h1>
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
 ```
@@ -151,41 +157,57 @@ Bien, ya hemos visto cómo enlazar JavaScript en nuestra página, ahora es el mo
 document.querySelector('h1').innerHTML = '¡Hola mundo!';
 ```
 
-Si has realizado los pasos anteriores y has copiado el código correctamente se mostrará una ventana en tu navegador con el mensaje "¡Hola mundo!". Si es así, ¡enhorabuena! acabas de crear tu primer código JavaScript. Fíjate que en el fichero `index.html` no hay nada dentro de la etiqueta `h1`, pero el navegador nos muestra un mensaje.
+Si has realizado los pasos anteriores y has copiado el código correctamente se mostrará una ventana en tu navegador con el mensaje "¡Hola mundo!". Si es así, ¡enhorabuena! acabas de crear tu primer código JavaScript. Fíjate que en el fichero `index.html` no hay nada dentro de la etiqueta `h1`, pero el navegador sí nos muestra un mensaje.
 
 En este momento estarás pensando «sí, lo he escrito pero no tengo ni idea de cómo funciona». No te preocupes, vamos a entender cómo funciona ahora mismo.
 
-La primera línea del archivo JavaScript (`'use strict';`) sirve para mejorar la rapidez de ejecución del código y hará que el navegador nos muestre errores que, de no ponerla, no lo haría. Por lo tanto esta instrucción al inicio de nuestro código hace que sea más estable o, dicho de otra forma, menos propenso a fallos. Como norma general, escribiremos SIEMPRE esta linea al comienzo de todos nuestros archivos JavaScript y para que funcione correctamente deberá ser la primera línea del documento (sin contar los comentarios y las líneas en blanco).
+### use strict
 
-La segunda línea (`document.querySelector('h1').innerHTML = '¡Hola mundo!';`) es una sentencia que describe una acción. En programación una sentencia (_statement_) es la unidad mínima que expresa una acción a llevar a cabo, en este caso, por el navegador. Básicamente le decimos "Hey navegador, haz esto."
+La primera línea del archivo JavaScript (`'use strict';`) sirve para mejorar la rapidez de ejecución del código y hará que el navegador nos muestre errores que, de no ponerla, no lo haría. Por lo tanto esta instrucción al inicio de nuestro código hace que sea más estable o, dicho de otra forma, menos propenso a fallos. Como norma general, **escribiremos SIEMPRE esta linea al comienzo de todos nuestros archivos JavaScript** y para que funcione correctamente deberá ser la primera línea del documento (sin contar los comentarios y las líneas en blanco).
+
+### Sentencia o statement
+
+La segunda línea (`document.querySelector('h1').innerHTML = '¡Hola mundo!';`) es una sentencia que describe una acción. En programación una sentencia (_statement_) es **la unidad mínima de código que expresa una acción u orden** a llevar a cabo, en este caso, por el navegador. Básicamente le decimos "Hey navegador, te ordeno que hagas esto."
 
 De momento para la sintaxis utilizada en `document.querySelector('h1').innerHTML = '¡Hola mundo!';`, solo comentaremos que permite cambiar el texto de una etiqueta de HTML determinada, en este caso el primer `h1` de nuestro documento HTML.
 
-Otro aspecto a destacar es que escribimos cada orden en una línea y ponemos un punto y coma al final de ésta. En JavaScript se pueden escribir varias sentencias en una misma línea si se separan por un punto y coma (`;`), por ejemplo `'use strict';document.querySelector('h1').innerHTML='¡Hola mundo!';` sería válido. Esto es totalmente desaconsejable y evitaremos hacerlo para que nuestro código sea más fácil de leer. Escribiremos como máximo una orden por línea y siempre añadiremos el punto y coma al final de esta para evitar posibles problemas.
+### Cada statement en una línea
 
-Puede que en este punto aún sigas perdida y no te haya quedado muy claro cómo usar realmente JavaScript pero no te preocupes, de momento sólo debes entender que programar no es otra cosa que pensar en los pasos para resolver un problema y traducirlo a órdenes con un lenguaje que entienda el navegador (JavaScript). Por tanto, lo que tenemos que hacer es practicar la lógica, familiarizarnos con la sintaxis de JavaScript y aprender a traducir pasos a este lenguaje para ir poco a poco mejorando y cogiendo soltura.
+Otro aspecto a destacar es que escribimos cada orden en una línea y ponemos un punto y coma al final de ésta. En JavaScript se pueden escribir varias sentencias en una misma línea si se separan por un punto y coma (`;`), por ejemplo
+
+```javascript
+'use strict';document.querySelector('h1').innerHTML='¡Hola mundo!';
+```
+
+sería válido. Esto es totalmente desaconsejable y evitaremos hacerlo para que nuestro código sea más fácil de leer. Escribiremos como máximo una orden por línea y **siempre añadiremos el punto y coma al final** de esta para evitar posibles problemas.
+
+Puede que en este punto aún sigas perdida y no te haya quedado muy claro cómo usar realmente JavaScript pero no te preocupes, de momento sólo debes entender que programar **no es otra cosa que pensar en los pasos para resolver un problema** y traducirlo a órdenes con un lenguaje que entienda el navegador (JavaScript). Por tanto, lo que tenemos que hacer es **practicar la lógica, familiarizarnos con la sintaxis de JavaScript y aprender a traducir pasos a este lenguaje** para ir poco a poco mejorando y cogiendo soltura.
 
 #### EJERCICIO 1
 
 **Mensaje de navegador obsoleto**
 
-En este ejercicio y con lo poquito que hemos visto hasta ahora de JavaScript, vamos a crear un código que muestre un título con el mensaje "Esta página no es compatible con la versión actual de tu navegador. Por favor actualízalo a la versión más reciente.". Para ello utilizaremos `document.querySelector('h1').innerHTML` tal y como hemos visto en los ejemplos anteriores.
+En este ejercicio y con lo poquito que hemos visto hasta ahora de JavaScript, vamos a crear un código que muestre un título con el mensaje "Esta página no es compatible con la versión actual de tu navegador. Por favor actualízalo a la versión más reciente". Para ello utilizaremos `document.querySelector('h1').innerHTML` tal y como hemos visto en los ejemplos anteriores.
 
 Una vez que lo hayáis realizado podéis enviárselo a algún amigo o familiar y decirle que os diga que le parecen los colores de vuestra nueva web para que pase un rato divertido intentando actualizar el navegador :).
 
 \_\_\_\_\_\_\_\_\_\_
 
+> **Importante:** después de realizar cualquier ejercicio con JS debemos ir al inspector de Chrome y analizar el código que hemos generado o modificado. Viendo el resultado en el inspector nuestro cerebro asimila mucho mejor lo que estamos programando.
+
 ## Variables
 
 Uno de los problemas que no sabemos resolver aún es cómo guardar los datos de una operación o un texto para poder utilizarlo en otra operación posterior. JavaScript tiene un recurso para poder hacer esto, las variables.
 
-Para tener una idea de qué es una variable, podríamos pensar en ella como si fuese una caja con una etiqueta que describe su contenido, en la que guardamos algo.
+Para tener una idea de qué es una variable, podríamos pensar en ella como si fuese un cajón con un nombre que describe su contenido, en el que guardamos algo.
 
-1. Para crearla, creamos la caja con la etiqueta.
-2. Para guardar algo metemos esa información dentro de la caja.
-3. Para obtener la información utilizamos la etiqueta de la caja.
+1. Para crearla, creamos el cajón con el nombre.
+1. Para guardar algo metemos esa información dentro del cajón.
+1. Para obtener la información utilizamos el nombre del cajón.
 
-Una cosa importante a saber es que las variables permiten guardar información de forma temporal y estarán disponibles hasta que la página web en donde se está ejecutando el código se cierre o se recargue.
+> **Nota:** Una cosa importante a saber es que las variables permiten guardar información de forma temporal. Cuando cerramos o refrescamos la página la información de las variables se reinicia.
+
+¿Qué cosas queremos guardar en una variable? Supongamos que estamos programando el login de una página. El login está compuesto de un formulario con dos inputs, uno para el email y otro para la contraseña. Cada usuaria que utilice nuestro login meterá un email y una contraseña diferente. Es decir estos datos varian dependiendo de la usuaria. **Como los datos varian, los llamamos variables.** El nombre de uno de los cajones de las variables será email, el otro password. El contenido del cajón email unas veces será `maricarmen@gmail.com`, otras `paquito1975@hotmail.com`...
 
 Veamos cómo trabajar con variables en JavaScript.
 
@@ -202,9 +224,9 @@ let officeAddress;
 
 Existen una serie de reglas importantes a la hora de establecer el nombre de una variable:
 
-- Las escribiremos en inglés como todo nuestro código JavaScript porque es el lenguaje que utilizan prácticamente todas las empresas
-- Deberán empezar por una letra y podrán contener letras y números
-- No podremos usar espacios ni puntos para separar los nombres de variables
+- Las escribiremos **en inglés como todo nuestro código** JavaScript porque es el lenguaje que utilizan  todas las empresas.
+- Deberán empezar por una letra y podrán contener letras y números.
+- No podremos usar espacios ni puntos para separar los nombres de variables.
 - Utilizaremos el estilo [_camel case_](https://es.wikipedia.org/wiki/CamelCase) para nombrar las variables. Este estilo se basa en juntar varias palabras en una haciendo que cada palabra empiece por mayúscula excepto la primera de todas ellas (ej: `'myCoolVariableName'`)
 
 
@@ -221,7 +243,7 @@ officeAddress = 'Calle Leganitos, 24';
 
 Cosas importantes a tener en cuenta a la hora de asignar una variable:
 
-- En vez de asignar un valor a una variable podemos asignar una operación. JavaScript lo que hace es que primero realiza las operaciones a la derecha del símbolo de igual y después el resultado de esas operaciones lo almacena en la variable.
+- En vez de asignar un valor a una variable podemos asignar una operación. JavaScript lo que hace es que primero realiza las operaciones a la derecha del símbolo de igual y después el resultado de esas operaciones lo asigna a la variable.
 
 ```js
 let totalHours;
@@ -231,7 +253,7 @@ totalHours = 10 + 20 + 30;
 - Los pasos para declarar una variable y asignarle un valor pueden combinarse y realizarse en una única linea:
 
 ```js
-let officeAddress = 'Calle Leganitos, 24';
+let totalHours = 10 + 20 + 30;
 ```
 
 Normalmente utilizaremos esta combinación de declaración y asignación para hacer más sencillo y más claro nuestro código y porque, no nos engañemos, a nadie le gusta escribir de más cuando es innecesario.
@@ -273,6 +295,8 @@ Ante la duda, es una buena práctica usar `const`. Si en algún momento intentam
 
 Con esto tendríamos la información necesaria para poder trabajar con variables y constantes sin problemas.
 
+### Legibilidad
+
 Para finalizar, una de las cualidades fundamentales que las variables y las constantes nos aportan es la capacidad de poder poner nombres descriptivos a nuestro código y poder dividir en varias partes las operaciones que realizamos. Un ejemplo:
 
 ```js
@@ -290,7 +314,11 @@ const sections = 4;
 const sectionSize = remainingSpace / sections;
 ```
 
-En este caso el código es mucho más verboso y más largo pero se entiende mucho mejor para que sirve -> establecer la altura de una sección en función de la altura de la pantalla sin tener en cuenta la cabecera y la subcabecera. La idea es que nuestro código sea así, semántico y que se entienda perfectamente qué queremos hacer en cada momento. Por eso, a partir de ahora, todos nuestro ejercicios en JavaScript deberán intentar parecerse a este lo máximo posible para adquirir esta buena práctica muy bien valorada en las empresas.
+En este caso el código es mucho más legible y más largo pero se entiende mucho mejor para que sirve. En este caso sirve para establecer la altura de una sección en función de la altura de la pantalla sin tener en cuenta la cabecera y la subcabecera.
+
+La idea es que nuestro código sea así, semántico y que se entienda perfectamente qué queremos hacer en cada momento. Por eso, a partir de ahora, todos nuestro ejercicios en JavaScript deberán intentar parecerse a este lo máximo posible para adquirir esta buena práctica muy bien valorada en las empresas.
+
+Cuando termines de escribir un código hazte esta pregunta: **¿Mi compañera sería capaz de entender lo que estoy haciendo sin preguntarme?**. Si la respuesta es sí, mejor para tu compañera y sobre todo mejor para tu cerebro, le obligarás a pensar menos.
 
 #### EJERCICIO 2
 
@@ -298,9 +326,9 @@ En este caso el código es mucho más verboso y más largo pero se entiende much
 
 Vamos a declarar una constante y a asignarle como valor nuestra dirección. En la siguiente linea, tenemos que reasignar su valor con la dirección de nuestra compañera.
 
-Ahora abrimos las herramientas para desarrolladoras de Chrome (DevTools) y seleccionamos la pestaña `Consola`. Debería aparecer un mensaje en rojo similar a este: `Uncaught TypeError: <aquí explicación de que está causando el error>`.
+Ahora abrimos las herramientas para desarrolladoras de Chrome (DevTools) y seleccionamos la pestaña `Console`. Debería aparecer un mensaje en rojo similar a este: `Uncaught TypeError: <aquí explicación de que está causando el error>`.
 
-Hay que leer la explicación y cambiar el código para que desaparezca el error.
+Debes leer la explicación y cambiar el código para que desaparezca el error.
 
 \_\_\_\_\_\_\_\_\_\_
 
@@ -308,28 +336,30 @@ Hay que leer la explicación y cambiar el código para que desaparezca el error.
 
 Ahora que hemos visto cómo funcionan las constantes y las variables para trabajar con valores, vamos a continuar aprendiendo cómo utilizar JavaScript para modificar el contenido y los estilos de nuestras páginas de forma ordenada.
 
-La operación más básica a la hora de trabajar con nuestra página web es obtener información acerca de una etiqueta, bien sea para añadir algo a su contenido, modificarlo o eliminarlo directamente. En JavaScript nos referimos a las etiquetas de HTML como elementos ( en futuras lecciones veremos el porqué de esto ).
+La operación más básica a la hora de trabajar con nuestra página web es obtener información acerca de una etiqueta, bien sea para añadir algo a su contenido, modificarlo o eliminarlo directamente. En JavaScript nos referimos a las etiquetas de HTML como elementos (en futuras lecciones veremos el porqué de esto).
 
 Como vimos al principio de la lección con `document.querySelector('h1').innerHTML = '¡Hola Mundo!'` cambiábamos el texto de a la etiqueta `h1` del documento HTML. Vamos a desgranar esto un poco para entenderlo mejor.
 
 ### Obtener una etiqueta o elemento de HTML
 
-Con `document.querySelector('h1')` obtenemos el primer elemento `h1` que hayamos escrito en nuestro HTML.
-Podemos usar esta sentencia para recoger un elemento de HTML y guardarlo en una constante.
+Con `document.querySelector('h1')` **obtenemos el primer elemento** `h1` que hayamos escrito en nuestro HTML. Podemos usar esta sentencia para recoger un elemento de HTML y asignarlo a una constante.
 
-Como sucedía en las hojas de estilo, acceder a las etiquetas por su nombre puede ser problemático y no es la mejor práctica. `document.querySelector()` nos permite acceder a los elementos de HTML utilizando los selectores de CSS:
+Como sucedía en las hojas de estilo, acceder a las etiquetas por su nombre puede ser problemático y no es la mejor práctica. Lo bueno es que `document.querySelector()` nos permite acceder a los elementos de HTML utilizando los selectores de CSS:
 
-**selector de etiqueta**
+**Selector de etiqueta:**
+
 ```js
 const mainTitle = document.querySelector('h1');
 ```
 
-**selector de id**
+**Selector de id:**
+
 ```js
 const mainTitle = document.querySelector('#mainTitle');
 ```
 
-**selector de clase**
+**Selector de clase:**
+
 ```js
 const mainTitle = document.querySelector('.mainTitle');
 ```
@@ -365,21 +395,18 @@ titleElement.innerHTML = 'Bienvenida';
 
 De esta forma el contenido de h1 pasaría de ser _"Binvenida"_ a _"Bienvenida"_ al cambiar el contenido de ese elemento (`.title`) el navegador automáticamente actualizará la vista de la página mostrando el texto nuevo. Esto sucede tan rápido que ni siquiera nos dará tiempo a ver la página con el texto anterior, sino que directamente aparecerá con el texto que hemos introducido mediante JavaScript.
 
->NOTA: Debemos dejar claro que la utilidad de JavaScript no es la de solucionar erratas en nuestro código. Esto lo modificaremos directamente en el HTML para corregirlo, pero creemos que este ejercicio ilustra bien cómo funciona `innerHTML` y para qué sirve
+>NOTA: Debemos dejar claro que la utilidad de JavaScript no es la de solucionar erratas en nuestro código. Esto lo modificaremos directamente en el HTML para corregirlo, pero creemos que este ejercicio ilustra bien cómo funciona `innerHTML` y para qué sirve.
 
-Ahora supongamos que tras cambiar con JavaScript el texto de _"Binvenida"_ a _"Bienvenida"_ queremos hacerlo más personal y queremos que ponga _"Bienvenida, adalaber"_ en vez de un soso _"Bienvenida"_.
+Ahora supongamos que tras cambiar con JavaScript el texto de _"Binvenida"_ a _"Bienvenida"_ queremos hacerlo más personal y queremos que ponga _"Bienvenida adalaber"_ en vez de un soso _"Bienvenida"_.
 
-En este caso deberemos coger el contenido actual del elemento y añadirle ", adalaber". Aquí viene un concepto interesante, `innerHTML` no solo nos permite cambiar el contenido de una etiqueta, también podemos recoger el valor actual, vamos a verlo:
+En este caso deberemos coger el contenido actual del elemento y añadirle "adalaber". Aquí viene un concepto interesante, `innerHTML` no solo nos permite cambiar el contenido de una etiqueta, también podemos recoger el valor actual, vamos a verlo:
 
 ```js
-/*
-Obtenemos el elemento con el que queremos trabajar usando
-document.querySelector()
-*/
+// Obtenemos el elemento con el que queremos trabajar usando document.querySelector()
 const titleElement = document.querySelector('.title');
 
 // Cambiamos el contenido del elemento, indicando que sea igual al actual, más una nueva palabra añadida
-titleElement.innerHTML = titleElement.innerHTML + ', adalaber';
+titleElement.innerHTML = titleElement.innerHTML + ' adalaber';
 ```
 
 Bien, ya sabemos cómo obtener un elemento y cómo modificarlo. Vamos a hacer un par de ejercicios para practicarlo.
@@ -402,7 +429,7 @@ Hay que crear una página HTML que contenga un listado con tu nombre y el de tu 
 La Adalaber seleccionada es: Lola
 ```
 
-Una vez hecho cambia el código para que el nombre sea el del segundo `li`.
+Una vez hecho esto, cambia el código para que el nombre sea el del segundo `li`.
 
 \_\_\_\_\_\_\_\_\_\_
 
@@ -410,7 +437,7 @@ Una vez hecho cambia el código para que el nombre sea el del segundo `li`.
 
 **Protege ese password**
 
-A partir de una página HTML en la que ponga "Mi contraseña es: Ada2019" y, usando JavaScript, tenemos que cambiar el texto 'Ada2019' por '****'.
+A partir de una página HTML en la que ponga "Mi contraseña es: Ada2020" y, usando JavaScript, tenemos que cambiar el texto 'Ada2020' por '****'.
 
 \_\_\_\_\_\_\_\_\_\_
 
@@ -523,7 +550,7 @@ const mainTitle = document.getElementById('mainTitle');
 
 En esta última variante el nombre del id (`mainTitle`) no va precedido de `#`, no es necesario por que con `getElementById` ya estamos indicando que el selector será un id.
 
-Este es un método muy usado, y lo encontramos en muchos ejemplos online.
+Este es un método muy usado, y lo encontramos en muchos ejemplos online. Desaconsejamos su uso porque es antiguo, y con `document.querySelector` podemos conseguir lo mismo.
 
 ### var
 
@@ -548,6 +575,7 @@ var DAYS_PER_WEEK = 7;
 
 Esto implica que vamos a encontrar montones de ejemplos con `var`, e incluso puede ser que nos toque trabajar en algún proyecto más antiguo dónde aun se use.
 
+`var` es viejuno. Nosotras somos unas modernas. No uses `var`, no seas hipster.
 
 ## Resumen
 
@@ -558,3 +586,11 @@ Aparte de ver qué es programar también hemos visto:
 - Cómo usar variables y constantes en JavaScript para guardar valores y poder utilizarlos después y además que nuestro código sea legible por otras programadoras.
 - Cómo leer y modificar el contenido de las etiquetas de HTML.
 - Cómo añadir y quitar clases de las etiquetas de HTML.
+
+## Sabemos lo que estás pensando...
+
+Sabemos que piensas que todo lo que hemos hecho con JS lo podemos hacer directamente en HTML y ahorrarnos el paso de escribir JavaScript. Y tienes razón.
+
+Desde la lección 1 a la 4 vamos a aprender cosas que no nos permiten darle mucha vidilla a la página. Pero en la lección 5 Eventos, vamos a aprender a escuchar las acciones de las usuarias. En ese momento aplicaremos todos los conocimientos aprendidos para cambiar la página después de las acciones de las usuarias. Ese día nuestras webs cobrarán vida!!! Ten fé amiga programadora...
+
+![La Jiosa de JS](./assets/images/2-1/diosa-de-js.jpg)
