@@ -26,7 +26,7 @@
 
 ## Módulo 1
 
-- Hola mundo
+- HTML y CSS
   - [1.1. Intro a la web](modulo_1/1_1_intro_a_la_web.md)
   - [1.2. Mi primera página web](modulo_1/1_2_mi_primera_web.md)
   - [1.3. Modelo de caja y herramientas](modulo_1/1_3_modelo_de_caja_y_herramientas.md)

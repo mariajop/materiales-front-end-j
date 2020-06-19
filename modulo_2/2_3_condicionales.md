@@ -20,13 +20,17 @@ Utilizando aplicaciones y webs, muchas veces nos encontramos con casos en los qu
 
 Las condicionales permiten tomar decisiones y realizar acciones en función de una serie de datos. Gracias a ellas diremos qué pasos queremos que siga la aplicación en cada momento para que se cumpla el objetivo que deseamos alcanzar.
 
-Durante esta sesión veremos cómo controlar qué parte de nuestro código se ejecuta y cuál no. Aprenderemos a dar instrucciones a nuestras aplicaciones para realizar acciones en función de datos. Estableciendo normas al estilo si sucede esto haz esto otro y si no haz una orden alternativa. El condicional es una de las estructuras de control más básicas e importantes de la programación.
+Durante esta sesión veremos cómo controlar qué parte de nuestro código se ejecuta y cuál no. Aprenderemos a dar instrucciones a nuestras aplicaciones para realizar acciones en función de datos. Estableciendo normas al estilo si sucede esto haz esto otro y si no haz una orden alternativa. El condicional es una de las estructuras de control más básicas e importantes de cualquier lenguaje de programación.
+
+¿Sabrías decir si en CSS hemos aprendido algún tipo de propiedad condicional?
 
 ## ¿Para qué sirve lo que vamos a ver en esta sesión?
 
-Los booleanos sirven para tener datos que representen verdadero o falso, como por ejemplo saber si una condición se cumple o no. Los condicionales se basan en condiciones, es decir, la base fundamental para que funcionen correctamente son los booleanos y sin ellos no serían viables.
+Los tipos de datos booleanos sirven para tener datos que representen verdadero o falso, como por ejemplo saber si una condición se cumple o no. Los condicionales se basan en condiciones, es decir, la base fundamental para que funcionen correctamente son los booleanos y sin ellos no serían viables.
 
 La mejor forma de explicar para qué sirven las condicionales es explicar cómo sería la programación sin ellas. En un mundo sin estos tendríamos que escribir en nuestro código todos los pasos a llevar a cabo, uno a uno y no podríamos ejecutar un código u otro en función de una serie de datos. Por ejemplo no podríamos comprobar si un formulario tiene todos los campos rellenos para enviarlo; ni comprobar si hemos hecho scroll hasta una sección concreta de nuestra página para mostrar un elemento o activar una animación. Es decir, no habría distintas vías, sólo un posible camino, cosa que haría prácticamente imposible ejecutar un código realmente útil.
+
+Las condiciones nos permiten evaluar algo y tomar un camino u otro.
 
 ## ¿En qué casos se utiliza?
 
@@ -39,9 +43,9 @@ Los booleanos se utilizan para almacenar datos verdaderos o falsos o convertir c
 
 Los condicionales se usan para realizar o no un código en función de una condición:
 
-- Mostrar un mensaje de error si falta un campo obligatorio por rellenar en un formulario
-- Mostrar el símbolo de usuario verificado en Twitter si la cuenta está verificada
-- Mostrar una película en favoritos si está marcada como favorita
+- Mostrar un mensaje de error si falta un campo obligatorio por rellenar en un formulario.
+- Mostrar el símbolo de usuario verificado en Twitter si la cuenta está verificada.
+- Mostrar una película en favoritos si está marcada como favorita.
 
 ## Booleanos
 
@@ -49,7 +53,6 @@ Los booleanos son tipos de datos de JavaScript que guardan información del tipo
 
 ```js
 const filled = false; // Este booleano es falso
-
 const solved = true; // Este booleano es verdadero
 ```
 
@@ -83,10 +86,10 @@ Ejemplo:
 
 ```js
 const currentVegetable = 'lettuce';
-
 const isLettuce = currentVegetable === 'lettuce'; // true
-
+console.log(isLettuce);
 const isTomato = currentVegetable === 'tomato'; // false
+console.log(isTomato);
 ```
 
 ### Desigualdad
@@ -97,9 +100,8 @@ Ejemplo:
 
 ```js
 const result = 5;
-
-result !== 4 + 5; // true
-result !== 0 + 5; // false
+console.log(result !== 4 + 5); // true
+console.log(result !== 0 + 5); // false
 ```
 
 Otros operadores de desigualdad para comparar números:
@@ -113,10 +115,9 @@ Ejemplo:
 
 ```js
 const result = 5;
-
-result >= 4 + 5; // false
-result >= 0 + 5; // true
-result >= 4 - 5; // true
+console.log(result >= 4 + 5); // false
+console.log(result >= 0 + 5); // true
+console.log(result >= 4 - 5); // true
 ```
 
 > **Nota**: Los operadores de comparación se ejecutan siempre después de los operadores numéricos, es decir, si tenemos `5 * 1 - 4 !== '3'`, primero se hará la multiplicación, luego la resta y finalmente se hará la operación de comparación.
@@ -532,6 +533,8 @@ Vamos a escribir un pequeño programa que nos permita saber cuál será el sigui
 **Pista:** Tenemos que escribir el año en el que estamos en una constante.
 
 \_\_\_\_\_\_\_\_\_\_
+
+Por cierto en CSS los media queries son una especie de condicional. Si el usuario tiene un pantalla de menor de 768px aplicamos una propiedad CSS, si están en una pantallama mayor aplicamos otras propiedades.
 
 ## Recursos externos
 
