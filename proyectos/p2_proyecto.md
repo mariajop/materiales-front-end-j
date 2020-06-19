@@ -150,6 +150,14 @@ Por ejemplo:
 
 De manera adicional, se deberá activar "GitHub Pages" en el proyecto para que este pueda ser visualizado como una web, es decir, que en el caso anterior, si alguien introdujese la dirección "https://beta.adalab.es/project-promo-x-module-2-team-1-morning/" en un navegador web, este mostraría la web que se genera con el código del repositorio.
 
+- **Entrega del primer sprint (sprint review):** 30 de Junio
+- **Entrega del segundo sprint (sprint review):** 9 de Julio
+- **Demo del proyecto (presentación final):** 16 de Julio
+
+En las sprint review se revisarán que se hayan solucionado todas las tareas técnicas asociadas a la entrega de esos sprints, si algo quedara pendiente se arrastraría al siguiente sprint. 
+
+Los días entre la presentación del segundo sprint y la demo final deben ser para hacer retoques y preparar la presentación del proyecto para vendérsela al cliente.
+
 ## Presentación
 
 El último día del módulo presentaréis la versión final de este proyecto a vuestras compañeras y al equipo de Adalab. Cada equipo realizará una presentación de 10 minutos y posteriormente habrá 10 minutos de feedback por parte del público.
