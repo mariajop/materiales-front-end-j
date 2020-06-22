@@ -220,7 +220,7 @@ Nos vamos de cena de Navidad, ¡qué alegría! Somos en total 9 personas y la cu
 
 **Calcular el número total de horas que hemos vivido**
 
-En este caso vamos a crear un código que nos diga cuantas horas en total hemos vivido. Por ejemplo, si alguien tiene 60 años, este código debería de mostrar un mensaje con el número **525600**.
+En este caso vamos a crear un código que nos diga cuántas horas en total hemos vivido. Por ejemplo, si alguien tiene 60 años, este código debería mostrar un mensaje con el número **525600**.
 
 \_\_\_\_\_\_\_\_\_\_
 
