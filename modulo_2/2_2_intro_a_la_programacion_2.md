@@ -276,7 +276,7 @@ En el caso de `string`, la única forma de operar con él es usando el operador 
 **Hola Adalaber**
 
 Vamos a preparar en una constante con el nombre de una compañera, y utilizándola
-tenemos que escribir un saludo en la pantalla. Si nuestra compañera se llamará Lola quedaría así:
+tenemos que escribir un saludo en la página. Si nuestra compañera se llamará Lola quedaría así:
 
 ```
 Hola Lola, encantada de conocerte.
