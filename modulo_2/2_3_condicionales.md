@@ -456,14 +456,14 @@ Podemos pensar en él como un atajo del `if...else` más sencillo.
 
 La estructura de un ternario es la siguiente:
 
-- indicamos entre paréntesis `( )` una condición
-- escribimos `?` y el código que se va a ejecutar si se cumple la condición
-- escribimos `:` y el código que se va a ejecutar si NO se cumple la condición
+- Escribimos `?` y el código que se va a ejecutar si se cumple la condición
+- Escribimos `:` y el código que se va a ejecutar si NO se cumple la condición
 
-Solo debemos utilizamos el operador ternario cuando:
+Solo debemos utilizar el operador ternario cuando:
 
-- Queremos guardar un valor en una variable o constante
+- Queremos guardar un valor en una variable o constante.
 - Solo queremos hacer una operación o sentencia dentro del `?` y del `:`. Si queremos hacer más cosas utilizaremos el `if - else`.
+- Queremos hacer una operación dentro del `?` y otra dentro del `:`. Si no queremos hacer nada en el `:`, es decir el `else`, no podemos usar un operador ternario.
 
 ```js
 const theme = 'hallowen';
@@ -534,7 +534,7 @@ Vamos a escribir un pequeño programa que nos permita saber cuál será el sigui
 
 \_\_\_\_\_\_\_\_\_\_
 
-Por cierto en CSS los media queries son una especie de condicional. Si el usuario tiene un pantalla de menor de 768px aplicamos una propiedad CSS, si están en una pantallama mayor aplicamos otras propiedades.
+Por cierto en CSS los media queries son una especie de condicional. Si el usuario tiene un pantalla de menor de 768px aplicamos una propiedad CSS, si están en una pantalla mayor aplicamos otras propiedades.
 
 ## Recursos externos
 
