@@ -507,42 +507,54 @@ Reescribe el código del ejemplo anterior (no del ejercicio anterior) utilizando
 ### Switch
 
 Ya conocemos como funciona un condicional clásico if...else, y por eso podemos darnos cuenta que podría darse el caso en el que tengamos que evaluar muchas condiciones hasta obtener un resultado, imagínate que podríamos encadenar sentencias if...else... hasta el infinito y más allá hasta que nuestro programa tomara una decisión.
-Cuando tenemos múltiples casos que evaluar en una condición existe un tipo de estructura especial, el switch, switch evalúa expresiones y no se centra en evaluar sentencias como ocurre con if/else.
+Cuando tenemos múltiples casos que evaluar en una condición existe un tipo de estructura especial, el `switch`.
 
-Cuando necesitamos comprobar bloques de código con varios casos usar un if/else tradicional puede volver el código ilegible y muy muy largo, con switch solucionamos el problema y facilitamos la legibilidad. Vamos a ver un ejemplo:
+`switch` evalúa expresiones y no se centra en evaluar sentencias como ocurre con `if...else`. Cuando necesitamos comprobar bloques de código con varios casos con `switch` solucionamos el problema de encadenar `if...else` infinitos y facilitamos la legibilidad. Vamos a ver un ejemplo:
 
-Como somos muy despistadas necesitamos que nos recuerden constantemente en qué día de la semana vivimos, así que vamos a evitar el trago de tener que preguntarlo para que nos lo chive nuestra consola.
+#### ¿En qué día vives?
 
-Vamos a decirle a javascript que nos diga el día de la semana utilizando new Date().getDay(). Javascript ya nos permite que podamos utilizar esto directamente porque es algo muy común, así que simplemente vamos a quedarnos con el valor de getDay guardándolo en un variable. El valor de getDay es un número de 0 a 6, siendo el 0 el Domingo y 6 el Sábado, así que haríamos lo siguiente:
+Como tenemos una estupenda vida social vamos a crear un programita que nos recuerde nuestras citas en función del día de la semana en el que estemos.
+
+Para ello, vamos a guardar en una constante el día de la semana en el que estamos para que nuestra consola nos chive que plan tenemos para ese día. Si cambias el día de la semana ¿Qué mensaje nos devolverá la consola?
 
 ```js
-const todayDate = new Date().getDay(); //nos da un número de 0 a 6 que equivale al día de Domingo a Lunes
+const todayDate = 'Viernes'
 
 switch (todayDate) {
-  case 0:
-    console.log('Hoy es Domingo');
+  case 'Lunes':
+    console.log('Hoy me tomo un café con Maricarmen');
     break;
-  case 1:
-    console.log('Hoy es Lunes');
+  case 'Martes':
+    console.log('Bajar al perro');
     break;
-  case 2:
-    console.log('Hoy es Martes');
+  case 'Miércoles':
+    console.log('Vamos al cine a ver una peli');
     break;
-  case 3:
-    console.log('Hoy es Miércoles');
+  case 'Jueves':
+    console.log('Juernesss');
     break;
-  case 4:
-    console.log('Hoy es Jueves');
+  case 'Viernes:
+    console.log('Cumpleaños de Paco');
     break;
-  case 5:
-    console.log('Hoy es Viernes');
+  case 'Sábado':
+    console.log('Comida con los suegros');
     break;
-  case 6:
-    console.log('Hoy es Sábado');
+  case 'Domingo':
+    console.log('Dormir hasta las 12');
 }
 
 ```
 
+#### EJERCICIO 8
+
+Vamos a hacer un pequeño programa que te sugiera una receta en función del ingrediente que le pasemos. 
+
+Para resolverlo nos dan una variable en la que podemos declarar 1 ingrediente a elegir entre estos tres: pollo, merluza o espinacas, por defecto si no hay ingrediente pondrá 'Nada en la nevera' y según el ingrediente que le pasemos el programa nos devolverá un mensaje por consola diciéndote el ingrediente que has elegido y con las siguientes sugerencias de receta: 
+Filete con patatas / Merluzita en salsa verde / Espinacas rehogadas. Ejemplo: Tu ingrediente es pollo. Puedes freirte un filete con patatas.
+
+```js
+let ingredient = 'Nada en la nevera';
+```
 
 \_\_\_\_\_\_\_\_\_\_
 
@@ -563,7 +575,7 @@ El operador de módulo tiene el mismo orden de ejecución que los operadores de 
 
 > **Nota**: este operador es muy util para saber si un número es par o impar. Como recordatorio todos los números cuya división entre dos tienen como resto 0 son pares.
 
-#### EJERCICIO 7 BONUS
+#### EJERCICIO 8 BONUS
 
 Calcular cuál va a ser el siguiente año bisiesto
 
