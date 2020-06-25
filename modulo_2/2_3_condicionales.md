@@ -504,6 +504,46 @@ Si en este punto el concepto de expresión y sentencia es confuso, no te preocup
 
 Reescribe el código del ejemplo anterior (no del ejercicio anterior) utilizando un ternario en lugar de un `if...else`.
 
+### Switch
+
+Ya conocemos como funciona un condicional clásico if...else, y por eso podemos darnos cuenta que podría darse el caso en el que tengamos que evaluar muchas condiciones hasta obtener un resultado, imagínate que podríamos encadenar sentencias if...else... hasta el infinito y más allá hasta que nuestro programa tomara una decisión.
+Cuando tenemos múltiples casos que evaluar en una condición existe un tipo de estructura especial, el switch, switch evalúa expresiones y no se centra en evaluar sentencias como ocurre con if/else.
+
+Cuando necesitamos comprobar bloques de código con varios casos usar un if/else tradicional puede volver el código ilegible y muy muy largo, con switch solucionamos el problema y facilitamos la legibilidad. Vamos a ver un ejemplo:
+
+Como somos muy despistadas necesitamos que nos recuerden constantemente en qué día de la semana vivimos, así que vamos a evitar el trago de tener que preguntarlo para que nos lo chive nuestra consola.
+
+Vamos a decirle a javascript que nos diga el día de la semana utilizando new Date().getDay(). Javascript ya nos permite que podamos utilizar esto directamente porque es algo muy común, así que simplemente vamos a quedarnos con el valor de getDay guardándolo en un variable. El valor de getDay es un número de 0 a 6, siendo el 0 el Domingo y 6 el Sábado, así que haríamos lo siguiente:
+
+```js
+const todayDate = new Date().getDay(); //nos da un número de 0 a 6 que equivale al día de Domingo a Lunes
+
+switch (todayDate) {
+  case 0:
+    console.log('Hoy es Domingo');
+    break;
+  case 1:
+    console.log('Hoy es Lunes');
+    break;
+  case 2:
+    console.log('Hoy es Martes');
+    break;
+  case 3:
+    console.log('Hoy es Miércoles');
+    break;
+  case 4:
+    console.log('Hoy es Jueves');
+    break;
+  case 5:
+    console.log('Hoy es Viernes');
+    break;
+  case 6:
+    console.log('Hoy es Sábado');
+}
+
+```
+
+
 \_\_\_\_\_\_\_\_\_\_
 
 ## BONUS
