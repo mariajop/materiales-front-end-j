@@ -504,7 +504,7 @@ Si en este punto el concepto de expresión y sentencia es confuso, no te preocup
 
 Reescribe el código del ejemplo anterior (no del ejercicio anterior) utilizando un ternario en lugar de un `if...else`.
 
-### Switch
+## Switch
 
 Ya conocemos como funciona un condicional clásico if...else, y por eso podemos darnos cuenta que podría darse el caso en el que tengamos que evaluar muchas condiciones hasta obtener un resultado, imagínate que podríamos encadenar sentencias if...else... hasta el infinito y más allá hasta que nuestro programa tomara una decisión.
 Cuando tenemos múltiples casos que evaluar en una condición existe un tipo de estructura especial, el `switch`.
