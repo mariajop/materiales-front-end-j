@@ -10,7 +10,8 @@
 - [EJERCICIO 4](#ejercicio-4)
 - [EJERCICIO 5](#ejercicio-5)
 - [EJERCICIO 6](#ejercicio-6)
-- [EJERCICIO 7 BONUS](#ejercicio-7-bonus)
+- [EJERCICIO 7](#ejercicio-7)
+- [EJERCICIO 8 BONUS](#ejercicio-8-bonus)
 
 <!-- /TOC -->
 
@@ -511,6 +512,10 @@ Cuando tenemos múltiples casos que evaluar en una condición existe un tipo de 
 
 `switch` evalúa expresiones y no se centra en evaluar sentencias como ocurre con `if...else`. Cuando necesitamos comprobar bloques de código con varios casos con `switch` solucionamos el problema de encadenar `if...else` infinitos y facilitamos la legibilidad. Vamos a ver un ejemplo:
 
+En cada uno de los `case` definiremos el código que se ejecutará en cada caso de la condición, seguido de `break`, que evita que se ejecute el siguiente caso si la condición se cumple, así evitamos pasar por todos los casos.
+
+Si ninguno de los valores que contemplamos en cada case coincide con el que estamos evaluando en nuestro `switch` ejecutaremos la instancia `default`.
+
 #### ¿En qué día vives?
 
 Como tenemos una estupenda vida social vamos a crear un programita que nos recuerde nuestras citas en función del día de la semana en el que estemos.
@@ -539,7 +544,7 @@ switch (todayDate) {
   case 'Sábado':
     console.log('Comida con los suegros');
     break;
-  case 'Domingo':
+  default:
     console.log('Dormir hasta las 12');
 }
 
