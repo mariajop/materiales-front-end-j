@@ -67,7 +67,7 @@ Otra característica habitual de un API REST es que cuando accedo a un listado d
 
 #### EJERCICIO 1
 
-Vamos a explorar [un API abierto de información sobre el mundo Star Wars](https://swapi.co/). En esta página tenemos la documentación completa del API y un formulario que nos permite hacer peticiones a la URL que indiquemos. Identifica la siguiente información sobre SWAPI:
+Vamos a explorar [un API abierto de información sobre el mundo Star Wars](https://swapi.dev/). En esta página tenemos la documentación completa del API y un formulario que nos permite hacer peticiones a la URL que indiquemos. Identifica la siguiente información sobre SWAPI:
 
 - la URL base del API
 - si necesita autenticación
