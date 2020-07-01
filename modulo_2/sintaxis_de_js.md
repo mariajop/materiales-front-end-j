@@ -450,4 +450,8 @@ const element = document.querySelector('body');
 console.dir(element);
 ```
 
+Como bonus os ponemos un [vídeo](https://www.youtube.com/watch?v=m5QGMBK_vIA) de cómo depurar JS:
+
+{% embed url="https://www.youtube.com/watch?v=m5QGMBK_vIA" %}
+
 > **NOTA:** Si echas en falta algo por favor dínoslo.

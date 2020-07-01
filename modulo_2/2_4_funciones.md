@@ -469,6 +469,16 @@ Se pueden ejecutar funciones dentro de otras funciones.
 
 Se pueden pasar funciones como argumentos para otras funciones, devolver funciones como valores de otras funciones y guardar funciones en variables.
 
+## Bonus: depurar JS
+
+Depurar o debugging es **el arte de ejecutar el código de un programa línea a línea** para poder comprobar cómo está funcionando nuestro programa. Principalmente nos ayuda a entender por qué no funciona nuestro programa, nos ahorra muchísimo tiempo y frustración.
+
+Además depurando se aprende mucho sobre cómo funciona JavaScript por dentro, nos muestra en directo lo que aprendemos en la teoría y nos enseña más que cualquier profesor.
+
+Ahora que ya sabemos cómo programar con funciones es el momento en el que podemos empezar a sacarle mucho jugo al debugging. Un consejo, la diferencia entre una programadora que no usa el depurador y otra que sí es que una va gateando y la otra va corriendo ;)
+
+Os hemos preparado un [vídeo explicando cómo funciona el debugging de DevTools](./sintaxis_de_js#debugger-y-console) para JavaScript.
+
 ## Recursos externos
 
 ### Curso de Ada Lovelace en Youtube
