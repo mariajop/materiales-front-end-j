@@ -265,7 +265,7 @@ Intenta cambiar el código para que aparezca el árbol completo.
 
 \_\_\_\_\_\_\_\_\_\_
 
-### Trabajar con arrays anidados
+## Trabajar con arrays anidados
 
 Algunas estructuras como una array de coordenadas requieren crear arrays dentro de otros arrays, o lo que es lo mismo, arrays anidados. Si pensamos en ese caso concreto de arrays de coordenadas, vemos que tenemos un array y cada elemento posee dos coordenadas que también se pueden mostrar en array. Esto es posible de llevar a cabo en JavaScript y es una práctica común. En este apartado veremos cómo crear arrays anidados, cómo obtener un valor de ellos y cómo modificarlos.
 
@@ -328,7 +328,7 @@ const firstElemX = coordinates[1][0]; // firstElemX es igual a 9
 
 En el código del ejemplo, si tuviésemos otro nivel más de anidación simplemente tendríamos que añadir otro corchete con el índice del elemento que queremos obtener `deepNestedArr[1][2][1]` y así sucesivamente.
 
-## Modificar elementos anidados
+### Modificar elementos anidados
 
 Para modificar elementos, la sintaxis es muy similar a la de acceder al valor de un array anidado:
 
@@ -349,7 +349,7 @@ coordinates = [
 */
 ```
 
-## Recorrer elementos anidados
+### Recorrer elementos anidados
 
 Imaginemos que tenemos un horario de clase declarados en arrays anidados y queremos pintar en consola cada una de las clases que tenemos a lo largo de la semana:
 
@@ -370,3 +370,9 @@ for (let day = 0; day < schedule.length; day += 1) {
 ```
 
 Ejecuta este código en la consola de Chrome y explica cómo funciona.
+
+## Arrays y objetos
+
+Es muy normal trabajar con arrays que contienen objetos que a su vez contienen arrays que a su vez contienen objetos... y así en bucle infinito ;)
+
+Os proponemos hacer este [ejercicio de promociones](https://github.com/Adalab/ejercicios-extra/tree/master/js-arrays-and-objects) para practicar a recorrer estos tipos de estructuras de datos. El ejercicio es largo, por ello no es necesario que lo hagáis del tirón, pero cuando lo domineis dominaréis los arrays y los objetos.
