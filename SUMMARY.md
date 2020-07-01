@@ -62,7 +62,7 @@
 - [2.13 Métodos funcionales de array](modulo_2/2_13_metodos_funcionales_array.md)
 - [2.14 Asincronía y temporizadores](modulo_2/2_14_asincronia.md)
 - [Repaso final](modulo_2/2_repaso.md)
-- [Sintaxis de JavaScript](modulo_2/sintaxis_de_js.md)
+- [Sintaxis de JavaScript](modulo_2/2_sintaxis_de_js.md)
 - [Ejercicio: tienda de camisetas](modulo_2/2_ejercicio_global_tienda_de_camisetas.md)
 
 ## Módulo 3
@@ -91,5 +91,5 @@
   - [Anexo. Diseña tu web desde cero](proyectos/p1_anexo.md)
 
 - [Proyecto 2. Awesome profile-cards](proyectos/p2_proyecto.md)
-  - [Anexo. Documentación del API de Awesome Profile Cards](proyectos/p2_anexo.md) 
+  - [Anexo. Documentación del API de Awesome Profile Cards](proyectos/p2_anexo.md)
 <!-- - [Proyecto 3. Un caso de código heredado](proyectos/P3_proyecto.md)-->
