@@ -477,7 +477,7 @@ Además depurando se aprende mucho sobre cómo funciona JavaScript por dentro, n
 
 Ahora que ya sabemos cómo programar con funciones es el momento en el que podemos empezar a sacarle mucho jugo al debugging. Un consejo, la diferencia entre una programadora que no usa el depurador y otra que sí es que una va gateando y la otra va corriendo ;)
 
-Os hemos preparado un [vídeo explicando cómo funciona el debugging de DevTools](./sintaxis_de_js#debugger-y-console) para JavaScript.
+Os hemos preparado un [vídeo explicando cómo funciona el debugging de DevTools](./2_sintaxis_de_js.md#debugger-y-console) para JavaScript.
 
 ## Recursos externos
 
