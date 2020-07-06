@@ -1,9 +1,9 @@
 
 # Fases de maquetación de una página web
 
-Hay muchas formas de afrontar la maquetación de una página web. Aquí proponemos una sencillita, con el objetivo de organizar mentalmente los pasos se pueden dar durante todo el proceso de maquetación. Cuando tengas experiencia maquetando lo harás a tu estilo y con los trucos que tú quieras, aquí solo proponemos una forma de trabajar.
+Hay muchas formas de afrontar la maquetación de una página web. Aquí proponemos una sencillita, con el objetivo de organizar mentalmente los pasos que se pueden dar durante todo el proceso. Cuando tengas experiencia maquetando lo harás a tu estilo y con los trucos que tú quieras, aquí solo proponemos una forma de trabajar.
 
-Antes de empezar a escribir código os recomendamos que pinteis en una papel un esqueleto básico de las cajas o "div" que identificamos en nuestra web. No hace falta fijarse en los detalles, céntrate en una visión esquemática del proyecto. Este proceso de esquematización en papel se llama "wireframing" y nos ayuda a visualizar la maquetación y las relaciones que establecerán los elementos entre sí.
+Antes de empezar a escribir código os recomendamos que pintéis en una papel un esqueleto básico de las cajas o "divs" que identificamos en nuestra web. No hace falta fijarse en los detalles, céntrate en una visión esquemática del proyecto. Este proceso de esquematización en papel se llama "wireframing" y nos ayuda a visualizar la maquetación y las relaciones que establecerán los elementos entre sí.
 
 Os mostramos un ejemplo:
 
@@ -21,7 +21,7 @@ Empezamos añadiendo todos los contenidos de la página como: textos, listados, 
 
 ### 2: Crear el esqueleto (o scaffolding)
 
-Bsándonos en nuestro wireframe continuamos identificando aquellos elementos de la página web que componen un grupo, es decir, que actúan como una unidad. Sabemos que esos elementos (aunque sean muchos) se comportan como una unidad si:
+Basándonos en nuestro wireframe continuamos identificando aquellos elementos de la página web que componen un grupo, es decir, que actúan como una unidad. Sabemos que esos elementos (aunque sean muchos) se comportan como una unidad si:
 
 * Se visualizan siempre juntos.
 * Se visualizan en el mismo orden respecto a los elementos que les preceden y/o les siguen.
@@ -41,7 +41,7 @@ Una vez que hemos creado el esqueleto de la página vamos a empezar a maquetarlo
 
 Lo primero de todo antes de empezar a añadir estilos, tenemos que incluir normalize.css para que todos los navegadores interpreten los estilos de la misma manera. 
 
-Después recuerda que cada etiqueta conlleva una serie de estilos por defecto (margins, paddings...) los cuales debemos resetar para que todo se vea correctamente.
+Después recuerda que cada etiqueta conlleva una serie de estilos por defecto (margins, paddings...) los cuales debemos resetear para que todo se vea correctamente.
 
 Para ello creamos nuestro fichero CSS y añadimos el siguiente código:
 
@@ -55,7 +55,7 @@ body {
 }
 
 ```
-Una vez que hemos reseteado nuestras etiquetas es una buena idea añadir este código para visualizar las cajas principales y ver el espacio que ocupan y cómos e distribuyen.
+Una vez que hemos reseteado nuestras etiquetas es una buena idea añadir este código para visualizar las cajas principales y ver el espacio que ocupan y cómo se distribuyen.
 
 ```css
 /* sustituir los siguientes selectores por las clases de tus contenedores y añadir los que falten */
