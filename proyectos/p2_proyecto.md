@@ -6,7 +6,7 @@
 - [Objetivos](#objetivos)
 - [Caso de uso](#caso-de-uso)
 - [Especificaciones](#especificaciones)
-- [Diseño](#diseo)
+- [Diseño](#diseno)
 - [Hitos](#hitos)
 - [Entrega](#entrega)
 - [Recursos](#recursos)
