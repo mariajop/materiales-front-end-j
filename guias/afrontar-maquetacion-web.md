@@ -6,7 +6,7 @@ Hay muchas formas de afrontar la maquetación de una página web. Aquí proponem
 Antes de empezar a escribir código os recomendamos que pinteis en una papel un esqueleto básico de las cajas o "div" que identificamos en nuestra web. No hace falta fijarse en los detalles, céntrate en una visión esquemática del proyecto. Este proceso de esquematización en papel se llama "wireframing" y nos ayuda a visualizar la maquetación y las relaciones que establecerán los elementos entre sí.
 
 Os mostramos un ejemplo:
-![Wireframe de baja fidelidad](assets/images/wireframe.jpg)
+![Wireframe de baja fidelidad](../assets/images/wireframe.jpg)
 
 Una vez que hemos realizado nuestro boceto en papel es hora de empezar a trabajar y escribir el código (HTML y CSS) de la página desde fuera (elementos más grandes) hacia dentro (elementos más pequeños). Debido a la herencia de CSS los estilos que damos a los elementos más grandes influyen en los de dentro.
 
