@@ -98,28 +98,32 @@ Para la gestión del proyecto, usaremos _historias de usuario_, que es una herra
 El formato de entrega de este proyecto será mediante la subida de este a la plataforma de GitHub. Para subirlo, se creará un repositorio **en la organización de Adalab**. El nombre del repositorio deberá estar compuesto de las siguientes partes, todo ello separado por guiones:
 
 - La palabra **project**.
-- Letra de la promoción **promo-j**.
-- Número del módulo **module-3**.
-- Número del equipo **team-1**.
+- Letra de la promoción **promo-x**.
+- Número del módulo **module-x**.
+- Número del equipo **team-x**.
 
 Por ejemplo:
 
 - Adalab/project-promo-j-module-3-team-1
 - Adalab/project-promo-j-module-3-team-3
 
-De manera adicional, se deberá activar "GitHub Pages" en el proyecto para que este pueda ser visualizado como una web, es decir, que en el caso anterior, si alguien introdujese la dirección "https://beta.adalab.es/project-promo-j-module-3-team-1/" en un navegador web, este mostraría la web que se genera con el código del repositorio.
+De manera adicional, se deberá activar "GitHub Pages" en el proyecto para que este pueda ser visualizado como una web, es decir, que en el caso anterior, si alguien introdujese la dirección "https://beta.adalab.es/project-promo-x-module-3-team-X/" en un navegador web, este mostraría la web que se genera con el código del repositorio.
 
-- **Entrega del primer sprint (sprint review):** 28 de julio
-- **Entrega del segundo sprint (sprint review):** 6 de agosto
-- **Demo del proyecto (presentación final):** 13 de agosto
+- **Entrega del primer sprint (sprint review):** 28 de Julio
+- **Entrega del segundo sprint (sprint review):** 6 de Agosto
+- **Demo del proyecto (presentación final):** 13 de Agosto
+
+En las sprint review se revisarán que se hayan solucionado todas las tareas técnicas asociadas a la entrega de esos sprints, si algo quedara pendiente se arrastraría al siguiente sprint.
+
+Los días entre la presentación del segundo sprint y la demo final deben ser para hacer retoques y preparar la presentación del proyecto para vendérsela al cliente.
 
 ## Presentación
 
-El último día del módulo presentaréis la versión final de este proyecto a vuestras compañeras y al equipo de Adalab. Cada equipo realizará una presentación de 10 minutos y posteriormente habrá 10 minutos de feedback por parte del público.
+El último día del módulo presentaréis la versión final de este proyecto a vuestras compañeras y al equipo de Adalab. Cada equipo realizará una presentación de 5 minutos y posteriormente habrá 5 minutos de feedback por parte del público.
 
 El objetivo es que practiquéis la realización de las demos del trabajo que estáis realizando que posteriormente tendréis que realizar en las empresas, y también que mejoréis vuestras habilidades de exposición en público, objetivo de desarrollo profesional del curso.
 
-Para que la presentación salga bien es imprescindible una buena preparación. Por ello, durante el segundo sprint del módulo tendréis que asignar responsabilidades dentro del equipo relacionadas con la preparación de esta. Durante los dos últimos días de la evaluación final del módulo cada equipo tendrá asesoramiento durante 30 minutos por parte de la Especialista en Comunicación sobre la presentación del proyecto grupal. Para aprovechar bien este espacio, es necesario que antes cada equipo haya decidido las cuestiones clave para la presentación.
+Para que la presentación salga bien es imprescindible una buena preparación. Por ello, durante el segundo sprint del módulo tendréis que asignar responsabilidades dentro del equipo relacionadas con la preparación de esta.
 
 A continuación algunos elementos que os pueden ayudar a enfocar la presentación:
 
