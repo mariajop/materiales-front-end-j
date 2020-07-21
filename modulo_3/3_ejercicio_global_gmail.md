@@ -32,3 +32,31 @@ Este ejercicio se grabó con público en directo en clase, durante el **módulo 
 ### [Pasar datos de madres a hijas por props](https://www.youtube.com/watch?v=3shSbykv0hA)
 
 {% embed url="https://www.youtube.com/watch?v=3shSbykv0hA" %}
+
+## T1E2
+
+### [En capítulos anteriores](https://www.youtube.com/watch?v=eP4bcAIOlbA)
+
+{% embed url="https://www.youtube.com/watch?v=eP4bcAIOlbA" %}
+
+### [Pintar un listado](https://www.youtube.com/watch?v=EOiVXgnOpxU)
+
+{% embed url="https://www.youtube.com/watch?v=EOiVXgnOpxU" %}
+
+### [Mover datos a un fichero externo](https://www.youtube.com/watch?v=fiAflHGZvDk)
+
+{% embed url="https://www.youtube.com/watch?v=fiAflHGZvDk" %}
+
+## T1E3
+
+### [Iniciar el estado](https://www.youtube.com/watch?v=a-5JeiXyQHY)
+
+{% embed url="https://www.youtube.com/watch?v=a-5JeiXyQHY" %}
+
+### [Cambio de estado](https://www.youtube.com/watch?v=NCUzSUrqevk)
+
+{% embed url="https://www.youtube.com/watch?v=NCUzSUrqevk" %}
+
+### [Qué datos guardamos en el estado](https://www.youtube.com/watch?v=hHQMemeGoFk)
+
+{% embed url="https://www.youtube.com/watch?v=hHQMemeGoFk" %}
