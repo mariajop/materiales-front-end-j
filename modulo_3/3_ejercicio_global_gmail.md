@@ -15,7 +15,7 @@ Este ejercicio se grabó con público en directo en clase, durante el **módulo 
 - El código fuente HTML, JS, React y CSS de cada capítulo está en su respectiva carpeta en el [repositorio de ejercicios extra > react gmail](https://github.com/Adalab/ejercicios-extra/tree/master/react-gmail).
 - El código fuente que hay en estas carpetas es código que hay al final de cada capítulo.
 
-## T1E1
+## T1E1: intro y props
 
 ### [Arrancar y limpiar el proyecto](https://www.youtube.com/watch?v=3shSbykv0hA)
 
@@ -33,7 +33,7 @@ Este ejercicio se grabó con público en directo en clase, durante el **módulo 
 
 {% embed url="https://www.youtube.com/watch?v=3shSbykv0hA" %}
 
-## T1E2
+## T1E2: pintar un listado
 
 ### [En capítulos anteriores](https://www.youtube.com/watch?v=eP4bcAIOlbA)
 
@@ -47,7 +47,21 @@ Este ejercicio se grabó con público en directo en clase, durante el **módulo 
 
 {% embed url="https://www.youtube.com/watch?v=fiAflHGZvDk" %}
 
-## T1E3
+## T1E3: eventos
+
+### [Escuchar evento en un componente de clase](https://www.youtube.com/watch?v=a-FN69XR0F3O4)
+
+{% embed url="https://www.youtube.com/watch?v=a-FN69XR0F3O4" %}
+
+### [Escuchar evento en un componente funcional](https://www.youtube.com/watch?v=wWObXeJTsqA)
+
+{% embed url="https://www.youtube.com/watch?v=wWObXeJTsqA" %}
+
+### [Lifting](https://www.youtube.com/watch?v=KKyfl3BkCkk)
+
+{% embed url="https://www.youtube.com/watch?v=KKyfl3BkCkk" %}
+
+## T1E4: estado
 
 ### [Iniciar el estado](https://www.youtube.com/watch?v=a-5JeiXyQHY)
 
