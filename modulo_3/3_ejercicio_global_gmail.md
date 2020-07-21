@@ -74,3 +74,25 @@ Este ejercicio se grabó con público en directo en clase, durante el **módulo 
 ### [Qué datos guardamos en el estado](https://www.youtube.com/watch?v=hHQMemeGoFk)
 
 {% embed url="https://www.youtube.com/watch?v=hHQMemeGoFk" %}
+
+## T1E5
+
+### [Pintar emails](https://www.youtube.com/watch?v=a-kqng_4UDQOs)
+
+{% embed url="https://www.youtube.com/watch?v=a-kqng_4UDQOs" %}
+
+### [Pintar filtros](https://www.youtube.com/watch?v=ehPFygsdg0s)
+
+{% embed url="https://www.youtube.com/watch?v=ehPFygsdg0s" %}
+
+### [Borrar emails](https://www.youtube.com/watch?v=ERxG6iaWrZY)
+
+{% embed url="https://www.youtube.com/watch?v=ERxG6iaWrZY" %}
+
+### [Mostrar email seleccionado](https://www.youtube.com/watch?v=ZOc9oDaHfAQ)
+
+{% embed url="https://www.youtube.com/watch?v=ZOc9oDaHfAQ" %}
+
+### [Marcar como leído un email](https://www.youtube.com/watch?v=UaWWEGGVX44)
+
+{% embed url="https://www.youtube.com/watch?v=UaWWEGGVX44" %}
