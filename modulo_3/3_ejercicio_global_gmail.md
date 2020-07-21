@@ -75,11 +75,11 @@ Este ejercicio se grabó con público en directo en clase, durante el **módulo 
 
 {% embed url="https://www.youtube.com/watch?v=hHQMemeGoFk" %}
 
-## T1E5
+## T1E5: más estado
 
-### [Pintar emails](https://www.youtube.com/watch?v=a-kqng_4UDQOs)
+### [Pintar emails](https://www.youtube.com/watch?v=kqng_4UDQOs)
 
-{% embed url="https://www.youtube.com/watch?v=a-kqng_4UDQOs" %}
+{% embed url="https://www.youtube.com/watch?v=kqng_4UDQOs" %}
 
 ### [Pintar filtros](https://www.youtube.com/watch?v=ehPFygsdg0s)
 
