@@ -49,9 +49,9 @@ Este ejercicio se grabó con público en directo en clase, durante el **módulo 
 
 ## T1E3: eventos
 
-### [Escuchar evento en un componente de clase](https://www.youtube.com/watch?v=a-FN69XR0F3O4)
+### [Escuchar evento en un componente de clase](https://www.youtube.com/watch?v=FN69XR0F3O4)
 
-{% embed url="https://www.youtube.com/watch?v=a-FN69XR0F3O4" %}
+{% embed url="https://www.youtube.com/watch?v=FN69XR0F3O4" %}
 
 ### [Escuchar evento en un componente funcional](https://www.youtube.com/watch?v=wWObXeJTsqA)
 
