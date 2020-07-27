@@ -120,3 +120,37 @@ Este ejercicio se grabó con público en directo en clase, durante el **módulo 
 ### [Controlar componente con mucha clase](https://www.youtube.com/watch?v=QedVNI3v1OA)
 
 {% embed url="https://www.youtube.com/watch?v=QedVNI3v1OA" %}
+
+## T1E8: React Router
+
+### [Qué vamos a ver hoy](https://www.youtube.com/watch?v=f-kVm47Yfwc)
+
+{% embed url="https://www.youtube.com/watch?v=f-kVm47Yfwc" %}
+
+### [Qué es una spa router y react router](https://www.youtube.com/watch?v=7E60JC2L3N8)
+
+{% embed url="https://www.youtube.com/watch?v=7E60JC2L3N8" %}
+
+### [Navegar entre dos páginas](https://www.youtube.com/watch?v=XFWZenA3FQM)
+
+{% embed url="https://www.youtube.com/watch?v=XFWZenA3FQM" %}
+
+### [Navegar a páginas con parámetros](https://www.youtube.com/watch?v=LElu-LG09Wk)
+
+{% embed url="https://www.youtube.com/watch?v=LElu-LG09Wk" %}
+
+### [Refrescar páginas con parámetros](https://www.youtube.com/watch?v=axmqQLCcItk)
+
+{% embed url="https://www.youtube.com/watch?v=axmqQLCcItk" %}
+
+### [Limpiar un poquito](https://www.youtube.com/watch?v=QqOirBIdI5Y)
+
+{% embed url="https://www.youtube.com/watch?v=QqOirBIdI5Y" %}
+
+### [React router en componente de clase](https://www.youtube.com/watch?v=ceFWcmUkiFA)
+
+{% embed url="https://www.youtube.com/watch?v=ceFWcmUkiFA" %}
+
+### [React router función children](https://www.youtube.com/watch?v=J34gzOJ8Mp0)
+
+{% embed url="https://www.youtube.com/watch?v=J34gzOJ8Mp0" %}
