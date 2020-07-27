@@ -151,6 +151,6 @@ Este ejercicio se grabó con público en directo en clase, durante el **módulo 
 
 {% embed url="https://www.youtube.com/watch?v=ceFWcmUkiFA" %}
 
-### [React router función children](https://www.youtube.com/watch?v=J34gzOJ8Mp0)
+### [React router propiedad children](https://www.youtube.com/watch?v=J34gzOJ8Mp0)
 
 {% embed url="https://www.youtube.com/watch?v=J34gzOJ8Mp0" %}
