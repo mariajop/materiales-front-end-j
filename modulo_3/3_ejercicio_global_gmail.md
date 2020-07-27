@@ -110,3 +110,13 @@ Este ejercicio se grabó con público en directo en clase, durante el **módulo 
 ### [Hook: useState](https://www.youtube.com/watch?v=Fen7YwAETjM)
 
 {% embed url="https://www.youtube.com/watch?v=Fen7YwAETjM" %}
+
+## T1E7: Formularios en React
+
+### [Componentes controlados](https://www.youtube.com/watch?v=mQfhciPXx_o)
+
+{% embed url="https://www.youtube.com/watch?v=mQfhciPXx_o" %}
+
+### [Controlar componente con mucha clase](https://www.youtube.com/watch?v=QedVNI3v1OA)
+
+{% embed url="https://www.youtube.com/watch?v=QedVNI3v1OA" %}
