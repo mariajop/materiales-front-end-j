@@ -96,3 +96,17 @@ Este ejercicio se grabó con público en directo en clase, durante el **módulo 
 ### [Marcar como leído un email](https://www.youtube.com/watch?v=UaWWEGGVX44)
 
 {% embed url="https://www.youtube.com/watch?v=UaWWEGGVX44" %}
+
+## T1E6: hooks / useState
+
+### [Qué es un hook](https://www.youtube.com/watch?v=9K-k6ezBne8)
+
+{% embed url="https://www.youtube.com/watch?v=9K-k6ezBne8" %}
+
+### [Cambiar componente de clase a funcional](https://www.youtube.com/watch?v=X6wKLPxKCHY)
+
+{% embed url="https://www.youtube.com/watch?v=X6wKLPxKCHY" %}
+
+### [Hook: useState](https://www.youtube.com/watch?v=Fen7YwAETjM)
+
+{% embed url="https://www.youtube.com/watch?v=Fen7YwAETjM" %}
