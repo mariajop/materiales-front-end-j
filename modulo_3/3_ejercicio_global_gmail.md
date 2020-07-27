@@ -154,3 +154,21 @@ Este ejercicio se grabó con público en directo en clase, durante el **módulo 
 ### [React router propiedad children](https://www.youtube.com/watch?v=J34gzOJ8Mp0)
 
 {% embed url="https://www.youtube.com/watch?v=J34gzOJ8Mp0" %}
+
+## T1E9: Ciclo de vida de los componentes
+
+### [Fetch en componente funcional](https://www.youtube.com/watch?v=U_vATXA7A-I)
+
+{% embed url="https://www.youtube.com/watch?v=13CjXL1lsXc" %}
+
+### [Fetch en componente de clase](https://www.youtube.com/watch?v=13CjXL1lsXc)
+
+{% embed url="https://www.youtube.com/watch?v=U_vATXA7A-I" %}
+
+### [Local storage en componente funcional](https://www.youtube.com/watch?v=_qY3N2nLkK0)
+
+{% embed url="https://www.youtube.com/watch?v=_qY3N2nLkK0" %}
+
+### [Local storage en componente de clase](https://www.youtube.com/watch?v=qyUO0-rWSFs)
+
+{% embed url="https://www.youtube.com/watch?v=qyUO0-rWSFs" %}
