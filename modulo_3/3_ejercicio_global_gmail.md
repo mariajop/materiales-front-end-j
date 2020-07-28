@@ -172,3 +172,33 @@ Este ejercicio se grabó con público en directo en clase, durante el **módulo 
 ### [Local storage en componente de clase](https://www.youtube.com/watch?v=qyUO0-rWSFs)
 
 {% embed url="https://www.youtube.com/watch?v=qyUO0-rWSFs" %}
+
+## T1E10: Dar cera, pulir cera
+
+### [Limpiar archivos](https://www.youtube.com/watch?v=-5XhLwRwCpk)
+
+{% embed url="https://www.youtube.com/watch?v=-5XhLwRwCpk" %}
+
+### [Limpiar servicios](https://www.youtube.com/watch?v=Rc_hrJevIhg)
+
+{% embed url="https://www.youtube.com/watch?v=Rc_hrJevIhg" %}
+
+### [Limpiar componente funcional](https://www.youtube.com/watch?v=jV9e4cMNLx4)
+
+{% embed url="https://www.youtube.com/watch?v=jV9e4cMNLx4" %}
+
+### [Limpiar componente de clase](https://www.youtube.com/watch?v=yxMIM1fFfd8)
+
+{% embed url="https://www.youtube.com/watch?v=yxMIM1fFfd8" %}
+
+### [Limpiar el resto de componentes](https://www.youtube.com/watch?v=h34O2OWhwwk)
+
+{% embed url="https://www.youtube.com/watch?v=h34O2OWhwwk" %}
+
+### [Limpiar funcionalidad](https://www.youtube.com/watch?v=IuwRN8rvf7M)
+
+{% embed url="https://www.youtube.com/watch?v=IuwRN8rvf7M" %}
+
+### [Añadir loading](https://www.youtube.com/watch?v=xQ_LYPSbWXY)
+
+{% embed url="https://www.youtube.com/watch?v=xQ_LYPSbWXY" %}
