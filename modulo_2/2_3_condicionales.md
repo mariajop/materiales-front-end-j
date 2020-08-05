@@ -508,20 +508,33 @@ Reescribe el código del ejemplo anterior (no del ejercicio anterior) utilizando
 
 ## Switch
 
-Ya conocemos como funciona un condicional clásico if...else, y por eso podemos darnos cuenta que podría darse el caso en el que tengamos que evaluar muchas condiciones hasta obtener un resultado, imagínate que podríamos encadenar sentencias if...else... hasta el infinito y más allá hasta que nuestro programa tomara una decisión.
-Cuando tenemos múltiples casos que evaluar en una condición existe un tipo de estructura especial, el `switch`.
+Ya sabemos hacer varios **if...else** encadenados para comprobar una condición, y sabemos que si la primera condición es falsa, comprobamos la siguiente, y si esta también es falsa comprobamos la siguiente... hasta que comprobamos una condición que es verdad, o hasta que llegamos hasta el **else** final.
 
-`switch` evalúa expresiones y no se centra en evaluar sentencias como ocurre con `if...else`. Cuando necesitamos comprobar bloques de código con varios casos con `switch` solucionamos el problema de encadenar `if...else` infinitos y facilitamos la legibilidad. Vamos a ver un ejemplo:
+Algunas veces nos encontramos en que todas estas comprobaciones son "parecidas", es decir, **una parte de la comparación es la misma y la otra parte de la comparación cambia**.
 
-En cada uno de los `case` definiremos el código que se ejecutará en cada caso de la condición, seguido de `break`, que evita que se ejecute el siguiente caso si la condición se cumple, así evitamos pasar por todos los casos.
+En el siguiente ejemplo la parte izquierda de la comparación es la misma, siempre comparamos la constante `todayDate` con otras cosas. La parte derecha de la comparación cambia. Por ejemplo:
 
-Si ninguno de los valores que contemplamos en cada case coincide con el que estamos evaluando en nuestro `switch` ejecutaremos la instancia `default`.
+```js
+const todayDate = 'Viernes'
 
-#### ¿En qué día vives?
+if (todayDate === 'Lunes') {
+  console.log('Hoy me tomo un café con Maricarmen');
+} else if (todayDate === 'Martes') {
+  console.log('Bajar al perro');
+} else if (todayDate === 'Miércoles') {
+  console.log('Vamos al cine a ver una peli');
+} else if (todayDate === 'Jueves') {
+  console.log('Juernesss');
+} else if (todayDate === 'Viernes') {
+  console.log('Cumpleaños de Paco');
+} else if (todayDate === 'Sábado') {
+  console.log('Comida con los suegros');
+} else {
+  console.log('Dormir hasta las 12');
+}
+```
 
-Como tenemos una estupenda vida social vamos a crear un programita que nos recuerde nuestras citas en función del día de la semana en el que estemos.
-
-Para ello, vamos a guardar en una constante el día de la semana en el que estamos para que nuestra consola nos chive que plan tenemos para ese día. Si cambias el día de la semana ¿Qué mensaje nos devolverá la consola?
+Para trabajar con este tipo de condiciones disponemos de la herramienta **switch**. El código anterior con if...else hace lo mismo que el siguiente con switch:
 
 ```js
 const todayDate = 'Viernes'
@@ -539,7 +552,7 @@ switch (todayDate) {
   case 'Jueves':
     console.log('Juernesss');
     break;
-  case 'Viernes:
+  case 'Viernes':
     console.log('Cumpleaños de Paco');
     break;
   case 'Sábado':
@@ -548,18 +561,41 @@ switch (todayDate) {
   default:
     console.log('Dormir hasta las 12');
 }
-
 ```
+
+**Switch es un tipo de condicional**, en el cual:
+
+1. JavaScript obtiene el valor de la variable o constante que pongamos en dentro del primer paréntesis. En el ejemplo `switch (todayDate)`, que en este caso es 'Viernes'.
+1. A continuación JavaScript compara este valor con cada uno de los valores de los `case`. Primero con `Lunes`, después con `Martes`...
+1. Cuando el valor comparado `todayDate`, coincida con uno de los valores `case`, en el ejemplo `case 'Viernes'` se ejecutarán las líneas de código que hay desde el `case` hasta el siguiente `break`, en el ejemplo se ejecutará la línea `console.log('Cumpleaños de Paco');`.
+1. Si ninguno de los valores del valor comparado `todayDate` coincide con un valor de `case`, JavaScript ejecutará la acción por defecto, es decir el código que está a continuación de `default`.
+
+Algunas consideraciones:
+
+* JavaScript compara los case en el orden en el que estén escritos.
+* JavaScript solo ejecuta el primer `case` que coincida. Si escribimos más de un `case` que coincida, solo se ejecutará el primero.
+* Entre un `case` y el siguiente `break;` puede haber una línea o las líneas de código que queramos.
+* La opción `default` equivale al último else de un if...else.
+* La opción `default` no es obligatoria.
+* **Al igual que un operador ternario, un switch es un tipo específico de condicional.** Todo operador ternario y todo switch se puede reescribir como la combinación de varios if...else.
+
+#### ¿Qué tengo que hacer hoy?
+
+Vamos a practicar un poco, copia el switch de ejemplo que tenemos arriba, mételo en un fichero de JavaScript y ejecútalo para ver qué se muestra en consola.
+
+A continuación cambia el día de la semana para ver qué se pinta en consola. Puedes añadir más *consoles* donde quieras.
 
 #### EJERCICIO 7
 
-Vamos a hacer un pequeño programa que te sugiera una receta en función del ingrediente que le pasemos. 
+Vamos a hacer un pequeño programa que te sugiera una receta en función del ingrediente que le pasemos.
 
-Para resolverlo nos dan una variable en la que podemos declarar un ingrediente a elegir entre estos tres: pollo, merluza o espinacas, por defecto si no hay ingrediente pondrá 'Nada en la nevera' y según el ingrediente que le pasemos el programa nos devolverá un mensaje por consola diciéndote el ingrediente que has elegido y con las siguientes sugerencias de receta: 
+Para resolverlo nos dan una variable en la que podemos declarar un ingrediente a elegir entre estos tres: pollo, merluza o espinacas, por defecto si no hay ingrediente pondrá 'Nada en la nevera' y según el ingrediente que le pasemos el programa nos devolverá un mensaje por consola diciéndote el ingrediente que has elegido y con las siguientes sugerencias de receta:
 Filete con patatas / Merluzita en salsa verde / Espinacas rehogadas. Ejemplo: Tu ingrediente es pollo. Puedes freirte un filete con patatas.
 
 ```js
-let ingredient = 'Nada en la nevera';
+let ingredient = 'Pollo';
+
+// aquí tu código
 ```
 
 \_\_\_\_\_\_\_\_\_\_
