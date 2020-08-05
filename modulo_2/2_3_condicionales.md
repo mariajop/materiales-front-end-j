@@ -10,7 +10,8 @@
 - [EJERCICIO 4](#ejercicio-4)
 - [EJERCICIO 5](#ejercicio-5)
 - [EJERCICIO 6](#ejercicio-6)
-- [EJERCICIO 7 BONUS](#ejercicio-7-bonus)
+- [EJERCICIO 7](#ejercicio-7)
+- [EJERCICIO 8 BONUS](#ejercicio-8-bonus)
 
 <!-- /TOC -->
 
@@ -505,6 +506,62 @@ Si en este punto el concepto de expresión y sentencia es confuso, no te preocup
 
 Reescribe el código del ejemplo anterior (no del ejercicio anterior) utilizando un ternario en lugar de un `if...else`.
 
+## Switch
+
+Ya conocemos como funciona un condicional clásico if...else, y por eso podemos darnos cuenta que podría darse el caso en el que tengamos que evaluar muchas condiciones hasta obtener un resultado, imagínate que podríamos encadenar sentencias if...else... hasta el infinito y más allá hasta que nuestro programa tomara una decisión.
+Cuando tenemos múltiples casos que evaluar en una condición existe un tipo de estructura especial, el `switch`.
+
+`switch` evalúa expresiones y no se centra en evaluar sentencias como ocurre con `if...else`. Cuando necesitamos comprobar bloques de código con varios casos con `switch` solucionamos el problema de encadenar `if...else` infinitos y facilitamos la legibilidad. Vamos a ver un ejemplo:
+
+En cada uno de los `case` definiremos el código que se ejecutará en cada caso de la condición, seguido de `break`, que evita que se ejecute el siguiente caso si la condición se cumple, así evitamos pasar por todos los casos.
+
+Si ninguno de los valores que contemplamos en cada case coincide con el que estamos evaluando en nuestro `switch` ejecutaremos la instancia `default`.
+
+#### ¿En qué día vives?
+
+Como tenemos una estupenda vida social vamos a crear un programita que nos recuerde nuestras citas en función del día de la semana en el que estemos.
+
+Para ello, vamos a guardar en una constante el día de la semana en el que estamos para que nuestra consola nos chive que plan tenemos para ese día. Si cambias el día de la semana ¿Qué mensaje nos devolverá la consola?
+
+```js
+const todayDate = 'Viernes'
+
+switch (todayDate) {
+  case 'Lunes':
+    console.log('Hoy me tomo un café con Maricarmen');
+    break;
+  case 'Martes':
+    console.log('Bajar al perro');
+    break;
+  case 'Miércoles':
+    console.log('Vamos al cine a ver una peli');
+    break;
+  case 'Jueves':
+    console.log('Juernesss');
+    break;
+  case 'Viernes:
+    console.log('Cumpleaños de Paco');
+    break;
+  case 'Sábado':
+    console.log('Comida con los suegros');
+    break;
+  default:
+    console.log('Dormir hasta las 12');
+}
+
+```
+
+#### EJERCICIO 7
+
+Vamos a hacer un pequeño programa que te sugiera una receta en función del ingrediente que le pasemos. 
+
+Para resolverlo nos dan una variable en la que podemos declarar un ingrediente a elegir entre estos tres: pollo, merluza o espinacas, por defecto si no hay ingrediente pondrá 'Nada en la nevera' y según el ingrediente que le pasemos el programa nos devolverá un mensaje por consola diciéndote el ingrediente que has elegido y con las siguientes sugerencias de receta: 
+Filete con patatas / Merluzita en salsa verde / Espinacas rehogadas. Ejemplo: Tu ingrediente es pollo. Puedes freirte un filete con patatas.
+
+```js
+let ingredient = 'Nada en la nevera';
+```
+
 \_\_\_\_\_\_\_\_\_\_
 
 ## BONUS
@@ -524,7 +581,7 @@ El operador de módulo tiene el mismo orden de ejecución que los operadores de 
 
 > **Nota**: este operador es muy util para saber si un número es par o impar. Como recordatorio todos los números cuya división entre dos tienen como resto 0 son pares.
 
-#### EJERCICIO 7 BONUS
+#### EJERCICIO 8 BONUS
 
 Calcular cuál va a ser el siguiente año bisiesto
 
