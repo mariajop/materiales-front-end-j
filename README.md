@@ -25,11 +25,11 @@ El fin último del curso es que todas las participantes sean capaces de realizar
 
 ## Sobre Adalab
 
-En Adalab impulsamos a mujeres jóvenes con dificultades de empleabilidad, para que se conviertan en programadoras. Lo hacemos a través de un programa integral que incluye formación técnica, desarrollo profesional y facilitamos su inserción laboral.
+Adalab es una escuela especializada en formación digital para mujeres.
 
-Lo que nos motiva es promover la diversidad en el sector tecnológico, reduciendo la brecha de género actual, a la vez que ayudamos a disminuir la tasa de desempleo.
+Trabajamos para formar y acompañar a mujeres que buscan un giro profesional adaptado a las nuevas necesidades digitales de las empresas.
 
-Actualmente tenemos una tasa de inserción laboral del 95%.
+A través de nuestro Curso Intensivo en programación front-end las alumnas inician una carrera en tecnología, aportando diversidad al sector.
 
 ## Objetivos generales
 
